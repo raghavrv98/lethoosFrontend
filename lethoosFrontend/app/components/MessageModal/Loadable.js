@@ -1,6 +1,6 @@
 /**
  *
- * Asynchronously loads the component for SamplePage
+ * Asynchronously loads the component for MessageModal
  *
  */
 

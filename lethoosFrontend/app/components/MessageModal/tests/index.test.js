@@ -2,10 +2,10 @@
 // import { mount } from 'enzyme';
 // import { enzymeFind } from 'styled-components/test-utils';
 
-// import { SamplePage } from '../index';
+// import MessageModal from '../index';
 
-describe('<SamplePage />', () => {
+describe('<MessageModal />', () => {
   it('Expect to have unit tests specified', () => {
-    expect(true).toEqual(true);
+    expect(true).toEqual(false);
   });
 });

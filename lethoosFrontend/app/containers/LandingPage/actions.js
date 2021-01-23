@@ -1,6 +1,6 @@
 /*
  *
- * SamplePage actions
+ * LandingPage actions
  *
  */
 

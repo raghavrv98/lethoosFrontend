@@ -17,15 +17,22 @@ import makeSelectHomePage from './selectors';
 import reducer from './reducer';
 import saga from './saga';
 
-import SamplePage from '../SamplePage/Loadable';
+import LandingPage from '../../containers/LandingPage/Loadable';
+import LoginPage from '../../containers/LoginPage/Loadable';
 
 /* eslint-disable react/prefer-stateless-function */
 export class HomePage extends React.PureComponent {
+
+  componentDidMount(){
+    this.props.history.push('/landingPage');
+  }
+
   render() {
     return (
       <React.Fragment>
         <Switch>
-          <Route exact path="/sample" render={props => <SamplePage {...props} />} />
+          <Route exact path="/landingPage" render={props => <LandingPage {...props} />} />
+          <Route exact path="/login" render={props => <LoginPage {...props} />} />
         </Switch>
       </React.Fragment>
     );

@@ -29,6 +29,9 @@ import 'file-loader?name=.htaccess!./.htaccess'; // eslint-disable-line import/e
 
 import configureStore from './configureStore';
 
+// Css
+import '../app/assets/css/main.css'
+
 // Import i18n messages
 import { translationMessages } from './i18n';
 

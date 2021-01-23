@@ -1,6 +1,6 @@
 /*
  *
- * SamplePage reducer
+ * LandingPage reducer
  *
  */
 
@@ -9,7 +9,7 @@ import { DEFAULT_ACTION } from './constants';
 
 export const initialState = fromJS({});
 
-function samplePageReducer(state = initialState, action) {
+function landingPageReducer(state = initialState, action) {
   switch (action.type) {
     case DEFAULT_ACTION:
       return state;
@@ -18,4 +18,4 @@ function samplePageReducer(state = initialState, action) {
   }
 }
 
-export default samplePageReducer;
+export default landingPageReducer;

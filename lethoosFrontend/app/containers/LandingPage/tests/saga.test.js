@@ -4,12 +4,12 @@
 
 /* eslint-disable redux-saga/yield-effects */
 // import { take, call, put, select } from 'redux-saga/effects';
-// import samplePageSaga from '../saga';
+// import landingPageSaga from '../saga';
 
-// const generator = samplePageSaga();
+// const generator = landingPageSaga();
 
-describe('samplePageSaga Saga', () => {
+describe('landingPageSaga Saga', () => {
   it('Expect to have unit tests specified', () => {
-    expect(true).toEqual(true);
+    expect(true).toEqual(false);
   });
 });

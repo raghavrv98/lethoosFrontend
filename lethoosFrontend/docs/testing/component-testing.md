@@ -62,7 +62,7 @@ be the HTML output
 
 ```html
 <button>                           <!-- <Button>             -->
-  <i class="fa fa-checkmark"></i>  <!--   <CheckmarkIcon />  -->
+  <i className="fa fa-checkmark"></i>  <!--   <CheckmarkIcon />  -->
   Click Me!                        <!--   { props.children } -->
 </button>                          <!-- </Button>            -->
 ```

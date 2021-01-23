@@ -1,0 +1,178 @@
+body {
+	margin: 0px !important;
+	padding: 0px !important;
+}
+
+.logo {
+	height: 60px;
+}
+
+.mr-r-15 {
+	margin-right: 15px;
+}
+
+.mr-r-5 {
+	margin-right: 5px;
+}
+
+.mr-r-30 {
+	margin-right: 30px;
+}
+
+.mr-t-20{
+	margin-top: 20px;
+}
+
+.pd-39{
+	padding: 39px;
+}
+
+.sticky-top{
+	position: fixed ;
+	top: 0;
+}
+
+.box{
+	height: 350px;
+	width: 100%;
+	background-color: #ffffff;
+	border-radius: 10px;
+	padding: 20px;
+	border-color: #d3d5df;
+	box-shadow: 0 4px 20px 0 rgba(218,220,230,.6);
+	cursor: pointer;
+	margin-bottom: 15px;
+}
+
+footer {
+	background-color: #f8f9fa;
+	height: 40px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+footer .text {
+	text-align: center;
+	font-size: 20px;
+	font-weight: 400;
+	margin: 5px 0px;
+}
+
+@media only screen and (max-width: 768px) {
+	.header {
+		height: 80px;
+		width: 100%;
+		box-shadow: 0px 0px 25px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+		padding: 10px;
+		position: relative;
+	}
+	.logo-text {
+		display: inline-block;
+		font-size: 20px;
+		margin: 0px 0px 0px 15px;
+	}
+	.nav-items {
+		font-size: 14px;
+		position: absolute;
+		right: 0px;
+		top: 28px;
+	}
+	.nav-mr {
+		margin-right: 12px;
+	}
+	.nav-items :hover {
+		color: orange;
+		cursor: pointer;
+	}
+	.count-text{
+		font-size: 20px;
+		font-weight: 600;
+	}
+	.content-padding{
+		padding: 25px 20px;
+	}
+
+	.shop-image{
+		width: 100%;
+		height: 150px;
+		border-radius: 10px;
+	}
+
+	.shop-time{
+		font-size: 15px;
+	}
+
+	.shop-address{
+		color: grey;
+		font-size: 15px;
+	}
+
+	.box{
+		height: 325px;
+	}
+
+	.shop-heading{
+		font-size: 25px;
+		margin-top: 20px;
+		font-weight: 400;
+	}
+}
+
+@media only screen and (min-width: 769px) {
+	.header {
+		height: 100px;
+		width: 100%;
+		box-shadow: 0px 0px 25px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+		padding: 25px 250px;
+		position: relative;
+	}
+	.logo-text {
+		display: inline-block;
+		font-size: 30px;
+		margin: 0px 0px 0px 15px;
+	}
+	.nav-items {
+		font-size: 25px;
+		float: right;
+		margin: 6px 0px;
+	}
+	.nav-items :hover {
+		color: orange;
+		cursor: pointer;
+	}
+	.nav-mr {
+		margin-right: 20px;
+	}
+	.count-text{
+		font-size: 30px;
+		font-weight: 600;
+	}
+	.content-padding{
+		padding: 50px 250px;
+	}
+	.shop-image{
+		width: 100%;
+		height: 215px;
+		border-radius: 10px;
+	}
+
+	.shop-address{
+		color: grey;
+		font-size: 17px;
+	}
+
+	.box{
+		height: 400px;
+	}
+
+	.shop-heading{
+		font-size: 30px;
+		margin-top: 20px;
+		font-weight: 400;
+	}
+
+	.shop-time{
+		font-size: 20px;
+	}
+}
