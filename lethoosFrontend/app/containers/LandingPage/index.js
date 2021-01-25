@@ -55,7 +55,7 @@ export class LandingPage extends React.PureComponent {
   modalTime = () => {
     this.setState({
       isOpenClassName: 'modal display-none container',
-      isFetching: false
+      isLoader: false
     })
   }
 

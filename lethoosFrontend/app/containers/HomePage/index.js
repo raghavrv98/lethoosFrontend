@@ -24,7 +24,7 @@ import LoginPage from '../../containers/LoginPage/Loadable';
 export class HomePage extends React.PureComponent {
 
   componentDidMount(){
-    this.props.history.push('/landingPage');
+    // this.props.history.push('/landingPage');
   }
 
   render() {
