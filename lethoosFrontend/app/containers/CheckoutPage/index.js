@@ -33,7 +33,7 @@ export class CheckoutPage extends React.PureComponent {
       area: ""
     },
     orderHistory: [],
-    confirmModal: true
+    confirmModal: false
   }
 
   componentWillMount() {
