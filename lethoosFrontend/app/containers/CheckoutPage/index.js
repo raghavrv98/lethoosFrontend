@@ -145,7 +145,7 @@ export class CheckoutPage extends React.PureComponent {
               <p className="bill-info-text"> Delivery Charges = {this.state.payload.area.length > 0 ? this.state.payload.area.slice(-2) : 'NA'}</p>
               <hr />
               <p className="bill-info-text"> Total : {this.state.payload.area.length > 0 ? this.totalBill(this.state.payload.area.slice(-2), this.state.orderHistory.total) : this.state.orderHistory.total}</p>
-              <button type="submit" data-toggle="modal" data-target="#exampleModal" className="btn btn-warning login-button place-order-button">Place Order</button>
+              <button type="submit" className="btn btn-warning login-button place-order-button">Place Order</button>
             </div>
           </div>
         </form>
@@ -164,7 +164,7 @@ export class CheckoutPage extends React.PureComponent {
               </div>
               <div className="modal-footer">
                 <button type="button" className="btn btn-secondary confirm-modal-no" onClick={this.modalCloseHandler}>No</button>
-                <button type="button" className="btn btn-primary confirm-modal-yes" onClick={this.modalCloseHandler}>Yes</button>
+                <button type="button" className="btn btn-primary confirm-modal-yes" onClick={() => this.props.history.push('/orderPlacedPage')}>Yes</button>
               </div>
             </div>
           </div>

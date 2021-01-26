@@ -669,4 +669,36 @@ footer .text {
 	.modal-content {
 		min-height: 200px;
 	}
+
+	.order-placed-outer{
+		padding: 100px 400px;
+		text-align: center;
+	}
+
+	h1{
+		font-size: 50px !important;
+	}
+
+	.order-placed-box{
+		height: 500px;
+		background-color: white;
+		width: 100%;
+		padding: 50px;
+		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
+		border-radius: 15px;
+	}
+
+	.order-placed-image{
+		height: 150px;
+		margin-bottom: 30px;
+	}
+
+	.order-placed-text{
+		font-size: 30px;
+		margin: 10px 0px 10px;
+	}
+
+	.order-placed-btn{
+		width: 30%;
+	}
 }
