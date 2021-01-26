@@ -20,16 +20,26 @@ import saga from './saga';
 import messages from './messages';
 import axios from 'axios';
 import MessageModal from '../../components/MessageModal/Loadable'
-
+import { capitalizeFirstLetter } from '../../utils/customUtils'
 
 /* eslint-disable react/prefer-stateless-function */
 export class LandingPage extends React.PureComponent {
 
   state = {
     isOpenClassName: 'modal display-none container',
-    shops: []
+    shops: [],
+    customerDetails: {}
   }
 
+  componentWillMount() {
+    let customerDetails = JSON.parse(sessionStorage.getItem("customerDetails")) ? JSON.parse(sessionStorage.getItem("customerDetails")) : this.state.customerDetails;
+    if (Object.keys(customerDetails).length == 0) {
+      this.props.history.push('/login')
+    }
+    this.setState({
+      customerDetails
+    })
+  }
 
   componentDidMount() {
     this.getShops()
@@ -71,7 +81,9 @@ export class LandingPage extends React.PureComponent {
           <p className="logo-text">Le Thoos</p>
           <span className="nav-items">
             <span className="nav-mr"><i className="fa fa-tags" aria-hidden="true"></i> Offers</span>
-            <span className="nav-mr" onClick={() => this.props.history.push('/login')}><i className="fa fa-user" aria-hidden="true"></i> Login/SignUp</span>
+            <span className="nav-mr"><i className="fa fa-history" aria-hidden="true"></i> Order History</span>
+            <span className="nav-mr"><i className="fa fa-user" aria-hidden="true"></i> {this.state.customerDetails.name && capitalizeFirstLetter(this.state.customerDetails.name)}</span>
+            <span className="nav-mr" onClick={() => { sessionStorage.clear(); this.props.history.push('/login') }}><i className="fa fa-power-off" aria-hidden="true"></i> Logout</span>
           </span>
         </div>
         <div className="content-padding">
@@ -80,9 +92,9 @@ export class LandingPage extends React.PureComponent {
           <div className="row pd-39">
             {
               this.state.shops.map((val, index) => {
-                return <div key={index} className="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                return <div key={index} onClick={() => this.props.history.push(`/shopDetails/${val._id}`)} className="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
                   <div className="box">
-                    <img className="shop-image" src={val.image} />
+                    <img className="shop-image img-responsive" src={val.image} />
                     <p className="shop-heading">{val.vendorName}</p>
                     <p className="shop-time">{val.time}</p>
                     <p className="shop-address">{val.address}</p>
@@ -92,11 +104,6 @@ export class LandingPage extends React.PureComponent {
             }
           </div>
         </div>
-        <footer>
-          <div className="text">Design and Developed by <a target="_blank" href="https://www.letscipher.com/">letscipher</a>
-          </div>
-        </footer>
-
         <MessageModal
           showHideClassName={this.state.isOpenClassName}
           modalType={this.state.type}

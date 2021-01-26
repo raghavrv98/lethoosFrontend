@@ -18,6 +18,10 @@ export default function App() {
       <Switch>
         <Route path="/" component={HomePage} />
       </Switch>
+      <footer>
+        <div className="text">Design and Developed by <a target="_blank" href="https://www.letscipher.com/">letscipher</a>
+        </div>
+      </footer>
     </React.Fragment>
   );
 }

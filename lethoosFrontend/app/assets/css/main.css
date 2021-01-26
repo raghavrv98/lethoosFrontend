@@ -4,10 +4,6 @@ body {
 	font-family: 'lora';
 }
 
-.logo {
-	height: 60px;
-}
-
 .mr-r-15 {
 	margin-right: 15px;
 }
@@ -18,6 +14,10 @@ body {
 
 .mr-r-30 {
 	margin-right: 30px;
+}
+
+.mr-t-25 {
+	margin-top: 25px;
 }
 
 .mr-t-20 {
@@ -105,7 +105,40 @@ footer .text {
 	}
 }
 
+.shop-header {
+	width: 100%;
+	height: 300px;
+	background-color: orange;
+	padding: 50px 300px;
+}
+
+.shop-header-name, .shop-header-address, .shop-header-time {
+	margin: 0px;
+	font-size: 70px;
+	color: white;
+}
+
+.shop-header-address, .shop-header-time {
+	font-size: 25px;
+}
+
+.shop-header-image {
+	position: absolute;
+	top: 15%;
+	right: 15%;
+}
+
+.menu-items-image {
+	top: 15px;
+	position: absolute;
+	height: 50px;
+}
+
 @media only screen and (max-width: 768px) {
+	.logo {
+		/* height: 60px; */
+		display: none;
+	}
 	.header {
 		height: 80px;
 		width: 100%;
@@ -117,6 +150,7 @@ footer .text {
 		display: inline-block;
 		font-size: 20px;
 		margin: 0px 0px 0px 15px;
+		display: none;
 	}
 	.nav-items {
 		font-size: 14px;
@@ -125,7 +159,7 @@ footer .text {
 		top: 28px;
 	}
 	.nav-mr {
-		margin-right: 12px;
+		margin-right: 20px;
 	}
 	.nav-items :hover {
 		color: orange;
@@ -195,7 +229,7 @@ footer .text {
 		color: brown;
 		font-weight: 600;
 	}
-	.forget-password, .sign-up {
+	.reset-password, .sign-up {
 		font-size: 10px;
 		font-weight: 600;
 		color: brown;
@@ -233,9 +267,125 @@ footer .text {
 		font-size: 15px;
 		text-align: center;
 	}
+	.shop-header-name, .shop-header-address, .shop-header-time {
+		font-size: 50px;
+		text-align: center;
+	}
+	.shop-header-address, .shop-header-time {
+		font-size: 20px;
+	}
+	.shop-header-image {
+		position: absolute;
+		top: 15%;
+		right: 15%;
+		display: none;
+	}
+	.shop-header {
+		width: 100%;
+		height: 200px;
+		padding: 20px
+	}
+	.empty-cart-image {
+		/* height: 358px; */
+	}
+	.shop-details-outer {
+		margin: 0px 13px 65px !important;
+	}
+	.menu-items {
+		margin-bottom: 10px;
+		height: 80px;
+		background-color: orange;
+		margin-bottom: 10px;
+		padding: 15px;
+		border-radius: 15px;
+		position: relative;
+	}
+	.menu-items-outer {
+		padding: 0px 0px;
+		margin-top: 15px;
+	}
+	.menu-items-name {
+		display: inline-block;
+		font-size: 20px;
+		margin: -10px 65px;
+		color: white;
+		top: 12px;
+	}
+	.menu-items-price {
+		display: block;
+		font-size: 20px;
+		margin: 2px 0px 2px 65px;
+		color: white;
+		top: 12px;
+	}
+
+	.menu-items-add-button, .menu-items-count-button {
+		font-size: 20px;
+		right: 5%;
+		top: 20%;
+		background: white;
+		border-radius: 8px;
+		padding: 5px;
+		border: 1px solid;
+		width: 60px;
+		text-align: center;
+		cursor: pointer;
+		position: absolute;
+	}
+	
+	.menu-items-count-button {
+		width: 80px;
+		cursor: context-menu;
+	}
+	
+	.menu-items-count-left-button {
+		position: absolute;
+		left: 10px;
+		font-size: 35px;
+		top: -9px;
+		cursor: pointer;
+	}
+	
+	.menu-items-count-right-button {
+		position: absolute;
+		right: 10px;
+		font-size: 20px;
+		top: 5px;
+		font-weight: 600;
+		cursor: pointer;
+	}
+
+	.cart-items {
+		background-color: orange;
+		padding: 20px;
+		min-height: 250px;
+		border-radius: 15px;
+		position: sticky;
+		top: 30px;
+	}
+	
+	.order-details-heading {
+		font-size: 20px;
+		color: white;
+	}
+	
+	.order-details-items {
+		font-size: 15px;
+		color: white;
+	}
+	
+	.checkout-button {
+		background-color: white !important;
+		color: orange !important;
+	}
+	
+	
 }
 
 @media only screen and (min-width: 769px) {
+	.logo {
+		height: 60px;
+	}
 	.header {
 		height: 100px;
 		width: 100%;
@@ -258,7 +408,7 @@ footer .text {
 		cursor: pointer;
 	}
 	.nav-mr {
-		margin-right: 20px;
+		margin-right: 50px;
 	}
 	.count-text {
 		font-size: 30px;
@@ -322,7 +472,7 @@ footer .text {
 		color: brown;
 		font-weight: 600;
 	}
-	.forget-password, .sign-up {
+	.reset-password, .sign-up {
 		font-size: 25px;
 		font-weight: 600;
 		color: brown;
@@ -352,4 +502,97 @@ footer .text {
 		color: red;
 		font-size: 20px;
 	}
+	.shop-details-outer {
+		padding: 30px 200px;
+		margin: 0px!important;
+	}
+	.empty-cart-image {
+		height: 358px;
+	}
+	.menu-items {
+		margin-bottom: 10px;
+		height: 80px;
+		background-color: orange;
+		margin-right: 20px;
+		margin-bottom: 10px;
+		padding: 15px;
+		border-radius: 15px;
+		position: relative;
+	}
+	.menu-items-name {
+		display: inline-block;
+		font-size: 28px;
+		margin: -10px 65px;
+		color: white;
+		top: 12px;
+	}
+	.menu-items-price {
+		display: block;
+		font-size: 25px;
+		margin: 2px 0px 2px 65px;
+		color: white;
+		top: 12px;
+	}
+
+	.menu-items-add-button, .menu-items-count-button {
+		font-size: 25px;
+		right: 5%;
+		top: 20%;
+		background: white;
+		border-radius: 8px;
+		padding: 5px;
+		border: 1px solid;
+		width: 80px;
+		text-align: center;
+		cursor: pointer;
+		position: absolute;
+	}
+	
+	.menu-items-count-button {
+		width: 100px;
+		cursor: context-menu;
+	}
+	
+	.menu-items-count-left-button {
+		position: absolute;
+		left: 10px;
+		font-size: 50px;
+		top: -17px;
+		cursor: pointer;
+	}
+	
+	.menu-items-count-right-button {
+		position: absolute;
+		right: 10px;
+		font-size: 35px;
+		top: -2px;
+		font-weight: 600;
+		cursor: pointer;
+	}
+
+	.cart-items {
+		background-color: orange;
+		padding: 20px;
+		min-height: 250px;
+		border-radius: 15px;
+		position: sticky;
+		top: 30px;
+	}
+	
+	.order-details-heading {
+		font-size: 30px;
+		color: white;
+	}
+	
+	.order-details-items {
+		font-size: 25px;
+		color: white;
+	}
+	
+	.checkout-button {
+		background-color: white !important;
+		color: orange !important;
+	}
+	
+	
 }

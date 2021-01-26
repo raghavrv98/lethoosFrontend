@@ -150,7 +150,7 @@ export class LoginPage extends React.PureComponent {
         <div className="loginPage row">
           <img className="loginBanner display-none" src={require('../../assets/images/loginBanner.png')} />
           <span className="loginbox">
-            <img className="login-box-icon" src={require('../../assets/images/logo.png')} />
+            <img className="login-box-icon img-responsive" src={require('../../assets/images/logo.png')} />
             <p className="welcome-message">Welcome To The Land Of Tastiest Food</p>
             {this.state.isDetailsIncorrect && <p className="incorrect-password-text">Incorrect Mobile Number or Password</p>}
             {this.state.isUserExist && <p className="incorrect-password-text">User Already Exist</p>}
@@ -198,8 +198,9 @@ export class LoginPage extends React.PureComponent {
                   </form>
             }
 
-            {this.state.boxContent !== "login" && !this.state.isLoader && <p onClick={this.changeContentHandler} id="login" className="forget-password"> Login</p>}
-            {this.state.boxContent !== "resetPassword" && !this.state.isLoader && <p onClick={this.changeContentHandler} id="forgetPassword" className="forget-password"> Reset Password</p>}
+            {this.state.boxContent !== "login" && !this.state.isLoader && <p onClick={this.changeContentHandler} id="login" className="reset-password"> Login</p>}
+            {console.log('this.state.boxContent: ', this.state.boxContent)}
+            {this.state.boxContent !== "resetPassword" && !this.state.isLoader && <p onClick={this.changeContentHandler} id="resetPassword" className="reset-password"> Reset Password</p>}
             {this.state.boxContent !== "signUp" && !this.state.isLoader && <p onClick={this.changeContentHandler} id="signUp" className="sign-up"> Don't have an account? Sign up</p>}
           </span>
         </div>
