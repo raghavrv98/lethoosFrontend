@@ -199,7 +199,6 @@ export class LoginPage extends React.PureComponent {
             }
 
             {this.state.boxContent !== "login" && !this.state.isLoader && <p onClick={this.changeContentHandler} id="login" className="reset-password"> Login</p>}
-            {console.log('this.state.boxContent: ', this.state.boxContent)}
             {this.state.boxContent !== "resetPassword" && !this.state.isLoader && <p onClick={this.changeContentHandler} id="resetPassword" className="reset-password"> Reset Password</p>}
             {this.state.boxContent !== "signUp" && !this.state.isLoader && <p onClick={this.changeContentHandler} id="signUp" className="sign-up"> Don't have an account? Sign up</p>}
           </span>

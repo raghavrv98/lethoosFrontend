@@ -2,6 +2,7 @@ body {
 	/* margin: 0px !important;
 	padding: 0px !important; */
 	font-family: 'lora';
+	background-color: #F5F5F5;
 }
 
 .mr-r-15 {
@@ -285,9 +286,9 @@ footer .text {
 		height: 200px;
 		padding: 20px
 	}
-	.empty-cart-image {
-		/* height: 358px; */
-	}
+	/* .empty-cart-image {
+		height: 358px;
+	} */
 	.shop-details-outer {
 		margin: 0px 13px 65px !important;
 	}
@@ -318,7 +319,6 @@ footer .text {
 		color: white;
 		top: 12px;
 	}
-
 	.menu-items-add-button, .menu-items-count-button {
 		font-size: 20px;
 		right: 5%;
@@ -332,12 +332,10 @@ footer .text {
 		cursor: pointer;
 		position: absolute;
 	}
-	
 	.menu-items-count-button {
 		width: 80px;
 		cursor: context-menu;
 	}
-	
 	.menu-items-count-left-button {
 		position: absolute;
 		left: 10px;
@@ -345,7 +343,6 @@ footer .text {
 		top: -9px;
 		cursor: pointer;
 	}
-	
 	.menu-items-count-right-button {
 		position: absolute;
 		right: 10px;
@@ -354,7 +351,6 @@ footer .text {
 		font-weight: 600;
 		cursor: pointer;
 	}
-
 	.cart-items {
 		background-color: orange;
 		padding: 20px;
@@ -363,23 +359,18 @@ footer .text {
 		position: sticky;
 		top: 30px;
 	}
-	
 	.order-details-heading {
 		font-size: 20px;
 		color: white;
 	}
-	
 	.order-details-items {
 		font-size: 15px;
 		color: white;
 	}
-	
 	.checkout-button {
 		background-color: white !important;
 		color: orange !important;
 	}
-	
-	
 }
 
 @media only screen and (min-width: 769px) {
@@ -533,7 +524,6 @@ footer .text {
 		color: white;
 		top: 12px;
 	}
-
 	.menu-items-add-button, .menu-items-count-button {
 		font-size: 25px;
 		right: 5%;
@@ -547,12 +537,10 @@ footer .text {
 		cursor: pointer;
 		position: absolute;
 	}
-	
 	.menu-items-count-button {
 		width: 100px;
 		cursor: context-menu;
 	}
-	
 	.menu-items-count-left-button {
 		position: absolute;
 		left: 10px;
@@ -560,7 +548,6 @@ footer .text {
 		top: -17px;
 		cursor: pointer;
 	}
-	
 	.menu-items-count-right-button {
 		position: absolute;
 		right: 10px;
@@ -569,7 +556,6 @@ footer .text {
 		font-weight: 600;
 		cursor: pointer;
 	}
-
 	.cart-items {
 		background-color: orange;
 		padding: 20px;
@@ -578,21 +564,109 @@ footer .text {
 		position: sticky;
 		top: 30px;
 	}
-	
 	.order-details-heading {
 		font-size: 30px;
 		color: white;
 	}
-	
 	.order-details-items {
 		font-size: 25px;
 		color: white;
 	}
-	
 	.checkout-button {
 		background-color: white !important;
 		color: orange !important;
 	}
-	
-	
+	.checkout-outer {
+		padding: 70px 300px;
+		margin: 0px !important;
+	}
+	.customer-info {
+		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
+		margin: 0px !important;
+		border-radius: 12px;
+		background-color: white;
+		padding: 30px;
+	}
+	.bill-info {
+		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
+		margin: 0px !important;
+		height: 500px;
+		border-radius: 12px;
+		float: right;
+		background-color: white;
+		padding: 30px;
+	}
+	.radio-btn-size {
+		height: 30px;
+		width: 30px;
+		cursor: pointer;
+	}
+	.radio-text-size {
+		font-size: 30px;
+		margin-left: 25px;
+		margin-right: 20px;
+	}
+	.area-box {
+		height: 45px;
+		width: 30%;
+		font-size: 30px;
+		margin-left: 30px;
+		border: 1px solid brown;
+		border-radius: 10px;
+		padding: 5px 16px;
+	}
+	.bill-info-heading {
+		font-size: 30px;
+		margin: 0px;
+		text-align: center;
+	}
+	.bill-info-text {
+		font-size: 30px;
+		margin: 0px;
+	}
+	.place-order-button {
+		background-color: #28A745;
+		color: white;
+	}
+	.display-block {
+		display: block;
+	}
+	.confirm-modal-heading {
+		font-size: 30px;
+		text-align: center;
+	}
+	.confirm-modal-body {
+		font-size: 30px;
+		text-align: center;
+		margin-top: -15px !important;
+	}
+	.modal-header {
+		border: none !important;
+	}
+	.modal-footer {
+		border: none !important;
+	}
+	.confirm-modal-close {
+		margin-top: -70px !important;
+		margin-right: -25px;
+		font-size: 35px;
+		color: black;
+		opacity: 1;
+	}
+	.confirm-modal-no {
+		position: absolute;
+		left: 60%;
+		font-size: 30px;
+		bottom: 3%;
+	}
+	.confirm-modal-yes {
+		position: absolute;
+		bottom: 9%;
+		right: 7%;
+		font-size: 18px;
+		background: #28A745;
+	}
+	.modal-content {
+		min-height: 200px;
+	}
 }

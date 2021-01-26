@@ -27,7 +27,11 @@ export class ShopDetails extends React.PureComponent {
 
   state = {
     customerDetails: {},
-    orderHistory: [],
+    orderHistory: {
+      orders: [],
+      vendorName: "",
+      address: ""
+    },
     shopDetails: {
       vendorName: "",
       address: "",
@@ -37,43 +41,63 @@ export class ShopDetails extends React.PureComponent {
     quantity: 0
   }
 
+  componentWillMount() {
+    if (this.props.match.params.id) {
+      this.getShopDetails()
+    }
+    let customerDetails = JSON.parse(sessionStorage.getItem("customerDetails")) ? JSON.parse(sessionStorage.getItem("customerDetails")) : cloneDeep(this.state.customerDetails);
+    let orderHistory = JSON.parse(sessionStorage.getItem("orderHistory")) ? JSON.parse(sessionStorage.getItem("orderHistory")) : cloneDeep(this.state.orderHistory);
+    if (Object.keys(customerDetails).length == 0) {
+      this.props.history.push('/login')
+    }
+
+    orderHistory.vendorName = this.state.shopDetails.vendorName
+    orderHistory.address = this.state.shopDetails.address
+
+    sessionStorage.setItem('orderHistory', JSON.stringify(orderHistory))
+    this.setState({
+      customerDetails,
+      orderHistory
+    })
+  }
+
   itemsCountHandler = (val, id) => {
     let shop = cloneDeep(this.state.shopDetails)
     let shopDetails = cloneDeep(this.state.shopDetails).details
     let shopDetailsIndex = shopDetails.findIndex(value => value.itemNo === val.itemNo)
     shopDetails[shopDetailsIndex].quantity = id == "add" ? shopDetails[shopDetailsIndex].quantity + 1 : shopDetails[shopDetailsIndex].quantity - 1
-    let orderHistory = cloneDeep(this.state.orderHistory)
+    let orderHistory = JSON.parse(sessionStorage.getItem("orderHistory")) ? JSON.parse(sessionStorage.getItem("orderHistory")) : cloneDeep(this.state.orderHistory);
 
-    let orderHistoryIndex = orderHistory.findIndex(value => value.itemNo === val.itemNo)
+    let orderHistoryIndex = orderHistory.orders.findIndex(value => value.itemNo === val.itemNo)
 
     if (orderHistoryIndex === -1) {
-      orderHistory.push(
+      orderHistory.orders.push(
         {
           itemNo: val.itemNo,
           item: val.name,
           quantity: shopDetails[shopDetailsIndex].quantity,
           portion: val.portion,
-          price: val.halfAvailable ? val.halfPrice : val.fullPrice
-
+          price: val.halfAvailable ? val.halfPrice : val.fullPrice,
         }
       )
     }
     else {
-      orderHistory[orderHistoryIndex].itemNo = val.itemNo
-      orderHistory[orderHistoryIndex].item = val.name
-      orderHistory[orderHistoryIndex].quantity = shopDetails[shopDetailsIndex].quantity
-      orderHistory[orderHistoryIndex].portion = val.portion
-      orderHistory[orderHistoryIndex].price = val.halfAvailable ? val.halfPrice : val.fullPrice
+      orderHistory.orders[orderHistoryIndex].itemNo = val.itemNo
+      orderHistory.orders[orderHistoryIndex].item = val.name
+      orderHistory.orders[orderHistoryIndex].quantity = shopDetails[shopDetailsIndex].quantity
+      orderHistory.orders[orderHistoryIndex].portion = val.portion
+      orderHistory.orders[orderHistoryIndex].price = val.halfAvailable ? val.halfPrice : val.fullPrice
     }
 
     shop.details = shopDetails
-    orderHistory.map((val, index) => {
+    orderHistory.orders.map((val, index) => {
       if (val.quantity == 0) {
-        orderHistory.splice(index, 1)
+        orderHistory.orders.splice(index, 1)
       }
       return val
     })
 
+    sessionStorage.setItem('orderHistory', JSON.stringify(orderHistory))
     this.setState({
       shopDetails: shop,
       orderHistory
@@ -81,25 +105,19 @@ export class ShopDetails extends React.PureComponent {
 
   }
 
-  componentWillMount() {
-    if (this.props.match.params.id) {
-      this.getShopDetails()
-    }
-    let customerDetails = JSON.parse(sessionStorage.getItem("customerDetails")) ? JSON.parse(sessionStorage.getItem("customerDetails")) : this.state.customerDetails;
-    if (Object.keys(customerDetails).length == 0) {
-      this.props.history.push('/login')
-    }
-    this.setState({
-      customerDetails
-    })
-  }
-
   getShopDetails = () => {
+    let orderHistory = JSON.parse(sessionStorage.getItem("orderHistory")) ? JSON.parse(sessionStorage.getItem("orderHistory")) : cloneDeep(this.state.orderHistory);
     let url = window.API_URL + `/shop/${this.props.match.params.id}`;
     axios.get(url)
       .then((res) => {
         let shopDetails = res.data;
         shopDetails.details.map(val => { val.quantity = 0; val.portion = "full" })
+
+        orderHistory.vendorName = shopDetails.vendorName
+        orderHistory.address = shopDetails.address
+
+        sessionStorage.setItem('orderHistory', JSON.stringify(orderHistory))
+
         this.setState({ shopDetails });
       })
       .catch((error) => {
@@ -112,11 +130,13 @@ export class ShopDetails extends React.PureComponent {
   };
 
   billTotal = () => {
-    let orderHistory = cloneDeep(this.state.orderHistory)
+    let orderHistory = JSON.parse(sessionStorage.getItem("orderHistory")) ? JSON.parse(sessionStorage.getItem("orderHistory")) : cloneDeep(this.state.orderHistory);
     let total = 0
-    orderHistory.map(val => {
+    orderHistory.orders.map(val => {
       total += val.price * val.quantity
     })
+    orderHistory.total = total
+    sessionStorage.setItem('orderHistory', JSON.stringify(orderHistory))
     return total
   }
 
@@ -162,18 +182,18 @@ export class ShopDetails extends React.PureComponent {
           </div>
           <div className="cart-items col-md-4">
             {
-              this.state.orderHistory.length > 0 ?
+              this.state.orderHistory.orders.length > 0 ?
                 <React.Fragment>
                   <div className="order-details-heading">order Details</div>
                   <hr />
-                  {this.state.orderHistory.map(val => {
-                    return <div className="order-details-items">
+                  {this.state.orderHistory.orders.map((val, index) => {
+                    return <div key={index} className="order-details-items">
                       {val.item} X {val.quantity} = {val.price * val.quantity}
                     </div>
                   })}
                   <hr />
                   <div className="order-details-heading">Total = {this.billTotal()}</div>
-                  <button onClick={'/checkoutPage'} className="btn btn-warning login-button checkout-button">Go To Cart</button>
+                  <button onClick={() => this.props.history.push('/checkoutPage')} className="btn btn-warning login-button checkout-button">Go To Cart</button>
                 </React.Fragment>
                 :
                 <img className="empty-cart-image img-responsive" src={require('../../assets/images/emptyCart.png')} />

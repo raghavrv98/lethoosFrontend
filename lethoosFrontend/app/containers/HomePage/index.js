@@ -20,6 +20,7 @@ import saga from './saga';
 import LandingPage from '../../containers/LandingPage/Loadable';
 import LoginPage from '../../containers/LoginPage/Loadable';
 import ShopDetails from '../../containers/shopDetails/Loadable';
+import CheckoutPage from '../../containers/checkoutPage/Loadable';
 import { capitalizeFirstLetter } from '../../utils/customUtils'
 
 /* eslint-disable react/prefer-stateless-function */
@@ -56,6 +57,7 @@ export class HomePage extends React.PureComponent {
           <Route exact path="/landingPage" render={props => <LandingPage {...props} />} />
           <Route exact path="/login" render={props => <LoginPage {...props} />} />
           <Route exact path="/shopDetails/:id" render={props => <ShopDetails {...props} />} />
+          <Route exact path="/checkoutPage" render={props => <CheckoutPage {...props} />} />
         </Switch>
       </React.Fragment >
     );
