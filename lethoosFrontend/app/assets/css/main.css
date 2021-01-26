@@ -215,6 +215,7 @@ footer .text {
 		height: 100vh!important;
 		background: #fff;
 		width: 100%;
+		margin: 0px!important;
 	}
 	.display-none {
 		display: none !important;
@@ -269,11 +270,11 @@ footer .text {
 		text-align: center;
 	}
 	.shop-header-name, .shop-header-address, .shop-header-time {
-		font-size: 50px;
+		font-size: 40px;
 		text-align: center;
 	}
 	.shop-header-address, .shop-header-time {
-		font-size: 20px;
+		font-size: 18px;
 	}
 	.shop-header-image {
 		position: absolute;
@@ -283,7 +284,7 @@ footer .text {
 	}
 	.shop-header {
 		width: 100%;
-		height: 200px;
+		height: 150px;
 		padding: 20px
 	}
 	/* .empty-cart-image {
@@ -370,6 +371,130 @@ footer .text {
 	.checkout-button {
 		background-color: white !important;
 		color: orange !important;
+	}
+	.checkout-outer {
+		padding: 10px;
+		margin: 0px !important;
+	}
+	.customer-info {
+		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
+		margin: 10px 0px 15px;
+		border-radius: 12px;
+		background-color: white;
+		padding: 30px;
+	}
+	.bill-info {
+		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
+		border-radius: 12px;
+		float: right;
+		background-color: white;
+		padding: 30px;
+		width: 100%;
+		margin: 0px 0px 60px;
+	}
+	.radio-btn-size {
+		height: 15px;
+		width: 15px;
+		cursor: pointer;
+	}
+	.radio-text-size {
+		font-size: 15px;
+		margin-left: 10px;
+		margin-right: 20px;
+	}
+	.area-box {
+		height: 30px;
+		width: 50%;
+		font-size: 15px;
+		margin-left: 30px;
+		border: 1px solid brown;
+		border-radius: 10px;
+		padding: 5px 16px;
+	}
+	.bill-info-heading {
+		font-size: 15px;
+		margin: 0px;
+		text-align: center;
+	}
+	.bill-info-text {
+		font-size: 15px;
+		margin: 0px;
+	}
+	.place-order-button {
+		background-color: #28A745;
+		color: white;
+	}
+	.display-block {
+		display: block;
+	}
+	.confirm-modal-heading {
+		font-size: 15px;
+		text-align: center;
+	}
+	.confirm-modal-body {
+		font-size: 15px;
+		text-align: center;
+		margin-top: -15px !important;
+	}
+	.confirm-modal-body-2 {
+		margin-top: -30px;
+		margin-bottom: 15px;
+		font-size: 15px;
+		text-align: center;
+	}
+	.modal-header {
+		border: none !important;
+	}
+	.modal-footer {
+		border: none !important;
+	}
+	.confirm-modal-close {
+		margin-top: -45px !important;
+		margin-right: -20px;
+		font-size: 25px;
+		color: black;
+		opacity: 1;
+	}
+	.confirm-modal-no {
+		position: absolute;
+		left: 60%;
+		font-size: 15px;
+		bottom: 8%;
+	}
+	.confirm-modal-yes {
+		position: absolute;
+		bottom: 9%;
+		right: 7%;
+		font-size: 13px;
+		background: #28A745;
+	}
+	.modal-content {
+		min-height: 130px;
+	}
+	.order-placed-outer {
+		padding: 10px;
+		text-align: center;
+	}
+	h1 {
+		font-size: 28px !important;
+	}
+	.order-placed-box {
+		background-color: white;
+		width: 100%;
+		padding: 50px;
+		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
+		border-radius: 15px;
+	}
+	.order-placed-image {
+		height: 80px;
+		margin-bottom: 30px;
+	}
+	.order-placed-text {
+		font-size: 15px;
+		margin: 10px 0px 10px;
+	}
+	.order-placed-btn {
+		width: 100%;
 	}
 }
 
@@ -638,7 +763,12 @@ footer .text {
 	.confirm-modal-body {
 		font-size: 30px;
 		text-align: center;
-		margin-top: -15px !important;
+	}
+	.confirm-modal-body-2 {
+		margin-top: -30px;
+		margin-bottom: 35px;
+		font-size: 30px;
+		text-align: center;
 	}
 	.modal-header {
 		border: none !important;
@@ -669,17 +799,14 @@ footer .text {
 	.modal-content {
 		min-height: 200px;
 	}
-
-	.order-placed-outer{
+	.order-placed-outer {
 		padding: 100px 400px;
 		text-align: center;
 	}
-
-	h1{
+	h1 {
 		font-size: 50px !important;
 	}
-
-	.order-placed-box{
+	.order-placed-box {
 		height: 500px;
 		background-color: white;
 		width: 100%;
@@ -687,18 +814,15 @@ footer .text {
 		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
 		border-radius: 15px;
 	}
-
-	.order-placed-image{
+	.order-placed-image {
 		height: 150px;
 		margin-bottom: 30px;
 	}
-
-	.order-placed-text{
+	.order-placed-text {
 		font-size: 30px;
 		margin: 10px 0px 10px;
 	}
-
-	.order-placed-btn{
+	.order-placed-btn {
 		width: 30%;
 	}
 }
