@@ -38,6 +38,10 @@ body {
 	margin: 45px 0px;
 }
 
+.mr-t-100{
+	margin-top: 100px !important;
+}
+
 .box {
 	height: 350px;
 	width: 100%;
@@ -160,7 +164,7 @@ footer .text {
 		top: 28px;
 	}
 	.nav-mr {
-		margin-right: 20px;
+		margin-right: 12px;
 	}
 	.nav-items :hover {
 		color: orange;
@@ -376,6 +380,46 @@ footer .text {
 		padding: 10px;
 		margin: 0px !important;
 	}
+	
+	.checkout-apply-btn {
+		margin: 0px;
+		display: inline;
+		width: 25%;
+		height: 40px;
+		padding: 5px !important;
+		font-size: 20px;
+		background-color: orange;
+		border-radius: 5px;
+	}
+	.checkout-apply-text {
+		width: 60% !important;
+		display: inline;
+		margin-right: 30px;
+		font-size: 20px;
+	}
+	.checkout-code-not-applied {
+		font-size: 15px;
+		color: red;
+	}
+	.checkout-code-applied {
+		font-size: 15px;
+		color: green;
+	}
+	.checkout-apply-btn-disabled {
+		cursor: not-allowed;
+		background-color: #ebebe4;
+	}
+
+	.checkout-discount-text{
+		font-size: 15px;
+		margin: 0px;
+	}
+
+	.checkout-total-text{
+		font-size: 25px;
+		margin: 0px;
+	}
+
 	.customer-info {
 		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
 		margin: 10px 0px 15px;
@@ -417,7 +461,7 @@ footer .text {
 		text-align: center;
 	}
 	.bill-info-text {
-		font-size: 15px;
+		font-size: 20px;
 		margin: 0px;
 	}
 	.place-order-button {
@@ -495,6 +539,78 @@ footer .text {
 	}
 	.order-placed-btn {
 		width: 100%;
+	}
+	.offers-page-outer {
+		padding: 50px;
+		margin: 10px 10px 50px;
+		background-color: white;
+		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
+		min-height: 500px;
+		border-radius: 15px;
+		position: relative;
+	}
+	.offers-box {
+		padding: 20px;
+		background-color: orange;
+		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
+		border-radius: 15px;
+		margin-bottom: 15px;
+		margin-top: 15px;
+		text-align: center;
+		cursor: pointer;
+	}
+	.offers-heading {
+		font-size: 50px;
+		margin-top: 10px;
+		text-align: center;
+	}
+	.offers-copy-btn {
+		height: 50px;
+		width: 100%;
+		background-color: white;
+		border-radius: 15px;
+		border: 1px dashed black;
+		text-align: center;
+		padding: 0px;
+		bottom: 23%;
+	}
+	.offers-copy-btn-outer {
+		padding: 0px 23px
+	}
+	.offers-text {
+		font-size: 30px;
+		vertical-align: text-top;
+	}
+	.offers-box-heading {
+		font-size: 20px;
+		color: black;
+		margin: 0px!important;
+	}
+	.offers-box-text, .offers-box-copied-text {
+		font-size: 15px;
+		color: black;
+		margin: 10px;
+	}
+	.offers-box-copied-text {
+		margin: 10px 0px 0px;
+	}
+	.offers-not-found {
+		position: absolute;
+		transform: translate(-50%, -50%);
+		top: 50%;
+		left: 50%;
+		width: 100%;
+	}
+	.offers-not-found-text1, .offers-not-found-text2 {
+		font-size: 20px;
+		position: absolute;
+		transform: translate(-50%, -50%);
+		top: 35%;
+		left: 50%;
+		z-index: 1;
+	}
+	.offers-not-found-text2 {
+		top: 43%;
 	}
 }
 
@@ -702,8 +818,36 @@ footer .text {
 		color: orange !important;
 	}
 	.checkout-outer {
-		padding: 70px 300px;
+		padding: 35px 300px;
 		margin: 0px !important;
+	}
+	.checkout-apply-btn {
+		margin: 0px;
+		display: inline;
+		width: 25%;
+		height: 40px;
+		padding: 5px !important;
+		font-size: 20px;
+		background-color: orange;
+		border-radius: 5px;
+	}
+	.checkout-apply-text {
+		width: 66% !important;
+		display: inline;
+		margin-right: 30px;
+		font-size: 20px;
+	}
+	.checkout-code-not-applied {
+		font-size: 20px;
+		color: red;
+	}
+	.checkout-code-applied {
+		font-size: 20px;
+		color: green;
+	}
+	.checkout-apply-btn-disabled {
+		cursor: not-allowed;
+		background-color: #ebebe4;
 	}
 	.customer-info {
 		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
@@ -715,7 +859,7 @@ footer .text {
 	.bill-info {
 		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
 		margin: 0px !important;
-		height: 500px;
+		min-height: 500px;
 		border-radius: 12px;
 		float: right;
 		background-color: white;
@@ -824,5 +968,85 @@ footer .text {
 	}
 	.order-placed-btn {
 		width: 30%;
+	}
+	.offers-page-outer {
+		padding: 50px;
+		margin: 10px 300px 50px 300px;
+		background-color: white;
+		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
+		min-height: 650px;
+		border-radius: 15px;
+		position: relative;
+	}
+	.offers-box {
+		padding: 30px;
+		background-color: orange;
+		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
+		border-radius: 15px;
+		margin-bottom: 15px;
+		margin-top: 15px;
+		text-align: center;
+		cursor: pointer;
+	}
+	.offers-heading {
+		font-size: 50px;
+		margin-top: 30px;
+		text-align: center;
+	}
+	.offers-copy-btn {
+		height: 50px;
+		width: 100%;
+		background-color: white;
+		border-radius: 15px;
+		border: 1px dashed black;
+		text-align: center;
+		padding: 0px;
+		bottom: 23%;
+	}
+	.offers-copy-btn-outer {
+		padding: 0px 23px
+	}
+	.offers-text {
+		font-size: 30px;
+		vertical-align: text-top;
+	}
+	.offers-box-heading {
+		font-size: 30px;
+		color: black;
+		margin: 0px!important;
+	}
+	.offers-box-text, .offers-box-copied-text {
+		font-size: 20px;
+		color: black;
+		margin: 10px;
+	}
+	.offers-box-copied-text {
+		margin: 10px 0px 0px;
+	}
+	.offers-not-found {
+		height: 550px;
+		position: absolute;
+		transform: translate(-50%, -50%);
+		top: 50%;
+		left: 50%;
+	}
+	.offers-not-found-text1, .offers-not-found-text2 {
+		font-size: 40px;
+		position: absolute;
+		transform: translate(-50%, -50%);
+		top: 35%;
+		left: 50%;
+		z-index: 1;
+	}
+	.offers-not-found-text2 {
+		top: 43%;
+	}
+	.checkout-discount-text{
+		font-size: 20px;
+		margin: 0px;
+	}
+	.checkout-total-text{
+		font-size: 30px;
+		margin: 0px;
 	}
 }

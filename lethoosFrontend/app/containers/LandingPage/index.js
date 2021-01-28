@@ -80,9 +80,11 @@ export class LandingPage extends React.PureComponent {
           <img className="logo" src={require('../../assets/images/logo.png')} />
           <p className="logo-text">Le Thoos</p>
           <span className="nav-items">
-            <span className="nav-mr"><i className="fa fa-tags" aria-hidden="true"></i> Offers</span>
+          {/* <span className="nav-mr" onClick={() => this.props.history.push('/landingPage')}><i className="fa fa-home" aria-hidden="true"></i> Shops</span> */}
+            <span className="nav-mr" onClick={() => this.props.history.push('/offersPage')}><i className="fa fa-tags" aria-hidden="true"></i> Offers</span>
             <span className="nav-mr"><i className="fa fa-history" aria-hidden="true"></i> Order History</span>
             <span className="nav-mr"><i className="fa fa-user" aria-hidden="true"></i> {this.state.customerDetails.name && capitalizeFirstLetter(this.state.customerDetails.name)}</span>
+            <span className="nav-mr" onClick={() => this.props.history.push('/checkoutPage')}><i className="fa fa-shopping-cart" aria-hidden="true"></i> Cart</span>
             <span className="nav-mr" onClick={() => { sessionStorage.clear(); this.props.history.push('/login') }}><i className="fa fa-power-off" aria-hidden="true"></i> Logout</span>
           </span>
         </div>
