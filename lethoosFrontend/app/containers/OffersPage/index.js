@@ -18,6 +18,7 @@ import makeSelectOffersPage from './selectors';
 import reducer from './reducer';
 import saga from './saga';
 import messages from './messages';
+import moment from 'moment';
 import { capitalizeFirstLetter } from '../../utils/customUtils'
 
 /* eslint-disable react/prefer-stateless-function */
@@ -77,8 +78,11 @@ export class OffersPage extends React.PureComponent {
             this.state.customerDetails.coupon.map((val, index) =>
               <div key={index} className="col-md-3">
                 <div onClick={() => this.copyCoupon(val.name)} className="offers-box">
-                  <p className="offers-box-heading">Tap To Copy</p>
-                  <p className="offers-box-text">{val.description}</p>
+                  <p className="offers-box-heading text-center">Tap To Copy</p>
+                  <p className="offers-box-text mr-b-10">{val.description}</p>
+                  <div className="offers-box-text"><span className="color-gray">Offered By</span> <span className="float-right">{val.offeredBy}</span></div>
+                  <div className="offers-box-text"><span className="color-gray">Valid Upto</span> <span className="float-right">{moment(val.validity).format("DD MMM HH:mm")}</span></div>
+                  <div className="offers-box-text"><span className="color-gray">Attempt</span>  <span className="float-right">{val.redeemAttempt}</span></div>
                   <div className="offers-copy-btn-outer"><div className="offers-copy-btn"><span className="offers-text">{val.name}</span></div></div>
                   <p className="offers-box-copied-text">{this.state.couponIdCopy}</p>
                 </div>

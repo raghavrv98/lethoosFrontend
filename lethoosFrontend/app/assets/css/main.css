@@ -25,12 +25,8 @@ body {
 	margin-top: 20px !important;
 }
 
-.mr-t-40{
+.mr-t-40 {
 	margin-top: 40px;
-}
-
-.pd-39 {
-	padding: 39px;
 }
 
 .sticky-top {
@@ -50,8 +46,12 @@ body {
 	margin-bottom: 10px;
 }
 
-.mr-t-10{
+.mr-t-10 {
 	margin-top: 10px !important;
+}
+
+.mr-b-10 {
+	margin-bottom: 10px !important;
 }
 
 .no-padding {
@@ -62,8 +62,16 @@ body {
 	text-align: center !important;
 }
 
-.float-right{
+.float-right {
 	float: right;
+}
+
+.float-left {
+	float: left;
+}
+
+.color-gray {
+	color: gray;
 }
 
 .box {
@@ -108,6 +116,10 @@ footer .text {
 	display: inline-block;
 	width: 80px;
 	height: 80px;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	position: absolute;
 }
 
 .lds-dual-ring:after {
@@ -136,9 +148,9 @@ footer .text {
 
 .shop-header {
 	width: 100%;
-	height: 300px;
+	height: 250px;
 	background-color: orange;
-	padding: 50px 300px;
+	padding: 30px 300px;
 }
 
 .shop-header-name, .shop-header-address, .shop-header-time {
@@ -155,12 +167,7 @@ footer .text {
 	position: absolute;
 	top: 15%;
 	right: 15%;
-}
-
-.menu-items-image {
-	top: 15px;
-	position: absolute;
-	height: 50px;
+	height: 150px;
 }
 
 /* width */
@@ -189,7 +196,7 @@ footer .text {
 	background: #555;
 }
 
-.text-color{
+.text-color {
 	color: black !important;
 	font-weight: 600;
 }
@@ -354,10 +361,10 @@ footer .text {
 	}
 	.menu-items {
 		margin-bottom: 10px;
-		height: 80px;
+		height: 60px;
 		background-color: orange;
 		margin-bottom: 10px;
-		padding: 15px;
+		padding: 5px;
 		border-radius: 15px;
 		position: relative;
 	}
@@ -367,14 +374,14 @@ footer .text {
 	}
 	.menu-items-name {
 		display: inline-block;
-		font-size: 20px;
+		font-size: 15px;
 		margin: -10px 65px;
 		color: white;
-		top: 12px;
+		top: 7px;
 	}
 	.menu-items-price {
 		display: block;
-		font-size: 20px;
+		font-size: 16px;
 		margin: 2px 0px 2px 65px;
 		color: white;
 		top: 12px;
@@ -393,7 +400,7 @@ footer .text {
 		position: absolute;
 	}
 	.menu-items-count-button {
-		width: 80px;
+		width: 70px;
 		cursor: context-menu;
 	}
 	.menu-items-count-left-button {
@@ -410,6 +417,13 @@ footer .text {
 		top: 5px;
 		font-weight: 600;
 		cursor: pointer;
+	}
+	.menu-items-image {
+		top: 10px;
+		position: absolute;
+		height: 40px;
+		margin-left: 10px;
+		border-radius: 7px;
 	}
 	.cart-items {
 		background-color: orange;
@@ -593,25 +607,24 @@ footer .text {
 	}
 	.offers-page-outer {
 		padding: 50px;
-		margin: 10px 10px 50px;
+		margin: 10px !important;
 		background-color: white;
 		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
-		min-height: 500px;
+		min-height: 400px;
 		border-radius: 15px;
 		position: relative;
 	}
 	.offers-box {
 		padding: 20px;
-		background-color: orange;
 		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
+		border: 1px solid #dadce6;
 		border-radius: 15px;
 		margin-bottom: 15px;
 		margin-top: 15px;
-		text-align: center;
 		cursor: pointer;
 	}
 	.offers-heading {
-		font-size: 50px;
+		font-size: 30px;
 		margin-top: 10px;
 		text-align: center;
 	}
@@ -620,7 +633,7 @@ footer .text {
 		width: 100%;
 		background-color: white;
 		border-radius: 15px;
-		border: 1px dashed black;
+		border: 1px dashed orange;
 		text-align: center;
 		padding: 0px;
 		bottom: 23%;
@@ -631,6 +644,7 @@ footer .text {
 	.offers-text {
 		font-size: 30px;
 		vertical-align: text-top;
+		color: orange;
 	}
 	.offers-box-heading {
 		font-size: 20px;
@@ -645,14 +659,19 @@ footer .text {
 	.offers-box-copied-text {
 		margin: 10px 0px 0px;
 	}
-	.offers-not-found {
+	.offers-not-found, .offers-not-found-shop-details {
 		position: absolute;
 		transform: translate(-50%, -50%);
 		top: 50%;
 		left: 50%;
 		width: 100%;
 	}
-	.offers-not-found-text1, .offers-not-found-text2 {
+	.offers-not-found-shop-details {
+		height: 450px;
+		top: 62%;
+		padding: 10px;
+	}
+	.offers-not-found-text1, .offers-not-found-text2, .offers-not-found-text1-shop-details {
 		font-size: 20px;
 		position: absolute;
 		transform: translate(-50%, -50%);
@@ -660,14 +679,144 @@ footer .text {
 		left: 50%;
 		z-index: 1;
 	}
+	.offers-not-found-text1-shop-details {
+		top: 60%;
+		font-size: 17px;
+	}
 	.offers-not-found-text2 {
 		top: 43%;
+	}
+	.no-shops-found {
+		min-height: 400px;
+		width: 100%;
+		background-color: white;
+		position: relative;
+		border-radius: 15px;
+		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
+		padding: 15px;
+	}
+	.no-shops-found-image, .no-shops-found-image-order-history, .no-shops-found-image-glass, .no-shops-found-image-glass-order-history {
+		height: 90px;
+		transform: translate(-50%, -50%);
+		top: 50%;
+		left: 50%;
+		position: absolute;
+	}
+	.no-shops-found-image-glass {
+		top: 63%;
+		left: 65%;
+	}
+	.no-shops-found-heading {
+		font-size: 25px;
+		margin-top: 35px;
+		text-align: center;
+	}
+	.no-shops-found-image-order-history {
+		height: 200px;
+		top: 55%;
+	}
+	.no-shops-found-image-glass-order-history {
+		top: 64%;
+		left: 70%;
+	}
+	.order-history-outer {
+		margin: 10px !important;
+		background-color: white;
+		min-height: 400px;
+		border-radius: 15px;
+		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
+		padding: 30px;
+	}
+	.order-history-outer {
+		margin: 20px 200px 100px 200px;
+		background-color: white;
+		min-height: 600px;
+		border-radius: 15px;
+		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
+		padding: 30px;
+	}
+	.order-history-box {
+		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
+		border: 1px solid #dadce6;
+		border-radius: 15px;
+		padding: 20px;
+		margin-bottom: 20px;
+	}
+	.order-history-box-heading {
+		font-size: 25px;
+		margin-bottom: 5px;
+	}
+	.order-history-box-text-heading {
+		font-size: 20px;
+		color: gray;
+	}
+	.order-history-box-text {
+		font-size: 20px;
+		color: black;
+		float: right;
+	}
+	.order-history-box-btn {
+		height: 50px;
+		width: 40%;
+		border: 1px solid orange;
+		border-radius: 15px;
+		text-align: center;
+		padding: 0px;
+		bottom: 23%;
+		margin: 10px 0px;
+	}
+	.order-history-box-btn:hover {
+		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, 1);
+	}
+	.order-history-box-btn-text {
+		font-size: 15px;
+		padding: 10px;
+		color: orange;
+	}
+	.order-history-box-image {
+		height: 70px;
+	}
+	.order-history-modal {
+		padding: 30px;
+		height: 600px;
+		overflow: auto;
+	}
+
+	.modal-dialog{
+		margin-top: 100px;
+	}
+
+	.order-history-modal-body-heading {
+		font-size: 25px;
+		font-weight: 600;
+	}
+	.order-history-modal-body-item-text {
+		font-size: 30px;
+		margin: 0px;
+	}
+	.order-history-modal-body-quantity-text {
+		margin-bottom: 10px;
+		font-size: 22px;
+	}
+	.order-history-modal-body-item-cost-text {
+		margin-bottom: 10px;
+		font-size: 22px;
+		float: right;
+	}
+	.order-history-modal-body-item-portion-text {
+		font-size: 20px;
+		margin: 0px;
+		margin-top: -5px;
+		margin-bottom: 5px;
 	}
 }
 
 @media only screen and (min-width: 769px) {
 	.logo {
 		height: 60px;
+	}
+	.pd-39 {
+		padding: 39px;
 	}
 	.header {
 		height: 100px;
@@ -698,7 +847,7 @@ footer .text {
 		font-weight: 600;
 	}
 	.content-padding {
-		padding: 50px 250px;
+		padding: 0px 250px 50px;
 	}
 	.shop-image {
 		width: 100%;
@@ -848,6 +997,12 @@ footer .text {
 		font-weight: 600;
 		cursor: pointer;
 	}
+	.menu-items-image {
+		top: 15px;
+		position: absolute;
+		height: 52px;
+		border-radius: 15px;
+	}
 	.cart-items {
 		background-color: orange;
 		padding: 20px;
@@ -869,7 +1024,7 @@ footer .text {
 		color: orange !important;
 	}
 	.checkout-outer {
-		padding: 35px 300px;
+		padding: 0px 300px 35px;
 		margin: 0px !important;
 	}
 	.checkout-apply-btn {
@@ -944,7 +1099,7 @@ footer .text {
 		font-size: 30px;
 		margin: 0px;
 	}
-	.bill-info-delivery-text{
+	.bill-info-delivery-text {
 		margin-top: 20px !important;
 		font-size: 25px;
 	}
@@ -1040,7 +1195,6 @@ footer .text {
 		border-radius: 15px;
 		margin-bottom: 15px;
 		margin-top: 15px;
-		text-align: center;
 		cursor: pointer;
 	}
 	.offers-heading {
@@ -1060,7 +1214,8 @@ footer .text {
 		color: orange;
 	}
 	.offers-copy-btn-outer {
-		padding: 0px 23px
+		padding: 0px 23px;
+		margin-top: 15px
 	}
 	.offers-text {
 		font-size: 30px;
@@ -1074,25 +1229,32 @@ footer .text {
 	.offers-box-text, .offers-box-copied-text {
 		font-size: 20px;
 		color: black;
-		margin: 10px;
+		margin: 5px 10px 0px;
 	}
 	.offers-box-copied-text {
 		margin: 10px 0px 0px;
 	}
-	.offers-not-found {
+	.offers-not-found, .offers-not-found-shop-details {
 		height: 550px;
 		position: absolute;
 		transform: translate(-50%, -50%);
 		top: 50%;
 		left: 50%;
 	}
-	.offers-not-found-text1, .offers-not-found-text2 {
+	.offers-not-found-shop-details {
+		height: 450px;
+		top: 67%;
+	}
+	.offers-not-found-text1, .offers-not-found-text2, .offers-not-found-text1-shop-details {
 		font-size: 40px;
 		position: absolute;
 		transform: translate(-50%, -50%);
 		top: 35%;
 		left: 50%;
 		z-index: 1;
+	}
+	.offers-not-found-text1-shop-details {
+		top: 60%;
 	}
 	.offers-not-found-text2 {
 		top: 43%;
@@ -1181,5 +1343,37 @@ footer .text {
 		margin: 0px;
 		margin-top: -5px;
 		margin-bottom: 5px;
+	}
+	.no-shops-found {
+		position: relative;
+		background-color: white;
+		min-height: 600px;
+		border-radius: 15px;
+		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
+		padding: 30px;
+	}
+	.no-shops-found-image, .no-shops-found-image-order-history, .no-shops-found-image-glass, .no-shops-found-image-glass-order-history {
+		height: 200px;
+		transform: translate(-50%, -50%);
+		top: 50%;
+		left: 50%;
+		position: absolute;
+	}
+	.no-shops-found-image-glass {
+		top: 65%;
+		left: 57%;
+	}
+	.no-shops-found-image-order-history {
+		height: 400px;
+		top: 55%;
+	}
+	.no-shops-found-image-glass-order-history {
+		top: 68%;
+		left: 58%;
+	}
+	.no-shops-found-heading {
+		font-size: 50px;
+		margin-top: 35px;
+		text-align: center;
 	}
 }

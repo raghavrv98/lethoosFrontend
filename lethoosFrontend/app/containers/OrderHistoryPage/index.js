@@ -39,7 +39,7 @@ export class OrderHistoryPage extends React.PureComponent {
     }
     this.setState({
       customerDetails
-    })
+    }, () => this.customerDetailsHandler())
   }
 
   detailsModalHandler = (val) => {
@@ -66,6 +66,25 @@ export class OrderHistoryPage extends React.PureComponent {
     return singleItemTotal
   }
 
+  customerDetailsHandler = () => {
+    let url = window.API_URL + `/customerLogin/${this.state.customerDetails._id}`;
+    axios.get(url)
+      .then((res) => {
+        const customerDetails = res.data;
+        sessionStorage.setItem("customerDetails", JSON.stringify(customerDetails))
+        this.setState({
+          customerDetails
+        })
+      })
+      .catch((error) => {
+        let message = errorHandler(error);
+        this.setState({
+          message,
+          type: "failure"
+        }, () => setTimeout(this.modalTime, 1500))
+      });
+  }
+
   render() {
     return (
       <div>
@@ -86,27 +105,38 @@ export class OrderHistoryPage extends React.PureComponent {
             <span className="nav-mr" onClick={() => { sessionStorage.clear(); this.props.history.push('/login') }}><i className="fa fa-power-off" aria-hidden="true"></i> Logout</span>
           </span>
         </div>
+
         <p className="offers-heading">Orders History</p>
         <div className="order-history-outer row">
-          {this.state.customerDetails.orderHistory.map((val, index) =>
-            <div key={index} className="col-md-3 no-padding">
-              <div className="order-history-box">
-                <div className="row">
-                  <div className="col-md-3">
-                    <img className="order-history-box-image" src={val.shopImage} />
-                  </div>
-                  <div className="col-md-9">
-                    <p className="order-history-box-heading">{val.name}</p>
-                    <p className="order-history-box-text-heading">{val.shopAddress}</p>
+          {this.state.customerDetails.orderHistory.length > 0 ?
+            <React.Fragment>
+              {this.state.customerDetails.orderHistory.map((val, index) =>
+                <div key={index} className="col-md-3 no-padding">
+                  <div className="order-history-box">
+                    <div className="row">
+                      <div className="col-md-3">
+                        <img className="order-history-box-image" src={val.shopImage} />
+                      </div>
+                      <div className="col-md-9">
+                        <p className="order-history-box-heading">{val.shopName}</p>
+                        <p className="order-history-box-text-heading">{val.shopAddress}</p>
+                      </div>
+                    </div>
+                    <hr />
+                    <p className="mr-b-10"><span className="order-history-box-text-heading">Order Number :</span><span className="order-history-box-text">{val.orderNumber}</span></p>
+                    <p className="mr-b-10"><span className="order-history-box-text-heading">Order Date :</span><span className="order-history-box-text">{moment(val.orderDate).format("DD MMM YYYY HH:mm")}</span></p>
+                    <div className="text-center"><button type="button" onClick={() => this.detailsModalHandler(val)} className="order-history-box-btn"><span className="order-history-box-btn-text">View Details</span></button></div>
                   </div>
                 </div>
-                <hr />
-                <p className="mr-b-10"><span className="order-history-box-text-heading">Order Number :</span><span className="order-history-box-text">{val.orderId}</span></p>
-                <p className="mr-b-10"><span className="order-history-box-text-heading">Order Date :</span><span className="order-history-box-text">{moment(val.orderDate).format("DD MMM YYYY HH:mm")}</span></p>
-                <div className="text-center"><button type="button" onClick={() => this.detailsModalHandler(val)} className="order-history-box-btn"><span className="order-history-box-btn-text">View Details</span></button></div>
-              </div>
-            </div>
-          )}
+              )}
+            </React.Fragment>
+            :
+            <React.Fragment>
+              <p className="no-shops-found-heading">No Orders Available</p>
+              <img className="no-shops-found-image-order-history" src={require('../../assets/images/noDetailsFound.png')} />
+              <img className="no-shops-found-image-glass-order-history" src={require('../../assets/images/glassIcon.png')} />
+            </React.Fragment>
+          }
         </div>
 
         {this.state.detailsModal && <div className="modal display-block">
@@ -123,14 +153,14 @@ export class OrderHistoryPage extends React.PureComponent {
                   <img className="order-history-box-image" src={this.state.modalDetailObject.shopImage} />
                 </div>
                 <div className="col-md-9">
-                  <p className="order-history-box-heading">{this.state.modalDetailObject.name}</p>
+                  <p className="order-history-box-heading">{this.state.modalDetailObject.shopName}</p>
                   <p className="order-history-box-text-heading">{this.state.modalDetailObject.shopAddress}</p>
                   <p className="order-history-box-text-heading">{this.state.modalDetailObject.shopMobileNumber}</p>
                 </div>
               </div>
               <hr />
               <p className="order-history-modal-body-heading">Your Order</p>
-              {this.state.modalDetailObject.orderDetails.map((val, index) => {
+              {this.state.modalDetailObject.orders.map((val, index) => {
                 return <div key={index}>
                   <p className="order-history-modal-body-item-text">{val.item}</p>
                   <p className="order-history-modal-body-item-portion-text">{val.portion}</p>
@@ -138,16 +168,16 @@ export class OrderHistoryPage extends React.PureComponent {
                 </div>
               })}
               <p className="order-history-box-text-heading mr-t-40"> Item Total <span className="order-history-box-text"> {itemTotal}</span></p>
-              <p className="order-history-box-text-heading">Coupon Code <span className="order-history-box-text"> {this.state.modalDetailObject.couponCode}</span></p>
+              <p className="order-history-box-text-heading">Coupon Code <span className="order-history-box-text"> {this.state.modalDetailObject.coupon}</span></p>
               <p className="order-history-box-text-heading">Total Discount <span className="order-history-box-text"> - {this.state.modalDetailObject.totalDiscount}</span></p>
-              <p className="order-history-box-text-heading">Delivery Charge <span className="order-history-box-text"> + {this.state.modalDetailObject.deliveryCharge}</span></p>
-              <p className="order-history-box-text-heading text-color">Grand Total <span className="order-history-box-text"> {this.grandTotalBill(itemTotal, this.state.modalDetailObject.deliveryCharge, this.state.modalDetailObject.totalDiscount)}</span></p>
+              <p className="order-history-box-text-heading">Delivery Charge <span className="order-history-box-text"> + {this.state.modalDetailObject.area.slice(-2)}</span></p>
+              <p className="order-history-box-text-heading text-color">Grand Total <span className="order-history-box-text"> {this.grandTotalBill(itemTotal, this.state.modalDetailObject.area.slice(-2), this.state.modalDetailObject.totalDiscount)}</span></p>
               <hr />
-              <p className="order-history-box-text-heading">Order Id <span className="order-history-box-text"> {this.state.modalDetailObject.orderId}</span></p>
-              <p className="order-history-box-text-heading">Payment <span className="order-history-box-text"> {this.state.modalDetailObject.paymentMode}</span></p>
+              <p className="order-history-box-text-heading">Order Number <span className="order-history-box-text"> {this.state.modalDetailObject.orderNumber}</span></p>
+              <p className="order-history-box-text-heading">Payment <span className="order-history-box-text"> {this.state.modalDetailObject.paymentMethod}</span></p>
               <p className="order-history-box-text-heading">Date <span className="order-history-box-text"> {moment(this.state.modalDetailObject.orderDate).format("DD MMM YYYY HH : mm")}</span></p>
-              <p className="order-history-box-text-heading">Phone Number <span className="order-history-box-text"> {this.state.modalDetailObject.customerMobileNumber}</span></p>
-              <p className="order-history-box-text-heading">Deliver To <span className="order-history-box-text"> {this.state.modalDetailObject.customerAddress}</span></p>
+              <p className="order-history-box-text-heading">Phone Number <span className="order-history-box-text"> {this.state.customerDetails.mobileNumber}, {this.state.customerDetails.alternateMobileNumber}</span></p>
+              <p className="order-history-box-text-heading">Deliver To <span className="order-history-box-text"> {this.state.customerDetails.address}</span></p>
 
             </div>
           </div>

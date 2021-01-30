@@ -28,7 +28,8 @@ export class LandingPage extends React.PureComponent {
   state = {
     isOpenClassName: 'modal display-none container',
     shops: [],
-    customerDetails: {}
+    customerDetails: {},
+    isLoader: true
   }
 
   componentWillMount() {
@@ -51,7 +52,7 @@ export class LandingPage extends React.PureComponent {
     axios.get(url)
       .then((res) => {
         const shops = res.data;
-        this.setState({ shops });
+        this.setState({ shops, isLoader: false });
       })
       .catch((error) => {
         let message = errorHandler(error);
@@ -80,7 +81,7 @@ export class LandingPage extends React.PureComponent {
           <img className="logo" src={require('../../assets/images/logo.png')} />
           <p className="logo-text">Le Thoos</p>
           <span className="nav-items">
-          {/* <span className="nav-mr" onClick={() => this.props.history.push('/landingPage')}><i className="fa fa-home" aria-hidden="true"></i> Shops</span> */}
+            {/* <span className="nav-mr" onClick={() => this.props.history.push('/landingPage')}><i className="fa fa-home" aria-hidden="true"></i> Shops</span> */}
             <span className="nav-mr" onClick={() => this.props.history.push('/offersPage')}><i className="fa fa-tags" aria-hidden="true"></i> Offers</span>
             <span className="nav-mr" onClick={() => this.props.history.push('/orderHistoryPage')}><i className="fa fa-history" aria-hidden="true"></i> Order History</span>
             <span className="nav-mr"><i className="fa fa-user" aria-hidden="true"></i> {this.state.customerDetails.name && capitalizeFirstLetter(this.state.customerDetails.name)}</span>
@@ -88,23 +89,35 @@ export class LandingPage extends React.PureComponent {
             <span className="nav-mr" onClick={() => { sessionStorage.clear(); this.props.history.push('/login') }}><i className="fa fa-power-off" aria-hidden="true"></i> Logout</span>
           </span>
         </div>
+        <p className="offers-heading">Shops</p>
         <div className="content-padding">
-          <span className="count-text">{this.state.shops.length} {this.state.shops.length > 1 ? "Shops" : "Shop"}</span>
-          <hr></hr>
-          <div className="row pd-39">
-            {
-              this.state.shops.map((val, index) => {
-                return <div key={index} onClick={() => this.props.history.push(`/shopDetails/${val._id}`)} className="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                  <div className="box">
-                    <img className="shop-image img-responsive" src={val.image} />
-                    <p className="shop-heading">{val.name}</p>
-                    <p className="shop-time">{val.time}</p>
-                    <p className="shop-address">{val.address}</p>
+          {this.state.isLoader ?
+            <div className="lds-dual-ring"></div>
+            :
+            <React.Fragment>
+              <span className="count-text">{this.state.shops.length > 0 ? <React.Fragment> {this.state.shops.length} {this.state.shops.length > 1 ? "Shops" : "Shop"} <hr /></React.Fragment> : ""}</span>
+              <div className="row pd-39">
+                {this.state.shops.length > 0 ?
+                  this.state.shops.map((val, index) => {
+                    return <div key={index} onClick={() => this.props.history.push(`/shopDetails/${val._id}`)} className="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                      <div className="box">
+                        <img className="shop-image img-responsive" src={val.image} />
+                        <p className="shop-heading">{val.name}</p>
+                        <p className="shop-time">{val.time}</p>
+                        <p className="shop-address">{val.address}</p>
+                      </div>
+                    </div>
+                  })
+                  :
+                  <div className="no-shops-found">
+                    <p className="no-shops-found-heading">No Shops Available</p>
+                    <img className="no-shops-found-image" src={require('../../assets/images/noShopsFound.jpg')} />
+                    <img className="no-shops-found-image-glass" src={require('../../assets/images/glassIcon.png')} />
                   </div>
-                </div>
-              })
-            }
-          </div>
+                }
+              </div>
+            </React.Fragment>
+          }
         </div>
         <MessageModal
           showHideClassName={this.state.isOpenClassName}

@@ -30,7 +30,7 @@ export class ShopDetails extends React.PureComponent {
     orderHistory: {
       orders: [],
       name: "",
-      address: ""
+      address: "",
     },
     shopDetails: {
       name: "",
@@ -38,7 +38,7 @@ export class ShopDetails extends React.PureComponent {
       time: "",
       details: []
     },
-    quantity: 0
+    isLoader: true
   }
 
   componentWillMount() {
@@ -53,6 +53,7 @@ export class ShopDetails extends React.PureComponent {
 
     orderHistory.name = this.state.shopDetails.name
     orderHistory.address = this.state.shopDetails.address
+    orderHistory.image = this.state.shopDetails.image
 
     sessionStorage.setItem('orderHistory', JSON.stringify(orderHistory))
     this.setState({
@@ -97,6 +98,7 @@ export class ShopDetails extends React.PureComponent {
       return val
     })
 
+    orderHistory.mobileNumber = shop.mobileNumber
     sessionStorage.setItem('orderHistory', JSON.stringify(orderHistory))
     this.setState({
       shopDetails: shop,
@@ -115,10 +117,14 @@ export class ShopDetails extends React.PureComponent {
 
         orderHistory.name = shopDetails.name
         orderHistory.address = shopDetails.address
+        orderHistory.image = shopDetails.image
 
+        orderHistory.orders.map(order => {
+          shopDetails.details[shopDetails.details.findIndex(value => value.itemNo === order.itemNo)].quantity = order.quantity
+        })
+        
         sessionStorage.setItem('orderHistory', JSON.stringify(orderHistory))
-
-        this.setState({ shopDetails });
+        this.setState({ shopDetails, isLoader: false });
       })
       .catch((error) => {
         let message = errorHandler(error);
@@ -151,7 +157,7 @@ export class ShopDetails extends React.PureComponent {
           <img className="logo" src={require('../../assets/images/logo.png')} />
           <p className="logo-text">Le Thoos</p>
           <span className="nav-items">
-          <span className="nav-mr" onClick={() => this.props.history.push('/landingPage')}><i className="fa fa-home" aria-hidden="true"></i> Shops</span>
+            <span className="nav-mr" onClick={() => this.props.history.push('/landingPage')}><i className="fa fa-home" aria-hidden="true"></i> Shops</span>
             <span className="nav-mr" onClick={() => this.props.history.push('/offersPage')}><i className="fa fa-tags" aria-hidden="true"></i> Offers</span>
             <span className="nav-mr" onClick={() => this.props.history.push('/orderHistoryPage')}><i className="fa fa-history" aria-hidden="true"></i> Order History</span>
             <span className="nav-mr"><i className="fa fa-user" aria-hidden="true"></i> {this.state.customerDetails.name && capitalizeFirstLetter(this.state.customerDetails.name)}</span>
@@ -168,39 +174,52 @@ export class ShopDetails extends React.PureComponent {
         </div>
 
         <div className="shop-details-outer row">
-          <div className="menu-items-outer col-md-8">
-            {this.state.shopDetails.details && this.state.shopDetails.details.map((val, index) =>
-              <div key={index} className="menu-items">
-                <img className="menu-items-image img-responsive" src={val.image} />
-                <p className="menu-items-name"> {val.name}</p>
-                <p className="menu-items-price"> {val.fullPrice}</p>
-                {val.quantity > 0 ?
-                  <div className="menu-items-count-button"><span onClick={() => this.itemsCountHandler(val, "sub")} className="menu-items-count-left-button">-</span><span>{val.quantity}</span><span onClick={() => this.itemsCountHandler(val, "add")} className="menu-items-count-right-button">+</span></div>
-                  :
-                  <div onClick={() => this.itemsCountHandler(val, "add")} className="menu-items-add-button">Add</div>
-                }
-              </div>
-            )}
-          </div>
-          <div className="cart-items col-md-4">
-            {
-              this.state.orderHistory.orders.length > 0 ?
-                <React.Fragment>
-                  <div className="order-details-heading">order Details</div>
-                  <hr />
-                  {this.state.orderHistory.orders.map((val, index) => {
-                    return <div key={index} className="order-details-items">
-                      {val.item} X {val.quantity} = {val.price * val.quantity}
+          {this.state.isLoader ?
+            <div className="lds-dual-ring"></div>
+            :
+            this.state.shopDetails.details.length > 0 ?
+              <React.Fragment>
+                <div className="menu-items-outer col-md-8">
+                  {this.state.shopDetails.details.map((val, index) =>
+                    <div key={index} className="menu-items">
+                      <img className="menu-items-image img-responsive" src={val.image} />
+                      <p className="menu-items-name"> {val.name}</p>
+                      <p className="menu-items-price"> {val.fullPrice}</p>
+
+                      {val.quantity > 0 ?
+                        <div className="menu-items-count-button"><span onClick={() => this.itemsCountHandler(val, "sub")} className="menu-items-count-left-button">-</span><span>{val.quantity}</span><span onClick={() => this.itemsCountHandler(val, "add")} className="menu-items-count-right-button">+</span></div>
+                        :
+                        <div onClick={() => this.itemsCountHandler(val, "add")} className="menu-items-add-button">Add</div>
+                      }
                     </div>
-                  })}
-                  <hr />
-                  <div className="order-details-heading">Total = {this.billTotal()}</div>
-                  <button onClick={() => this.props.history.push('/checkoutPage')} className="btn btn-warning login-button checkout-button">Go To Cart</button>
-                </React.Fragment>
-                :
-                <img className="empty-cart-image img-responsive" src={require('../../assets/images/emptyCart.png')} />
-            }
-          </div>
+                  )}
+                </div>
+                <div className="cart-items col-md-4">
+                  {
+                    this.state.orderHistory.orders.length > 0 ?
+                      <React.Fragment>
+                        <div className="order-details-heading">order Details</div>
+                        <hr />
+                        {this.state.orderHistory.orders.map((val, index) => {
+                          return <div key={index} className="order-details-items">
+                            <span>{val.item} X {val.quantity}</span> <span className="float-right">{val.price * val.quantity}</span>
+                          </div>
+                        })}
+                        <hr />
+                        <div className="order-details-heading">Total <span className="float-right">{this.billTotal()}</span></div>
+                        <button onClick={() => this.props.history.push('/checkoutPage')} className="btn btn-warning login-button checkout-button">Go To Cart</button>
+                      </React.Fragment>
+                      :
+                      <img className="empty-cart-image img-responsive" src={require('../../assets/images/emptyCart.png')} />
+                  }
+                </div>
+              </React.Fragment>
+              :
+              <React.Fragment>
+                <p className="offers-not-found-text1-shop-details">No Information Available</p>
+                <img className="offers-not-found-shop-details" src={require('../../assets/images/notFoundOffers.png')} />
+              </React.Fragment>
+          }
         </div>
       </div>
     );

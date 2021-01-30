@@ -28,11 +28,14 @@ export class CheckoutPage extends React.PureComponent {
   state = {
     payload: {
       alternateMobileNumber: "",
-      address: "",
-      paymentMethod: "",
-      area: "other20",
-      coupon: "",
-      orderHistory: [],
+      name: "",
+      address: "ww",
+      orderHistory: {
+        orderNumber: "",
+        area: "other20",
+        coupon: "",
+        paymentMethod: "online",
+      },
     },
     isCouponExist: false,
     confirmModal: false,
@@ -49,7 +52,22 @@ export class CheckoutPage extends React.PureComponent {
     if (Object.keys(customerDetails).length == 0) {
       this.props.history.push('/login')
     }
-    payload.orderHistory = orderHistory
+
+    payload.orderHistory = {
+      shopName: orderHistory.name,
+      shopAddress: orderHistory.address,
+      shopMobileNumber: orderHistory.mobileNumber,
+      shopImage: orderHistory.image,
+      orders: orderHistory.orders,
+      coupon: "",
+      total: orderHistory.total,
+      area: customerDetails.area
+    }
+
+    payload.name = customerDetails.name
+    payload.mobileNumber = customerDetails.mobileNumber
+    payload.alternateMobileNumber = customerDetails.alternateMobileNumber
+
     this.setState({
       customerDetails,
       payload
@@ -58,14 +76,20 @@ export class CheckoutPage extends React.PureComponent {
 
   inputChangeHandler = event => {
     let payload = cloneDeep(this.state.payload)
-    payload[event.target.id] = event.target.value
+
+    if (event.target.id === "area" || event.target.id === "paymentMethod" || event.target.id === "coupon") {
+      payload.orderHistory[event.target.id] = event.target.value
+    }
+    else {
+      payload[event.target.id] = event.target.value
+    }
     this.setState({
       payload,
       codeCouponText: ""
     })
   }
 
-  totalBillHandler = (bill, delivery) => {
+  totalBillHandler = (delivery, bill) => {
     let totalBill = parseInt(bill) + parseInt(delivery)
     this.setState({
       totalBill
@@ -75,8 +99,15 @@ export class CheckoutPage extends React.PureComponent {
 
   orderConfirmHandler = (event) => {
     event.preventDefault()
+    let payload = cloneDeep(this.state.payload)
+
+    payload.orderHistory.orderNumber = this.state.customerDetails.orderHistory.length + 1
+    payload.orderHistory.totalDiscount = this.state.codeCouponText === "Code applied" ? this.state.customerDetails.coupon.find(val => val.name === this.state.payload.orderHistory.coupon).amount : 0
+
+    event.preventDefault()
     this.setState({
-      confirmModal: true
+      confirmModal: true,
+      payload
     })
   }
 
@@ -87,13 +118,11 @@ export class CheckoutPage extends React.PureComponent {
   }
 
   checkCouponCode = () => {
-    let payload = cloneDeep(this.state.payload)
     let customerDetails = JSON.parse(sessionStorage.getItem("customerDetails")) ? JSON.parse(sessionStorage.getItem("customerDetails")) : this.state.customerDetails;
+    let coupon = this.state.payload.orderHistory.coupon
+    let isCouponExist = customerDetails.coupon.map(val => val.name === coupon && val.redeemAttempt > 0 && (val.validity - new Date().getTime()) > 0)
 
-    let couponArray = customerDetails.coupon.map(val => val.name)
-    let isCouponExist = couponArray.includes(payload.coupon)
-
-    let codeCouponText = isCouponExist ? "Code applied" : "Code does not exist"
+    let codeCouponText = isCouponExist[0] ? "Code applied" : "Code does not exist"
 
     this.setState({
       isCouponExist,
@@ -103,6 +132,33 @@ export class CheckoutPage extends React.PureComponent {
 
   grandTotalBill = (totalBill, amount) => {
     return totalBill - amount
+  }
+
+  orderPlaced = () => {
+    let customerDetails = JSON.parse(sessionStorage.getItem("customerDetails")) ? JSON.parse(sessionStorage.getItem("customerDetails")) : this.state.customerDetails;
+    let payload = cloneDeep(this.state.payload)
+
+    let orderHistoryCopy = payload.orderHistory
+
+    payload.orderHistory = customerDetails.orderHistory
+    payload.orderHistory.push(orderHistoryCopy)
+
+    let url = window.API_URL + `/customerLogin/${customerDetails._id}`;
+    axios.patch(url, payload)
+      .then((res) => {
+        this.setState({
+          confirmModal: false
+        })
+        sessionStorage.removeItem("orderHistory");
+        this.props.history.push('/orderPlacedPage')
+      })
+      .catch((error) => {
+        let message = errorHandler(error);
+        this.setState({
+          message,
+          type: "failure"
+        }, () => setTimeout(this.modalTime, 1500))
+      });
   }
 
   render() {
@@ -124,13 +180,14 @@ export class CheckoutPage extends React.PureComponent {
             <span className="nav-mr" onClick={() => { sessionStorage.clear(); this.props.history.push('/login') }}><i className="fa fa-power-off" aria-hidden="true"></i> Logout</span>
           </span>
         </div>
+        <p className="offers-heading">Cart</p>
         {this.state.payload.orderHistory.orders && this.state.payload.orderHistory.orders.length > 0 ?
           <form onSubmit={this.orderConfirmHandler}>
             <div className="checkout-outer row">
               <div className="col-md-7 customer-info">
                 <div className="form-group">
                   <label className="box-label" htmlFor="inputlg">Name</label>
-                  <input value={capitalizeFirstLetter(JSON.parse(sessionStorage.getItem('customerDetails')).name)} id="name" onChange={this.inputChangeHandler} className="form-control input-lg" type="text" required readOnly />
+                  <input value={this.state.payload.name} id="name" onChange={this.inputChangeHandler} className="form-control input-lg" type="text" required />
                 </div>
                 <div className="form-group">
                   <label className="box-label" htmlFor="inputlg">Mobile Number</label>
@@ -138,7 +195,7 @@ export class CheckoutPage extends React.PureComponent {
                 </div>
                 <div className="form-group">
                   <label className="box-label" htmlFor="inputlg">Alternate Mobile Number</label>
-                  <input value={this.state.payload.mobileNumber} id="alternateMobileNumber" onChange={this.inputChangeHandler} className="form-control input-lg" type="text" required />
+                  <input value={this.state.payload.alternateMobileNumber} id="alternateMobileNumber" onChange={this.inputChangeHandler} className="form-control input-lg" type="text" required />
                 </div>
                 <div className="form-group">
                   <label className="box-label" htmlFor="inputlg">Address</label>
@@ -146,7 +203,7 @@ export class CheckoutPage extends React.PureComponent {
                 </div>
                 <div className="form-group">
                   <label className="box-label" htmlFor="inputlg">Select Area</label>
-                  <select className="area-box" onChange={this.inputChangeHandler} value={this.state.payload.area} id="area" required>
+                  <select className="area-box" onChange={this.inputChangeHandler} value={this.state.payload.orderHistory.area} id="area" required>
                     <option value="Other20">Other</option>
                     <option value="kosi10">kosi</option>
                     <option value="jindal20">Jindal</option>
@@ -173,20 +230,20 @@ export class CheckoutPage extends React.PureComponent {
                     {val.item} X {val.quantity} <span className="float-right">{val.price * val.quantity}</span>
                   </div>
                 })}
-                <div className="bill-info-delivery-text"> Delivery Charges  <span className="float-right">+ {this.state.payload.area.length > 0 ? this.state.payload.area.slice(-2) : 'NA'}</span></div>
-                <div className="mr-t-25"><input value={this.state.payload.coupon} placeholder="Enter Code" id="coupon" onChange={this.inputChangeHandler} className="form-control input-lg checkout-apply-text" type="text" required /><button onClick={() => this.state.payload.coupon.length > 0 ? this.checkCouponCode() : ""} className={`checkout-apply-btn ${this.state.payload.coupon.length > 0 ? "" : "checkout-apply-btn-disabled"}`} type="button">Apply</button></div>
+                <div className="bill-info-delivery-text"> Delivery Charges  <span className="float-right">+ {this.state.payload.orderHistory.area.slice(-2)}</span></div>
+                <div className="mr-t-25"><input value={this.state.payload.orderHistory.coupon} placeholder="Enter Code" id="coupon" onChange={this.inputChangeHandler} className="form-control input-lg checkout-apply-text" type="text" /><button onClick={() => this.state.payload.orderHistory.coupon.length > 0 ? this.checkCouponCode() : ""} className={`checkout-apply-btn ${this.state.payload.orderHistory.coupon.length > 0 ? "" : "checkout-apply-btn-disabled"}`} type="button">Apply</button></div>
                 <p className={this.state.codeCouponText === "Code applied" ? "checkout-code-applied" : "checkout-code-not-applied"}>{this.state.codeCouponText.length > 0 && this.state.codeCouponText}</p>
                 <hr />
-                <p className={this.state.codeCouponText === "Code applied" ? "checkout-discount-text" : "checkout-total-text"}> Total <span className="float-right">{this.state.payload.area.length > 0 ? this.totalBillHandler(this.state.payload.area.slice(-2), this.state.payload.orderHistory.total) : this.state.payload.orderHistory.total}</span></p>
-                {this.state.codeCouponText === "Code applied" && <div className="checkout-discount-text">Total Discount <span className="float-right">- {this.state.customerDetails.coupon.find(val => val.name === this.state.payload.coupon).amount}</span></div>}
-                {this.state.codeCouponText === "Code applied" && <div className="checkout-total-text">Grand Total <span className="float-right">{this.grandTotalBill(this.state.totalBill, this.state.customerDetails.coupon.find(val => val.name === this.state.payload.coupon).amount)}</span></div>}
+                <p className={this.state.codeCouponText === "Code applied" ? "checkout-discount-text" : "checkout-total-text"}> Total <span className="float-right">{this.totalBillHandler(this.state.payload.orderHistory.area.slice(-2), this.state.payload.orderHistory.total)}</span></p>
+                {this.state.codeCouponText === "Code applied" && <div className="checkout-discount-text">Total Discount <span className="float-right">- {this.state.customerDetails.coupon.find(val => val.name === this.state.payload.orderHistory.coupon).amount}</span></div>}
+                {this.state.codeCouponText === "Code applied" && <div className="checkout-total-text">Grand Total <span className="float-right">{this.grandTotalBill(this.state.totalBill, this.state.customerDetails.coupon.find(val => val.name === this.state.payload.orderHistory.coupon).amount)}</span></div>}
                 <button type="submit" className="btn btn-warning login-button place-order-button">Place Order</button>
               </div>
             </div>
           </form>
           :
           <React.Fragment>
-            <div className="offers-page-outer mr-t-100">
+            <div className="offers-page-outer">
               <img className="offers-not-found" src={require('../../assets/images/emptycart1.png')} />
             </div>
           </React.Fragment>
@@ -209,7 +266,7 @@ export class CheckoutPage extends React.PureComponent {
               </div>
               <div className="modal-footer">
                 <button type="button" className="btn btn-secondary confirm-modal-no" onClick={this.modalCloseHandler}>No</button>
-                <button type="button" className="btn btn-primary confirm-modal-yes" onClick={() => { sessionStorage.removeItem("orderHistory"); this.props.history.push('/orderPlacedPage') }}>Yes</button>
+                <button type="button" className="btn btn-primary confirm-modal-yes" onClick={this.orderPlaced}>Yes</button>
               </div>
             </div>
           </div>
