@@ -29,11 +29,11 @@ export class ShopDetails extends React.PureComponent {
     customerDetails: {},
     orderHistory: {
       orders: [],
-      vendorName: "",
+      name: "",
       address: ""
     },
     shopDetails: {
-      vendorName: "",
+      name: "",
       address: "",
       time: "",
       details: []
@@ -51,7 +51,7 @@ export class ShopDetails extends React.PureComponent {
       this.props.history.push('/login')
     }
 
-    orderHistory.vendorName = this.state.shopDetails.vendorName
+    orderHistory.name = this.state.shopDetails.name
     orderHistory.address = this.state.shopDetails.address
 
     sessionStorage.setItem('orderHistory', JSON.stringify(orderHistory))
@@ -113,7 +113,7 @@ export class ShopDetails extends React.PureComponent {
         let shopDetails = res.data;
         shopDetails.details.map(val => { val.quantity = 0; val.portion = "full" })
 
-        orderHistory.vendorName = shopDetails.vendorName
+        orderHistory.name = shopDetails.name
         orderHistory.address = shopDetails.address
 
         sessionStorage.setItem('orderHistory', JSON.stringify(orderHistory))
@@ -153,7 +153,7 @@ export class ShopDetails extends React.PureComponent {
           <span className="nav-items">
           <span className="nav-mr" onClick={() => this.props.history.push('/landingPage')}><i className="fa fa-home" aria-hidden="true"></i> Shops</span>
             <span className="nav-mr" onClick={() => this.props.history.push('/offersPage')}><i className="fa fa-tags" aria-hidden="true"></i> Offers</span>
-            <span className="nav-mr"><i className="fa fa-history" aria-hidden="true"></i> Order History</span>
+            <span className="nav-mr" onClick={() => this.props.history.push('/orderHistoryPage')}><i className="fa fa-history" aria-hidden="true"></i> Order History</span>
             <span className="nav-mr"><i className="fa fa-user" aria-hidden="true"></i> {this.state.customerDetails.name && capitalizeFirstLetter(this.state.customerDetails.name)}</span>
             <span className="nav-mr" onClick={() => this.props.history.push('/checkoutPage')}><i className="fa fa-shopping-cart" aria-hidden="true"></i> Cart</span>
             <span className="nav-mr" onClick={() => { sessionStorage.clear(); this.props.history.push('/login') }}><i className="fa fa-power-off" aria-hidden="true"></i> Logout</span>
@@ -161,7 +161,7 @@ export class ShopDetails extends React.PureComponent {
         </div>
 
         <div className="shop-header">
-          <p className="shop-header-name">{this.state.shopDetails.vendorName}</p>
+          <p className="shop-header-name">{this.state.shopDetails.name}</p>
           <p className="shop-header-address mr-t-25">{this.state.shopDetails.address}</p>
           <p className="shop-header-time">{this.state.shopDetails.time}</p>
           <img className="shop-header-image img-responsive" src={this.state.shopDetails.image} />

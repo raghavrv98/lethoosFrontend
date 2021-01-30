@@ -118,7 +118,7 @@ export class CheckoutPage extends React.PureComponent {
           <span className="nav-items">
             <span className="nav-mr" onClick={() => this.props.history.push('/landingPage')}><i className="fa fa-home" aria-hidden="true"></i> Shops</span>
             <span className="nav-mr" onClick={() => this.props.history.push('/offersPage')}><i className="fa fa-tags" aria-hidden="true"></i> Offers</span>
-            <span className="nav-mr"><i className="fa fa-history" aria-hidden="true"></i> Order History</span>
+            <span className="nav-mr" onClick={() => this.props.history.push('/orderHistoryPage')}><i className="fa fa-history" aria-hidden="true"></i> Order History</span>
             <span className="nav-mr"><i className="fa fa-user" aria-hidden="true"></i> {this.state.customerDetails.name && capitalizeFirstLetter(this.state.customerDetails.name)}</span>
             {/* <span className="nav-mr" onClick={() => this.props.history.push('/checkoutPage')}><i className="fa fa-shopping-cart" aria-hidden="true"></i> Cart</span> */}
             <span className="nav-mr" onClick={() => { sessionStorage.clear(); this.props.history.push('/login') }}><i className="fa fa-power-off" aria-hidden="true"></i> Logout</span>
@@ -165,21 +165,21 @@ export class CheckoutPage extends React.PureComponent {
                 </div>
               </div>
               <div className="col-md-4 bill-info">
-                <p className="bill-info-heading">{this.state.payload.orderHistory.vendorName}</p>
+                <p className="bill-info-heading">{this.state.payload.orderHistory.name}</p>
                 <p className="bill-info-heading">{this.state.payload.orderHistory.address}</p>
                 <hr />
                 {this.state.payload.orderHistory.orders.map((val, index) => {
                   return <div key={index} className="bill-info-text">
-                    {val.item} X {val.quantity} = {val.price * val.quantity}
+                    {val.item} X {val.quantity} <span className="float-right">{val.price * val.quantity}</span>
                   </div>
                 })}
-                <p className="bill-info-text"> Delivery Charges = {this.state.payload.area.length > 0 ? this.state.payload.area.slice(-2) : 'NA'}</p>
+                <div className="bill-info-delivery-text"> Delivery Charges  <span className="float-right">+ {this.state.payload.area.length > 0 ? this.state.payload.area.slice(-2) : 'NA'}</span></div>
                 <div className="mr-t-25"><input value={this.state.payload.coupon} placeholder="Enter Code" id="coupon" onChange={this.inputChangeHandler} className="form-control input-lg checkout-apply-text" type="text" required /><button onClick={() => this.state.payload.coupon.length > 0 ? this.checkCouponCode() : ""} className={`checkout-apply-btn ${this.state.payload.coupon.length > 0 ? "" : "checkout-apply-btn-disabled"}`} type="button">Apply</button></div>
                 <p className={this.state.codeCouponText === "Code applied" ? "checkout-code-applied" : "checkout-code-not-applied"}>{this.state.codeCouponText.length > 0 && this.state.codeCouponText}</p>
                 <hr />
-                <p className={this.state.codeCouponText === "Code applied" ? "checkout-discount-text" : "checkout-total-text"}> Total : {this.state.payload.area.length > 0 ? this.totalBillHandler(this.state.payload.area.slice(-2), this.state.payload.orderHistory.total) : this.state.payload.orderHistory.total}</p>
-                {this.state.codeCouponText === "Code applied" && <p className="checkout-discount-text">Total Discount : {this.state.customerDetails.coupon.find(val => val.name === this.state.payload.coupon).amount}</p>}
-                {this.state.codeCouponText === "Code applied" && <p className="checkout-total-text">Grand Total : {this.grandTotalBill(this.state.totalBill, this.state.customerDetails.coupon.find(val => val.name === this.state.payload.coupon).amount)}</p>}
+                <p className={this.state.codeCouponText === "Code applied" ? "checkout-discount-text" : "checkout-total-text"}> Total <span className="float-right">{this.state.payload.area.length > 0 ? this.totalBillHandler(this.state.payload.area.slice(-2), this.state.payload.orderHistory.total) : this.state.payload.orderHistory.total}</span></p>
+                {this.state.codeCouponText === "Code applied" && <div className="checkout-discount-text">Total Discount <span className="float-right">- {this.state.customerDetails.coupon.find(val => val.name === this.state.payload.coupon).amount}</span></div>}
+                {this.state.codeCouponText === "Code applied" && <div className="checkout-total-text">Grand Total <span className="float-right">{this.grandTotalBill(this.state.totalBill, this.state.customerDetails.coupon.find(val => val.name === this.state.payload.coupon).amount)}</span></div>}
                 <button type="submit" className="btn btn-warning login-button place-order-button">Place Order</button>
               </div>
             </div>

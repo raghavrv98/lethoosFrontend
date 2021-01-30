@@ -82,7 +82,7 @@ export class LandingPage extends React.PureComponent {
           <span className="nav-items">
           {/* <span className="nav-mr" onClick={() => this.props.history.push('/landingPage')}><i className="fa fa-home" aria-hidden="true"></i> Shops</span> */}
             <span className="nav-mr" onClick={() => this.props.history.push('/offersPage')}><i className="fa fa-tags" aria-hidden="true"></i> Offers</span>
-            <span className="nav-mr"><i className="fa fa-history" aria-hidden="true"></i> Order History</span>
+            <span className="nav-mr" onClick={() => this.props.history.push('/orderHistoryPage')}><i className="fa fa-history" aria-hidden="true"></i> Order History</span>
             <span className="nav-mr"><i className="fa fa-user" aria-hidden="true"></i> {this.state.customerDetails.name && capitalizeFirstLetter(this.state.customerDetails.name)}</span>
             <span className="nav-mr" onClick={() => this.props.history.push('/checkoutPage')}><i className="fa fa-shopping-cart" aria-hidden="true"></i> Cart</span>
             <span className="nav-mr" onClick={() => { sessionStorage.clear(); this.props.history.push('/login') }}><i className="fa fa-power-off" aria-hidden="true"></i> Logout</span>
@@ -97,7 +97,7 @@ export class LandingPage extends React.PureComponent {
                 return <div key={index} onClick={() => this.props.history.push(`/shopDetails/${val._id}`)} className="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
                   <div className="box">
                     <img className="shop-image img-responsive" src={val.image} />
-                    <p className="shop-heading">{val.vendorName}</p>
+                    <p className="shop-heading">{val.name}</p>
                     <p className="shop-time">{val.time}</p>
                     <p className="shop-address">{val.address}</p>
                   </div>

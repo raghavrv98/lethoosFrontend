@@ -22,7 +22,11 @@ body {
 }
 
 .mr-t-20 {
-	margin-top: 20px;
+	margin-top: 20px !important;
+}
+
+.mr-t-40{
+	margin-top: 40px;
 }
 
 .pd-39 {
@@ -38,8 +42,28 @@ body {
 	margin: 45px 0px;
 }
 
-.mr-t-100{
+.mr-t-100 {
 	margin-top: 100px !important;
+}
+
+.mr-b-10 {
+	margin-bottom: 10px;
+}
+
+.mr-t-10{
+	margin-top: 10px !important;
+}
+
+.no-padding {
+	padding: 0px !important;
+}
+
+.text-center {
+	text-align: center !important;
+}
+
+.float-right{
+	float: right;
 }
 
 .box {
@@ -137,6 +161,37 @@ footer .text {
 	top: 15px;
 	position: absolute;
 	height: 50px;
+}
+
+/* width */
+
+::-webkit-scrollbar {
+	width: 7px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+	border-radius: 16px;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 16px;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+.text-color{
+	color: black !important;
+	font-weight: 600;
 }
 
 @media only screen and (max-width: 768px) {
@@ -380,7 +435,6 @@ footer .text {
 		padding: 10px;
 		margin: 0px !important;
 	}
-	
 	.checkout-apply-btn {
 		margin: 0px;
 		display: inline;
@@ -409,17 +463,14 @@ footer .text {
 		cursor: not-allowed;
 		background-color: #ebebe4;
 	}
-
-	.checkout-discount-text{
+	.checkout-discount-text {
 		font-size: 15px;
 		margin: 0px;
 	}
-
-	.checkout-total-text{
+	.checkout-total-text {
 		font-size: 25px;
 		margin: 0px;
 	}
-
 	.customer-info {
 		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
 		margin: 10px 0px 15px;
@@ -893,6 +944,10 @@ footer .text {
 		font-size: 30px;
 		margin: 0px;
 	}
+	.bill-info-delivery-text{
+		margin-top: 20px !important;
+		font-size: 25px;
+	}
 	.place-order-button {
 		background-color: #28A745;
 		color: white;
@@ -980,8 +1035,8 @@ footer .text {
 	}
 	.offers-box {
 		padding: 30px;
-		background-color: orange;
 		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
+		border: 1px solid #dadce6;
 		border-radius: 15px;
 		margin-bottom: 15px;
 		margin-top: 15px;
@@ -998,10 +1053,11 @@ footer .text {
 		width: 100%;
 		background-color: white;
 		border-radius: 15px;
-		border: 1px dashed black;
+		border: 1px dashed orange;
 		text-align: center;
 		padding: 0px;
 		bottom: 23%;
+		color: orange;
 	}
 	.offers-copy-btn-outer {
 		padding: 0px 23px
@@ -1041,12 +1097,89 @@ footer .text {
 	.offers-not-found-text2 {
 		top: 43%;
 	}
-	.checkout-discount-text{
+	.checkout-discount-text {
 		font-size: 20px;
 		margin: 0px;
 	}
-	.checkout-total-text{
+	.checkout-total-text {
 		font-size: 30px;
 		margin: 0px;
+	}
+	.order-history-outer {
+		margin: 20px 200px 100px 200px;
+		background-color: white;
+		min-height: 600px;
+		border-radius: 15px;
+		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
+		padding: 30px;
+	}
+	.order-history-box {
+		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
+		border: 1px solid #dadce6;
+		border-radius: 15px;
+		margin-right: 20px;
+		padding: 20px;
+	}
+	.order-history-box-heading {
+		font-size: 25px;
+		margin-bottom: 5px;
+	}
+	.order-history-box-text-heading {
+		font-size: 20px;
+		color: gray;
+	}
+	.order-history-box-text {
+		font-size: 20px;
+		color: black;
+		float: right;
+	}
+	.order-history-box-btn {
+		height: 50px;
+		width: 40%;
+		border: 1px solid orange;
+		border-radius: 15px;
+		text-align: center;
+		padding: 0px;
+		bottom: 23%;
+		margin: 10px 0px;
+	}
+	.order-history-box-btn:hover {
+		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, 1);
+	}
+	.order-history-box-btn-text {
+		font-size: 15px;
+		padding: 10px;
+		color: orange;
+	}
+	.order-history-box-image {
+		height: 70px;
+	}
+	.order-history-modal {
+		padding: 30px;
+		height: 800px;
+		overflow: auto;
+	}
+	.order-history-modal-body-heading {
+		font-size: 25px;
+		font-weight: 600;
+	}
+	.order-history-modal-body-item-text {
+		font-size: 30px;
+		margin: 0px;
+	}
+	.order-history-modal-body-quantity-text {
+		margin-bottom: 10px;
+		font-size: 22px;
+	}
+	.order-history-modal-body-item-cost-text {
+		margin-bottom: 10px;
+		font-size: 22px;
+		float: right;
+	}
+	.order-history-modal-body-item-portion-text {
+		font-size: 20px;
+		margin: 0px;
+		margin-top: -5px;
+		margin-bottom: 5px;
 	}
 }
