@@ -42,8 +42,8 @@ body {
 	margin-top: 100px !important;
 }
 
-.mr-b-10 {
-	margin-bottom: 10px;
+.mr-b-30 {
+	margin-bottom: 30px;
 }
 
 .mr-t-10 {
@@ -112,7 +112,7 @@ footer .text {
 	font-size: 30px;
 }
 
-.lds-dual-ring {
+.lds-dual-ring{
 	display: inline-block;
 	width: 80px;
 	height: 80px;
@@ -133,8 +133,7 @@ footer .text {
 	border-color: orange transparent orange transparent;
 	animation: lds-dual-ring 1.2s linear infinite;
 	position: absolute;
-	top: 50%;
-	left: 43%;
+	left: 0% !important;
 }
 
 @keyframes lds-dual-ring {
@@ -511,7 +510,7 @@ footer .text {
 		margin-left: 10px;
 		margin-right: 20px;
 	}
-	.area-box {
+	.area-box, .profile-page-area-box {
 		height: 30px;
 		width: 50%;
 		font-size: 15px;
@@ -519,6 +518,10 @@ footer .text {
 		border: 1px solid brown;
 		border-radius: 10px;
 		padding: 5px 16px;
+	}
+	.profile-page-area-box {
+		width: 95%;
+		margin-left: 0px;
 	}
 	.bill-info-heading {
 		font-size: 15px;
@@ -781,11 +784,9 @@ footer .text {
 		height: 600px;
 		overflow: auto;
 	}
-
-	.modal-dialog{
+	.modal-dialog {
 		margin-top: 100px;
 	}
-
 	.order-history-modal-body-heading {
 		font-size: 25px;
 		font-weight: 600;
@@ -808,6 +809,23 @@ footer .text {
 		margin: 0px;
 		margin-top: -5px;
 		margin-bottom: 5px;
+	}
+	.profile-page-outer {
+		margin: 10px;
+		background-color: white;
+		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
+		border-radius: 15px;
+		padding: 30px;
+		min-height: 400px;
+		position: relative;
+	}
+	.profile-page-btn {
+		font-weight: 600;
+		background: orange;
+	}
+
+	.profile-page-loader{
+
 	}
 }
 
@@ -1081,7 +1099,7 @@ footer .text {
 		margin-left: 25px;
 		margin-right: 20px;
 	}
-	.area-box {
+	.area-box, .profile-page-area-box {
 		height: 45px;
 		width: 30%;
 		font-size: 30px;
@@ -1089,6 +1107,10 @@ footer .text {
 		border: 1px solid brown;
 		border-radius: 10px;
 		padding: 5px 16px;
+	}
+	.profile-page-area-box {
+		width: 95%;
+		margin-left: 0px;
 	}
 	.bill-info-heading {
 		font-size: 30px;
@@ -1273,13 +1295,14 @@ footer .text {
 		min-height: 600px;
 		border-radius: 15px;
 		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
-		padding: 30px;
+		padding: 10px 30px 30px;
 	}
 	.order-history-box {
 		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
 		border: 1px solid #dadce6;
 		border-radius: 15px;
 		margin-right: 20px;
+		margin-top: 20px;
 		padding: 20px;
 	}
 	.order-history-box-heading {
@@ -1375,5 +1398,22 @@ footer .text {
 		font-size: 50px;
 		margin-top: 35px;
 		text-align: center;
+	}
+	.profile-page-outer {
+		margin: 20px 300px 100px 300px;
+		background-color: white;
+		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
+		border-radius: 15px;
+		padding: 30px;
+		min-height: 650px;
+		position: relative;
+	}
+	.profile-page-btn {
+		font-size: 25px;
+		padding: 10px 10px;
+		font-weight: 600;
+		background: orange;
+		width: 20%;
+		margin: 30px 0px 0px;
 	}
 }

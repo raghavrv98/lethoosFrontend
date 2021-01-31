@@ -24,6 +24,7 @@ import CheckoutPage from '../../containers/checkoutPage/Loadable';
 import OrderPlacedPage from '../../containers/OrderPlacedPage/Loadable';
 import OffersPage from '../../containers/OffersPage/Loadable';
 import OrderHistoryPage from '../../containers/OrderHistoryPage/Loadable';
+import ProfilePage from '../../containers/ProfilePage/Loadable';
 import { capitalizeFirstLetter } from '../../utils/customUtils'
 
 /* eslint-disable react/prefer-stateless-function */
@@ -64,6 +65,7 @@ export class HomePage extends React.PureComponent {
           <Route exact path="/orderPlacedPage" render={props => <OrderPlacedPage {...props} />} />
           <Route exact path="/offersPage" render={props => <OffersPage {...props} />} />
           <Route exact path="/orderHistoryPage" render={props => <OrderHistoryPage {...props} />} />
+          <Route exact path="/profilePage" render={props => <ProfilePage {...props} />} />
         </Switch>
       </React.Fragment >
     );
