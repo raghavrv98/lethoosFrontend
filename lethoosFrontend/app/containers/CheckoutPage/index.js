@@ -18,7 +18,7 @@ import makeSelectCheckoutPage from './selectors';
 import reducer from './reducer';
 import saga from './saga';
 import messages from './messages';
-import { capitalizeFirstLetter } from '../../utils/customUtils'
+import Header from '../../components/Header/Loadable'
 import axios from 'axios';
 import { cloneDeep } from 'lodash';
 
@@ -29,17 +29,21 @@ export class CheckoutPage extends React.PureComponent {
     payload: {
       alternateMobileNumber: "",
       name: "",
-      address: "ww",
+      address: "",
       orderHistory: {
         orderNumber: "",
         area: "other20",
         coupon: "",
         paymentMethod: "online",
+        orderDate: "",
+        orderAddress: "",
+        orderAlternateMobileNumber: ""
       },
     },
     isCouponExist: false,
     confirmModal: false,
-    codeCouponText: ""
+    codeCouponText: "",
+    isLoader: false
   }
 
   componentWillMount() {
@@ -61,7 +65,7 @@ export class CheckoutPage extends React.PureComponent {
       orders: orderHistory.orders,
       coupon: "",
       total: orderHistory.total,
-      area: customerDetails.area
+      area: customerDetails.area ? customerDetails.area : payload.orderHistory.area,
     }
 
     payload.name = customerDetails.name
@@ -104,8 +108,10 @@ export class CheckoutPage extends React.PureComponent {
 
     payload.orderHistory.orderNumber = this.state.customerDetails.orderHistory.length + 1
     payload.orderHistory.totalDiscount = this.state.codeCouponText === "Code applied" ? this.state.customerDetails.coupon.find(val => val.name === this.state.payload.orderHistory.coupon).amount : 0
+    payload.orderHistory.orderDate = new Date().getTime()
+    payload.orderHistory.orderAddress = payload.address
+    payload.orderHistory.orderAlternateMobileNumber = payload.alternateMobileNumber
 
-    event.preventDefault()
     this.setState({
       confirmModal: true,
       payload
@@ -138,8 +144,12 @@ export class CheckoutPage extends React.PureComponent {
   orderPlaced = () => {
     let customerDetails = JSON.parse(sessionStorage.getItem("customerDetails")) ? JSON.parse(sessionStorage.getItem("customerDetails")) : this.state.customerDetails;
     let payload = cloneDeep(this.state.payload)
-
     let orderHistoryCopy = payload.orderHistory
+
+    payload.name = customerDetails.name
+    payload.mobileNumber = customerDetails.mobileNumber
+    payload.alternateMobileNumber = customerDetails.alternateMobileNumber
+    payload.address = customerDetails.address
 
     payload.orderHistory = customerDetails.orderHistory
     payload.orderHistory.push(orderHistoryCopy)
@@ -169,18 +179,9 @@ export class CheckoutPage extends React.PureComponent {
           <title>CheckoutPage</title>
           <meta name="description" content="Description of CheckoutPage" />
         </Helmet>
-        <div className="header sticky-top">
-          <img className="logo" src={require('../../assets/images/logo.png')} />
-          <p className="logo-text">Le Thoos</p>
-          <span className="nav-items">
-            <span className="nav-mr" onClick={() => this.props.history.push('/landingPage')}><i className="fa fa-home" aria-hidden="true"></i> Shops</span>
-            <span className="nav-mr" onClick={() => this.props.history.push('/offersPage')}><i className="fa fa-tags" aria-hidden="true"></i> Offers</span>
-            <span className="nav-mr" onClick={() => this.props.history.push('/orderHistoryPage')}><i className="fa fa-history" aria-hidden="true"></i> Order History</span>
-            <span className="nav-mr" onClick={() => this.props.history.push('/profilePage')}><i className="fa fa-user" aria-hidden="true"></i> {this.state.customerDetails.name && capitalizeFirstLetter(this.state.customerDetails.name)}</span>
-            {/* <span className="nav-mr" onClick={() => this.props.history.push('/checkoutPage')}><i className="fa fa-shopping-cart" aria-hidden="true"></i> Cart</span> */}
-            <span className="nav-mr" onClick={() => { sessionStorage.clear(); this.props.history.push('/login') }}><i className="fa fa-power-off" aria-hidden="true"></i> Logout</span>
-          </span>
-        </div>
+
+        <Header />
+
         <p className="offers-heading">Cart</p>
         {this.state.payload.orderHistory.orders && this.state.payload.orderHistory.orders.length > 0 ?
           <form onSubmit={this.orderConfirmHandler}>

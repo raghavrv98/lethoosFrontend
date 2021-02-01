@@ -20,7 +20,7 @@ import saga from './saga';
 import messages from './messages';
 import axios from 'axios';
 import MessageModal from '../../components/MessageModal/Loadable'
-import { capitalizeFirstLetter } from '../../utils/customUtils'
+import Header from '../../components/Header/Loadable'
 
 /* eslint-disable react/prefer-stateless-function */
 export class LandingPage extends React.PureComponent {
@@ -30,16 +30,6 @@ export class LandingPage extends React.PureComponent {
     shops: [],
     customerDetails: {},
     isLoader: true
-  }
-
-  componentWillMount() {
-    let customerDetails = JSON.parse(sessionStorage.getItem("customerDetails")) ? JSON.parse(sessionStorage.getItem("customerDetails")) : this.state.customerDetails;
-    if (Object.keys(customerDetails).length == 0) {
-      this.props.history.push('/login')
-    }
-    this.setState({
-      customerDetails
-    })
   }
 
   componentDidMount() {
@@ -77,18 +67,9 @@ export class LandingPage extends React.PureComponent {
           <title>Shops - Select Your Shop</title>
           <meta name="description" content="Description of LandingPage" />
         </Helmet>
-        <div className="header sticky-top">
-          <img className="logo" src={require('../../assets/images/logo.png')} />
-          <p className="logo-text">Le Thoos</p>
-          <span className="nav-items">
-            {/* <span className="nav-mr" onClick={() => this.props.history.push('/landingPage')}><i className="fa fa-home" aria-hidden="true"></i> Shops</span> */}
-            <span className="nav-mr" onClick={() => this.props.history.push('/offersPage')}><i className="fa fa-tags" aria-hidden="true"></i> Offers</span>
-            <span className="nav-mr" onClick={() => this.props.history.push('/orderHistoryPage')}><i className="fa fa-history" aria-hidden="true"></i> Order History</span>
-            <span className="nav-mr" onClick={() => this.props.history.push('/profilePage')}><i className="fa fa-user" aria-hidden="true"></i> {this.state.customerDetails.name && capitalizeFirstLetter(this.state.customerDetails.name)}</span>
-            <span className="nav-mr" onClick={() => this.props.history.push('/checkoutPage')}><i className="fa fa-shopping-cart" aria-hidden="true"></i> Cart</span>
-            <span className="nav-mr" onClick={() => { sessionStorage.clear(); this.props.history.push('/login') }}><i className="fa fa-power-off" aria-hidden="true"></i> Logout</span>
-          </span>
-        </div>
+
+        <Header />
+
         <p className="offers-heading">Shops</p>
         <div className="content-padding">
           {this.state.isLoader ?
@@ -126,7 +107,7 @@ export class LandingPage extends React.PureComponent {
           onClose={this.modalCloseHandler}
         />
 
-      </div>
+      </div >
     );
   }
 }

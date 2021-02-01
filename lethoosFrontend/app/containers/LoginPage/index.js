@@ -156,7 +156,7 @@ export class LoginPage extends React.PureComponent {
             {this.state.isUserExist && <p className="incorrect-password-text">User Already Exist</p>}
             {this.state.isLoader ? <div className="lds-dual-ring"></div> :
               this.state.boxContent === "login" ?
-                <form className="mr-tb-45" id="login" onSubmit={this.onSubmitHandler}>
+                <form className="mr-t-45" id="login" onSubmit={this.onSubmitHandler}>
                   <div className="form-group">
                     <label className="box-label" htmlFor="inputlg">Mobile Number</label>
                     <input value={this.state.payload.mobileNumber} id="mobileNumber" onChange={this.inputChangeHandler} className="form-control input-lg" type="tel" required />
@@ -170,7 +170,7 @@ export class LoginPage extends React.PureComponent {
                   </div>
                 </form> :
                 this.state.boxContent === "signUp" ?
-                  <form className="mr-tb-45" id="signUp" onSubmit={this.onSubmitHandler}>
+                  <form className="mr-t-45" id="signUp" onSubmit={this.onSubmitHandler}>
                     <div className="form-group">
                       <label className="box-label" htmlFor="inputlg">Name</label>
                       <input value={this.state.payload.name} id="name" onChange={this.inputChangeHandler} className="form-control input-lg" type="text" required />
@@ -187,15 +187,22 @@ export class LoginPage extends React.PureComponent {
                       <button type="submit" className="btn btn-warning login-button">Sign Up</button>
                     </div>
                   </form>
-                  : <form className="mr-tb-45" id="resetPassword" onSubmit={this.onSubmitHandler}>
-                    <div className="form-group">
-                      <label className="box-label" htmlFor="inputlg">Mobile Number</label>
-                      <input value={this.state.payload.mobileNumber} id="mobileNumber" onChange={this.inputChangeHandler} className="form-control input-lg" type="tel" required />
-                    </div>
-                    <div className="form-group">
-                      <button type="submit" className="btn btn-warning login-button">Send Password</button>
-                    </div>
-                  </form>
+                  :
+
+                  <div className="reset-password-text">
+                    <p> Please Contact Admin.</p>
+                    <p> Send Your Password request on Whatsapp at 8192095423.</p>
+                  </div>
+
+              // <form className="mr-tb-45" id="resetPassword" onSubmit={this.onSubmitHandler}>
+              //   <div className="form-group">
+              //     <label className="box-label" htmlFor="inputlg">Mobile Number</label>
+              //     <input value={this.state.payload.mobileNumber} id="mobileNumber" onChange={this.inputChangeHandler} className="form-control input-lg" type="tel" required />
+              //   </div>
+              //   <div className="form-group">
+              //     <button type="submit" className="btn btn-warning login-button">Send Password</button>
+              //   </div>
+              // </form>
             }
 
             {this.state.boxContent !== "login" && !this.state.isLoader && <p onClick={this.changeContentHandler} id="login" className="reset-password"> Login</p>}

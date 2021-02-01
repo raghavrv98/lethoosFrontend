@@ -17,7 +17,7 @@ import injectReducer from 'utils/injectReducer';
 import makeSelectOrderHistoryPage from './selectors';
 import reducer from './reducer';
 import saga from './saga';
-import { capitalizeFirstLetter } from '../../utils/customUtils'
+import Header from '../../components/Header/Loadable'
 import axios from 'axios';
 import messages from './messages';
 import moment from 'moment';
@@ -30,6 +30,7 @@ export class OrderHistoryPage extends React.PureComponent {
     customerDetails: {},
     couponIdCopy: "",
     detailsModal: false,
+    isLoader: true
   }
 
   componentWillMount() {
@@ -73,7 +74,8 @@ export class OrderHistoryPage extends React.PureComponent {
         const customerDetails = res.data;
         sessionStorage.setItem("customerDetails", JSON.stringify(customerDetails))
         this.setState({
-          customerDetails
+          customerDetails,
+          isLoader: false
         })
       })
       .catch((error) => {
@@ -85,6 +87,15 @@ export class OrderHistoryPage extends React.PureComponent {
       });
   }
 
+  sameMobileNumberCheckHandler = (mobileNumber, alternateMobileNumber) => {
+    if (alternateMobileNumber === mobileNumber) {
+      return alternateMobileNumber
+    }
+    else {
+      return `${mobileNumber}, ${alternateMobileNumber}`
+    }
+  }
+
   render() {
     return (
       <div>
@@ -93,49 +104,41 @@ export class OrderHistoryPage extends React.PureComponent {
           <meta name="description" content="Description of OrderHistoryPage" />
         </Helmet>
 
-        <div className="header sticky-top">
-          <img className="logo" src={require('../../assets/images/logo.png')} />
-          <p className="logo-text">Le Thoos</p>
-          <span className="nav-items">
-            <span className="nav-mr" onClick={() => this.props.history.push('/landingPage')}><i className="fa fa-home" aria-hidden="true"></i> Shops</span>
-            <span className="nav-mr" onClick={() => this.props.history.push('/offersPage')}><i className="fa fa-tags" aria-hidden="true"></i> Offers</span>
-            {/* <span className="nav-mr"><i className="fa fa-history" aria-hidden="true"></i> Order History</span> */}
-            <span className="nav-mr" onClick={() => this.props.history.push('/profilePage')}><i className="fa fa-user" aria-hidden="true"></i> {this.state.customerDetails.name && capitalizeFirstLetter(this.state.customerDetails.name)}</span>
-            <span className="nav-mr" onClick={() => this.props.history.push('/checkoutPage')}><i className="fa fa-shopping-cart" aria-hidden="true"></i> Cart</span>
-            <span className="nav-mr" onClick={() => { sessionStorage.clear(); this.props.history.push('/login') }}><i className="fa fa-power-off" aria-hidden="true"></i> Logout</span>
-          </span>
-        </div>
+        <Header />
 
         <p className="offers-heading">Orders History</p>
         <div className="order-history-outer row">
-          {this.state.customerDetails.orderHistory.length > 0 ?
-            <React.Fragment>
-              {this.state.customerDetails.orderHistory.map((val, index) =>
-                <div key={index} className="col-md-3 no-padding">
-                  <div className="order-history-box">
-                    <div className="row">
-                      <div className="col-md-3">
-                        <img className="order-history-box-image" src={val.shopImage} />
-                      </div>
-                      <div className="col-md-9">
-                        <p className="order-history-box-heading">{val.shopName}</p>
-                        <p className="order-history-box-text-heading">{val.shopAddress}</p>
-                      </div>
-                    </div>
-                    <hr />
-                    <p className="mr-b-10"><span className="order-history-box-text-heading">Order Number :</span><span className="order-history-box-text">{val.orderNumber}</span></p>
-                    <p className="mr-b-10"><span className="order-history-box-text-heading">Order Date :</span><span className="order-history-box-text">{moment(val.orderDate).format("DD MMM YYYY HH:mm")}</span></p>
-                    <div className="text-center"><button type="button" onClick={() => this.detailsModalHandler(val)} className="order-history-box-btn"><span className="order-history-box-btn-text">View Details</span></button></div>
-                  </div>
-                </div>
-              )}
-            </React.Fragment>
+          {this.state.isLoader ?
+            <div className="lds-dual-ring"></div>
             :
-            <React.Fragment>
-              <p className="no-shops-found-heading">No Orders Available</p>
-              <img className="no-shops-found-image-order-history" src={require('../../assets/images/noDetailsFound.png')} />
-              <img className="no-shops-found-image-glass-order-history" src={require('../../assets/images/glassIcon.png')} />
-            </React.Fragment>
+            this.state.customerDetails.orderHistory.length > 0 ?
+              <React.Fragment>
+                {this.state.customerDetails.orderHistory.map((val, index) =>
+                  <div key={index} className="col-md-3 no-padding">
+                    <div className="order-history-box">
+                      <div className="row">
+                        <div className="col-md-3">
+                          <img className="order-history-box-image" src={val.shopImage} />
+                        </div>
+                        <div className="col-md-9">
+                          <p className="order-history-box-heading">{val.shopName}</p>
+                          <p className="order-history-box-text-heading">{val.shopAddress}</p>
+                        </div>
+                      </div>
+                      <hr />
+                      <p className="mr-b-10"><span className="order-history-box-text-heading">Order Number :</span><span className="order-history-box-text">{val.orderNumber}</span></p>
+                      <p className="mr-b-10"><span className="order-history-box-text-heading">Order Date :</span><span className="order-history-box-text">{moment(val.orderDate).format("DD MMM YYYY HH:mm")}</span></p>
+                      <div className="text-center"><button type="button" onClick={() => this.detailsModalHandler(val)} className="order-history-box-btn"><span className="order-history-box-btn-text">View Details</span></button></div>
+                    </div>
+                  </div>
+                )}
+              </React.Fragment>
+              :
+              <React.Fragment>
+                <p className="no-shops-found-heading">No Orders Available</p>
+                <img className="no-shops-found-image-order-history" src={require('../../assets/images/noDetailsFound.png')} />
+                <img className="no-shops-found-image-glass-order-history" src={require('../../assets/images/glassIcon.png')} />
+              </React.Fragment>
           }
         </div>
 
@@ -168,7 +171,7 @@ export class OrderHistoryPage extends React.PureComponent {
                 </div>
               })}
               <p className="order-history-box-text-heading mr-t-40"> Item Total <span className="order-history-box-text"> {itemTotal}</span></p>
-              <p className="order-history-box-text-heading">Coupon Code <span className="order-history-box-text"> {this.state.modalDetailObject.coupon}</span></p>
+              <p className="order-history-box-text-heading">Coupon Code <span className="order-history-box-text"> {this.state.modalDetailObject.coupon.length > 0 ? this.state.modalDetailObject.coupon : "NA"}</span></p>
               <p className="order-history-box-text-heading">Total Discount <span className="order-history-box-text"> - {this.state.modalDetailObject.totalDiscount}</span></p>
               <p className="order-history-box-text-heading">Delivery Charge <span className="order-history-box-text"> + {this.state.modalDetailObject.area.slice(-2)}</span></p>
               <p className="order-history-box-text-heading text-color">Grand Total <span className="order-history-box-text"> {this.grandTotalBill(itemTotal, this.state.modalDetailObject.area.slice(-2), this.state.modalDetailObject.totalDiscount)}</span></p>
@@ -176,9 +179,8 @@ export class OrderHistoryPage extends React.PureComponent {
               <p className="order-history-box-text-heading">Order Number <span className="order-history-box-text"> {this.state.modalDetailObject.orderNumber}</span></p>
               <p className="order-history-box-text-heading">Payment <span className="order-history-box-text"> {this.state.modalDetailObject.paymentMethod}</span></p>
               <p className="order-history-box-text-heading">Date <span className="order-history-box-text"> {moment(this.state.modalDetailObject.orderDate).format("DD MMM YYYY HH : mm")}</span></p>
-              <p className="order-history-box-text-heading">Phone Number <span className="order-history-box-text"> {this.state.customerDetails.mobileNumber}, {this.state.customerDetails.alternateMobileNumber}</span></p>
-              <p className="order-history-box-text-heading">Deliver To <span className="order-history-box-text"> {this.state.customerDetails.address}</span></p>
-
+              <p className="order-history-box-text-heading">Phone Number <span className="order-history-box-text"> {this.sameMobileNumberCheckHandler(this.state.customerDetails.mobileNumber, this.state.modalDetailObject.orderAlternateMobileNumber)}</span></p>
+              <p className="order-history-box-text-heading">Deliver To <span className="order-history-box-text"> <textarea className="text-area-order-history" value={this.state.modalDetailObject.orderAddress} rows="2" cols="25" readOnly /></span></p>
             </div>
           </div>
         </div>}
