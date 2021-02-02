@@ -67,6 +67,7 @@ export class OffersPage extends React.PureComponent {
           {this.state.customerDetails.coupon.length > 0 ?
             this.state.customerDetails.coupon.map((val, index) =>
               <div key={index} className="col-md-3">
+                {(val.validity < new Date().getTime() || val.attempt == 0) && < img className="offers-expired-img" src={require('../../assets/images/offerExpired.png')} />}
                 <div onClick={() => this.copyCoupon(val.name)} className="offers-box">
                   <p className="offers-box-heading text-center">Tap To Copy</p>
                   <p className="offers-box-text mr-b-10">{val.description}</p>

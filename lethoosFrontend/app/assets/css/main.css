@@ -213,6 +213,14 @@ footer .text {
 	padding-top: 60px;
 }
 
+.closNav{
+	width: 0px;
+}
+
+.openNav{
+	width: 250px;
+}
+
 .sidenav-heading {
 	padding: 0px 8px 0px 32px;
 	text-decoration: none;
@@ -898,6 +906,15 @@ hr{
 		font-size: 16px;
 		margin: 15px 0px;
 	}
+
+	.offers-expired-img{
+		position: absolute;
+		height: 135px;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		left: 50%;
+		opacity: 0.5;
+	}
 }
 
 @media only screen and (min-width: 769px) {
@@ -1495,4 +1512,14 @@ hr{
 		font-size: 30px;
 		margin: 15px 0px;
 	}
+
+	.offers-expired-img{
+		position: absolute;
+		height: 216px;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		left: 50%;
+		opacity: 0.5;
+	}
+
 }

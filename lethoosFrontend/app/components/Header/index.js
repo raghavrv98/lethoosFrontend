@@ -18,6 +18,7 @@ class Header extends React.PureComponent {
 
   state = {
     customerDetails: {},
+    sideNavStatus: false
   }
 
   componentWillMount() {
@@ -30,12 +31,17 @@ class Header extends React.PureComponent {
     })
   }
 
-  openNav = () => {
-    document.getElementById("mySidenav").style.width = "250px";
+  openCloseNav = () => {
+    let sideNavStatus = this.state.sideNavStatus
+    this.setState({
+      sideNavStatus: !sideNavStatus
+    })
   }
 
   closeNav = () => {
-    document.getElementById("mySidenav").style.width = "0";
+    this.setState({
+      sideNavStatus: false
+    })
   }
 
   render() {
@@ -59,7 +65,7 @@ class Header extends React.PureComponent {
         </span>
 
         <span className="nav-mob-view">
-          <div id="mySidenav" className="sidenav">
+          <div id="mySidenav" className={this.state.sideNavStatus ? "openNav sidenav" : "closeNav sidenav"}>
             <a className="closebtn" onClick={() => this.closeNav()}>&times;</a>
             <div className="mr-b-30">
               <img className="logo-mob" src={require('../../assets/images/logo.png')} />
@@ -76,7 +82,7 @@ class Header extends React.PureComponent {
           <div id="main">
             <img className="logo" src={require('../../assets/images/logo.png')} />
             <p className="logo-text">Le Thoos</p>
-            <span onClick={() => this.openNav()}><span className="landing-page-mob-nav-icon"><i className="fa fa-bars" aria-hidden="true"></i></span></span>
+            <span onClick={() => this.openCloseNav()}><span className="landing-page-mob-nav-icon"><i className="fa fa-bars" aria-hidden="true"></i></span></span>
           </div>
         </span>
 

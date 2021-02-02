@@ -153,14 +153,14 @@ export class ProfilePage extends React.PureComponent {
                 <div className="col-md-6 col-12">
                   <div className="form-group mr-b-30">
                     <label className="box-label" htmlFor="inputlg">Mobile Number</label>
-                    <input value={JSON.parse(sessionStorage.getItem('customerDetails')).mobileNumber} id="mobileNumber" onChange={this.inputChangeHandler} className="form-control input-lg" type="text" required readOnly />
+                    <input value={JSON.parse(sessionStorage.getItem('customerDetails')).mobileNumber} pattern="[1-9]{1}[0-9]{9}" title="Enter 10 digit mobile number" id="mobileNumber" onChange={this.inputChangeHandler} className="form-control input-lg" type="tel" required readOnly />
                   </div>
                 </div>
 
                 <div className="col-md-6 col-12">
                   <div className="form-group mr-b-30">
                     <label className="box-label" htmlFor="inputlg">Alternate Mobile Number</label>
-                    <input value={this.state.payload.alternateMobileNumber} id="alternateMobileNumber" onChange={this.inputChangeHandler} className="form-control input-lg" type="text" required />
+                    <input value={this.state.payload.alternateMobileNumber} pattern="[1-9]{1}[0-9]{9}" title="Enter 10 digit mobile number" id="alternateMobileNumber" onChange={this.inputChangeHandler} className="form-control input-lg" type="tel" required />
                   </div>
                 </div>
 

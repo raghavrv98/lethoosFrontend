@@ -159,11 +159,11 @@ export class LoginPage extends React.PureComponent {
                 <form className="mr-t-45" id="login" onSubmit={this.onSubmitHandler}>
                   <div className="form-group">
                     <label className="box-label" htmlFor="inputlg">Mobile Number</label>
-                    <input value={this.state.payload.mobileNumber} id="mobileNumber" onChange={this.inputChangeHandler} className="form-control input-lg" type="tel" required />
+                    <input value={this.state.payload.mobileNumber} title="Enter 10 digit mobile number" id="mobileNumber" onChange={this.inputChangeHandler} className="form-control input-lg" type="tel" required />
                   </div>
                   <div className="form-group">
                     <label className="box-label" htmlFor="inputlg">Password</label>
-                    <input value={this.state.payload.password} id="password" onChange={this.inputChangeHandler} className="form-control input-lg" type="text" required />
+                    <input value={this.state.payload.password} id="password" onChange={this.inputChangeHandler} className="form-control input-lg" type="password" required />
                   </div>
                   <div className="form-group">
                     <button type="submit" className="btn btn-warning login-button">Login</button>
@@ -177,11 +177,11 @@ export class LoginPage extends React.PureComponent {
                     </div>
                     <div className="form-group">
                       <label className="box-label" htmlFor="inputlg">Mobile Number</label>
-                      <input value={this.state.payload.mobileNumber} id="mobileNumber" onChange={this.inputChangeHandler} className="form-control input-lg" type="tel" required />
+                      <input value={this.state.payload.mobileNumber} pattern="[1-9]{1}[0-9]{9}" title="Enter 10 digit mobile number" id="mobileNumber" onChange={this.inputChangeHandler} className="form-control input-lg" type="tel" required />
                     </div>
                     <div className="form-group">
                       <label className="box-label" htmlFor="inputlg">Password</label>
-                      <input value={this.state.payload.password} id="password" onChange={this.inputChangeHandler} className="form-control input-lg" type="text" required />
+                      <input value={this.state.payload.password} id="password" onChange={this.inputChangeHandler} className="form-control input-lg" type="password" required />
                     </div>
                     <div className="form-group">
                       <button type="submit" className="btn btn-warning login-button">Sign Up</button>
