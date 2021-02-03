@@ -48,6 +48,10 @@ export class LoginPage extends React.PureComponent {
   onSubmitHandler = event => {
     let id = event.target.id
     let payload = cloneDeep(this.state.payload)
+    payload.name = payload.name.trim()
+    payload.mobileNumber = payload.mobileNumber.trim()
+    payload.password = payload.password.trim()
+
     this.setState({
       isLoader: true,
       isDetailsIncorrect: false,
@@ -188,7 +192,6 @@ export class LoginPage extends React.PureComponent {
                     </div>
                   </form>
                   :
-
                   <div className="reset-password-text">
                     <p> Please Contact Admin.</p>
                     <p> Send Your Password request on Whatsapp at 8192095423.</p>
@@ -206,8 +209,8 @@ export class LoginPage extends React.PureComponent {
             }
 
             {this.state.boxContent !== "login" && !this.state.isLoader && <p onClick={this.changeContentHandler} id="login" className="reset-password"> Login</p>}
-            {this.state.boxContent !== "resetPassword" && !this.state.isLoader && <p onClick={this.changeContentHandler} id="resetPassword" className="reset-password"> Reset Password</p>}
             {this.state.boxContent !== "signUp" && !this.state.isLoader && <p onClick={this.changeContentHandler} id="signUp" className="sign-up"> Don't have an account? Sign up</p>}
+            {this.state.boxContent !== "resetPassword" && !this.state.isLoader && <p onClick={this.changeContentHandler} id="resetPassword" className="reset-password"> Reset Password</p>}
           </span>
         </div>
 

@@ -127,12 +127,12 @@ export class CheckoutPage extends React.PureComponent {
   checkCouponCode = () => {
     let customerDetails = JSON.parse(sessionStorage.getItem("customerDetails")) ? JSON.parse(sessionStorage.getItem("customerDetails")) : this.state.customerDetails;
     let coupon = this.state.payload.orderHistory.coupon
-    let isCouponExist = customerDetails.coupon.map(val => val.name === coupon && val.redeemAttempt > 0 && (val.validity - new Date().getTime()) > 0)
+    let selectedCoupon = customerDetails.coupon.find(val => val.name === coupon)
+    let isCouponExist = selectedCoupon && parseInt(selectedCoupon.redeemAttempt) > 0 && selectedCoupon.validity > new Date().getTime()
 
-    let codeCouponText = isCouponExist[0] ? "Code applied" : "Code does not exist"
+    let codeCouponText = isCouponExist ? "Code applied" : "Code does not exist"
 
     this.setState({
-      isCouponExist,
       codeCouponText
     })
   }
@@ -146,12 +146,15 @@ export class CheckoutPage extends React.PureComponent {
     let payload = cloneDeep(this.state.payload)
     let orderHistoryCopy = payload.orderHistory
 
+    customerDetails.coupon[customerDetails.coupon.findIndex(val => val.name == orderHistoryCopy.coupon)].redeemAttempt = parseInt(customerDetails.coupon[customerDetails.coupon.findIndex(val => val.name == orderHistoryCopy.coupon)].redeemAttempt) - 1
+
     payload.name = customerDetails.name
     payload.mobileNumber = customerDetails.mobileNumber
     payload.alternateMobileNumber = customerDetails.alternateMobileNumber
     payload.address = customerDetails.address
 
     payload.orderHistory = customerDetails.orderHistory
+    payload.coupon = customerDetails.coupon
     payload.orderHistory.push(orderHistoryCopy)
 
     let url = window.API_URL + `/customerLogin/${customerDetails._id}`;
