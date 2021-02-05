@@ -31,6 +31,9 @@ export class ShopDetails extends React.PureComponent {
       orders: [],
       name: "",
       address: "",
+      mobileNumber: "",
+      image: "",
+      _id: ""
     },
     shopDetails: {
       name: "",
@@ -38,7 +41,8 @@ export class ShopDetails extends React.PureComponent {
       time: "",
       details: []
     },
-    isLoader: true
+    isLoader: true,
+    confirmModal: false
   }
 
   componentWillMount() {
@@ -47,13 +51,10 @@ export class ShopDetails extends React.PureComponent {
     }
     let customerDetails = JSON.parse(sessionStorage.getItem("customerDetails")) ? JSON.parse(sessionStorage.getItem("customerDetails")) : cloneDeep(this.state.customerDetails);
     let orderHistory = JSON.parse(sessionStorage.getItem("orderHistory")) ? JSON.parse(sessionStorage.getItem("orderHistory")) : cloneDeep(this.state.orderHistory);
+
     if (Object.keys(customerDetails).length == 0) {
       this.props.history.push('/login')
     }
-
-    orderHistory.name = this.state.shopDetails.name
-    orderHistory.address = this.state.shopDetails.address
-    orderHistory.image = this.state.shopDetails.image
 
     sessionStorage.setItem('orderHistory', JSON.stringify(orderHistory))
     this.setState({
@@ -62,68 +63,91 @@ export class ShopDetails extends React.PureComponent {
     })
   }
 
-  itemsCountHandler = (val, id) => {
-    let shop = cloneDeep(this.state.shopDetails)
-    let shopDetails = cloneDeep(this.state.shopDetails).details
-    let shopDetailsIndex = shopDetails.findIndex(value => value.itemNo === val.itemNo)
-    shopDetails[shopDetailsIndex].quantity = id == "add" ? shopDetails[shopDetailsIndex].quantity + 1 : shopDetails[shopDetailsIndex].quantity - 1
+  itemsCountHandler = (val, id, index) => {
     let orderHistory = JSON.parse(sessionStorage.getItem("orderHistory")) ? JSON.parse(sessionStorage.getItem("orderHistory")) : cloneDeep(this.state.orderHistory);
+    let shop = cloneDeep(this.state.shopDetails)
 
-    let orderHistoryIndex = orderHistory.orders.findIndex(value => value.itemNo === val.itemNo)
+    if (orderHistory._id == shop._id || orderHistory._id == "") {
+      let shopDetails = cloneDeep(this.state.shopDetails).details
 
-    if (orderHistoryIndex === -1) {
-      orderHistory.orders.push(
-        {
-          itemNo: val.itemNo,
-          item: val.name,
-          quantity: shopDetails[shopDetailsIndex].quantity,
-          portion: val.portion,
-          price: val.halfAvailable ? val.halfPrice : val.fullPrice,
+      let orderHistoryIndex = orderHistory.orders.findIndex(value => value.itemNo === val.itemNo)
+
+      shopDetails[index].quantity = id == "add" ? shopDetails[index].quantity + 1 : shopDetails[index].quantity - 1
+
+      if (orderHistoryIndex === -1) {
+        orderHistory.orders.push(
+          {
+            itemNo: val.itemNo,
+            item: val.name,
+            quantity: shopDetails[index].quantity,
+            portion: val.portion,
+            price: val.halfAvailable ? val.halfPrice : val.fullPrice,
+          }
+        )
+      }
+      else {
+        orderHistory.orders[orderHistoryIndex].itemNo = val.itemNo
+        orderHistory.orders[orderHistoryIndex].item = val.name
+        orderHistory.orders[orderHistoryIndex].quantity = shopDetails[index].quantity
+        orderHistory.orders[orderHistoryIndex].portion = val.portion
+        orderHistory.orders[orderHistoryIndex].price = val.halfAvailable ? val.halfPrice : val.fullPrice
+      }
+
+      shop.details = shopDetails
+
+      orderHistory.orders.map((val, index) => {
+        if (val.quantity == 0) {
+          orderHistory.orders.splice(index, 1)
         }
-      )
+        return val
+      })
+
+      if (orderHistory.orders.length > 0) {
+        orderHistory.mobileNumber = shop.mobileNumber
+        orderHistory.name = shop.name
+        orderHistory.address = shop.address
+        orderHistory.image = shop.image
+        orderHistory._id = shop._id
+      }
+      else {
+        orderHistory.mobileNumber = ""
+        orderHistory.name = ""
+        orderHistory.address = ""
+        orderHistory.image = ""
+        orderHistory._id = ""
+      }
+
+
+      sessionStorage.setItem('orderHistory', JSON.stringify(orderHistory))
+      this.setState({
+        shopDetails: shop,
+        orderHistory
+      })
     }
     else {
-      orderHistory.orders[orderHistoryIndex].itemNo = val.itemNo
-      orderHistory.orders[orderHistoryIndex].item = val.name
-      orderHistory.orders[orderHistoryIndex].quantity = shopDetails[shopDetailsIndex].quantity
-      orderHistory.orders[orderHistoryIndex].portion = val.portion
-      orderHistory.orders[orderHistoryIndex].price = val.halfAvailable ? val.halfPrice : val.fullPrice
+      this.setState({
+        confirmModal: true
+      })
+
     }
-
-    shop.details = shopDetails
-    orderHistory.orders.map((val, index) => {
-      if (val.quantity == 0) {
-        orderHistory.orders.splice(index, 1)
-      }
-      return val
-    })
-
-    orderHistory.mobileNumber = shop.mobileNumber
-    sessionStorage.setItem('orderHistory', JSON.stringify(orderHistory))
-    this.setState({
-      shopDetails: shop,
-      orderHistory
-    })
-
   }
 
   getShopDetails = () => {
-    let orderHistory = JSON.parse(sessionStorage.getItem("orderHistory")) ? JSON.parse(sessionStorage.getItem("orderHistory")) : cloneDeep(this.state.orderHistory);
     let url = window.API_URL + `/shop/${this.props.match.params.id}`;
+    let orderHistory = JSON.parse(sessionStorage.getItem("orderHistory")) ? JSON.parse(sessionStorage.getItem("orderHistory")) : cloneDeep(this.state.orderHistory);
     axios.get(url)
       .then((res) => {
         let shopDetails = res.data;
         shopDetails.details.map(val => { val.quantity = 0; val.portion = "full" })
-
-        orderHistory.name = shopDetails.name
-        orderHistory.address = shopDetails.address
-        orderHistory.image = shopDetails.image
-
-        orderHistory.orders.map(order => {
-          shopDetails.details[shopDetails.details.findIndex(value => value.itemNo === order.itemNo)].quantity = order.quantity
-        })
-
-        sessionStorage.setItem('orderHistory', JSON.stringify(orderHistory))
+        if (orderHistory.orders.length > 0) {
+          shopDetails.details.map(val => {
+            orderHistory.orders.map(value => {
+              if (val.itemNo === value.itemNo) {
+                val.quantity = value.quantity
+              }
+            })
+          })
+        }
         this.setState({ shopDetails, isLoader: false });
       })
       .catch((error) => {
@@ -144,6 +168,29 @@ export class ShopDetails extends React.PureComponent {
     orderHistory.total = total
     sessionStorage.setItem('orderHistory', JSON.stringify(orderHistory))
     return total
+  }
+
+  modalCloseHandler = () => {
+    this.setState({
+      confirmModal: false
+    })
+  }
+
+  orderReplacedHandler = () => {
+    let orderHistory = JSON.parse(sessionStorage.getItem("orderHistory")) ? JSON.parse(sessionStorage.getItem("orderHistory")) : cloneDeep(this.state.orderHistory);
+    orderHistory.mobileNumber = ""
+    orderHistory.name = ""
+    orderHistory.address = ""
+    orderHistory.image = ""
+    orderHistory._id = ""
+    orderHistory.orders = []
+    orderHistory.total = 0
+    orderHistory._id = ""
+    sessionStorage.setItem('orderHistory', JSON.stringify(orderHistory))
+    this.setState({
+      orderHistory,
+      confirmModal: false
+    })
   }
 
   render() {
@@ -170,18 +217,23 @@ export class ShopDetails extends React.PureComponent {
             this.state.shopDetails.details.length > 0 ?
               <React.Fragment>
                 <div className="menu-items-outer col-md-8">
-                  {this.state.shopDetails.details.map((val, index) =>
-                    <div key={index} className="menu-items">
+                  {this.state.shopDetails.details.map((val, index) => {
+                    return <div key={index} className="menu-items">
                       <img className="menu-items-image img-responsive" src={val.image} />
                       <p className="menu-items-name"> {val.name}</p>
                       <p className="menu-items-price"> {val.fullPrice}</p>
 
                       {val.quantity > 0 ?
-                        <div className="menu-items-count-button"><span onClick={() => this.itemsCountHandler(val, "sub")} className="menu-items-count-left-button">-</span><span>{val.quantity}</span><span onClick={() => this.itemsCountHandler(val, "add")} className="menu-items-count-right-button">+</span></div>
+                        <div className="menu-items-count-button">
+                          <span onClick={() => this.itemsCountHandler(val, "sub", index)} className="menu-items-count-left-button">-</span>
+                          <span>{val.quantity}</span>
+                          <span onClick={() => this.itemsCountHandler(val, "add", index)} className="menu-items-count-right-button">+</span>
+                        </div>
                         :
-                        <div onClick={() => this.itemsCountHandler(val, "add")} className="menu-items-add-button">Add</div>
+                        <div onClick={() => this.itemsCountHandler(val, "add", index)} className="menu-items-add-button">Add</div>
                       }
                     </div>
+                  }
                   )}
                 </div>
                 <div className="cart-items col-md-4">
@@ -211,6 +263,28 @@ export class ShopDetails extends React.PureComponent {
               </React.Fragment>
           }
         </div>
+        {this.state.confirmModal && <div className="modal display-block">
+          <div className="modal-dialog" role="document">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title confirm-modal-heading" id="exampleModalLabel">Items already in cart</h5>
+                <button type="button" className="close confirm-modal-close" onClick={this.modalCloseHandler}>
+                  <i className="fa fa-times-circle" aria-hidden="true"></i>
+                </button>
+              </div>
+              <div className="modal-body confirm-modal-body">
+                Your cart contains items from other restaurant.
+              </div>
+              <div className="modal-body confirm-modal-body-2">
+                Would you like to reset your cart for adding items from this restaurant?.
+              </div>
+              <div className="modal-footer">
+                <button type="button" className="btn btn-secondary confirm-modal-no" onClick={this.modalCloseHandler}>No</button>
+                <button type="button" className="btn btn-primary confirm-modal-yes" onClick={this.orderReplacedHandler}>Yes</button>
+              </div>
+            </div>
+          </div>
+        </div>}
       </div>
     );
   }

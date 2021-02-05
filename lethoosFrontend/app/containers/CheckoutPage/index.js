@@ -37,7 +37,8 @@ export class CheckoutPage extends React.PureComponent {
         paymentMethod: "online",
         orderDate: "",
         orderAddress: "",
-        orderAlternateMobileNumber: ""
+        orderAlternateMobileNumber: "",
+        otherSpecifications: ""
       },
     },
     isCouponExist: false,
@@ -66,6 +67,7 @@ export class CheckoutPage extends React.PureComponent {
       coupon: "",
       total: orderHistory.total,
       area: customerDetails.area ? customerDetails.area : payload.orderHistory.area,
+      otherSpecifications: orderHistory.otherSpecifications
     }
 
     payload.name = customerDetails.name
@@ -82,7 +84,7 @@ export class CheckoutPage extends React.PureComponent {
   inputChangeHandler = event => {
     let payload = cloneDeep(this.state.payload)
 
-    if (event.target.id === "area" || event.target.id === "paymentMethod" || event.target.id === "coupon") {
+    if (event.target.id === "area" || event.target.id === "paymentMethod" || event.target.id === "coupon" || event.target.id === "otherSpecifications") {
       payload.orderHistory[event.target.id] = event.target.value
     }
     else {
@@ -141,12 +143,25 @@ export class CheckoutPage extends React.PureComponent {
     return totalBill - amount
   }
 
-  orderPlaced = () => {
+  orderPlacedHandler = () => {
+    this.setState({
+      isLoader: true,
+      confirmModal: false
+    },
+      () => this.orderPlacedApiHandler()
+    )
+  }
+
+  orderPlacedApiHandler = () => {
     let customerDetails = JSON.parse(sessionStorage.getItem("customerDetails")) ? JSON.parse(sessionStorage.getItem("customerDetails")) : this.state.customerDetails;
     let payload = cloneDeep(this.state.payload)
     let orderHistoryCopy = payload.orderHistory
 
-    customerDetails.coupon[customerDetails.coupon.findIndex(val => val.name == orderHistoryCopy.coupon)].redeemAttempt = parseInt(customerDetails.coupon[customerDetails.coupon.findIndex(val => val.name == orderHistoryCopy.coupon)].redeemAttempt) - 1
+    let index = customerDetails.coupon.findIndex(val => val.name == orderHistoryCopy.coupon)
+
+    if (index != -1) {
+      customerDetails.coupon[index].redeemAttempt = parseInt(customerDetails.coupon[index].redeemAttempt) - 1
+    }
 
     payload.name = customerDetails.name
     payload.mobileNumber = customerDetails.mobileNumber
@@ -190,59 +205,76 @@ export class CheckoutPage extends React.PureComponent {
           <form onSubmit={this.orderConfirmHandler}>
             <div className="checkout-outer row">
               <div className="col-md-7 customer-info">
-                <div className="form-group">
-                  <label className="box-label" htmlFor="inputlg">Name</label>
-                  <input value={this.state.payload.name} id="name" onChange={this.inputChangeHandler} className="form-control input-lg" type="text" required />
-                </div>
-                <div className="form-group">
-                  <label className="box-label" htmlFor="inputlg">Mobile Number</label>
-                  <input value={JSON.parse(sessionStorage.getItem('customerDetails')).mobileNumber} id="mobileNumber" onChange={this.inputChangeHandler} className="form-control input-lg" type="text" required readOnly />
-                </div>
-                <div className="form-group">
-                  <label className="box-label" htmlFor="inputlg">Alternate Mobile Number</label>
-                  <input value={this.state.payload.alternateMobileNumber} id="alternateMobileNumber" onChange={this.inputChangeHandler} className="form-control input-lg" type="text" required />
-                </div>
-                <div className="form-group">
-                  <label className="box-label" htmlFor="inputlg">Address</label>
-                  <textarea rows="3" cols="50" value={this.state.payload.address} id="address" onChange={this.inputChangeHandler} className="form-control input-lg" type="text" required />
-                </div>
-                <div className="form-group">
-                  <label className="box-label" htmlFor="inputlg">Select Area</label>
-                  <select className="area-box" onChange={this.inputChangeHandler} value={this.state.payload.orderHistory.area} id="area" required>
-                    <option value="Other20">Other</option>
-                    <option value="kosi10">kosi</option>
-                    <option value="jindal20">Jindal</option>
-                    <option value="narsiVillage20">Narsi Village</option>
-                    <option value="gopalBagh20">Gopal Bagh</option>
-                    <option value="kamlaNagar20">Kamla Nagar</option>
-                    <option value="bathenGate20">Bathen Gate</option>
-                  </select>
-                </div>
-                <div className="form-group">
-                  <label className="box-label" htmlFor="inputlg">Payment Method</label>
-                  <div>
-                    <label className="radio-inline"><input type="radio" onChange={this.inputChangeHandler} className="radio-btn-size" id="paymentMethod" value="Cash On Delivery" name="radio" required /><span className="radio-text-size">Cash on Delivery</span></label>
-                    <label className="radio-inline"><input type="radio" onChange={this.inputChangeHandler} className="radio-btn-size" id="paymentMethod" value="Online" name="radio" required /><span className="radio-text-size">Online</span></label>
-                  </div>
-                </div>
+                {this.state.isLoader ?
+                  <div className="lds-dual-ring"></div>
+                  :
+                  <React.Fragment>
+                    <div className="form-group">
+                      <label className="box-label" htmlFor="inputlg">Name</label>
+                      <input value={this.state.payload.name} id="name" onChange={this.inputChangeHandler} className="form-control input-lg" type="text" required />
+                    </div>
+                    <div className="form-group">
+                      <label className="box-label" htmlFor="inputlg">Mobile Number</label>
+                      <input value={JSON.parse(sessionStorage.getItem('customerDetails')).mobileNumber} id="mobileNumber" onChange={this.inputChangeHandler} className="form-control input-lg" type="text" required readOnly />
+                    </div>
+                    <div className="form-group">
+                      <label className="box-label" htmlFor="inputlg">Alternate Mobile Number</label>
+                      <input value={this.state.payload.alternateMobileNumber} id="alternateMobileNumber" onChange={this.inputChangeHandler} className="form-control input-lg" type="text" required />
+                    </div>
+                    <div className="form-group">
+                      <label className="box-label" htmlFor="inputlg">Address</label>
+                      <textarea rows="3" cols="50" value={this.state.payload.address} id="address" onChange={this.inputChangeHandler} className="form-control input-lg" type="text" required />
+                    </div>
+                    <div className="form-group">
+                      <label className="box-label" htmlFor="inputlg">Select Area</label>
+                      <select className="area-box" onChange={this.inputChangeHandler} value={this.state.payload.orderHistory.area} id="area" required>
+                        <option value="Other20">Other</option>
+                        <option value="kosi10">kosi</option>
+                        <option value="jindal20">Jindal</option>
+                        <option value="narsiVillage20">Narsi Village</option>
+                        <option value="gopalBagh20">Gopal Bagh</option>
+                        <option value="kamlaNagar20">Kamla Nagar</option>
+                        <option value="bathenGate20">Bathen Gate</option>
+                      </select>
+                    </div>
+                    <div className="form-group">
+                      <label className="box-label" htmlFor="inputlg">Payment Method</label>
+                      <div>
+                        <label className="radio-inline"><input type="radio" onChange={this.inputChangeHandler} className="radio-btn-size" id="paymentMethod" value="Cash On Delivery" name="radio" required /><span className="radio-text-size">Cash on Delivery</span></label>
+                        <label className="radio-inline"><input type="radio" onChange={this.inputChangeHandler} className="radio-btn-size" id="paymentMethod" value="Online" name="radio" required /><span className="radio-text-size">Online</span></label>
+                      </div>
+                    </div>
+                    <div className="form-group">
+                      <label className="box-label" htmlFor="inputlg">Other Specifications</label>
+                      <textarea rows="3" cols="50" value={this.state.payload.otherSpecifications} placeholder="For Example : Without Onion or less Spicy" id="otherSpecifications" onChange={this.inputChangeHandler} className="form-control input-lg" type="text" />
+                    </div>
+                  </React.Fragment>
+                }
               </div>
               <div className="col-md-4 bill-info">
-                <p className="bill-info-heading">{this.state.payload.orderHistory.name}</p>
-                <p className="bill-info-heading">{this.state.payload.orderHistory.address}</p>
-                <hr />
-                {this.state.payload.orderHistory.orders.map((val, index) => {
-                  return <div key={index} className="bill-info-text">
-                    {val.item} X {val.quantity} <span className="float-right">{val.price * val.quantity}</span>
-                  </div>
-                })}
-                <div className="bill-info-delivery-text"> Delivery Charges  <span className="float-right">+ {this.state.payload.orderHistory.area.slice(-2)}</span></div>
-                <div className="mr-t-25"><input value={this.state.payload.orderHistory.coupon} placeholder="Enter Code" id="coupon" onChange={this.inputChangeHandler} className="form-control input-lg checkout-apply-text" type="text" /><button onClick={() => this.state.payload.orderHistory.coupon.length > 0 ? this.checkCouponCode() : ""} className={`checkout-apply-btn ${this.state.payload.orderHistory.coupon.length > 0 ? "" : "checkout-apply-btn-disabled"}`} type="button">Apply</button></div>
-                <p className={this.state.codeCouponText === "Code applied" ? "checkout-code-applied" : "checkout-code-not-applied"}>{this.state.codeCouponText.length > 0 && this.state.codeCouponText}</p>
-                <hr />
-                <p className={this.state.codeCouponText === "Code applied" ? "checkout-discount-text" : "checkout-total-text"}> Total <span className="float-right">{this.totalBillHandler(this.state.payload.orderHistory.area.slice(-2), this.state.payload.orderHistory.total)}</span></p>
-                {this.state.codeCouponText === "Code applied" && <div className="checkout-discount-text">Total Discount <span className="float-right">- {this.state.customerDetails.coupon.find(val => val.name === this.state.payload.orderHistory.coupon).amount}</span></div>}
-                {this.state.codeCouponText === "Code applied" && <div className="checkout-total-text">Grand Total <span className="float-right">{this.grandTotalBill(this.state.totalBill, this.state.customerDetails.coupon.find(val => val.name === this.state.payload.orderHistory.coupon).amount)}</span></div>}
-                <button type="submit" className="btn btn-warning login-button place-order-button">Place Order</button>
+
+                {this.state.isLoader ?
+                  <div className="lds-dual-ring"></div>
+                  :
+                  <React.Fragment>
+                    <p className="bill-info-heading">{this.state.payload.orderHistory.shopName}</p>
+                    <p className="bill-info-heading">{this.state.payload.orderHistory.shopAddress}</p>
+                    <hr />
+                    {this.state.payload.orderHistory.orders.map((val, index) => {
+                      return <div key={index} className="bill-info-text">
+                        {val.item} X {val.quantity} <span className="float-right">{val.price * val.quantity}</span>
+                      </div>
+                    })}
+                    <div className="bill-info-delivery-text"> Delivery Charges  <span className="float-right">+ {this.state.payload.orderHistory.area.slice(-2)}</span></div>
+                    <div className="mr-t-25"><input value={this.state.payload.orderHistory.coupon} placeholder="Enter Code" id="coupon" onChange={this.inputChangeHandler} className="form-control input-lg checkout-apply-text" type="text" /><button onClick={() => this.state.payload.orderHistory.coupon.length > 0 ? this.checkCouponCode() : ""} className={`checkout-apply-btn ${this.state.payload.orderHistory.coupon.length > 0 ? "" : "checkout-apply-btn-disabled"}`} type="button">Apply</button></div>
+                    <p className={this.state.codeCouponText === "Code applied" ? "checkout-code-applied" : "checkout-code-not-applied"}>{this.state.codeCouponText.length > 0 && this.state.codeCouponText}</p>
+                    <hr />
+                    <p className={this.state.codeCouponText === "Code applied" ? "checkout-discount-text" : "checkout-total-text"}> Total <span className="float-right">{this.totalBillHandler(this.state.payload.orderHistory.area.slice(-2), this.state.payload.orderHistory.total)}</span></p>
+                    {this.state.codeCouponText === "Code applied" && <div className="checkout-discount-text">Total Discount <span className="float-right">- {this.state.customerDetails.coupon.find(val => val.name === this.state.payload.orderHistory.coupon).amount}</span></div>}
+                    {this.state.codeCouponText === "Code applied" && <div className="checkout-total-text">Grand Total <span className="float-right">{this.grandTotalBill(this.state.totalBill, this.state.customerDetails.coupon.find(val => val.name === this.state.payload.orderHistory.coupon).amount)}</span></div>}
+                    <button type="submit" className="btn btn-warning login-button place-order-button">Place Order</button>
+                  </React.Fragment>
+                }
               </div>
             </div>
           </form>
@@ -271,7 +303,7 @@ export class CheckoutPage extends React.PureComponent {
               </div>
               <div className="modal-footer">
                 <button type="button" className="btn btn-secondary confirm-modal-no" onClick={this.modalCloseHandler}>No</button>
-                <button type="button" className="btn btn-primary confirm-modal-yes" onClick={this.orderPlaced}>Yes</button>
+                <button type="button" className="btn btn-primary confirm-modal-yes" onClick={this.orderPlacedHandler}>Yes</button>
               </div>
             </div>
           </div>

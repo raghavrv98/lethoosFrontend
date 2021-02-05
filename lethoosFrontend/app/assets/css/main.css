@@ -213,11 +213,11 @@ footer .text {
 	padding-top: 60px;
 }
 
-.closNav{
+.closNav {
 	width: 0px;
 }
 
-.openNav{
+.openNav {
 	width: 250px;
 }
 
@@ -248,13 +248,13 @@ footer .text {
 	position: relative;
 }
 
-.text-area-order-history{
+.text-area-order-history {
 	resize: none;
 	outline: none;
 	margin-bottom: 30px;
 }
 
-hr{
+hr {
 	margin: 0px;
 	margin-bottom: 20px;
 }
@@ -404,7 +404,7 @@ hr{
 		text-align: center;
 	}
 	.shop-header-name, .shop-header-address, .shop-header-time {
-		font-size: 40px;
+		font-size: 25px;
 		text-align: center;
 	}
 	.shop-header-address, .shop-header-time {
@@ -492,6 +492,7 @@ hr{
 		height: 40px;
 		margin-left: 10px;
 		border-radius: 7px;
+		width: 13%;
 	}
 	.cart-items {
 		background-color: orange;
@@ -559,6 +560,7 @@ hr{
 		border-radius: 12px;
 		background-color: white;
 		padding: 30px;
+		min-height: 250px;
 	}
 	.bill-info {
 		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
@@ -568,6 +570,7 @@ hr{
 		padding: 30px;
 		width: 100%;
 		margin: 0px 0px 60px;
+		min-height: 250px;
 	}
 	.radio-btn-size {
 		height: 15px;
@@ -906,8 +909,7 @@ hr{
 		font-size: 16px;
 		margin: 15px 0px;
 	}
-
-	.offers-expired-img{
+	.offers-expired-img {
 		position: absolute;
 		height: 135px;
 		top: 50%;
@@ -972,7 +974,7 @@ hr{
 		height: 400px;
 	}
 	.shop-heading {
-		font-size: 30px;
+		font-size: 25px;
 		margin-top: 20px;
 		font-weight: 400;
 	}
@@ -1112,6 +1114,7 @@ hr{
 		position: absolute;
 		height: 52px;
 		border-radius: 15px;
+		width: 5%;
 	}
 	.cart-items {
 		background-color: orange;
@@ -1134,7 +1137,7 @@ hr{
 		color: orange !important;
 	}
 	.checkout-outer {
-		padding: 0px 300px 35px;
+		padding: 0px 300px 100px;
 		margin: 0px !important;
 	}
 	.checkout-apply-btn {
@@ -1171,6 +1174,7 @@ hr{
 		border-radius: 12px;
 		background-color: white;
 		padding: 30px;
+		min-height: 500px;
 	}
 	.bill-info {
 		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
@@ -1180,6 +1184,8 @@ hr{
 		float: right;
 		background-color: white;
 		padding: 30px;
+		position:sticky;
+		top: 50px;
 	}
 	.radio-btn-size {
 		height: 30px;
@@ -1512,8 +1518,7 @@ hr{
 		font-size: 30px;
 		margin: 15px 0px;
 	}
-
-	.offers-expired-img{
+	.offers-expired-img {
 		position: absolute;
 		height: 216px;
 		top: 50%;
@@ -1521,5 +1526,4 @@ hr{
 		left: 50%;
 		opacity: 0.5;
 	}
-
 }
