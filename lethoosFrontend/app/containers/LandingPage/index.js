@@ -21,6 +21,7 @@ import messages from './messages';
 import axios from 'axios';
 import MessageModal from '../../components/MessageModal/Loadable'
 import Header from '../../components/Header/Loadable'
+import { errorHandler } from "../../utils/customUtils";
 
 /* eslint-disable react/prefer-stateless-function */
 export class LandingPage extends React.PureComponent {
@@ -42,6 +43,8 @@ export class LandingPage extends React.PureComponent {
     axios.get(url)
       .then((res) => {
         const shops = res.data;
+        shops.sort((a, b) => (a.priority > b.priority) ? 1 : (a.priority === b.priority) ? ((a.name > b.name) ? 1 : -1) : -1)
+        console.log('shops: ', shops);
         this.setState({ shops, isLoader: false });
       })
       .catch((error) => {
@@ -81,11 +84,12 @@ export class LandingPage extends React.PureComponent {
                 {this.state.shops.length > 0 ?
                   this.state.shops.map((val, index) => {
                     return <div key={index} onClick={() => this.props.history.push(`/shopDetails/${val._id}`)} className="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                      <div className="box">
+                      <div className={val.status ? "box" : "box shop-closed-color"}>
                         <img className="shop-image img-responsive" src={val.image} />
                         <p className="shop-heading">{val.name}</p>
                         <p className="shop-time">{val.time}</p>
                         <p className="shop-address">{val.address}</p>
+                        {!val.status && <div className="shop-closed-tag">Closed</div>}
                       </div>
                     </div>
                   })

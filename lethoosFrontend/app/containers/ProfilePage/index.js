@@ -21,6 +21,7 @@ import messages from './messages';
 import Header from '../../components/Header/Loadable'
 import axios from 'axios';
 import { cloneDeep } from 'lodash';
+import { errorHandler } from "../../utils/customUtils";
 
 /* eslint-disable react/prefer-stateless-function */
 export class ProfilePage extends React.PureComponent {

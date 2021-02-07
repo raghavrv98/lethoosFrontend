@@ -21,6 +21,7 @@ import messages from './messages';
 import Header from '../../components/Header/Loadable'
 import axios from 'axios';
 import { cloneDeep } from 'lodash';
+import { errorHandler } from "../../utils/customUtils";
 
 /* eslint-disable react/prefer-stateless-function */
 export class CheckoutPage extends React.PureComponent {
@@ -84,12 +85,22 @@ export class CheckoutPage extends React.PureComponent {
   inputChangeHandler = event => {
     let payload = cloneDeep(this.state.payload)
 
-    if (event.target.id === "area" || event.target.id === "paymentMethod" || event.target.id === "coupon" || event.target.id === "otherSpecifications") {
+    if (event.target.id === "area" || event.target.id === "paymentMethod" || event.target.id === "otherSpecifications") {
       payload.orderHistory[event.target.id] = event.target.value
     }
     else {
       payload[event.target.id] = event.target.value
     }
+    this.setState({
+      payload
+    })
+  }
+
+  couponInputChangeHandler = event => {
+    let payload = cloneDeep(this.state.payload)
+
+    payload.orderHistory[event.target.id] = event.target.value
+
     this.setState({
       payload,
       codeCouponText: ""
@@ -266,7 +277,7 @@ export class CheckoutPage extends React.PureComponent {
                       </div>
                     })}
                     <div className="bill-info-delivery-text"> Delivery Charges  <span className="float-right">+ {this.state.payload.orderHistory.area.slice(-2)}</span></div>
-                    <div className="mr-t-25"><input value={this.state.payload.orderHistory.coupon} placeholder="Enter Code" id="coupon" onChange={this.inputChangeHandler} className="form-control input-lg checkout-apply-text" type="text" /><button onClick={() => this.state.payload.orderHistory.coupon.length > 0 ? this.checkCouponCode() : ""} className={`checkout-apply-btn ${this.state.payload.orderHistory.coupon.length > 0 ? "" : "checkout-apply-btn-disabled"}`} type="button">Apply</button></div>
+                    <div className="mr-t-25"><input value={this.state.payload.orderHistory.coupon} placeholder="Enter Code" id="coupon" onChange={this.couponInputChangeHandler} className="form-control input-lg checkout-apply-text" type="text" /><button onClick={() => this.state.payload.orderHistory.coupon.length > 0 ? this.checkCouponCode() : ""} className={`checkout-apply-btn ${this.state.payload.orderHistory.coupon.length > 0 ? "" : "checkout-apply-btn-disabled"}`} type="button">Apply</button></div>
                     <p className={this.state.codeCouponText === "Code applied" ? "checkout-code-applied" : "checkout-code-not-applied"}>{this.state.codeCouponText.length > 0 && this.state.codeCouponText}</p>
                     <hr />
                     <p className={this.state.codeCouponText === "Code applied" ? "checkout-discount-text" : "checkout-total-text"}> Total <span className="float-right">{this.totalBillHandler(this.state.payload.orderHistory.area.slice(-2), this.state.payload.orderHistory.total)}</span></p>

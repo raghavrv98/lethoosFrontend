@@ -21,6 +21,7 @@ import messages from './messages';
 import moment from 'moment';
 import Header from '../../components/Header/Loadable'
 import axios from 'axios'
+import { errorHandler } from "../../utils/customUtils";
 
 /* eslint-disable react/prefer-stateless-function */
 export class OffersPage extends React.PureComponent {
@@ -98,7 +99,7 @@ export class OffersPage extends React.PureComponent {
               this.state.customerDetails.coupon.map((val, index) =>
                 <div key={index} className="col-md-3">
                   {(val.validity < new Date().getTime() || parseInt(val.redeemAttempt) <= 0) && < img className="offers-expired-img" src={require('../../assets/images/offerExpired.png')} />}
-                  <div onClick={() => this.copyCoupon(val.name, index)} className="offers-box">
+                  <div onClick={() => !(val.validity < new Date().getTime() || parseInt(val.redeemAttempt) <= 0) && this.copyCoupon(val.name, index)} className="offers-box">
                     <p className="offers-box-heading text-center">Tap To Copy</p>
                     <p className="offers-box-text mr-b-10">{val.description}</p>
                     <div className="offers-box-text"><span className="color-gray">Offered By</span> <span className="float-right">{val.offeredBy}</span></div>

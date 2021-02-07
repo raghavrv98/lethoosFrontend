@@ -74,8 +74,11 @@ body {
 	color: gray;
 }
 
+.shop-closed-color {
+	background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
 .box {
-	height: 350px;
 	width: 100%;
 	background-color: #ffffff;
 	border-radius: 10px;
@@ -318,9 +321,6 @@ hr {
 		color: grey;
 		font-size: 15px;
 	}
-	.box {
-		height: 325px;
-	}
 	.shop-heading {
 		font-size: 25px;
 		margin-top: 20px;
@@ -448,11 +448,19 @@ hr {
 		top: 7px;
 	}
 	.menu-items-price {
-		display: block;
 		font-size: 16px;
 		margin: 2px 0px 2px 65px;
 		color: white;
 		top: 12px;
+	}
+	.menu-items-half-price {
+		color: white;
+		font-size: 16px;
+	}
+	.menu-items-half-text {
+		margin-left: 20px;
+		font-size: 16px;
+		color: white;
 	}
 	.menu-items-add-button, .menu-items-count-button {
 		font-size: 20px;
@@ -841,6 +849,7 @@ hr {
 	}
 	.order-history-box-image {
 		height: 70px;
+		width: 100%;
 	}
 	.order-history-modal {
 		padding: 30px;
@@ -917,6 +926,25 @@ hr {
 		left: 50%;
 		opacity: 0.5;
 	}
+	.shop-closed-tag, .shopDetails-closed-tag {
+		height: 40px;
+		width: 67px;
+		background-color: #000;
+		color: #fff;
+		font-size: 20px;
+		border-radius: 15px;
+		padding: 5px;
+		float: right;
+	}
+	.shop-closed-tag {
+		margin-top: -80px;
+	}
+	.shopDetails-closed-tag {
+		height: 37px;
+		width: 67px;
+		font-size: 20px;
+		float: right;
+	}
 }
 
 @media only screen and (min-width: 769px) {
@@ -969,9 +997,6 @@ hr {
 	.shop-address {
 		color: grey;
 		font-size: 17px;
-	}
-	.box {
-		height: 400px;
 	}
 	.shop-heading {
 		font-size: 25px;
@@ -1071,11 +1096,27 @@ hr {
 		top: 12px;
 	}
 	.menu-items-price {
-		display: block;
 		font-size: 25px;
 		margin: 2px 0px 2px 65px;
 		color: white;
 		top: 12px;
+	}
+	.menu-items-half-price {
+		color: white;
+		font-size: 25px;
+	}
+	.menu-items-half-text {
+		margin-left: 25px;
+		font-size: 20px;
+		color: white;
+	}
+	.menu-items-half-price-checkbox {
+		height: 25px;
+		width: 25px;
+		cursor: pointer;
+		position: absolute;
+		top: 46%;
+		left: 40%;
 	}
 	.menu-items-add-button, .menu-items-count-button {
 		font-size: 25px;
@@ -1184,7 +1225,7 @@ hr {
 		float: right;
 		background-color: white;
 		padding: 30px;
-		position:sticky;
+		position: sticky;
 		top: 50px;
 	}
 	.radio-btn-size {
@@ -1402,6 +1443,7 @@ hr {
 		margin-right: 20px;
 		margin-top: 20px;
 		padding: 20px;
+		min-height: 321px;
 	}
 	.order-history-box-heading {
 		font-size: 25px;
@@ -1436,6 +1478,7 @@ hr {
 	}
 	.order-history-box-image {
 		height: 70px;
+		width: 100%;
 	}
 	.order-history-modal {
 		padding: 30px;
@@ -1525,5 +1568,28 @@ hr {
 		transform: translate(-50%, -50%);
 		left: 50%;
 		opacity: 0.5;
+	}
+	.shop-closed-tag, .shopDetails-closed-tag {
+		height: 40px;
+		width: 67px;
+		background-color: #000;
+		color: #fff;
+		font-size: 20px;
+		border-radius: 15px;
+		padding: 5px;
+		margin-top: -73px;
+		margin-left: 400px;
+	}
+	.shop-closed-tag {
+		margin-top: -80px;
+		margin-left: 225px;
+	}
+	.shopDetails-closed-tag {
+		height: 50px;
+		width: 100px;
+		font-size: 30px;
+	}
+	.box {
+		height: 400px;
 	}
 }

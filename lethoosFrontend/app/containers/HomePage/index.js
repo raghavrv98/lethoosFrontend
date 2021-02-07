@@ -25,7 +25,7 @@ import OrderPlacedPage from '../../containers/OrderPlacedPage/Loadable';
 import OffersPage from '../../containers/OffersPage/Loadable';
 import OrderHistoryPage from '../../containers/OrderHistoryPage/Loadable';
 import ProfilePage from '../../containers/ProfilePage/Loadable';
-
+import NotFoundPage from '../../components/NotFoundPage/Loadable'
 
 /* eslint-disable react/prefer-stateless-function */
 export class HomePage extends React.PureComponent {
@@ -47,16 +47,6 @@ export class HomePage extends React.PureComponent {
   render() {
     return (
       <React.Fragment>
-        {/* { Object.keys(this.state.customerDetails).length == 0 ? null : < div className="header sticky-top">
-          <img className="logo" src={require('../../assets/images/logo.png')} />
-          <p className="logo-text">Le Thoos</p>
-          <span className="nav-items">
-            <span className="nav-mr" onClick={() => this.props.history.push('/offersPage')}><i className="fa fa-tags" aria-hidden="true"></i> Offers</span>
-            <span className="nav-mr"><i className="fa fa-history" aria-hidden="true"></i> Order History</span>
-            <span className="nav-mr"><i className="fa fa-user" aria-hidden="true"></i> {this.state.customerDetails.name && capitalizeFirstLetter(this.state.customerDetails.name)}</span>
-            <span className="nav-mr" onClick={() => { sessionStorage.clear(); this.props.history.push('/login') }}><i className="fa fa-power-off" aria-hidden="true"></i> Logout</span>
-          </span>
-        </div>} */}
         <Switch>
           <Route exact path="/landingPage" render={props => <LandingPage {...props} />} />
           <Route exact path="/login" render={props => <LoginPage {...props} />} />
@@ -67,6 +57,8 @@ export class HomePage extends React.PureComponent {
           <Route exact path="/offersPage" render={props => <OffersPage {...props} />} />
           <Route exact path="/orderHistoryPage" render={props => <OrderHistoryPage {...props} />} />
           <Route exact path="/profilePage" render={props => <ProfilePage {...props} />} />
+          <Route path="/error404" render={props => <NotFoundPage {...props} />} />
+          <Route component={NotFoundPage} />
         </Switch>
       </React.Fragment >
     );
