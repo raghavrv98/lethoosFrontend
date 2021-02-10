@@ -52,7 +52,7 @@ export class ShopDetails extends React.PureComponent {
     }
     let customerDetails = JSON.parse(sessionStorage.getItem("customerDetails")) ? JSON.parse(sessionStorage.getItem("customerDetails")) : cloneDeep(this.state.customerDetails);
     let orderHistory = JSON.parse(sessionStorage.getItem("orderHistory")) ? JSON.parse(sessionStorage.getItem("orderHistory")) : cloneDeep(this.state.orderHistory);
-
+    let shopDetails = JSON.parse(sessionStorage.getItem("shopDetails")) ? JSON.parse(sessionStorage.getItem("shopDetails")) : cloneDeep(this.state.shopDetails);
     if (Object.keys(customerDetails).length == 0) {
       this.props.history.push('/login')
     }
@@ -60,138 +60,70 @@ export class ShopDetails extends React.PureComponent {
     sessionStorage.setItem('orderHistory', JSON.stringify(orderHistory))
     this.setState({
       customerDetails,
-      orderHistory
+      orderHistory,
+      shopDetails
     })
   }
 
   itemsCountHandler = (val, id, index) => {
     let orderHistory = JSON.parse(sessionStorage.getItem("orderHistory")) ? JSON.parse(sessionStorage.getItem("orderHistory")) : cloneDeep(this.state.orderHistory);
-    let shop = cloneDeep(this.state.shopDetails)
+    let shop = JSON.parse(sessionStorage.getItem("shopDetails")) ? JSON.parse(sessionStorage.getItem("shopDetails")) : cloneDeep(this.state.shopDetails);
 
     if (orderHistory._id == shop._id || orderHistory._id == "") {
-      let shopDetails = cloneDeep(this.state.shopDetails).details
+      let shopDetails = shop.details
 
-      let orderHistoryIndex = orderHistory.orders.findIndex(value => value.itemNo === val.itemNo)
+      let orderHistoryIndex = orderHistory.orders.findIndex(value => value.itemNo === val.itemNo && value.isHalfSelected === val.isHalfSelected)
 
-      if (val.portion === "half") {
+      if (val.isHalfSelected) {
         shopDetails[index].halfQuantity = id == "add" ? shopDetails[index].halfQuantity + 1 : shopDetails[index].halfQuantity - 1
       }
       else {
         shopDetails[index].quantity = id == "add" ? shopDetails[index].quantity + 1 : shopDetails[index].quantity - 1
       }
 
-      if (orderHistoryIndex === -1) {
-        orderHistory.orders.push(
-          {
-            itemNo: val.itemNo,
-            item: val.name,
-            [val.portion === "half" ? "halfQuantity" : "quantity"]: val.portion === "half" ? shopDetails[index].halfQuantity : shopDetails[index].quantity,
-            portion: val.portion,
-            price: val.portion == "half" ? val.halfPrice : val.fullPrice,
-          })
-      }
-      else if (val.portion === "half" && val.halfQuantity == 0) {
-        orderHistory.orders.push(
-          {
-            itemNo: val.itemNo,
-            item: val.name,
-            halfQuantity: shopDetails[index].halfQuantity,
-            portion: val.portion,
-            price: val.halfPrice,
-          }
-        )
-      }
-      else if (val.portion === "full" && val.quantity == 0) {
-        orderHistory.orders.push(
-          {
-            itemNo: val.itemNo,
-            item: val.name,
-            quantity: shopDetails[index].quantity,
-            portion: val.portion,
-            price: val.fullPrice,
-          }
-        )
+      if (val.isHalfSelected) {
+        if (val.halfQuantity == 0) {
+          orderHistory.orders.push(
+            {
+              itemNo: val.itemNo,
+              item: val.name,
+              halfQuantity: shopDetails[index].halfQuantity,
+              price: val.halfPrice,
+              isHalfSelected: true
+            })
+        }
+        else {
+          orderHistory.orders[orderHistoryIndex].itemNo = val.itemNo
+          orderHistory.orders[orderHistoryIndex].item = val.name
+          orderHistory.orders[orderHistoryIndex].halfQuantity = shopDetails[index].halfQuantity
+          orderHistory.orders[orderHistoryIndex].price = val.halfPrice
+          orderHistory.orders[orderHistoryIndex].isHalfSelected = val.isHalfSelected
+        }
       }
       else {
-
-        orderHistory.orders = [
-          {
-            itemNo: shopDetails[index].itemNo,
-            item: shopDetails[index].name,
-            halfQuantity: shopDetails[index].halfQuantity,
-            portion: "half",
-            price: shopDetails[index].halfPrice
-          },
-          {
-            itemNo: shopDetails[index].itemNo,
-            item: shopDetails[index].name,
-            quantity: shopDetails[index].quantity,
-            portion: "full",
-            price: shopDetails[index].fullPrice
-          },
-        ]
-
-        // for (let i = 0; i < shopDetails[index].halfQuantity; i++) {
-
-        //   ob.push({
-        //     itemNo: val.itemNo,
-        //     item: val.name,
-        //     halfQuantity: shopDetails[index].halfQuantity,
-        //     portion: val.portion,
-        //     price: val.halfPrice
-        //   })
-
-        // }
-
-        // for (let i = 0; i < shopDetails[index].quantity; i++) {
-
-        //   ob.push({
-        //     itemNo: val.itemNo,
-        //     item: val.name,
-        //     quantity: shopDetails[index].quantity,
-        //     portion: val.portion,
-        //     price: val.halfPrice
-        //   })
-
-        // }
-
-        // console.log('ob: ', ob);
-
-        // console.log('orderHistory.orders: ', orderHistory.orders);
-        // let ob = orderHistory.orders
-        // ob.push({
-        //   itemNo: val.itemNo,
-        //   item: val.name,
-        //   [val.portion == "half" ? "halfQuantity" : "quantity"]: val.portion = "half" ? shopDetails[index].halfQuantity : shopDetails[index].quantity,
-        //   portion: val.portion,
-        //   price: val.portion == "half" ? val.halfPrice : val.fullPrice
-        // })
-
-
-        // orderHistory.orders = ob
-        // if (value1.portion == "half") {
-        //   orderHistory.orders[orderHistoryIndex].itemNo = val.itemNo
-        //   orderHistory.orders[orderHistoryIndex].item = val.name
-        //   orderHistory.orders[orderHistoryIndex].halfQuantity = shopDetails[index].halfQuantity
-        //   orderHistory.orders[orderHistoryIndex].portion = val.portion
-        //   orderHistory.orders[orderHistoryIndex].price = val.halfPrice
-        // }
-        // else {
-        //   orderHistory.orders[orderHistoryIndex].itemNo = val.itemNo
-        //   orderHistory.orders[orderHistoryIndex].item = val.name
-        //   orderHistory.orders[orderHistoryIndex].quantity = shopDetails[index].quantity
-        //   orderHistory.orders[orderHistoryIndex].portion = val.portion
-        //   orderHistory.orders[orderHistoryIndex].price = val.fullPrice
-        // }
+        if (val.quantity == 0) {
+          orderHistory.orders.push(
+            {
+              itemNo: val.itemNo,
+              item: val.name,
+              quantity: shopDetails[index].quantity,
+              price: val.fullPrice,
+              isHalfSelected: false
+            })
+        }
+        else {
+          orderHistory.orders[orderHistoryIndex].itemNo = val.itemNo
+          orderHistory.orders[orderHistoryIndex].item = val.name
+          orderHistory.orders[orderHistoryIndex].quantity = shopDetails[index].quantity
+          orderHistory.orders[orderHistoryIndex].price = val.fullPrice
+          orderHistory.orders[orderHistoryIndex].isHalfSelected = val.isHalfSelected
+        }
       }
 
       shop.details = shopDetails
 
       orderHistory.orders.map((val, index) => {
-        if (val.quantity == 0) {
-          orderHistory.orders.splice(index, 1)
-        }
-        else if (val.halfQuantity == 0) {
+        if (val.quantity == 0 || val.halfQuantity == 0) {
           orderHistory.orders.splice(index, 1)
         }
         return val
@@ -213,6 +145,7 @@ export class ShopDetails extends React.PureComponent {
       }
 
       sessionStorage.setItem('orderHistory', JSON.stringify(orderHistory))
+      sessionStorage.setItem('shopDetails', JSON.stringify(shop))
       this.setState({
         shopDetails: shop,
         orderHistory
@@ -232,18 +165,20 @@ export class ShopDetails extends React.PureComponent {
     axios.get(url)
       .then((res) => {
         let shopDetails = res.data;
-        shopDetails.details.map(val => { val.quantity = 0; val.portion = "full"; val.halfQuantity = 0 })
+        shopDetails.details.map(val => { val.quantity = 0; val.isHalfSelected = false; val.halfQuantity = 0 })
         if (orderHistory.orders.length > 0) {
           shopDetails.details.map(val => {
             orderHistory.orders.map(value => {
               if (val.itemNo === value.itemNo) {
                 val.quantity = value.quantity ? value.quantity : 0
                 val.halfQuantity = value.halfQuantity ? value.halfQuantity : 0
-                val.portion = value.portion
+                val.isHalfSelected = value.isHalfSelected
               }
             })
           })
         }
+        shopDetails = JSON.parse(sessionStorage.getItem("shopDetails")) ? JSON.parse(sessionStorage.getItem("shopDetails")) : cloneDeep(shopDetails);
+        sessionStorage.setItem('shopDetails', JSON.stringify(shopDetails))
         this.setState({ shopDetails, isLoader: false });
       })
       .catch((error) => {
@@ -259,10 +194,12 @@ export class ShopDetails extends React.PureComponent {
     let orderHistory = JSON.parse(sessionStorage.getItem("orderHistory")) ? JSON.parse(sessionStorage.getItem("orderHistory")) : cloneDeep(this.state.orderHistory);
     let total = 0
     orderHistory.orders.map(val => {
-      val.portion === "half" ?
-        total += val.price * val.halfQuantity
-        :
-        total += val.price * val.quantity
+      if (val.isHalfSelected) {
+        total += parseInt(val.price) * parseInt(val.halfQuantity)
+      }
+      else {
+        total += parseInt(val.price) * parseInt(val.quantity)
+      }
     })
     orderHistory.total = total
     sessionStorage.setItem('orderHistory', JSON.stringify(orderHistory))
@@ -295,10 +232,42 @@ export class ShopDetails extends React.PureComponent {
   halfPriceHandler = (event) => {
     let checked = event.target.checked
     let id = event.target.id
-    let shopDetails = cloneDeep(this.state.shopDetails)
-    shopDetails.details[id].portion = checked ? "half" : "full"
+    let shopDetails = JSON.parse(sessionStorage.getItem("shopDetails")) ? JSON.parse(sessionStorage.getItem("shopDetails")) : cloneDeep(this.state.shopDetails);
 
+    shopDetails.details[id].isHalfSelected = checked
+
+    sessionStorage.setItem('shopDetails', JSON.stringify(shopDetails))
     this.setState({
+      shopDetails
+    })
+  }
+
+  deleteMultipleItemHandler = (index) => {
+    let orderHistory = JSON.parse(sessionStorage.getItem("orderHistory")) ? JSON.parse(sessionStorage.getItem("orderHistory")) : cloneDeep(this.state.orderHistory);
+    let shopDetails = JSON.parse(sessionStorage.getItem("shopDetails")) ? JSON.parse(sessionStorage.getItem("shopDetails")) : cloneDeep(this.state.shopDetails);
+
+    orderHistory.orders[index].isHalfSelected ? orderHistory.orders[index].halfQuantity = orderHistory.orders[index].halfQuantity - 1 : orderHistory.orders[index].quantity = orderHistory.orders[index].quantity - 1
+
+    let shopDetailsIndex = shopDetails.details.findIndex(val => val.itemNo == orderHistory.orders[index].itemNo)
+
+    if (shopDetails.details[shopDetailsIndex].isHalfSelected === orderHistory.orders[index].isHalfSelected) {
+      shopDetails.details[shopDetailsIndex].halfQuantity = shopDetails.details[shopDetailsIndex].halfQuantity - 1
+    }
+    else {
+      shopDetails.details[shopDetailsIndex].quantity = shopDetails.details[shopDetailsIndex].quantity - 1
+    }
+
+    orderHistory.orders.map((val, index) => {
+      if (val.quantity == 0 || val.halfQuantity == 0) {
+        orderHistory.orders.splice(index, 1)
+      }
+      return val
+    })
+
+    sessionStorage.setItem('orderHistory', JSON.stringify(orderHistory))
+    sessionStorage.setItem('shopDetails', JSON.stringify(shopDetails))
+    this.setState({
+      orderHistory,
       shopDetails
     })
   }
@@ -332,11 +301,14 @@ export class ShopDetails extends React.PureComponent {
                     return <div key={index} className="menu-items">
                       <img className="menu-items-image img-responsive" src={val.image} />
                       <p className="menu-items-name"> {val.name}</p>
-                      <div><span className="menu-items-price"> {val.fullPrice}</span>{val.halfAvailable && <React.Fragment><span className="menu-items-half-text">Half -</span><span className="menu-items-half-price"> {val.halfPrice}</span><span className="menu-items-half-text">Check mark for Half</span><span><input type="checkbox" id={index} checked={val.portion === "half"} className="menu-items-half-price-checkbox" onChange={this.halfPriceHandler} /></span></React.Fragment>}</div>
-                      {val.quantity > 0 || val.halfQuantity > 0 ?
+                      <div><span className="menu-items-price"> {val.fullPrice}</span>{val.halfAvailable && <React.Fragment><span className="menu-items-half-text">Half -</span><span className="menu-items-half-price"> {val.halfPrice}</span><span className="menu-items-half-text">Check mark for Half</span><span><input type="checkbox" id={index} checked={val.isHalfSelected} className="menu-items-half-price-checkbox" onChange={this.halfPriceHandler} /></span></React.Fragment>}</div>
+                      {(val.quantity + val.halfQuantity) > 0 ?
                         <div className="menu-items-count-button">
-                          <span onClick={() => this.state.shopDetails.status ? this.itemsCountHandler(val, "sub", index) : ""} className="menu-items-count-left-button">-</span>
+
+                          <span onClick={() => this.state.shopDetails.status && !(this.state.orderHistory.orders.filter(value => value.itemNo === val.itemNo) && this.state.orderHistory.orders.filter(value => value.itemNo === val.itemNo).length > 1) ? this.itemsCountHandler(val, "sub", index) : ""} className={this.state.shopDetails.status && !(this.state.orderHistory.orders.filter(value => value.itemNo === val.itemNo) && this.state.orderHistory.orders.filter(value => value.itemNo === val.itemNo).length > 1) ? "menu-items-count-left-button" : "menu-items-count-left-button disabled"}>-</span>
+
                           <span>{val.quantity + val.halfQuantity}</span>
+
                           <span onClick={() => this.state.shopDetails.status ? this.itemsCountHandler(val, "add", index) : ""} className="menu-items-count-right-button">+</span>
                         </div>
                         :
@@ -353,13 +325,13 @@ export class ShopDetails extends React.PureComponent {
                         <div className="order-details-heading">order Details</div>
                         <hr />
                         {this.state.orderHistory.orders.map((val, index) => {
+
                           return <div key={index} className="order-details-items">
-                            {val.portion === "half" ?
-                              <React.Fragment><span>{val.item} X {val.halfQuantity}</span> <span className="float-right">{val.price * val.halfQuantity}</span></React.Fragment>
+                            {val.isHalfSelected ?
+                              <React.Fragment>{this.state.orderHistory.orders.filter(value => value.itemNo === val.itemNo) && this.state.orderHistory.orders.filter(value => value.itemNo === val.itemNo).length > 1 && <span onClick={() => this.deleteMultipleItemHandler(index)} className="shop-details-minus-btn"><i className="fa fa-minus-square-o" aria-hidden="true"></i></span>}<span>{val.item} X {val.halfQuantity}</span> <span className="float-right">{val.price * val.halfQuantity}</span><span>(Half)</span></React.Fragment>
                               :
-                              <React.Fragment><span>{val.item} X {val.quantity}</span> <span className="float-right">{val.price * val.quantity}</span></React.Fragment>
+                              <React.Fragment>{this.state.orderHistory.orders.filter(value => value.itemNo === val.itemNo) && this.state.orderHistory.orders.filter(value => value.itemNo === val.itemNo).length > 1 && <span onClick={() => this.deleteMultipleItemHandler(index)} className="shop-details-minus-btn"><i className="fa fa-minus-square-o" aria-hidden="true"></i></span>}<span>{val.item} X {val.quantity}</span> <span className="float-right">{val.price * val.quantity}</span></React.Fragment>
                             }
-                            <span>{val.portion == "half" && "(Half)"}</span>
                           </div>
                         })}
                         <hr />
@@ -378,29 +350,31 @@ export class ShopDetails extends React.PureComponent {
               </React.Fragment>
           }
         </div>
-        {this.state.confirmModal && <div className="modal display-block">
-          <div className="modal-dialog" role="document">
-            <div className="modal-content">
-              <div className="modal-header">
-                <h5 className="modal-title confirm-modal-heading" id="exampleModalLabel">Items already in cart</h5>
-                <button type="button" className="close confirm-modal-close" onClick={this.modalCloseHandler}>
-                  <i className="fa fa-times-circle" aria-hidden="true"></i>
-                </button>
+        {
+          this.state.confirmModal && <div className="modal display-block">
+            <div className="modal-dialog" role="document">
+              <div className="modal-content">
+                <div className="modal-header">
+                  <h5 className="modal-title confirm-modal-heading" id="exampleModalLabel">Items already in cart</h5>
+                  <button type="button" className="close confirm-modal-close" onClick={this.modalCloseHandler}>
+                    <i className="fa fa-times-circle" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <div className="modal-body confirm-modal-body">
+                  Your cart contains items from other restaurant.
               </div>
-              <div className="modal-body confirm-modal-body">
-                Your cart contains items from other restaurant.
+                <div className="modal-body confirm-modal-body-2">
+                  Would you like to reset your cart for adding items from this restaurant?.
               </div>
-              <div className="modal-body confirm-modal-body-2">
-                Would you like to reset your cart for adding items from this restaurant?.
-              </div>
-              <div className="modal-footer">
-                <button type="button" className="btn btn-secondary confirm-modal-no" onClick={this.modalCloseHandler}>No</button>
-                <button type="button" className="btn btn-primary confirm-modal-yes" onClick={this.orderReplacedHandler}>Yes</button>
+                <div className="modal-footer">
+                  <button type="button" className="btn btn-secondary confirm-modal-no" onClick={this.modalCloseHandler}>No</button>
+                  <button type="button" className="btn btn-primary confirm-modal-yes" onClick={this.orderReplacedHandler}>Yes</button>
+                </div>
               </div>
             </div>
           </div>
-        </div>}
-      </div>
+        }
+      </div >
     );
   }
 }
