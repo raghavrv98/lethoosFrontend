@@ -22,6 +22,7 @@ import Header from '../../components/Header/Loadable'
 import axios from 'axios';
 import { cloneDeep } from 'lodash';
 import { errorHandler } from "../../utils/customUtils";
+import MessageModal from '../../components/MessageModal';
 
 /* eslint-disable react/prefer-stateless-function */
 export class ProfilePage extends React.PureComponent {
@@ -59,6 +60,14 @@ export class ProfilePage extends React.PureComponent {
       customerDetails,
       payload
     })
+  }
+
+  modalCloseHandler = () => {
+    setTimeout(() => {
+      this.setState({
+        isMessageModal: false
+      })
+    }, 1000);
   }
 
   inputChangeHandler = event => {
@@ -99,15 +108,20 @@ export class ProfilePage extends React.PureComponent {
     axios.patch(url, payload)
       .then((res) => {
         this.setState({
-          isLoader: false
-        })
+          isLoader: false,
+          message: "Profile Updated Successfully",
+          isMessageModal: true,
+          type: "success"
+        }, () => this.modalCloseHandler())
       })
       .catch((error) => {
-        let message = errorHandler(error);
+        // let message = errorHandler(error);
         this.setState({
-          message,
+          isLoader: false,
+          message: "Some Error Occured",
+          isMessageModal: true,
           type: "failure"
-        }, () => setTimeout(this.modalTime, 1500))
+        }, () => this.modalCloseHandler())
       });
   }
 
@@ -178,6 +192,11 @@ export class ProfilePage extends React.PureComponent {
             </form>
           }
         </div>
+        {this.state.isMessageModal && <MessageModal
+          modalType={this.state.type}
+          message={this.state.message}
+          onClose={this.modalCloseHandler}
+        />}
       </div>
     );
   }

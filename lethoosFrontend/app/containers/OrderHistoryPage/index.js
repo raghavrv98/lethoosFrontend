@@ -62,12 +62,6 @@ export class OrderHistoryPage extends React.PureComponent {
     return (parseInt(totalBill) + parseInt(delivery)) - parseInt(discount)
   }
 
-  itemTotalHandler = (price, quantity) => {
-    let singleItemTotal = parseInt(price) * parseInt(quantity)
-    itemTotal = itemTotal + parseInt(price) * parseInt(quantity)
-    return singleItemTotal
-  }
-
   customerDetailsHandler = () => {
     let url = window.API_URL + `/customerLogin/${this.state.customerDetails._id}`;
     axios.get(url)
@@ -166,17 +160,20 @@ export class OrderHistoryPage extends React.PureComponent {
               <p className="order-history-modal-body-heading">Your Order</p>
               {this.state.modalDetailObject.orders.map((val, index) => {
                 return <div key={index}>
-                  <p className="order-history-modal-body-item-text">{val.item}</p>
                   <p className="order-history-modal-body-item-portion-text">{val.portion}</p>
-                  <p className="order-history-modal-body-quantity-text">{val.quantity} X {val.price}<span className="order-history-modal-body-item-cost-text">{this.itemTotalHandler(val.price, val.quantity)}</span></p>
+                  {val.isHalfSelected ?
+                    <React.Fragment><span className="order-history-modal-body-quantity-text">{val.item} X {val.halfQuantity}</span> <span className="order-history-modal-body-item-cost-text">{val.price * val.halfQuantity}</span><span>(Half)</span></React.Fragment>
+                    :
+                    <React.Fragment><span className="order-history-modal-body-quantity-text">{val.item} X {val.quantity}</span> <span className="order-history-modal-body-item-cost-text">{val.price * val.quantity}</span></React.Fragment>
+                  }
                 </div>
               })}
               <p className="order-history-box-text-heading">Other Specifications <span className="order-history-box-text"> <textarea className="text-area-order-history" value={this.state.modalDetailObject.otherSpecifications} rows="1" cols="15" readOnly /></span></p>
-              <p className="order-history-box-text-heading mr-t-45"> Item Total <span className="order-history-box-text"> {itemTotal}</span></p>
+              <p className="order-history-box-text-heading mr-t-45"> Item Total <span className="order-history-box-text"> {this.state.modalDetailObject.total}</span></p>
               <p className="order-history-box-text-heading">Coupon Code <span className="order-history-box-text"> {this.state.modalDetailObject.coupon.length > 0 ? this.state.modalDetailObject.coupon : "NA"}</span></p>
               <p className="order-history-box-text-heading">Total Discount <span className="order-history-box-text"> - {this.state.modalDetailObject.totalDiscount}</span></p>
               <p className="order-history-box-text-heading">Delivery Charge <span className="order-history-box-text"> + {this.state.modalDetailObject.area.slice(-2)}</span></p>
-              <p className="order-history-box-text-heading text-color">Grand Total <span className="order-history-box-text"> {this.grandTotalBill(itemTotal, this.state.modalDetailObject.area.slice(-2), this.state.modalDetailObject.totalDiscount)}</span></p>
+              <p className="order-history-box-text-heading text-color">Grand Total <span className="order-history-box-text"> {this.grandTotalBill(this.state.modalDetailObject.total, this.state.modalDetailObject.area.slice(-2), this.state.modalDetailObject.totalDiscount)}</span></p>
               <hr />
               <p className="order-history-box-text-heading">Order Number <span className="order-history-box-text"> {this.state.modalDetailObject.orderNumber}</span></p>
               <p className="order-history-box-text-heading">Payment <span className="order-history-box-text"> {this.state.modalDetailObject.paymentMethod}</span></p>

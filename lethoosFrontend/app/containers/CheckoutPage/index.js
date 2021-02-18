@@ -271,11 +271,19 @@ export class CheckoutPage extends React.PureComponent {
                     <p className="bill-info-heading">{this.state.payload.orderHistory.shopName}</p>
                     <p className="bill-info-heading">{this.state.payload.orderHistory.shopAddress}</p>
                     <hr />
+
                     {this.state.payload.orderHistory.orders.map((val, index) => {
                       return <div key={index} className="bill-info-text">
-                        {val.item} X {val.quantity} <span className="float-right">{val.price * val.quantity}</span>
+                        {/* {val.item} X {val.quantity} <span className="float-right">{val.price * val.quantity}</span> */}
+                        {val.isHalfSelected ?
+                          <React.Fragment><span>{val.item} X {val.halfQuantity}</span> <span className="float-right">{val.price * val.halfQuantity}</span><span>(Half)</span></React.Fragment>
+                          :
+                          <React.Fragment><span>{val.item} X {val.quantity}</span> <span className="float-right">{val.price * val.quantity}</span></React.Fragment>
+                        }
                       </div>
                     })}
+
+
                     <div className="bill-info-delivery-text"> Delivery Charges  <span className="float-right">+ {this.state.payload.orderHistory.area.slice(-2)}</span></div>
                     <div className="mr-t-25"><input value={this.state.payload.orderHistory.coupon} placeholder="Enter Code" id="coupon" onChange={this.couponInputChangeHandler} className="form-control input-lg checkout-apply-text" type="text" /><button onClick={() => this.state.payload.orderHistory.coupon.length > 0 ? this.checkCouponCode() : ""} className={`checkout-apply-btn ${this.state.payload.orderHistory.coupon.length > 0 ? "" : "checkout-apply-btn-disabled"}`} type="button">Apply</button></div>
                     <p className={this.state.codeCouponText === "Code applied" ? "checkout-code-applied" : "checkout-code-not-applied"}>{this.state.codeCouponText.length > 0 && this.state.codeCouponText}</p>

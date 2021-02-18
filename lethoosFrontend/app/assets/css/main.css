@@ -9,7 +9,7 @@ body {
 	margin-right: 15px;
 }
 
-.mr-r-20{
+.mr-r-20 {
 	margin-right: 20px;
 }
 
@@ -31,6 +31,10 @@ body {
 
 .mr-t-40 {
 	margin-top: 40px;
+}
+
+.mr-l-20 {
+	margin-left: -20px;
 }
 
 .sticky-top {
@@ -76,6 +80,16 @@ body {
 
 .color-gray {
 	color: gray;
+}
+
+.msg-modal-success{
+	background-color: #D4EDDA;
+	color: #2C693A;
+}
+
+.msg-modal-failure{
+	background-color: #F8D7DA;
+	color: #8B3E46;
 }
 
 .shop-closed-color {
@@ -266,11 +280,11 @@ hr {
 	margin-bottom: 20px;
 }
 
-.disabled{
+.disabled {
 	cursor: not-allowed !important;
 }
 
-.shop-details-minus-btn{
+.shop-details-minus-btn {
 	margin-right: 20px;
 	cursor: pointer;
 }
@@ -442,7 +456,7 @@ hr {
 	}
 	.menu-items {
 		margin-bottom: 10px;
-		height: 60px;
+		height: 75px;
 		background-color: orange;
 		margin-bottom: 10px;
 		padding: 5px;
@@ -478,7 +492,7 @@ hr {
 	.menu-items-add-button, .menu-items-count-button {
 		font-size: 20px;
 		right: 5%;
-		top: 20%;
+		top: 24%;
 		background: white;
 		border-radius: 8px;
 		padding: 5px;
@@ -510,7 +524,7 @@ hr {
 	.menu-items-image {
 		top: 10px;
 		position: absolute;
-		height: 40px;
+		height: 55px;
 		margin-left: 10px;
 		border-radius: 7px;
 		width: 13%;
@@ -882,7 +896,6 @@ hr {
 		font-size: 15px;
 	}
 	.order-history-modal-body-item-cost-text {
-		margin-bottom: 10px;
 		font-size: 15px;
 		float: right;
 	}
@@ -957,6 +970,28 @@ hr {
 		width: 67px;
 		font-size: 20px;
 		float: right;
+	}
+	.mob-view-checkbox {
+		position: absolute;
+		bottom: 5px;
+		left: 14%;
+	}
+	.mob-left-10 {
+		margin-left: 10px !important;
+	}
+	.msg-modal-box-position {
+		position: absolute;
+		top: 15%;
+		right: 2%;
+		height: 40px;
+		width: 358px;
+		font-size: 20px;
+		border-radius: 10px;
+		padding: 5px 20px;
+	}
+	.msg-modal-times-position{
+		float: right;
+		cursor: pointer;
 	}
 }
 
@@ -1145,7 +1180,7 @@ hr {
 		position: absolute;
 	}
 	.menu-items-count-button {
-		width: 100px;
+		width: 78px;
 		cursor: context-menu;
 	}
 	.menu-items-count-left-button {
@@ -1511,7 +1546,6 @@ hr {
 		font-size: 22px;
 	}
 	.order-history-modal-body-item-cost-text {
-		margin-bottom: 10px;
 		font-size: 22px;
 		float: right;
 	}
@@ -1604,5 +1638,19 @@ hr {
 	}
 	.box {
 		height: 400px;
+	}
+	.msg-modal-box-position {
+		position: absolute;
+		top: 14%;
+		right: 2%;
+		height: 50px;
+		width: 400px;
+		font-size: 26px;
+		border-radius: 10px;
+		padding: 5px 20px;
+	}
+	.msg-modal-times-position{
+		float: right;
+		cursor: pointer;
 	}
 }

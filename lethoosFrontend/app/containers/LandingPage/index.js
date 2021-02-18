@@ -19,7 +19,6 @@ import reducer from './reducer';
 import saga from './saga';
 import messages from './messages';
 import axios from 'axios';
-import MessageModal from '../../components/MessageModal/Loadable'
 import Header from '../../components/Header/Loadable'
 import { errorHandler } from "../../utils/customUtils";
 
@@ -44,14 +43,13 @@ export class LandingPage extends React.PureComponent {
       .then((res) => {
         const shops = res.data;
         shops.sort((a, b) => (a.priority > b.priority) ? 1 : (a.priority === b.priority) ? ((a.name > b.name) ? 1 : -1) : -1)
-        console.log('shops: ', shops);
         this.setState({ shops, isLoader: false });
       })
       .catch((error) => {
         let message = errorHandler(error);
         this.setState({
           message,
-          type: "failure"
+          modalType: "failure"
         }, () => setTimeout(this.modalTime, 1500))
       });
   };
@@ -104,13 +102,6 @@ export class LandingPage extends React.PureComponent {
             </React.Fragment>
           }
         </div>
-        <MessageModal
-          showHideClassName={this.state.isOpenClassName}
-          modalType={this.state.type}
-          message={this.state.message}
-          onClose={this.modalCloseHandler}
-        />
-
       </div >
     );
   }
