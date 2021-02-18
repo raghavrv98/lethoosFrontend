@@ -22,6 +22,7 @@ import Header from '../../components/Header/Loadable'
 import axios from 'axios';
 import { cloneDeep } from 'lodash';
 import { errorHandler } from "../../utils/customUtils";
+import MessageModal from '../../components/MessageModal';
 
 /* eslint-disable react/prefer-stateless-function */
 export class ShopDetails extends React.PureComponent {
@@ -159,6 +160,15 @@ export class ShopDetails extends React.PureComponent {
     }
   }
 
+  modalCloseHandler = () => {
+    console.log("hello");
+    setTimeout(() => {
+      this.setState({
+        isMessageModal: false
+      })
+    }, 1000);
+  }
+
   getShopDetails = () => {
     let url = window.API_URL + `/shop/${this.props.match.params.id}`;
     let orderHistory = JSON.parse(sessionStorage.getItem("orderHistory")) ? JSON.parse(sessionStorage.getItem("orderHistory")) : cloneDeep(this.state.orderHistory);
@@ -180,11 +190,12 @@ export class ShopDetails extends React.PureComponent {
         this.setState({ shopDetails, isLoader: false });
       })
       .catch((error) => {
-        let message = errorHandler(error);
         this.setState({
-          message,
+          isLoader: false,
+          message: "Some Error Occured",
+          isMessageModal: true,
           type: "failure"
-        }, () => setTimeout(this.modalTime, 1500))
+        })
       });
   };
 
@@ -379,6 +390,11 @@ export class ShopDetails extends React.PureComponent {
             </div>
           </div>
         }
+        {this.state.isMessageModal && <MessageModal
+          modalType={this.state.type}
+          message={this.state.message}
+          onClose={this.modalCloseHandler}
+        />}
       </div >
     );
   }

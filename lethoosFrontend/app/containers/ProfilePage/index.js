@@ -121,7 +121,7 @@ export class ProfilePage extends React.PureComponent {
           message: "Some Error Occured",
           isMessageModal: true,
           type: "failure"
-        }, () => this.modalCloseHandler())
+        })
       });
   }
 

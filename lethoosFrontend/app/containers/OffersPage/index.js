@@ -22,6 +22,7 @@ import moment from 'moment';
 import Header from '../../components/Header/Loadable'
 import axios from 'axios'
 import { errorHandler } from "../../utils/customUtils";
+import MessageModal from '../../components/MessageModal';
 
 /* eslint-disable react/prefer-stateless-function */
 export class OffersPage extends React.PureComponent {
@@ -49,18 +50,23 @@ export class OffersPage extends React.PureComponent {
           customerDetails,
           isLoader: false
         })
-
-        this.setState({
-          confirmModal: false
-        })
       })
       .catch((error) => {
-        let message = errorHandler(error);
         this.setState({
-          message,
+          isLoader: false,
+          message: "Some Error Occured",
+          isMessageModal: true,
           type: "failure"
-        }, () => setTimeout(this.modalTime, 1500))
+        })
       });
+  }
+
+  modalCloseHandler = () => {
+    setTimeout(() => {
+      this.setState({
+        isMessageModal: false
+      })
+    }, 1000);
   }
 
   copyCoupon = (couponId, index) => {
@@ -119,7 +125,11 @@ export class OffersPage extends React.PureComponent {
           }
 
         </div>
-
+        {this.state.isMessageModal && <MessageModal
+          modalType={this.state.type}
+          message={this.state.message}
+          onClose={this.modalCloseHandler}
+        />}
       </div >
     );
   }

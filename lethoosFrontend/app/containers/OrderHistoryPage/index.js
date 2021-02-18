@@ -22,6 +22,7 @@ import axios from 'axios';
 import messages from './messages';
 import moment from 'moment';
 import { errorHandler } from "../../utils/customUtils";
+import MessageModal from '../../components/MessageModal';
 
 var itemTotal = 0
 /* eslint-disable react/prefer-stateless-function */
@@ -31,7 +32,8 @@ export class OrderHistoryPage extends React.PureComponent {
     customerDetails: {},
     couponIdCopy: "",
     detailsModal: false,
-    isLoader: true
+    isLoader: true,
+    type: "success"
   }
 
   componentWillMount() {
@@ -52,12 +54,6 @@ export class OrderHistoryPage extends React.PureComponent {
     })
   }
 
-  modalCloseHandler = () => {
-    this.setState({
-      detailsModal: false
-    })
-  }
-
   grandTotalBill = (totalBill, delivery, discount) => {
     return (parseInt(totalBill) + parseInt(delivery)) - parseInt(discount)
   }
@@ -74,12 +70,21 @@ export class OrderHistoryPage extends React.PureComponent {
         })
       })
       .catch((error) => {
-        let message = errorHandler(error);
         this.setState({
-          message,
+          isLoader: false,
+          message: "Some Error Occured",
+          isMessageModal: true,
           type: "failure"
-        }, () => setTimeout(this.modalTime, 1500))
+        })
       });
+  }
+
+  modalCloseHandler = () => {
+    setTimeout(() => {
+      this.setState({
+        isMessageModal: false
+      })
+    }, 1000);
   }
 
   sameMobileNumberCheckHandler = (mobileNumber, alternateMobileNumber) => {
@@ -106,7 +111,7 @@ export class OrderHistoryPage extends React.PureComponent {
           {this.state.isLoader ?
             <div className="lds-dual-ring"></div>
             :
-            this.state.customerDetails.orderHistory.length > 0 ?
+            this.state.customerDetails.orderHistory.length > 0 && this.state.type === "success" ?
               <React.Fragment>
                 {this.state.customerDetails.orderHistory.map((val, index) =>
                   <div key={index} className="col-md-3 no-padding">
@@ -183,7 +188,11 @@ export class OrderHistoryPage extends React.PureComponent {
             </div>
           </div>
         </div>}
-
+        {this.state.isMessageModal && <MessageModal
+          modalType={this.state.type}
+          message={this.state.message}
+          onClose={this.modalCloseHandler}
+        />}
       </div >
     );
   }

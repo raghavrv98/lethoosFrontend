@@ -21,6 +21,7 @@ import messages from './messages';
 import axios from 'axios';
 import Header from '../../components/Header/Loadable'
 import { errorHandler } from "../../utils/customUtils";
+import MessageModal from '../../components/MessageModal';
 
 /* eslint-disable react/prefer-stateless-function */
 export class LandingPage extends React.PureComponent {
@@ -46,19 +47,21 @@ export class LandingPage extends React.PureComponent {
         this.setState({ shops, isLoader: false });
       })
       .catch((error) => {
-        let message = errorHandler(error);
         this.setState({
-          message,
-          modalType: "failure"
-        }, () => setTimeout(this.modalTime, 1500))
+          isLoader: false,
+          message: "Some Error Occured",
+          isMessageModal: true,
+          type: "failure"
+        })
       });
-  };
+  }
 
-  modalTime = () => {
-    this.setState({
-      isOpenClassName: 'modal display-none container',
-      isLoader: false
-    })
+  modalCloseHandler = () => {
+    setTimeout(() => {
+      this.setState({
+        isMessageModal: false
+      })
+    }, 1000);
   }
 
   render() {
@@ -102,6 +105,11 @@ export class LandingPage extends React.PureComponent {
             </React.Fragment>
           }
         </div>
+        {this.state.isMessageModal && <MessageModal
+          modalType={this.state.type}
+          message={this.state.message}
+          onClose={this.modalCloseHandler}
+        />}
       </div >
     );
   }
