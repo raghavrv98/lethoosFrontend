@@ -96,6 +96,12 @@ export class OrderHistoryPage extends React.PureComponent {
     }
   }
 
+  detailsModalCloseHandler = () => {
+    this.setState({
+      detailsModal: false
+    })
+  }
+
   render() {
     return (
       <div>
@@ -147,7 +153,7 @@ export class OrderHistoryPage extends React.PureComponent {
             <div className="modal-content order-history-modal">
               <div className="modal-header">
                 <h5 className="modal-title confirm-modal-heading" id="exampleModalLabel">Order Details</h5>
-                <button type="button" className="close confirm-modal-close" onClick={this.modalCloseHandler}>
+                <button type="button" className="close confirm-modal-close" onClick={this.detailsModalCloseHandler}>
                   <i className="fa fa-times-circle" aria-hidden="true"></i>
                 </button>
               </div>

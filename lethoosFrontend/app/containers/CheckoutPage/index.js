@@ -22,6 +22,7 @@ import Header from '../../components/Header/Loadable'
 import axios from 'axios';
 import { cloneDeep } from 'lodash';
 import { errorHandler } from "../../utils/customUtils";
+import moment from 'moment';
 
 /* eslint-disable react/prefer-stateless-function */
 export class CheckoutPage extends React.PureComponent {
@@ -155,15 +156,7 @@ export class CheckoutPage extends React.PureComponent {
   }
 
   orderPlacedHandler = () => {
-    this.setState({
-      isLoader: true,
-      confirmModal: false
-    },
-      () => this.orderPlacedApiHandler()
-    )
-  }
 
-  orderPlacedApiHandler = () => {
     let customerDetails = JSON.parse(sessionStorage.getItem("customerDetails")) ? JSON.parse(sessionStorage.getItem("customerDetails")) : this.state.customerDetails;
     let payload = cloneDeep(this.state.payload)
     let orderHistoryCopy = payload.orderHistory
@@ -182,6 +175,70 @@ export class CheckoutPage extends React.PureComponent {
     payload.orderHistory = customerDetails.orderHistory
     payload.coupon = customerDetails.coupon
     payload.orderHistory.push(orderHistoryCopy)
+
+    let orders = []
+    orderHistoryCopy.orders.map(val => {
+      let orderDetails = ` ${val.item} ${val.isHalfSelected ? "(Half)" : ""} X ${val.isHalfSelected ? val.halfQuantity : val.quantity}`
+      orders.push(orderDetails)
+      return val
+    })
+
+    let mailDetails =
+      `
+    Shop Name = ${orderHistoryCopy.shopName}
+    Shop Address = ${orderHistoryCopy.shopAddress}
+    Shop Mobile Number = ${orderHistoryCopy.shopMobileNumber}
+    ----------------------------------------------------------
+    Customer Name = ${customerDetails.name}
+    Customer Address = ${orderHistoryCopy.orderAddress}
+    Customer Number = ${customerDetails.mobileNumber}
+    Customer Calling Number = ${orderHistoryCopy.orderAlternateMobileNumber}
+
+    Customer Payment Method = ${orderHistoryCopy.paymentMethod}
+    Customer Total Discount = ${orderHistoryCopy.totalDiscount}
+    
+    Customer Total Amount = ${orderHistoryCopy.total + parseInt(orderHistoryCopy.area.slice(-2) - orderHistoryCopy.totalDiscount)}
+    
+    Customer Area = ${orderHistoryCopy.area.slice(0, -2)}
+    Customer Order Number = ${orderHistoryCopy.orderNumber}
+    Customer Order Date = ${moment(orderHistoryCopy.orderDate).format("DD MMM HH:mm")}
+
+    ----------------------------------------------------------
+
+    Order Details
+    ${orders}
+    `
+
+    var formData = new FormData();
+    formData.append('mailDetails', mailDetails);
+
+    let url = window.API_URL + `/customerLogin/orderDetails/mail`;
+    axios.post(url, formData)
+      .then((res) => {
+        this.setState({
+          confirmModal: false
+        })
+        sessionStorage.removeItem("orderHistory");
+        this.props.history.push('/orderPlacedPage')
+      })
+      .catch((error) => {
+        let message = errorHandler(error);
+        this.setState({
+          message,
+          type: "failure"
+        }, () => setTimeout(this.modalTime, 1500))
+      });
+
+    this.setState({
+      isLoader: true,
+      confirmModal: false
+    },
+      () => this.orderPlacedApiHandler(payload)
+    )
+  }
+
+  orderPlacedApiHandler = (payload) => {
+    let customerDetails = JSON.parse(sessionStorage.getItem("customerDetails")) ? JSON.parse(sessionStorage.getItem("customerDetails")) : this.state.customerDetails;
 
     let url = window.API_URL + `/customerLogin/${customerDetails._id}`;
     axios.patch(url, payload)
@@ -274,7 +331,6 @@ export class CheckoutPage extends React.PureComponent {
 
                     {this.state.payload.orderHistory.orders.map((val, index) => {
                       return <div key={index} className="bill-info-text">
-                        {/* {val.item} X {val.quantity} <span className="float-right">{val.price * val.quantity}</span> */}
                         {val.isHalfSelected ?
                           <React.Fragment><span>{val.item} X {val.halfQuantity}</span> <span className="float-right">{val.price * val.halfQuantity}</span><span>(Half)</span></React.Fragment>
                           :
