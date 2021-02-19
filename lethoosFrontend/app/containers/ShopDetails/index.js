@@ -348,9 +348,9 @@ export class ShopDetails extends React.PureComponent {
 
                           return <div key={index} className="order-details-items">
                             {val.isHalfSelected ?
-                              <React.Fragment>{<span onClick={() => this.deleteMultipleItemHandler(index)} className="shop-details-minus-btn"><i className="fa fa-minus-square-o" aria-hidden="true"></i></span>}<span>{val.item} X {val.halfQuantity}</span> <span className="float-right">{val.price * val.halfQuantity}</span><span>(Half)</span></React.Fragment>
+                              <React.Fragment>{<span onClick={() => this.deleteMultipleItemHandler(index)} className="shop-details-minus-btn"><i className="fa fa-minus-square-o" aria-hidden="true"></i></span>}<span className="font-size-30">{val.item} X {val.halfQuantity}</span> <span className="float-right">{val.price * val.halfQuantity}</span><span>(Half)</span></React.Fragment>
                               :
-                              <React.Fragment>{<span onClick={() => this.deleteMultipleItemHandler(index)} className="shop-details-minus-btn"><i className="fa fa-minus-square-o" aria-hidden="true"></i></span>}<span>{val.item} X {val.quantity}</span> <span className="float-right">{val.price * val.quantity}</span></React.Fragment>
+                              <React.Fragment>{<span onClick={() => this.deleteMultipleItemHandler(index)} className="shop-details-minus-btn"><i className="fa fa-minus-square-o" aria-hidden="true"></i></span>}<span className="font-size-30">{val.item} X {val.quantity}</span> <span className="float-right">{val.price * val.quantity}</span></React.Fragment>
                             }
                           </div>
                         })}

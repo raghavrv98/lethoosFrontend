@@ -272,7 +272,7 @@ export class CheckoutPage extends React.PureComponent {
         {this.state.payload.orderHistory.orders && this.state.payload.orderHistory.orders.length > 0 ?
           <form onSubmit={this.orderConfirmHandler}>
             <div className="checkout-outer row">
-              <div className="col-md-7 customer-info">
+              <div className="col-md-6 customer-info">
                 {this.state.isLoader ?
                   <div className="lds-dual-ring"></div>
                   :
@@ -319,7 +319,7 @@ export class CheckoutPage extends React.PureComponent {
                   </React.Fragment>
                 }
               </div>
-              <div className="col-md-4 bill-info">
+              <div className="col-md-5 bill-info">
 
                 {this.state.isLoader ?
                   <div className="lds-dual-ring"></div>

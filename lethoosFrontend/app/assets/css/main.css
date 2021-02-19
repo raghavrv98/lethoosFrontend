@@ -82,12 +82,12 @@ body {
 	color: gray;
 }
 
-.msg-modal-success{
+.msg-modal-success {
 	background-color: #D4EDDA;
 	color: #2C693A;
 }
 
-.msg-modal-failure{
+.msg-modal-failure {
 	background-color: #F8D7DA;
 	color: #8B3E46;
 }
@@ -175,7 +175,7 @@ footer .text {
 
 .shop-header-name, .shop-header-address, .shop-header-time {
 	margin: 0px;
-	font-size: 70px;
+	font-size: 50px;
 	color: white;
 }
 
@@ -282,12 +282,6 @@ hr {
 
 .disabled {
 	cursor: not-allowed !important;
-}
-
-.shop-details-minus-btn {
-	margin-right: 15px;
-	font-size: 20px;
-	cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {
@@ -991,10 +985,17 @@ hr {
 		border-radius: 10px;
 		padding: 5px 20px;
 	}
-	.msg-modal-times-position{
+	.msg-modal-times-position {
 		float: right;
 		cursor: pointer;
 	}
+
+	.shop-details-minus-btn {
+		margin-right: 15px;
+		font-size: 20px;
+		cursor: pointer;
+	}
+
 }
 
 @media only screen and (min-width: 769px) {
@@ -1122,7 +1123,7 @@ hr {
 		font-size: 20px;
 	}
 	.shop-details-outer {
-		padding: 30px 200px;
+		padding: 30px 200px 100px;
 		margin: 0px!important;
 	}
 	.empty-cart-image {
@@ -1166,7 +1167,7 @@ hr {
 		cursor: pointer;
 		position: absolute;
 		top: 46%;
-		left: 40%;
+		left: 41%;
 	}
 	.menu-items-add-button, .menu-items-count-button {
 		font-size: 25px;
@@ -1651,8 +1652,18 @@ hr {
 		border-radius: 10px;
 		padding: 5px 20px;
 	}
-	.msg-modal-times-position{
+	.msg-modal-times-position {
 		float: right;
 		cursor: pointer;
 	}
+	.font-size-30 {
+		font-size: 30px !important;
+	}
+
+	.shop-details-minus-btn {
+		margin-right: 15px;
+		font-size: 30px;
+		cursor: pointer;
+	}
+	
 }
