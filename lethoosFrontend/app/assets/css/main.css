@@ -285,7 +285,8 @@ hr {
 }
 
 .shop-details-minus-btn {
-	margin-right: 20px;
+	margin-right: 15px;
+	font-size: 20px;
 	cursor: pointer;
 }
 
@@ -445,8 +446,8 @@ hr {
 	}
 	.shop-header {
 		width: 100%;
-		height: 150px;
-		padding: 20px
+		height: 110px;
+		padding: 10px
 	}
 	/* .empty-cart-image {
 		height: 358px;
@@ -542,8 +543,9 @@ hr {
 		color: white;
 	}
 	.order-details-items {
-		font-size: 15px;
+		font-size: 20px;
 		color: white;
+		margin-bottom: 10px;
 	}
 	.checkout-button {
 		background-color: white !important;

@@ -161,7 +161,6 @@ export class ShopDetails extends React.PureComponent {
   }
 
   modalCloseHandler = () => {
-    console.log("hello");
     setTimeout(() => {
       this.setState({
         isMessageModal: false
@@ -177,16 +176,21 @@ export class ShopDetails extends React.PureComponent {
         let shopDetails = res.data;
         shopDetails.details.map(val => { val.quantity = 0; val.isHalfSelected = false; val.halfQuantity = 0 })
         if (orderHistory.orders.length > 0 && orderHistory._id == this.props.match.params.id) {
+
           shopDetails.details.map(val => {
             orderHistory.orders.map(value => {
-              if (val.itemNo === value.itemNo) {
-                val.quantity = value.quantity ? value.quantity : 0
+              if (val.itemNo === value.itemNo && value.isHalfSelected) {
                 val.halfQuantity = value.halfQuantity ? value.halfQuantity : 0
               }
+              else if (val.itemNo === value.itemNo) {
+                val.quantity = value.quantity ? value.quantity : 0
+              }
+              return value
             })
+            return val
           })
+
         }
-        shopDetails = cloneDeep(shopDetails);
         this.setState({ shopDetails, isLoader: false });
       })
       .catch((error) => {
