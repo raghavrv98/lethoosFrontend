@@ -221,7 +221,7 @@ export class CheckoutPage extends React.PureComponent {
       isLoader: true,
       confirmModal: false
     },
-      // () => this.orderPlacedApiHandler(payload)
+      () => this.orderPlacedApiHandler(payload)
     )
   }
 
