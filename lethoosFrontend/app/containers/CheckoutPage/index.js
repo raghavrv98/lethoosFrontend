@@ -183,37 +183,25 @@ export class CheckoutPage extends React.PureComponent {
       return val
     })
 
-    let mailDetails =
-      `
-    Shop Name = ${orderHistoryCopy.shopName}
-    Shop Address = ${orderHistoryCopy.shopAddress}
-    Shop Mobile Number = ${orderHistoryCopy.shopMobileNumber}
-    ----------------------------------------------------------
-    Customer Name = ${customerDetails.name}
-    Customer Address = ${orderHistoryCopy.orderAddress}
-    Customer Number = ${customerDetails.mobileNumber}
-    Customer Calling Number = ${orderHistoryCopy.orderAlternateMobileNumber}
-
-    Customer Payment Method = ${orderHistoryCopy.paymentMethod}
-    Customer Total Discount = ${orderHistoryCopy.totalDiscount}
-    
-    Customer Total Amount = ${orderHistoryCopy.total + parseInt(orderHistoryCopy.area.slice(-2) - orderHistoryCopy.totalDiscount)}
-    
-    Customer Area = ${orderHistoryCopy.area.slice(0, -2)}
-    Customer Order Number = ${orderHistoryCopy.orderNumber}
-    Customer Order Date = ${moment(orderHistoryCopy.orderDate).format("DD MMM HH:mm")}
-
-    ----------------------------------------------------------
-
-    Order Details
-    ${orders}
-    `
-
-    var formData = new FormData();
-    formData.append('mailDetails', mailDetails);
+    let mailDetails = {
+      shopName: orderHistoryCopy.shopName,
+      shopAddress: orderHistoryCopy.shopAddress,
+      shopMobileNumber: orderHistoryCopy.shopMobileNumber,
+      customerName: customerDetails.name,
+      customerAddress: orderHistoryCopy.orderAddress,
+      customerNumber: customerDetails.mobileNumber,
+      customerCallingNumber: orderHistoryCopy.orderAlternateMobileNumber,
+      customerPaymentMethod: orderHistoryCopy.paymentMethod,
+      customerTotalDiscount: orderHistoryCopy.totalDiscount,
+      customerTotalAmount: orderHistoryCopy.total + parseInt(orderHistoryCopy.area.slice(-2) - orderHistoryCopy.totalDiscount),
+      customerArea: orderHistoryCopy.area.slice(0, -2),
+      customerOrderNumber: orderHistoryCopy.orderNumber,
+      customerOrderDate: moment(orderHistoryCopy.orderDate).format("DD MMM HH:mm"),
+      customerOrders: orders
+    }
 
     let url = window.API_URL + `/customerLogin/orderDetails/mail`;
-    axios.post(url, formData)
+    axios.post(url, mailDetails)
       .then((res) => {
         this.setState({
           confirmModal: false
@@ -233,7 +221,7 @@ export class CheckoutPage extends React.PureComponent {
       isLoader: true,
       confirmModal: false
     },
-      () => this.orderPlacedApiHandler(payload)
+      // () => this.orderPlacedApiHandler(payload)
     )
   }
 
