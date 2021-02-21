@@ -343,14 +343,19 @@ hr {
 	.shop-time {
 		font-size: 15px;
 	}
+
+	.shop-time-heading{
+		font-size: 15px;
+		font-weight: 600;
+	}
+
 	.shop-address {
-		color: grey;
 		font-size: 15px;
 	}
 	.shop-heading {
 		font-size: 25px;
 		margin-top: 20px;
-		font-weight: 400;
+		font-weight: 600;
 	}
 	.loginBanner {
 		width: 50%;
@@ -956,24 +961,16 @@ hr {
 		left: 50%;
 		opacity: 0.5;
 	}
-	.shop-closed-tag, .shopDetails-closed-tag {
-		height: 40px;
-		width: 67px;
+	.shopDetails-closed-tag {
 		background-color: #000;
 		color: #fff;
 		font-size: 20px;
 		border-radius: 15px;
 		padding: 5px;
 		float: right;
-	}
-	.shop-closed-tag {
-		margin-top: -80px;
-	}
-	.shopDetails-closed-tag {
 		height: 37px;
 		width: 67px;
-		font-size: 20px;
-		float: right;
+		margin-top: -89px;
 	}
 	.mob-view-checkbox {
 		position: absolute;
@@ -1052,17 +1049,21 @@ hr {
 		border-radius: 10px;
 	}
 	.shop-address {
-		color: grey;
 		font-size: 17px;
 	}
 	.shop-heading {
 		font-size: 25px;
 		margin-top: 20px;
-		font-weight: 400;
+		font-weight: 600;
 	}
 	.shop-time {
 		font-size: 20px;
 	}
+	.shop-time-heading{
+		font-size: 20px;
+		font-weight: 600;
+	}
+
 	.loginBanner {
 		width: 50%;
 		position: absolute;
@@ -1653,28 +1654,19 @@ hr {
 		left: 50%;
 		opacity: 0.5;
 	}
-	.shop-closed-tag, .shopDetails-closed-tag {
-		height: 40px;
-		width: 67px;
+	.shopDetails-closed-tag {
 		background-color: #000;
 		color: #fff;
-		font-size: 20px;
 		border-radius: 15px;
 		padding: 5px;
 		margin-top: -73px;
 		margin-left: 400px;
-	}
-	.shop-closed-tag {
-		margin-top: -80px;
-		margin-left: 225px;
-	}
-	.shopDetails-closed-tag {
 		height: 50px;
 		width: 100px;
 		font-size: 30px;
 	}
 	.box {
-		height: 400px;
+		height: 500px;
 	}
 	.msg-modal-box-position {
 		position: absolute;

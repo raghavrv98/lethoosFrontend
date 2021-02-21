@@ -43,7 +43,7 @@ export class LandingPage extends React.PureComponent {
     axios.get(url)
       .then((res) => {
         const shops = res.data;
-        shops.sort((a, b) => (a.priority > b.priority) ? 1 : (a.priority === b.priority) ? ((a.name > b.name) ? 1 : -1) : -1)
+        shops.sort((a, b) => (a.priority - b.priority))
         this.setState({ shops, isLoader: false });
       })
       .catch((error) => {
@@ -88,9 +88,10 @@ export class LandingPage extends React.PureComponent {
                       <div className={val.status ? "box" : "box shop-closed-color"}>
                         <img className="shop-image img-responsive" src={val.image} />
                         <p className="shop-heading">{val.name}</p>
-                        <p className="shop-time">{val.time}</p>
-                        <p className="shop-address">{val.address}</p>
+                        <p className="shop-time"><span className="shop-time-heading">Timing :</span> {val.time}</p>
+                        <p className="shop-address"><span className="shop-time-heading">Address :</span> {val.address}</p>
                         {!val.status && <div className="shop-closed-tag">Closed</div>}
+                        <p className="shop-address"><span className="shop-time-heading">Description :</span> {val.description}</p>
                       </div>
                     </div>
                   })

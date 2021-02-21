@@ -306,7 +306,7 @@ export class ShopDetails extends React.PureComponent {
           <p className="shop-header-name">{this.state.shopDetails.name}</p>
           <p className="shop-header-address mr-t-25">{this.state.shopDetails.address}</p>
           <p className="shop-header-time">{this.state.shopDetails.time}</p>
-          {!this.state.shopDetails.status && !this.state.isLoader && <div className="shopDetails-closed-tag">Closed</div>}
+          {!this.state.shopDetails.status && !this.state.isLoader && this.state.type != 'failure' && <div className="shopDetails-closed-tag">Closed</div>}
           <img className="shop-header-image img-responsive" src={this.state.shopDetails.image} />
         </div>
 
