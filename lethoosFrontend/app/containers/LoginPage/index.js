@@ -23,6 +23,8 @@ import axios from 'axios';
 import { errorHandler } from "../../utils/customUtils";
 import MessageModal from '../../components/MessageModal';
 
+import firebase from './../../firebase'
+
 /* eslint-disable react/prefer-stateless-function */
 export class LoginPage extends React.PureComponent {
 
@@ -46,20 +48,6 @@ export class LoginPage extends React.PureComponent {
       isUserExist: false,
       isMessageModal: false
     })
-  }
-
-  onSubmitHandler = event => {
-    let id = event.target.id
-    let payload = cloneDeep(this.state.payload)
-    payload.name = payload.name.trim()
-    payload.mobileNumber = payload.mobileNumber.trim()
-    payload.password = payload.password.trim()
-
-    this.setState({
-      isLoader: true,
-      isDetailsIncorrect: false,
-      isUserExist: false
-    }, () => id == "signUp" ? this.customerSignUp(payload) : id == "login" ? this.customerLogin(payload) : this.resetPassword(payload))
   }
 
   customerSignUp = (payload) => {
@@ -138,6 +126,68 @@ export class LoginPage extends React.PureComponent {
     })
   }
 
+  onSubmitHandler = id => {
+    let payload = cloneDeep(this.state.payload)
+    payload.name = payload.name.trim()
+    payload.mobileNumber = payload.mobileNumber.trim()
+    payload.password = payload.password.trim()
+
+    this.setState({
+      isLoader: true,
+      isDetailsIncorrect: false,
+      isUserExist: false
+    }, () => id == "signUp" ? this.customerSignUp(payload) : id == "login" ? this.customerLogin(payload) : this.resetPassword(payload))
+  }
+
+  setUpRecaptcha = () => {
+    window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container', {
+      'size': 'invisible',
+      'callback': (response) => {
+        // reCAPTCHA solved, allow signInWithPhoneNumber.
+        this.onSignInSubmit();
+      }
+    });
+  }
+
+  onSignInSubmit = (event) => {
+    event.preventDefault();
+    this.setUpRecaptcha();
+    const phoneNumber = `+91${this.state.payload.mobileNumber}`;
+    const appVerifier = window.recaptchaVerifier;
+    firebase.auth().signInWithPhoneNumber(phoneNumber, appVerifier)
+      .then((confirmationResult) => {
+        // SMS sent. Prompt user to type the code from the message, then sign the
+        // user in with confirmationResult.confirm(code).
+        window.confirmationResult = confirmationResult;
+
+        const code = window.prompt('Enter OTP');
+        confirmationResult.confirm(code).then((result) => {
+          // User signed in successfully.
+          const user = result.user;
+          console.log('user: ', user);
+          this.onSubmitHandler('signUp')
+          // ... 
+        }).catch((error) => {
+          // User couldn't sign in (bad verification code?)
+          console.log('error: ', error);
+          this.setState({
+            message: "Incorrect OTP",
+            isMessageModal: true,
+            type: "failure"
+          })
+
+        });
+      }).catch((error) => {
+        console.log('error: ', error);
+        // Error; SMS not sent
+        this.setState({
+          message: "SMS not sent. Please Refresh",
+          isMessageModal: true,
+          type: "failure"
+        })
+      });
+  }
+
 
   render() {
     return (
@@ -151,11 +201,13 @@ export class LoginPage extends React.PureComponent {
           <span className="loginbox">
             <img className="login-box-icon img-responsive" src={require('../../assets/images/logo.png')} />
             <p className="welcome-message">Welcome To The Land Of Tastiest Food</p>
+            <div id="recaptcha-container"></div>
+            <label></label>
             {this.state.isDetailsIncorrect && <p className="incorrect-password-text">Incorrect Mobile Number or Password</p>}
             {this.state.isUserExist && <p className="incorrect-password-text">User Already Exist</p>}
             {this.state.isLoader ? <div className="lds-dual-ring"></div> :
               this.state.boxContent === "login" ?
-                <form className="mr-t-45" id="login" onSubmit={this.onSubmitHandler}>
+                <form className="mr-t-45" onSubmit={() => this.onSubmitHandler('login')}>
                   <div className="form-group">
                     <label className="box-label" htmlFor="inputlg">Mobile Number</label>
                     <input value={this.state.payload.mobileNumber} title="Enter 10 digit mobile number" id="mobileNumber" onChange={this.inputChangeHandler} className="form-control input-lg" type="tel" required />
@@ -169,7 +221,7 @@ export class LoginPage extends React.PureComponent {
                   </div>
                 </form> :
                 this.state.boxContent === "signUp" ?
-                  <form className="mr-t-45" id="signUp" onSubmit={this.onSubmitHandler}>
+                  <form className="mr-t-45" id="signUp" onSubmit={this.onSignInSubmit}>
                     <div className="form-group">
                       <label className="box-label" htmlFor="inputlg">Name</label>
                       <input value={this.state.payload.name} id="name" onChange={this.inputChangeHandler} className="form-control input-lg" type="text" required />

@@ -343,12 +343,10 @@ hr {
 	.shop-time {
 		font-size: 15px;
 	}
-
-	.shop-time-heading{
+	.shop-time-heading {
 		font-size: 15px;
 		font-weight: 600;
 	}
-
 	.shop-address {
 		font-size: 15px;
 	}
@@ -982,13 +980,13 @@ hr {
 	}
 	.msg-modal-box-position {
 		position: absolute;
-		top: 15%;
-		right: 2%;
+		top: 24%;
+		right: 10%;
 		height: 40px;
-		width: 358px;
+		width: 284px;
 		font-size: 20px;
 		border-radius: 10px;
-		padding: 5px 20px;
+		padding: 5px 10px;
 	}
 	.msg-modal-times-position {
 		float: right;
@@ -1059,11 +1057,10 @@ hr {
 	.shop-time {
 		font-size: 20px;
 	}
-	.shop-time-heading{
+	.shop-time-heading {
 		font-size: 20px;
 		font-weight: 600;
 	}
-
 	.loginBanner {
 		width: 50%;
 		position: absolute;
@@ -1168,20 +1165,16 @@ hr {
 		font-size: 20px;
 		color: white;
 	}
-
-	.menu-items-half-price-text{
+	.menu-items-half-price-text {
 		margin-left: 20px;
 		font-size: 20px;
 		color: white;
 	}
-	
 	.menu-items-full-text {
 		margin-left: 50px;
 		font-size: 20px;
 		color: white;
 	}
-
-
 	.menu-items-half-price-radioBox {
 		height: 20px;
 		width: 20px;
@@ -1190,7 +1183,6 @@ hr {
 		top: 54%;
 		left: 24%;
 	}
-
 	.menu-items-full-price-radioBox {
 		height: 20px;
 		width: 20px;
@@ -1199,7 +1191,6 @@ hr {
 		top: 54%;
 		left: 32%;
 	}
-
 	.menu-items-add-button, .menu-items-count-button {
 		font-size: 25px;
 		right: 5%;
