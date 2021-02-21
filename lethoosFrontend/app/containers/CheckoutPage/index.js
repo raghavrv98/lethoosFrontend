@@ -200,14 +200,12 @@ export class CheckoutPage extends React.PureComponent {
       customerOrders: orders
     }
 
-    let url = window.API_URL + `/customerLogin/orderDetails/mail`;
+    var url = window.API_URL + `/customerLogin/orderDetails/mail`;
     axios.post(url, mailDetails)
       .then((res) => {
         this.setState({
           confirmModal: false
         })
-        sessionStorage.removeItem("orderHistory");
-        this.props.history.push('/orderPlacedPage')
       })
       .catch((error) => {
         let message = errorHandler(error);
@@ -216,6 +214,23 @@ export class CheckoutPage extends React.PureComponent {
           type: "failure"
         }, () => setTimeout(this.modalTime, 1500))
       });
+      
+      url = window.API_URL + `/customerLogin/orderDetails`;
+      axios.post(url, mailDetails)
+        .then((res) => {
+          this.setState({
+            confirmModal: false
+          })
+          sessionStorage.removeItem("orderHistory");
+          this.props.history.push('/orderPlacedPage')
+        })
+        .catch((error) => {
+          let message = errorHandler(error);
+          this.setState({
+            message,
+            type: "failure"
+          }, () => setTimeout(this.modalTime, 1500))
+        });
 
     this.setState({
       isLoader: true,
@@ -274,7 +289,7 @@ export class CheckoutPage extends React.PureComponent {
                       <input value={JSON.parse(sessionStorage.getItem('customerDetails')).mobileNumber} id="mobileNumber" onChange={this.inputChangeHandler} className="form-control input-lg" type="text" required readOnly />
                     </div>
                     <div className="form-group">
-                      <label className="box-label" htmlFor="inputlg">Alternate Mobile Number</label>
+                      <label className="box-label" htmlFor="inputlg">Mobile Number for Call</label>
                       <input value={this.state.payload.alternateMobileNumber} id="alternateMobileNumber" onChange={this.inputChangeHandler} className="form-control input-lg" type="text" required />
                     </div>
                     <div className="form-group">

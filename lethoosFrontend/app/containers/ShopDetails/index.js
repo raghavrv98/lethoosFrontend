@@ -321,7 +321,7 @@ export class ShopDetails extends React.PureComponent {
                     return <div key={index} className="menu-items">
                       <img className="menu-items-image img-responsive" src={val.image} />
                       <p className="menu-items-name"> {val.name}</p>
-                      <div><span className="menu-items-price"> {val.fullPrice}</span>{val.halfAvailable && <React.Fragment><span className="menu-items-half-text">Half -</span><span className="menu-items-half-price"> {val.halfPrice}</span><span className="mob-view-checkbox"><span className="menu-items-half-text">Check mark for Half</span><span><input type="checkbox" id={index} checked={val.isHalfSelected} className="menu-items-half-price-checkbox mob-left-10" onChange={this.halfPriceHandler} /></span></span></React.Fragment>}</div>
+                      <div><span className="menu-items-price"> {val.fullPrice}</span>{val.halfAvailable && <React.Fragment><span className="menu-items-half-text">Half -</span><span className="menu-items-half-price"> {val.halfPrice}</span><span className="mob-view-checkbox"><span className="menu-items-half-text">Check mark for Half</span><span><input type="checkbox" id={index} checked={val.isHalfSelected} className="menu-items-half-price-radioBox mob-left-10" onChange={this.halfPriceHandler} /></span></span></React.Fragment>}</div>
                       {(val.quantity + val.halfQuantity) > 0 ?
                         <div className="menu-items-count-button">
 

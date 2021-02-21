@@ -21,6 +21,7 @@ import messages from './messages';
 import { cloneDeep } from 'lodash';
 import axios from 'axios';
 import { errorHandler } from "../../utils/customUtils";
+import MessageModal from '../../components/MessageModal';
 
 /* eslint-disable react/prefer-stateless-function */
 export class LoginPage extends React.PureComponent {
@@ -42,7 +43,8 @@ export class LoginPage extends React.PureComponent {
     this.setState({
       payload,
       isDetailsIncorrect: false,
-      isUserExist: false
+      isUserExist: false,
+      isMessageModal: false
     })
   }
 
@@ -78,11 +80,12 @@ export class LoginPage extends React.PureComponent {
         }
       })
       .catch((error) => {
-        let message = errorHandler(error);
         this.setState({
-          message,
+          isLoader: false,
+          message: "Some Error Occured",
+          isMessageModal: true,
           type: "failure"
-        }, () => setTimeout(this.modalTime, 1500))
+        })
       });
   }
 
@@ -104,30 +107,20 @@ export class LoginPage extends React.PureComponent {
         }
       })
       .catch((error) => {
-        let message = errorHandler(error);
         this.setState({
-          message,
+          isLoader: false,
+          message: "Some Error Occured",
+          isMessageModal: true,
           type: "failure"
-        }, () => setTimeout(this.modalTime, 1500))
+        })
       });
   }
 
-
-
-  modalTime = () => {
-    this.setState({
-      isOpenClassName: 'modal display-none container',
-      isLoader: false
-    })
-  }
-
-  stopLoaderHandler = () => {
+  modalCloseHandler = () => {
     setTimeout(() => {
       this.setState({
-        isLoader: false
-      },
-        // () => this.props.history.push('/landingPage')
-      )
+        isMessageModal: false
+      })
     }, 1000);
   }
 
@@ -140,7 +133,8 @@ export class LoginPage extends React.PureComponent {
         password: ""
       },
       isDetailsIncorrect: false,
-      isUserExist: false
+      isUserExist: false,
+      isMessageModal: false
     })
   }
 
@@ -214,7 +208,11 @@ export class LoginPage extends React.PureComponent {
             {this.state.boxContent !== "resetPassword" && !this.state.isLoader && <p onClick={this.changeContentHandler} id="resetPassword" className="reset-password"> Reset Password</p>}
           </span>
         </div>
-
+        {this.state.isMessageModal && <MessageModal
+          modalType={this.state.type}
+          message={this.state.message}
+          onClose={this.modalCloseHandler}
+        />}
       </div>
     );
   }

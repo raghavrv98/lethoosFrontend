@@ -150,12 +150,12 @@ export class OrderHistoryPage extends React.PureComponent {
 
         {this.state.detailsModal && <div className="modal display-block">
           <div className="modal-dialog" role="document">
+            <button type="button" className="close confirm-modal-close" onClick={this.detailsModalCloseHandler}>
+              <i className="fa fa-times-circle" aria-hidden="true"></i>
+            </button>
             <div className="modal-content order-history-modal">
               <div className="modal-header">
                 <h5 className="modal-title confirm-modal-heading" id="exampleModalLabel">Order Details</h5>
-                <button type="button" className="close confirm-modal-close" onClick={this.detailsModalCloseHandler}>
-                  <i className="fa fa-times-circle" aria-hidden="true"></i>
-                </button>
               </div>
               <div className="row">
                 <div className="col-md-3">
@@ -179,7 +179,7 @@ export class OrderHistoryPage extends React.PureComponent {
                   }
                 </div>
               })}
-              <p className="order-history-box-text-heading">Other Specifications <span className="order-history-box-text"> <textarea className="text-area-order-history" value={this.state.modalDetailObject.otherSpecifications} rows="1" cols="15" readOnly /></span></p>
+              <p className="order-history-box-text-heading mr-t-15">Other Specifications <span className="order-history-box-text"> <textarea className="text-area-order-history" value={this.state.modalDetailObject.otherSpecifications} rows="1" cols="15" readOnly /></span></p>
               <p className="order-history-box-text-heading mr-t-45"> Item Total <span className="order-history-box-text"> {this.state.modalDetailObject.total}</span></p>
               <p className="order-history-box-text-heading">Coupon Code <span className="order-history-box-text"> {this.state.modalDetailObject.coupon.length > 0 ? this.state.modalDetailObject.coupon : "NA"}</span></p>
               <p className="order-history-box-text-heading">Total Discount <span className="order-history-box-text"> - {this.state.modalDetailObject.totalDiscount}</span></p>

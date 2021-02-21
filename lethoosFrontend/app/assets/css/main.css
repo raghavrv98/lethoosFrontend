@@ -25,6 +25,10 @@ body {
 	margin-top: 25px;
 }
 
+.mr-t-15 {
+	margin-top: 15px !important;
+}
+
 .mr-t-20 {
 	margin-top: 20px !important;
 }
@@ -669,6 +673,10 @@ hr {
 		font-size: 25px;
 		color: black;
 		opacity: 1;
+		position: absolute;
+		top: 7%;
+		z-index: 1;
+		right: 9%;
 	}
 	.confirm-modal-no {
 		position: absolute;
@@ -872,7 +880,7 @@ hr {
 	}
 	.order-history-box-image {
 		height: 70px;
-		width: 100%;
+		width: 50%;
 	}
 	.order-history-modal {
 		padding: 30px;
@@ -989,13 +997,11 @@ hr {
 		float: right;
 		cursor: pointer;
 	}
-
 	.shop-details-minus-btn {
 		margin-right: 15px;
 		font-size: 20px;
 		cursor: pointer;
 	}
-
 }
 
 @media only screen and (min-width: 769px) {
@@ -1157,18 +1163,42 @@ hr {
 		font-size: 25px;
 	}
 	.menu-items-half-text {
-		margin-left: 25px;
+		margin-left: 33px;
 		font-size: 20px;
 		color: white;
 	}
-	.menu-items-half-price-checkbox {
-		height: 25px;
-		width: 25px;
+
+	.menu-items-half-price-text{
+		margin-left: 20px;
+		font-size: 20px;
+		color: white;
+	}
+	
+	.menu-items-full-text {
+		margin-left: 50px;
+		font-size: 20px;
+		color: white;
+	}
+
+
+	.menu-items-half-price-radioBox {
+		height: 20px;
+		width: 20px;
 		cursor: pointer;
 		position: absolute;
-		top: 46%;
-		left: 41%;
+		top: 54%;
+		left: 24%;
 	}
+
+	.menu-items-full-price-radioBox {
+		height: 20px;
+		width: 20px;
+		cursor: pointer;
+		position: absolute;
+		top: 54%;
+		left: 32%;
+	}
+
 	.menu-items-add-button, .menu-items-count-button {
 		font-size: 25px;
 		right: 5%;
@@ -1291,7 +1321,7 @@ hr {
 	}
 	.area-box, .profile-page-area-box {
 		height: 45px;
-		width: 30%;
+		width: 40%;
 		font-size: 30px;
 		margin-left: 30px;
 		border: 1px solid brown;
@@ -1348,6 +1378,10 @@ hr {
 		font-size: 35px;
 		color: black;
 		opacity: 1;
+		position: absolute;
+		top: 9%;
+		z-index: 1;
+		right: 6%;
 	}
 	.confirm-modal-no {
 		position: absolute;
@@ -1533,7 +1567,7 @@ hr {
 	}
 	.order-history-modal {
 		padding: 30px;
-		height: 800px;
+		height: 850px;
 		overflow: auto;
 	}
 	.order-history-modal-body-heading {
@@ -1659,11 +1693,9 @@ hr {
 	.font-size-30 {
 		font-size: 30px !important;
 	}
-
 	.shop-details-minus-btn {
 		margin-right: 15px;
 		font-size: 30px;
 		cursor: pointer;
 	}
-	
 }
