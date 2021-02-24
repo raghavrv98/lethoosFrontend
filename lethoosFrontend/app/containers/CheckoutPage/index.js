@@ -46,7 +46,8 @@ export class CheckoutPage extends React.PureComponent {
     isCouponExist: false,
     confirmModal: false,
     codeCouponText: "",
-    isLoader: false
+    isLoader: false,
+    copiedText: ""
   }
 
   componentWillMount() {
@@ -93,7 +94,8 @@ export class CheckoutPage extends React.PureComponent {
       payload[event.target.id] = event.target.value
     }
     this.setState({
-      payload
+      payload,
+      copiedText: ""
     })
   }
 
@@ -214,23 +216,23 @@ export class CheckoutPage extends React.PureComponent {
           type: "failure"
         }, () => setTimeout(this.modalTime, 1500))
       });
-      
-      url = window.API_URL + `/customerLogin/orderDetails`;
-      axios.post(url, mailDetails)
-        .then((res) => {
-          this.setState({
-            confirmModal: false
-          })
-          sessionStorage.removeItem("orderHistory");
-          this.props.history.push('/orderPlacedPage')
+
+    url = window.API_URL + `/customerLogin/orderDetails`;
+    axios.post(url, mailDetails)
+      .then((res) => {
+        this.setState({
+          confirmModal: false
         })
-        .catch((error) => {
-          let message = errorHandler(error);
-          this.setState({
-            message,
-            type: "failure"
-          }, () => setTimeout(this.modalTime, 1500))
-        });
+        sessionStorage.removeItem("orderHistory");
+        this.props.history.push('/orderPlacedPage')
+      })
+      .catch((error) => {
+        let message = errorHandler(error);
+        this.setState({
+          message,
+          type: "failure"
+        }, () => setTimeout(this.modalTime, 1500))
+      });
 
     this.setState({
       isLoader: true,
@@ -261,6 +263,42 @@ export class CheckoutPage extends React.PureComponent {
       });
   }
 
+  copyPhoneNumber = (phoneNumber) => {
+    let tempElement = document.createElement("textarea");
+    tempElement.value = phoneNumber;
+    document.body.appendChild(tempElement);
+    tempElement.select();
+    document.execCommand("copy");
+    document.body.removeChild(tempElement);
+
+    this.setState({
+      copiedText: "Phone Number Copied"
+    })
+  };
+
+  copyNumberToCallingHandler = () => {
+    let payload = cloneDeep(this.state.payload)
+
+    payload.alternateMobileNumber = payload.mobileNumber
+
+    this.setState({
+      payload
+    })
+
+  }
+
+  radioButtonChangeHandler = event => {
+    let payload = cloneDeep(this.state.payload)
+
+    payload[event.target.id] = event.target.value
+
+    this.setState({
+      payload,
+      isOnlineMessageOpen: !(event.target.value === 'Cash On Delivery'),
+      copiedText: ""
+    })
+  }
+
   render() {
     return (
       <div>
@@ -286,11 +324,11 @@ export class CheckoutPage extends React.PureComponent {
                     </div>
                     <div className="form-group">
                       <label className="box-label" htmlFor="inputlg">Mobile Number</label>
-                      <input value={JSON.parse(sessionStorage.getItem('customerDetails')).mobileNumber} id="mobileNumber" onChange={this.inputChangeHandler} className="form-control input-lg" type="text" required readOnly />
+                      <input value={JSON.parse(sessionStorage.getItem('customerDetails')).mobileNumber} pattern="[1-9]{1}[0-9]{9}" title="Enter 10 digit mobile number" id="mobileNumber" onChange={this.inputChangeHandler} className="form-control input-lg" type="tel" required readOnly />
                     </div>
                     <div className="form-group">
-                      <label className="box-label" htmlFor="inputlg">Mobile Number for Call</label>
-                      <input value={this.state.payload.alternateMobileNumber} id="alternateMobileNumber" onChange={this.inputChangeHandler} className="form-control input-lg" type="text" required />
+                      <label className="box-label" htmlFor="inputlg">Mobile Number for Call</label><button className="same-as-above-btn" onClick={this.copyNumberToCallingHandler} type="button">Same as Above</button>
+                      <input value={this.state.payload.alternateMobileNumber} pattern="[1-9]{1}[0-9]{9}" title="Enter 10 digit mobile number" id="alternateMobileNumber" onChange={this.inputChangeHandler} className="form-control input-lg" type="tel" required />
                     </div>
                     <div className="form-group">
                       <label className="box-label" htmlFor="inputlg">Address</label>
@@ -306,15 +344,20 @@ export class CheckoutPage extends React.PureComponent {
                         <option value="gopalBagh20">Gopal Bagh</option>
                         <option value="kamlaNagar20">Kamla Nagar</option>
                         <option value="bathenGate20">Bathen Gate</option>
+                        <option value="keshavKunj30">Keshav Kunj</option>
                       </select>
                     </div>
                     <div className="form-group">
                       <label className="box-label" htmlFor="inputlg">Payment Method</label>
                       <div>
-                        <label className="radio-inline"><input type="radio" onChange={this.inputChangeHandler} className="radio-btn-size" id="paymentMethod" value="Cash On Delivery" name="radio" required /><span className="radio-text-size">Cash on Delivery</span></label>
-                        <label className="radio-inline"><input type="radio" onChange={this.inputChangeHandler} className="radio-btn-size" id="paymentMethod" value="Online" name="radio" required /><span className="radio-text-size">Online</span></label>
+                        <label className="radio-inline"><input type="radio" onChange={this.radioButtonChangeHandler} className="radio-btn-size" id="paymentMethod" value="Cash On Delivery" name="radio" required /><span className="radio-text-size">Cash on Delivery</span></label>
+                        <label className="radio-inline"><input type="radio" onChange={this.radioButtonChangeHandler} onClick={this.slideHandler} className="radio-btn-size" id="paymentMethod" value="Online" name="radio" required /><span className="radio-text-size">Online</span></label>
                       </div>
                     </div>
+                    {this.state.isOnlineMessageOpen && <div onClick={() => this.copyPhoneNumber('8630422423')} className="online-payment-message">
+                      <p>Please pay on this number <strong>8630422423</strong>. And have a screenshot ready with you at the time of delivery.</p>
+                      {this.state.copiedText.length > 0 ? <p>({this.state.copiedText})</p> : <p>(Tap to Copy)</p>}
+                    </div>}
                     <div className="form-group">
                       <label className="box-label" htmlFor="inputlg">Other Specifications</label>
                       <textarea rows="3" cols="50" value={this.state.payload.otherSpecifications} placeholder="For Example : Without Onion or less Spicy" id="otherSpecifications" onChange={this.inputChangeHandler} className="form-control input-lg" type="text" />
@@ -364,29 +407,31 @@ export class CheckoutPage extends React.PureComponent {
           </React.Fragment>
         }
 
-        {this.state.confirmModal && <div className="modal display-block">
-          <div className="modal-dialog" role="document">
-            <div className="modal-content">
-              <div className="modal-header">
-                <h5 className="modal-title confirm-modal-heading" id="exampleModalLabel">Order Confirmation</h5>
-                <button type="button" className="close confirm-modal-close" onClick={this.modalCloseHandler}>
-                  <i className="fa fa-times-circle" aria-hidden="true"></i>
-                </button>
+        {
+          this.state.confirmModal && <div className="modal display-block">
+            <div className="modal-dialog" role="document">
+              <div className="modal-content">
+                <div className="modal-header">
+                  <h5 className="modal-title confirm-modal-heading" id="exampleModalLabel">Order Confirmation</h5>
+                  <button type="button" className="close confirm-modal-close" onClick={this.modalCloseHandler}>
+                    <i className="fa fa-times-circle" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <div className="modal-body confirm-modal-body">
+                  Are You sure want to Place Order?
               </div>
-              <div className="modal-body confirm-modal-body">
-                Are You sure want to Place Order?
+                <div className="modal-body confirm-modal-body-2">
+                  Once Placed, Order can't be Canceled.
               </div>
-              <div className="modal-body confirm-modal-body-2">
-                Once Placed, Order can't be Canceled.
-              </div>
-              <div className="modal-footer">
-                <button type="button" className="btn btn-secondary confirm-modal-no" onClick={this.modalCloseHandler}>No</button>
-                <button type="button" className="btn btn-primary confirm-modal-yes" onClick={this.orderPlacedHandler}>Yes</button>
+                <div className="modal-footer">
+                  <button type="button" className="btn btn-secondary confirm-modal-no" onClick={this.modalCloseHandler}>No</button>
+                  <button type="button" className="btn btn-primary confirm-modal-yes" onClick={this.orderPlacedHandler}>Yes</button>
+                </div>
               </div>
             </div>
           </div>
-        </div>}
-      </div>
+        }
+      </div >
     );
   }
 }

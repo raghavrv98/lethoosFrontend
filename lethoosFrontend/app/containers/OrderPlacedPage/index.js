@@ -53,7 +53,7 @@ export class OrderPlacedPage extends React.PureComponent {
           <div className="order-placed-box">
             <img className="order-placed-image" src={require('../../assets/images/orderPlaced.png')} />
             <p className="order-placed-text">Preparing your Order.</p>
-            <p className="order-placed-text">Your Order will be prepared and will come soon.</p>
+            <p className="order-placed-text">Your Order will be prepared and delivered in a Maximum of 40 min.</p>
             <div className="form-group">
               <button type="button" onClick={() => this.props.history.push('/orderHistoryPage')} className="btn btn-warning login-button order-placed-btn">Order History</button>
             </div>

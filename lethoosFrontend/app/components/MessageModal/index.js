@@ -14,9 +14,9 @@ import messages from './messages';
 function MessageModal(props) {
   return (
     <div>
-      <div className={`msg-modal-box-position ${props.modalType === "success" ? "msg-modal-success" : "msg-modal-failure"}`}>{props.message}<span className="msg-modal-times-position"><i className="fa fa-window-close-o" aria-hidden="true"></i></span>
+      <div className={`msg-modal-box-position ${props.modalType === "success" ? "msg-modal-success" : "msg-modal-failure"}`}>{props.message}<span className="msg-modal-times-position"><i onClick={() => window.location.reload()} className="fa fa-window-close-o" aria-hidden="true"></i></span>
       </div>
-    </div>
+    </div >
   );
 }
 
