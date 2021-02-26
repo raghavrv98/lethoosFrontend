@@ -180,7 +180,7 @@ export class CheckoutPage extends React.PureComponent {
 
     let orders = []
     orderHistoryCopy.orders.map(val => {
-      let orderDetails = ` ${val.item} ${val.isHalfSelected ? "(Half)" : ""} X ${val.isHalfSelected ? val.halfQuantity : val.quantity}`
+      let orderDetails = ` ${val.item} ${val.isHalfSelected ? "(Half)" : ""} X ${val.isHalfSelected ? val.halfQuantity : val.quantity} = ${val.price}`
       orders.push(orderDetails)
       return val
     })
@@ -193,13 +193,16 @@ export class CheckoutPage extends React.PureComponent {
       customerAddress: orderHistoryCopy.orderAddress,
       customerNumber: customerDetails.mobileNumber,
       customerCallingNumber: orderHistoryCopy.orderAlternateMobileNumber,
-      customerPaymentMethod: orderHistoryCopy.paymentMethod,
+      customerPaymentMethod: payload.paymentMethod,
       customerTotalDiscount: orderHistoryCopy.totalDiscount,
       customerTotalAmount: orderHistoryCopy.total + parseInt(orderHistoryCopy.area.slice(-2) - orderHistoryCopy.totalDiscount),
       customerArea: orderHistoryCopy.area.slice(0, -2),
       customerOrderNumber: orderHistoryCopy.orderNumber,
       customerOrderDate: moment(orderHistoryCopy.orderDate).format("DD MMM HH:mm"),
-      customerOrders: orders
+      orderSpecifications: orderHistoryCopy.otherSpecifications,
+      customerOrders: orders,
+      customerDeliveryCharges: orderHistoryCopy.area.slice(-2),
+
     }
 
     var url = window.API_URL + `/customerLogin/orderDetails/mail`;
