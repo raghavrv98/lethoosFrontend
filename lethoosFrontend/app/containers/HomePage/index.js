@@ -19,8 +19,8 @@ import saga from './saga';
 
 import LandingPage from '../../containers/LandingPage/Loadable';
 import LoginPage from '../../containers/LoginPage/Loadable';
-import ShopDetails from '../../containers/shopDetails/Loadable';
-import CheckoutPage from '../../containers/checkoutPage/Loadable';
+import ShopDetails from '../../containers/ShopDetails/Loadable';
+import CheckoutPage from '../../containers/CheckoutPage/Loadable';
 import OrderPlacedPage from '../../containers/OrderPlacedPage/Loadable';
 import OffersPage from '../../containers/OffersPage/Loadable';
 import OrderHistoryPage from '../../containers/OrderHistoryPage/Loadable';
