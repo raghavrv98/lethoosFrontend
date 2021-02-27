@@ -335,7 +335,7 @@ export class CheckoutPage extends React.PureComponent {
                     </div>
                     <div className="form-group">
                       <label className="box-label" htmlFor="inputlg">Address</label>
-                      <textarea rows="3" cols="50" value={this.state.payload.address} id="address" onChange={this.inputChangeHandler} className="form-control input-lg" type="text" required />
+                      <textarea rows="3" cols="50" value={this.state.payload.address} id="address" pattern="^[A-Za-z_-][A-Za-z0-9_-]*$" title="Use only Numbers, Alphabets, spaces and ," onChange={this.inputChangeHandler} className="form-control input-lg" type="text" required />
                     </div>
                     <div className="form-group">
                       <label className="box-label" htmlFor="inputlg">Select Area</label>
