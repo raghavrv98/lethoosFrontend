@@ -424,7 +424,7 @@ export class CheckoutPage extends React.PureComponent {
                   Are You sure want to Place Order?
               </div>
                 <div className="modal-body confirm-modal-body-2">
-                  Once Placed, Order can't be Canceled.
+                  Once Placed, Order can not be Canceled.
               </div>
                 <div className="modal-footer">
                   <button type="button" className="btn btn-secondary confirm-modal-no" onClick={this.modalCloseHandler}>No</button>

@@ -82,8 +82,16 @@ body {
 	float: left;
 }
 
+.break-word{
+	word-wrap: break-word;
+}
+
 .color-gray {
 	color: gray;
+}
+
+.color-black{
+	color: #000;
 }
 
 .msg-modal-success {
@@ -112,11 +120,11 @@ body {
 }
 
 footer {
-	background-color: #f8f9fa;
+	/* background-color: #f8f9fa;
 	height: 40px;
 	position: fixed;
 	bottom: 0;
-	width: 100%;
+	width: 100%; */
 }
 
 footer .text {
@@ -488,7 +496,7 @@ hr {
 	}
 	.menu-items-half-text {
 		margin-left: 20px;
-		font-size: 16px;
+		font-size: 14px;
 		color: white;
 	}
 	.menu-items-add-button, .menu-items-count-button {
@@ -505,7 +513,7 @@ hr {
 		position: absolute;
 	}
 	.menu-items-count-button {
-		width: 70px;
+		width: 50px;
 		cursor: context-menu;
 	}
 	.menu-items-count-left-button {
@@ -544,7 +552,7 @@ hr {
 		color: white;
 	}
 	.order-details-items {
-		font-size: 20px;
+		font-size: 15px;
 		color: white;
 		margin-bottom: 10px;
 	}
@@ -571,6 +579,7 @@ hr {
 		display: inline;
 		margin-right: 30px;
 		font-size: 20px;
+		text-transform: uppercase;
 	}
 	.checkout-code-not-applied {
 		font-size: 15px;
@@ -597,7 +606,7 @@ hr {
 		margin: 10px 0px 15px;
 		border-radius: 12px;
 		background-color: white;
-		padding: 30px;
+		padding: 20px;
 		min-height: 250px;
 	}
 	.bill-info {
@@ -605,9 +614,9 @@ hr {
 		border-radius: 12px;
 		float: right;
 		background-color: white;
-		padding: 30px;
+		padding: 20px;
 		width: 100%;
-		margin: 0px 0px 60px;
+		margin: 0px 0px 20px;
 		min-height: 250px;
 	}
 	.radio-btn-size {
@@ -617,8 +626,6 @@ hr {
 	}
 	.radio-text-size {
 		font-size: 15px;
-		margin-left: 10px;
-		margin-right: 20px;
 	}
 	.area-box, .profile-page-area-box {
 		height: 30px;
@@ -639,7 +646,7 @@ hr {
 		text-align: center;
 	}
 	.bill-info-text {
-		font-size: 20px;
+		font-size: 17px;
 		margin: 0px;
 	}
 	.place-order-button {
@@ -723,7 +730,7 @@ hr {
 		width: 100%;
 	}
 	.offers-page-outer {
-		padding: 50px;
+		padding: 20px;
 		margin: 10px !important;
 		background-color: white;
 		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
@@ -856,7 +863,7 @@ hr {
 		margin-bottom: 5px;
 	}
 	.order-history-box-text-heading {
-		font-size: 15px;
+		font-size: 12px;
 		color: gray;
 	}
 	.order-history-box-text {
@@ -994,7 +1001,7 @@ hr {
 	}
 	.shop-details-minus-btn {
 		margin-right: 15px;
-		font-size: 20px;
+		font-size: 16px;
 		cursor: pointer;
 	}
 	.online-payment-message {
@@ -1006,16 +1013,14 @@ hr {
 		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
 		cursor: pointer;
 	}
-
-	.same-as-above-btn{
-		font-size: 15px;
+	.same-as-above-btn {
+		font-size: 12px;
 		padding: 6px;
 		background: orange;
 		border-radius: 20px;
-		margin-left: 20px;
+		margin-left: 13px;
 	}
-
-	.same-as-above-btn:focus{
+	.same-as-above-btn:focus {
 		outline: none !important;
 		transform: translateY(-3px);
 		box-shadow: 1px 10px 0 rgb(218 220 230 / 60%)
@@ -1292,6 +1297,7 @@ hr {
 		display: inline;
 		margin-right: 30px;
 		font-size: 20px;
+		text-transform: uppercase;
 	}
 	.checkout-code-not-applied {
 		font-size: 20px;
@@ -1713,15 +1719,14 @@ hr {
 		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
 		cursor: pointer;
 	}
-	.same-as-above-btn{
+	.same-as-above-btn {
 		font-size: 20px;
 		padding: 10px 10px;
 		background: orange;
 		border-radius: 20px;
 		margin-left: 200px;
 	}
-
-	.same-as-above-btn:focus{
+	.same-as-above-btn:focus {
 		outline: none !important;
 		transform: translateY(-3px);
 		box-shadow: 1px 10px 0 rgb(218 220 230 / 60%)

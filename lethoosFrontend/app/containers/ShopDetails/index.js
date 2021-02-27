@@ -342,7 +342,7 @@ export class ShopDetails extends React.PureComponent {
                   {
                     this.state.orderHistory.orders.length > 0 ?
                       <React.Fragment>
-                        <div className="order-details-heading">order Details</div>
+                        <div className="order-details-heading">Order Details</div>
                         <hr />
                         {this.state.orderHistory.orders.map((val, index) => {
 

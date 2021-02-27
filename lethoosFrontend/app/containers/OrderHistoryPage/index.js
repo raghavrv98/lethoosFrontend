@@ -179,7 +179,8 @@ export class OrderHistoryPage extends React.PureComponent {
                   }
                 </div>
               })}
-              <p className="order-history-box-text-heading mr-t-15">Other Specifications <span className="order-history-box-text"> <textarea className="text-area-order-history" value={this.state.modalDetailObject.otherSpecifications} rows="1" cols="15" readOnly /></span></p>
+              <p className="order-history-box-text-heading mr-t-15">Other Specifications <span className="order-history-box-text"></span></p>
+              <p className="color-black break-word">{this.state.modalDetailObject.otherSpecifications ? this.state.modalDetailObject.otherSpecifications : "NA"}</p>
               <p className="order-history-box-text-heading mr-t-45"> Item Total <span className="order-history-box-text"> {this.state.modalDetailObject.total}</span></p>
               <p className="order-history-box-text-heading">Coupon Code <span className="order-history-box-text"> {this.state.modalDetailObject.coupon.length > 0 ? this.state.modalDetailObject.coupon : "NA"}</span></p>
               <p className="order-history-box-text-heading">Total Discount <span className="order-history-box-text"> - {this.state.modalDetailObject.totalDiscount}</span></p>
