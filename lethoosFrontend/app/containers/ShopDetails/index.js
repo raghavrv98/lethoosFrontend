@@ -339,10 +339,11 @@ export class ShopDetails extends React.PureComponent {
                   )}
                 </div>
                 <div className="cart-items col-md-4">
+                  {this.state.orderHistory.orders.length > 0 && <a href="#cart" className="floating-cart-button"><span className="floating-cart-icon"><i className="fa fa-cart-arrow-down" aria-hidden="true"></i></span></a>}
                   {
                     this.state.orderHistory.orders.length > 0 ?
                       <React.Fragment>
-                        <div className="order-details-heading">Order Details</div>
+                        <div className="order-details-heading" id="cart">Order Details</div>
                         <hr />
                         {this.state.orderHistory.orders.map((val, index) => {
 

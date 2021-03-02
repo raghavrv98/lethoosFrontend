@@ -31,7 +31,8 @@ import NotFoundPage from '../../components/NotFoundPage/Loadable'
 export class HomePage extends React.PureComponent {
 
   state = {
-    customerDetails: {}
+    customerDetails: {},
+    isLoading: true
   }
 
   componentWillMount() {
@@ -40,26 +41,52 @@ export class HomePage extends React.PureComponent {
       this.props.history.push('/login')
     }
     this.setState({
-      customerDetails
+      customerDetails,
+      isLoading: false
     })
+    this.refreshAt(14,0,0);
+    this.refreshAt(20,0,0);
   }
+
+  // auto reload for checking shop status
+
+  refreshAt = (hours, minutes, seconds) => {
+    var now = new Date();
+    var then = new Date();
+
+    if (now.getHours() > hours ||
+      (now.getHours() == hours && now.getMinutes() > minutes) ||
+      now.getHours() == hours && now.getMinutes() == minutes && now.getSeconds() >= seconds) {
+      then.setDate(now.getDate() + 1);
+    }
+    then.setHours(hours);
+    then.setMinutes(minutes);
+    then.setSeconds(seconds);
+
+    var timeout = (then.getTime() - now.getTime());
+    setTimeout(function () { window.location.reload(true); }, timeout);
+  }
+
 
   render() {
     return (
       <React.Fragment>
-        <Switch>
-          <Route exact path="/landingPage" render={props => <LandingPage {...props} />} />
-          <Route exact path="/login" render={props => <LoginPage {...props} />} />
-          <Route exact path="/" render={props => <LoginPage {...props} />} />
-          <Route exact path="/shopDetails/:id" render={props => <ShopDetails {...props} />} />
-          <Route exact path="/checkoutPage" render={props => <CheckoutPage {...props} />} />
-          <Route exact path="/orderPlacedPage" render={props => <OrderPlacedPage {...props} />} />
-          <Route exact path="/offersPage" render={props => <OffersPage {...props} />} />
-          <Route exact path="/orderHistoryPage" render={props => <OrderHistoryPage {...props} />} />
-          <Route exact path="/profilePage" render={props => <ProfilePage {...props} />} />
-          <Route path="/error404" render={props => <NotFoundPage {...props} />} />
-          <Route component={NotFoundPage} />
-        </Switch>
+        {this.state.isLoading ?
+          <div className="lds-dual-ring"></div> :
+          <Switch>
+            <Route exact path="/landingPage" render={props => <LandingPage {...props} />} />
+            <Route exact path="/login" render={props => <LoginPage {...props} />} />
+            <Route exact path="/" render={props => <LoginPage {...props} />} />
+            <Route exact path="/shopDetails/:id" render={props => <ShopDetails {...props} />} />
+            <Route exact path="/checkoutPage" render={props => <CheckoutPage {...props} />} />
+            <Route exact path="/orderPlacedPage" render={props => <OrderPlacedPage {...props} />} />
+            <Route exact path="/offersPage" render={props => <OffersPage {...props} />} />
+            <Route exact path="/orderHistoryPage" render={props => <OrderHistoryPage {...props} />} />
+            <Route exact path="/profilePage" render={props => <ProfilePage {...props} />} />
+            <Route path="/error404" render={props => <NotFoundPage {...props} />} />
+            <Route component={NotFoundPage} />
+          </Switch>
+        }
       </React.Fragment >
     );
   }

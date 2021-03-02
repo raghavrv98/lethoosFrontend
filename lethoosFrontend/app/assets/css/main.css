@@ -5,6 +5,10 @@ body {
 	background-color: #F5F5F5;
 }
 
+html {
+	scroll-behavior: smooth !important;
+}
+
 .mr-r-15 {
 	margin-right: 15px;
 }
@@ -82,7 +86,7 @@ body {
 	float: left;
 }
 
-.break-word{
+.break-word {
 	word-wrap: break-word;
 }
 
@@ -90,7 +94,7 @@ body {
 	color: gray;
 }
 
-.color-black{
+.color-black {
 	color: #000;
 }
 
@@ -341,7 +345,7 @@ hr {
 		font-weight: 600;
 	}
 	.content-padding {
-		padding: 25px 20px;
+		padding: 0px 10px;
 	}
 	.shop-image {
 		width: 100%;
@@ -462,7 +466,7 @@ hr {
 		height: 358px;
 	} */
 	.shop-details-outer {
-		margin: 0px 13px 65px !important;
+		margin: 10px !important;
 	}
 	.menu-items {
 		margin-bottom: 10px;
@@ -542,7 +546,6 @@ hr {
 	.cart-items {
 		background-color: orange;
 		padding: 20px;
-		min-height: 250px;
 		border-radius: 15px;
 		position: sticky;
 		top: 30px;
@@ -966,6 +969,17 @@ hr {
 		left: 50%;
 		opacity: 0.5;
 	}
+	.shop-closed-tag, .shopDetails-closed-tag {
+		height: 30px;
+		width: 53px;
+		background-color: #000;
+		color: #fff;
+		font-size: 15px;
+		border-radius: 6px;
+		padding: 5px;
+		margin-top: 10px;
+		margin-bottom: -15px;
+	}
 	.shopDetails-closed-tag {
 		background-color: #000;
 		color: #fff;
@@ -1025,6 +1039,23 @@ hr {
 		transform: translateY(-3px);
 		box-shadow: 1px 10px 0 rgb(218 220 230 / 60%)
 	}
+	.floating-cart-button {
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		height: 50px;
+		width: 50px;
+		border-radius: 50%;
+		background-color: #D55905;
+	}
+	.floating-cart-icon {
+		color: white;
+		font-size: 35px;
+		transform: translate(-50%, -50%);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+	}
 }
 
 @media only screen and (min-width: 769px) {
@@ -1067,7 +1098,7 @@ hr {
 		font-weight: 600;
 	}
 	.content-padding {
-		padding: 0px 250px 50px;
+		padding: 0px 250px;
 	}
 	.shop-image {
 		width: 100%;
@@ -1155,7 +1186,7 @@ hr {
 		font-size: 20px;
 	}
 	.shop-details-outer {
-		padding: 30px 200px 100px;
+		padding: 30px 200px;
 		margin: 0px!important;
 	}
 	.empty-cart-image {
@@ -1261,7 +1292,6 @@ hr {
 	.cart-items {
 		background-color: orange;
 		padding: 20px;
-		min-height: 250px;
 		border-radius: 15px;
 		position: sticky;
 		top: 30px;
@@ -1674,6 +1704,17 @@ hr {
 		left: 50%;
 		opacity: 0.5;
 	}
+	.shop-closed-tag, .shopDetails-closed-tag {
+		height: 30px;
+		width: 53px;
+		background-color: #000;
+		color: #fff;
+		font-size: 15px;
+		border-radius: 6px;
+		padding: 5px;
+		margin-top: 10px;
+		margin-bottom: -15px;
+	}
 	.shopDetails-closed-tag {
 		background-color: #000;
 		color: #fff;
@@ -1686,7 +1727,7 @@ hr {
 		font-size: 30px;
 	}
 	.box {
-		height: 500px;
+		height: 510px;
 	}
 	.msg-modal-box-position {
 		position: absolute;
@@ -1730,5 +1771,9 @@ hr {
 		outline: none !important;
 		transform: translateY(-3px);
 		box-shadow: 1px 10px 0 rgb(218 220 230 / 60%)
+	}
+
+	.fa-cart-arrow-down{
+		display: none !important;
 	}
 }

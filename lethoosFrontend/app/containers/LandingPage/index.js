@@ -29,12 +29,12 @@ export class LandingPage extends React.PureComponent {
   state = {
     isOpenClassName: 'modal display-none container',
     shops: [],
-    customerDetails: {},
     isLoader: true
   }
 
   componentDidMount() {
     this.getShops()
+    JSON.parse(sessionStorage.getItem('customerDetails')).coupon.length === 0 && this.addingDiscountCopuons()
   }
 
 
@@ -45,6 +45,23 @@ export class LandingPage extends React.PureComponent {
         const shops = res.data;
         shops.sort((a, b) => (a.priority - b.priority))
         this.setState({ shops, isLoader: false });
+      })
+      .catch((error) => {
+        this.setState({
+          isLoader: false,
+          message: "Some Error Occured",
+          isMessageModal: true,
+          type: "failure"
+        })
+      });
+  }
+
+  addingDiscountCopuons = () => {
+    let id = JSON.parse(sessionStorage.getItem('customerDetails'))._id
+    let url = window.API_URL + `/customerLogin/coupons/${id}`;
+    axios.patch(url, {})
+      .then((res) => {
+        const couponAdded = res.data;
       })
       .catch((error) => {
         this.setState({
@@ -87,10 +104,10 @@ export class LandingPage extends React.PureComponent {
                     return <div key={index} onClick={() => this.props.history.push(`/shopDetails/${val._id}`)} className="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
                       <div className={val.status ? "box" : "box shop-closed-color"}>
                         <img className="shop-image img-responsive" src={val.image} />
+                        {!val.status && <div className="shop-closed-tag">Closed</div>}
                         <p className="shop-heading">{val.name}</p>
                         <p className="shop-time"><span className="shop-time-heading">Timing :</span> {val.time}</p>
                         <p className="shop-address"><span className="shop-time-heading">Address :</span> {val.address}</p>
-                        {!val.status && <div className="shop-closed-tag">Closed</div>}
                         <p className="shop-address"><span className="shop-time-heading">Description :</span> {val.description}</p>
                       </div>
                     </div>
