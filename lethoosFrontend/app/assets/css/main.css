@@ -468,7 +468,7 @@ hr {
 	}
 	.shop-header {
 		width: 100%;
-		height: 110px;
+		height: 130px;
 		padding: 10px
 	}
 	/* .empty-cart-image {
@@ -998,7 +998,7 @@ hr {
 		float: right;
 		height: 37px;
 		width: 67px;
-		margin-top: -89px;
+		margin-top: -15px;
 	}
 	.mob-view-checkbox {
 		position: absolute;
