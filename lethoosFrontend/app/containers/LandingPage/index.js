@@ -34,7 +34,6 @@ export class LandingPage extends React.PureComponent {
 
   componentDidMount() {
     this.getShops()
-    JSON.parse(sessionStorage.getItem('customerDetails')).coupon.length === 0 && this.addingDiscountCopuons()
   }
 
 
@@ -45,23 +44,6 @@ export class LandingPage extends React.PureComponent {
         const shops = res.data;
         shops.sort((a, b) => (a.priority - b.priority))
         this.setState({ shops, isLoader: false });
-      })
-      .catch((error) => {
-        this.setState({
-          isLoader: false,
-          message: "Some Error Occured",
-          isMessageModal: true,
-          type: "failure"
-        })
-      });
-  }
-
-  addingDiscountCopuons = () => {
-    let id = JSON.parse(sessionStorage.getItem('customerDetails'))._id
-    let url = window.API_URL + `/customerLogin/coupons/${id}`;
-    axios.patch(url, {})
-      .then((res) => {
-        const couponAdded = res.data;
       })
       .catch((error) => {
         this.setState({

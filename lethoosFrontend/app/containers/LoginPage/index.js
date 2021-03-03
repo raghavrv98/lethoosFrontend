@@ -57,6 +57,7 @@ export class LoginPage extends React.PureComponent {
         const customerDetails = res.data.data;
         if (Object.keys(customerDetails).length > 0) {
           sessionStorage.setItem("customerDetails", JSON.stringify(customerDetails))
+          customerDetails.coupon.length === 0 && this.addingDiscountCopuons()
           this.props.history.push('/landingPage')
         }
         else {
@@ -93,6 +94,24 @@ export class LoginPage extends React.PureComponent {
             isUserExist: false
           })
         }
+      })
+      .catch((error) => {
+        this.setState({
+          isLoader: false,
+          message: "Some Error Occured",
+          isMessageModal: true,
+          type: "failure"
+        })
+      });
+  }
+
+
+  addingDiscountCopuons = () => {
+    let id = JSON.parse(sessionStorage.getItem('customerDetails'))._id
+    let url = window.API_URL + `/customerLogin/coupons/${id}`;
+    axios.patch(url, {})
+      .then((res) => {
+        const couponAdded = res.data;
       })
       .catch((error) => {
         this.setState({
@@ -198,6 +217,7 @@ export class LoginPage extends React.PureComponent {
         </Helmet>
         <div className="loginPage row">
           <img className="loginBanner display-none" src={require('../../assets/images/loginBanner.png')} />
+          <img className="loginBackground" src={require('../../assets/images/loginBackground.jpg')} />
           <span className="loginbox">
             <img className="login-box-icon img-responsive" src={require('../../assets/images/logo.png')} />
             <p className="welcome-message">Welcome To The Land Of Tastiest Food</p>

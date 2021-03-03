@@ -319,7 +319,7 @@ export class ShopDetails extends React.PureComponent {
                 <div className="menu-items-outer col-md-8">
                   {this.state.shopDetails.details.map((val, index) => {
                     return <div key={index} className="menu-items">
-                      <img className="menu-items-image img-responsive" src={val.image} />
+                      <img className="menu-items-image img-responsive" src={this.state.shopDetails.imageName ==="foodFusion" ? window.API_IMAGE_URL + `${this.state.shopDetails.imageName}/${val.image}` : require('../../assets/images/noImage.jpg')} />
                       <p className="menu-items-name"> {val.name}</p>
                       <div><span className="menu-items-price"> {val.fullPrice}</span>{val.halfAvailable && <React.Fragment><span className="menu-items-half-text">Half -</span><span className="menu-items-half-price"> {val.halfPrice}</span><span className="mob-view-checkbox"><span className="menu-items-half-text">Check mark for Half</span><span><input type="checkbox" id={index} checked={val.isHalfSelected} className="menu-items-half-price-radioBox mob-left-10" onChange={this.halfPriceHandler} /></span></span></React.Fragment>}</div>
                       {(val.quantity + val.halfQuantity) > 0 ?

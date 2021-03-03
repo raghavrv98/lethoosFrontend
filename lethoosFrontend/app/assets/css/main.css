@@ -248,6 +248,7 @@ footer .text {
 	overflow-x: hidden;
 	transition: 0.5s;
 	padding-top: 60px;
+	z-index: 100;
 }
 
 .closNav {
@@ -298,6 +299,14 @@ hr {
 
 .disabled {
 	cursor: not-allowed !important;
+}
+
+.loginBackground{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	height: 100%;
+	right: 0%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1774,6 +1783,10 @@ hr {
 	}
 
 	.fa-cart-arrow-down{
+		display: none !important;
+	}
+
+	.loginBackground{
 		display: none !important;
 	}
 }
