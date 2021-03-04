@@ -192,6 +192,8 @@ export class OrderHistoryPage extends React.PureComponent {
               <p className="order-history-box-text-heading">Date <span className="order-history-box-text"> {moment(this.state.modalDetailObject.orderDate).format("DD MMM YYYY HH : mm")}</span></p>
               <p className="order-history-box-text-heading">Phone Number <span className="order-history-box-text"> {this.sameMobileNumberCheckHandler(this.state.customerDetails.mobileNumber, this.state.modalDetailObject.orderAlternateMobileNumber)}</span></p>
               <p className="order-history-box-text-heading">Deliver To <span className="order-history-box-text"> <textarea className="text-area-order-history" value={this.state.modalDetailObject.orderAddress} rows="2" cols="25" readOnly /></span></p>
+              <p className="order-history-box-text-heading">Delivery Agent Name <span className="order-history-box-text">Pawan Singh</span></p>
+              <p className="order-history-box-text-heading">Delivery Agent Phone Number <span className="order-history-box-text"> 8439395179</span></p>
             </div>
           </div>
         </div>}
