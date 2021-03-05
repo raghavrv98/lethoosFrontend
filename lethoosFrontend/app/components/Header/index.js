@@ -53,6 +53,7 @@ class Header extends React.PureComponent {
             <img className="logo" src={require('../../assets/images/logo.png')} />
             <p className="logo-text">Le Thoos</p>
             <span className="nav-items">
+              {this.state.customerDetails.accountType === "admin" && <span className="nav-mr" onClick={() => history.push('/adminPage')}><i className="fa fa-cogs" aria-hidden="true"></i>Admin</span>}
               <span className="nav-mr" onClick={() => history.push('/landingPage')}><i className="fa fa-home" aria-hidden="true"></i> Shops</span>
               <span className="nav-mr" onClick={() => history.push('/offersPage')}><i className="fa fa-tags" aria-hidden="true"></i> Offers</span>
               <span className="nav-mr" onClick={() => history.push('/orderHistoryPage')}><i className="fa fa-history" aria-hidden="true"></i> Order History</span>
@@ -72,6 +73,7 @@ class Header extends React.PureComponent {
               <p className="logo-text-mob">Le Thoos</p>
             </div>
             <p className="mob-nav-text">Hi, {this.state.customerDetails.name && capitalizeFirstLetter(this.state.customerDetails.name)}</p>
+            {this.state.customerDetails.accountType === "admin" && <p className="sidenav-heading" onClick={() => history.push('/adminPage')}>Admin</p>}
             <p className="sidenav-heading" onClick={() => history.push('/profilePage')} >Profile</p>
             <p className="sidenav-heading" onClick={() => history.push('/orderHistoryPage')}>Order History</p>
             <p className="sidenav-heading" onClick={() => history.push('/landingPage')}>Shops</p>

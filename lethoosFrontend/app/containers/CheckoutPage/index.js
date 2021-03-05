@@ -102,7 +102,7 @@ export class CheckoutPage extends React.PureComponent {
   couponInputChangeHandler = event => {
     let payload = cloneDeep(this.state.payload)
 
-    payload.orderHistory[event.target.id] = event.target.value
+    payload.orderHistory[event.target.id] = (event.target.value).toUpperCase();
 
     this.setState({
       payload,
@@ -390,7 +390,7 @@ export class CheckoutPage extends React.PureComponent {
 
 
                     <div className="bill-info-delivery-text"> Delivery Charges  <span className="float-right">+ {this.state.payload.orderHistory.area.slice(-2)}</span></div>
-                    <div className="mr-t-25"><input value={this.state.payload.orderHistory.coupon} placeholder="Enter Code" id="coupon" onChange={this.couponInputChangeHandler} className="form-control input-lg checkout-apply-text" type="text" /><button onClick={() => this.state.payload.orderHistory.coupon.length > 0 ? this.checkCouponCode() : ""} className={`checkout-apply-btn ${this.state.payload.orderHistory.coupon.length > 0 ? "" : "checkout-apply-btn-disabled"}`} type="button">Apply</button></div>
+                    <div className="mr-t-25"><input value={this.state.payload.orderHistory.coupon} placeholder="Enter Code" id="coupon" onChange={this.couponInputChangeHandler} className="form-control input-lg checkout-apply-text" type="text" /><span onClick={() => this.props.history.push('/offersPage')} className="offers-check-text" >Offers</span><button onClick={() => this.state.payload.orderHistory.coupon.length > 0 ? this.checkCouponCode() : ""} className={`checkout-apply-btn ${this.state.payload.orderHistory.coupon.length > 0 ? "" : "checkout-apply-btn-disabled"}`} type="button">Apply</button></div>
                     <p className={this.state.codeCouponText === "Code applied" ? "checkout-code-applied" : "checkout-code-not-applied"}>{this.state.codeCouponText.length > 0 && this.state.codeCouponText}</p>
                     <hr />
                     <p className={this.state.codeCouponText === "Code applied" ? "checkout-discount-text" : "checkout-total-text"}> Total <span className="float-right">{this.totalBillHandler(this.state.payload.orderHistory.area.slice(-2), this.state.payload.orderHistory.total)}</span></p>

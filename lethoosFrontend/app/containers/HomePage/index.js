@@ -25,6 +25,7 @@ import OrderPlacedPage from '../../containers/OrderPlacedPage/Loadable';
 import OffersPage from '../../containers/OffersPage/Loadable';
 import OrderHistoryPage from '../../containers/OrderHistoryPage/Loadable';
 import ProfilePage from '../../containers/ProfilePage/Loadable';
+import AdminPage from '../../containers/AdminPage/Loadable';
 import NotFoundPage from '../../components/NotFoundPage/Loadable'
 
 /* eslint-disable react/prefer-stateless-function */
@@ -42,10 +43,9 @@ export class HomePage extends React.PureComponent {
     }
     this.setState({
       customerDetails,
-      isLoading: false
     })
-    this.refreshAt(14,0,0);
-    this.refreshAt(20,0,0);
+    this.refreshAt(14, 0, 0);
+    this.refreshAt(20, 0, 0);
   }
 
   // auto reload for checking shop status
@@ -64,11 +64,17 @@ export class HomePage extends React.PureComponent {
     then.setSeconds(seconds);
 
     var timeout = (then.getTime() - now.getTime());
-    setTimeout(function () { window.location.reload(true); }, timeout);
+    setTimeout(() => { window.location.reload(true); }, timeout);
   }
 
 
   render() {
+    setTimeout(() => {
+      this.setState({
+        isLoading: false
+      })
+    }, 1000);
+
     return (
       <React.Fragment>
         {this.state.isLoading ?
@@ -83,6 +89,7 @@ export class HomePage extends React.PureComponent {
             <Route exact path="/offersPage" render={props => <OffersPage {...props} />} />
             <Route exact path="/orderHistoryPage" render={props => <OrderHistoryPage {...props} />} />
             <Route exact path="/profilePage" render={props => <ProfilePage {...props} />} />
+            <Route exact path="/adminPage" render={props => <AdminPage {...props} />} />
             <Route path="/error404" render={props => <NotFoundPage {...props} />} />
             <Route component={NotFoundPage} />
           </Switch>
