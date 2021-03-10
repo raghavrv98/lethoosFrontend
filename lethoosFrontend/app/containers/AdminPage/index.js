@@ -26,9 +26,14 @@ import axios from 'axios'
 export class AdminPage extends React.PureComponent {
 
   state = {
-    isLoader: false
+    isLoader: true,
+    shops: []
   }
 
+
+  componentDidMount() {
+    this.getShops()
+  }
 
   changeShopStatusHandler = event => {
     event.preventDefault();
@@ -44,10 +49,33 @@ export class AdminPage extends React.PureComponent {
           message: id == "open" ? "shop Open Successfully" : "Shop Close Successfully",
           isMessageModal: true,
           type: "success"
-        }, () => this.modalCloseHandler())
+        }, () => this.modalCloseHandler(), this.shopUpdateHandler())
       })
       .catch((error) => {
-        // let message = errorHandler(error);
+        this.setState({
+          isLoader: false,
+          message: "Some Error Occured",
+          isMessageModal: true,
+          type: "failure"
+        })
+      });
+  }
+
+  shopUpdateHandler = () => {
+    this.setState({
+      isLoader: true
+    }, () => this.getShops())
+  }
+
+  getShops = () => {
+    let url = window.API_URL + "/shop";
+    axios.get(url)
+      .then((res) => {
+        const shops = res.data;
+        shops.sort((a, b) => (a.priority - b.priority))
+        this.setState({ shops, isLoader: false });
+      })
+      .catch((error) => {
         this.setState({
           isLoader: false,
           message: "Some Error Occured",
@@ -81,14 +109,44 @@ export class AdminPage extends React.PureComponent {
             <div className="lds-dual-ring"></div>
             :
             <React.Fragment>
-              <div className="row">
-                <div className="col-md-6">
+              <div className="row mr-b-30">
+                <div className="col-md-4">
+                  <p className="status-text">All Shops Status</p>
+                </div>
+                <div className="col-md-4">
                   <button type="button" id="open" onClick={this.changeShopStatusHandler} className="btn btn-success admin-shop-status-btn">Open</button>
                 </div>
-                <div className="col-md-6">
+                <div className="col-md-4">
                   <button type="button" id="close" onClick={this.changeShopStatusHandler} className="btn btn-danger admin-shop-status-btn">Close</button>
                 </div>
               </div>
+
+              <div className="row">
+
+                {this.state.shops.length > 0 ?
+                  this.state.shops.map((val, index) => {
+                    return <div key={index} onClick={() => this.props.history.push(`/admin/shopDetails/${val._id}`)} className="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                      <div className={val.status ? "box" : "box shop-closed-color"}>
+                        <img className="shop-image img-responsive" src={val.image} />
+                        {!val.status && <div className="shop-closed-tag">Closed</div>}
+                        <p className="shop-heading">{val.name}</p>
+                        <p className="shop-time"><span className="shop-time-heading">Timing :</span> {val.time}</p>
+                        <p className="shop-time"><span className="shop-time-heading">Delivery Time :</span> {val.deliveryTime}</p>
+                        <p className="shop-address"><span className="shop-time-heading">Address :</span> {val.address}</p>
+                        <p className="shop-address"><span className="shop-time-heading">Description :</span> {val.description}</p>
+                      </div>
+                    </div>
+                  })
+                  :
+                  <div className="no-shops-found">
+                    <p className="no-shops-found-heading">No Shops Available</p>
+                    <img className="no-shops-found-image" src={require('../../assets/images/noShopsFound.jpg')} />
+                    <img className="no-shops-found-image-glass" src={require('../../assets/images/glassIcon.png')} />
+                  </div>
+                }
+
+              </div>
+
             </React.Fragment>
           }
 

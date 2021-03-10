@@ -27,7 +27,6 @@ import MessageModal from '../../components/MessageModal';
 export class LandingPage extends React.PureComponent {
 
   state = {
-    isOpenClassName: 'modal display-none container',
     shops: [],
     isLoader: true
   }
