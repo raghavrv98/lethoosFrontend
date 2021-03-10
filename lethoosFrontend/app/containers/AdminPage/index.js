@@ -60,12 +60,10 @@ export class AdminPage extends React.PureComponent {
   modalCloseHandler = () => {
     setTimeout(() => {
       this.setState({
-        isMessageModal: true
+        isMessageModal: false
       })
     }, 1000);
   }
-
-
 
   render() {
     return (
