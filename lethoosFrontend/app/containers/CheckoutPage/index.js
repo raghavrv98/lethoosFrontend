@@ -187,22 +187,23 @@ export class CheckoutPage extends React.PureComponent {
 
     let mailDetails = {
       shopName: orderHistoryCopy.shopName,
+      shopImage : orderHistoryCopy.shopImage,
       shopAddress: orderHistoryCopy.shopAddress,
       shopMobileNumber: orderHistoryCopy.shopMobileNumber,
       customerName: customerDetails.name,
       customerAddress: orderHistoryCopy.orderAddress,
       customerNumber: customerDetails.mobileNumber,
       customerCallingNumber: orderHistoryCopy.orderAlternateMobileNumber,
+      customerCoupon: orderHistoryCopy.coupon,
       customerPaymentMethod: payload.paymentMethod,
       customerTotalDiscount: orderHistoryCopy.totalDiscount,
       customerTotalAmount: orderHistoryCopy.total + parseInt(orderHistoryCopy.area.slice(-2) - orderHistoryCopy.totalDiscount),
       customerArea: orderHistoryCopy.area.slice(0, -2),
       customerOrderNumber: orderHistoryCopy.orderNumber,
-      customerOrderDate: moment(orderHistoryCopy.orderDate).format("DD MMM HH:mm"),
+      customerOrderDate: orderHistoryCopy.orderDate,
       orderSpecifications: orderHistoryCopy.otherSpecifications,
       customerOrders: orders,
       customerDeliveryCharges: orderHistoryCopy.area.slice(-2),
-
     }
 
     var url = window.API_URL + `/customerLogin/orderDetails/mail`;

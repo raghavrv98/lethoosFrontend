@@ -28,6 +28,7 @@ import ProfilePage from '../../containers/ProfilePage/Loadable';
 import AdminPage from '../../containers/AdminPage/Loadable';
 import NotFoundPage from '../../components/NotFoundPage/Loadable'
 import AdminShopEdit from '../../containers/AdminShopEdit/Loadable'
+import OrderDetails from '../../containers/OrderDetails/Loadable'
 
 /* eslint-disable react/prefer-stateless-function */
 export class HomePage extends React.PureComponent {
@@ -85,6 +86,7 @@ export class HomePage extends React.PureComponent {
             <Route exact path="/login" render={props => <LoginPage {...props} />} />
             <Route exact path="/" render={props => <LoginPage {...props} />} />
             <Route exact path="/shopDetails/:id" render={props => <ShopDetails {...props} />} />
+            <Route exact path="/orderDetails" render={props => <OrderDetails {...props} />} />
             <Route exact path="/checkoutPage" render={props => <CheckoutPage {...props} />} />
             <Route exact path="/orderPlacedPage" render={props => <OrderPlacedPage {...props} />} />
             <Route exact path="/offersPage" render={props => <OffersPage {...props} />} />

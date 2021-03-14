@@ -1,6 +1,6 @@
 /**
  *
- * OrderHistoryPage
+ * OrderDetails
  *
  */
 
@@ -14,22 +14,22 @@ import { compose } from 'redux';
 
 import injectSaga from 'utils/injectSaga';
 import injectReducer from 'utils/injectReducer';
-import makeSelectOrderHistoryPage from './selectors';
+import makeSelectOrderDetails from './selectors';
 import reducer from './reducer';
 import saga from './saga';
+import messages from './messages';
 import Header from '../../components/Header/Loadable'
 import axios from 'axios';
-import messages from './messages';
 import moment from 'moment';
 import { errorHandler } from "../../utils/customUtils";
 import MessageModal from '../../components/MessageModal';
-
 var itemTotal = 0
-/* eslint-disable react/prefer-stateless-function */
-export class OrderHistoryPage extends React.PureComponent {
 
+/* eslint-disable react/prefer-stateless-function */
+export class OrderDetails extends React.PureComponent {
   state = {
     customerDetails: {},
+    couponIdCopy: "",
     detailsModal: false,
     isLoader: true,
     type: "success"
@@ -42,7 +42,7 @@ export class OrderHistoryPage extends React.PureComponent {
     }
     this.setState({
       customerDetails
-    }, () => this.customerDetailsHandler())
+    }, () => this.orderDetailsHandler())
   }
 
   detailsModalHandler = (val) => {
@@ -57,14 +57,13 @@ export class OrderHistoryPage extends React.PureComponent {
     return (parseInt(totalBill) + parseInt(delivery)) - parseInt(discount)
   }
 
-  customerDetailsHandler = () => {
-    let url = window.API_URL + `/customerLogin/${this.state.customerDetails._id}`;
+  orderDetailsHandler = () => {
+    let url = window.API_URL + `/orderDetails`;
     axios.get(url)
       .then((res) => {
-        const customerDetails = res.data;
-        sessionStorage.setItem("customerDetails", JSON.stringify(customerDetails))
+        const orderDetails = res.data.reverse();
         this.setState({
-          customerDetails,
+          orderDetails,
           isLoader: false
         })
       })
@@ -105,20 +104,20 @@ export class OrderHistoryPage extends React.PureComponent {
     return (
       <div>
         <Helmet>
-          <title>OrderHistoryPage</title>
+          <title>OrderDetailsPage</title>
           <meta name="description" content="Description of OrderHistoryPage" />
         </Helmet>
 
         <Header />
 
-        <p className="offers-heading">Orders History</p>
+        <p className="offers-heading">Daily Orders Details ({this.state.orderDetails && this.state.orderDetails.length})</p>
         <div className="order-history-outer row">
           {this.state.isLoader ?
             <div className="lds-dual-ring"></div>
             :
-            this.state.customerDetails.orderHistory.length > 0 && this.state.type === "success" ?
+            this.state.orderDetails.length > 0 ?
               <React.Fragment>
-                {this.state.customerDetails.orderHistory.map((val, index) =>
+                {this.state.orderDetails.map((val, index) =>
                   <div key={index} className="col-md-3 no-padding">
                     <div className="order-history-box">
                       <div className="row">
@@ -131,8 +130,8 @@ export class OrderHistoryPage extends React.PureComponent {
                         </div>
                       </div>
                       <hr />
-                      <p className="mr-b-10"><span className="order-history-box-text-heading">Order Number :</span><span className="order-history-box-text">{val.orderNumber}</span></p>
-                      <p className="mr-b-10"><span className="order-history-box-text-heading">Order Date :</span><span className="order-history-box-text">{moment(val.orderDate).format("DD MMM YYYY HH:mm")}</span></p>
+                      <p className="mr-b-10"><span className="order-history-box-text-heading">Order Number :</span><span className="order-history-box-text">{val.customerOrderNumber}</span></p>
+                      <p className="mr-b-10"><span className="order-history-box-text-heading">Order Date :</span><span className="order-history-box-text">{val.customerOrderDate ? moment(val.customerOrderDate).format("DD MMM YYYY HH : mm") : "NA"}</span></p>
                       <div className="text-center"><button type="button" onClick={() => this.detailsModalHandler(val)} className="order-history-box-btn"><span className="order-history-box-btn-text">View Details</span></button></div>
                     </div>
                   </div>
@@ -167,31 +166,22 @@ export class OrderHistoryPage extends React.PureComponent {
                 </div>
               </div>
               <hr />
-              <p className="order-history-modal-body-heading">Your Order</p>
-              {this.state.modalDetailObject.orders.map((val, index) => {
-                return <div key={index}>
-                  <p className="order-history-modal-body-item-portion-text">{val.portion}</p>
-                  {val.isHalfSelected ?
-                    <React.Fragment><span className="order-history-modal-body-quantity-text">{val.item} X {val.halfQuantity}</span> <span className="order-history-modal-body-item-cost-text">{val.price * val.halfQuantity}</span><span>(Half)</span></React.Fragment>
-                    :
-                    <React.Fragment><span className="order-history-modal-body-quantity-text">{val.item} X {val.quantity}</span> <span className="order-history-modal-body-item-cost-text">{val.price * val.quantity}</span></React.Fragment>
-                  }
-                </div>
-              })}
+              <p className="order-history-modal-body-heading">Customer Order</p>
+              {this.state.modalDetailObject.customerOrders.map((val, index) => <p className="font-size-30" key={index}>{val}</p>)}
               <p className="order-history-box-text-heading mr-t-15">Other Specifications</p>
-              <p className="order-history-box-specification-text">{this.state.modalDetailObject.otherSpecifications ? this.state.modalDetailObject.otherSpecifications : "NA"}</p>
-              <p className="order-history-box-text-heading mr-t-45"> Item Total <span className="order-history-box-text"> {this.state.modalDetailObject.total}</span></p>
-              <p className="order-history-box-text-heading">Coupon Code <span className="order-history-box-text"> {this.state.modalDetailObject.coupon.length > 0 ? this.state.modalDetailObject.coupon : "NA"}</span></p>
-              <p className="order-history-box-text-heading">Total Discount <span className="order-history-box-text"> - {this.state.modalDetailObject.totalDiscount}</span></p>
-              <p className="order-history-box-text-heading">Delivery Charge <span className="order-history-box-text"> + {this.state.modalDetailObject.area.slice(-2)}</span></p>
-              <p className="order-history-box-text-heading text-color">Grand Total <span className="order-history-box-text"> {this.grandTotalBill(this.state.modalDetailObject.total, this.state.modalDetailObject.area.slice(-2), this.state.modalDetailObject.totalDiscount)}</span></p>
+              <p className="order-history-box-specification-text">{this.state.modalDetailObject.orderSpecifications ? this.state.modalDetailObject.orderSpecifications : "NA"}</p>
+              <p className="order-history-box-text-heading mr-t-45"> Item Total <span className="order-history-box-text"> {this.state.modalDetailObject.customerTotalAmount - this.state.modalDetailObject.customerDeliveryCharges}</span></p>
+              <p className="order-history-box-text-heading">Coupon Code <span className="order-history-box-text"> {this.state.modalDetailObject.customerCoupon ? this.state.modalDetailObject.customerCoupon : "NA"}</span></p>
+              <p className="order-history-box-text-heading">Total Discount <span className="order-history-box-text"> - {this.state.modalDetailObject.customerTotalDiscount}</span></p>
+              <p className="order-history-box-text-heading">Delivery Charge <span className="order-history-box-text"> + {this.state.modalDetailObject.customerDeliveryCharges}</span></p>
+              <p className="order-history-box-text-heading text-color">Grand Total <span className="order-history-box-text"> {this.state.modalDetailObject.customerTotalAmount}</span></p>
               <hr />
-              <p className="order-history-box-text-heading">Order Number <span className="order-history-box-text"> {this.state.modalDetailObject.orderNumber}</span></p>
-              <p className="order-history-box-text-heading">Payment <span className="order-history-box-text"> {this.state.customerDetails.paymentMethod}</span></p>
-              <p className="order-history-box-text-heading">Date <span className="order-history-box-text"> {moment(this.state.modalDetailObject.orderDate).format("DD MMM YYYY HH : mm")}</span></p>
-              <p className="order-history-box-text-heading">Phone Number <span className="order-history-box-text"> {this.sameMobileNumberCheckHandler(this.state.customerDetails.mobileNumber, this.state.modalDetailObject.orderAlternateMobileNumber)}</span></p>
+              <p className="order-history-box-text-heading">Order Number <span className="order-history-box-text"> {this.state.modalDetailObject.customerOrderNumber}</span></p>
+              <p className="order-history-box-text-heading">Payment <span className="order-history-box-text"> {this.state.modalDetailObject.customerPaymentMethod}</span></p>
+              <p className="order-history-box-text-heading">Date <span className="order-history-box-text"> {this.state.modalDetailObject.customerOrderDate ? moment(this.state.modalDetailObject.customerOrderDate).format("DD MMM YYYY HH : mm") : "NA"}</span></p>
+              <p className="order-history-box-text-heading">Phone Number <span className="order-history-box-text"> {this.sameMobileNumberCheckHandler(this.state.modalDetailObject.customerNumber, this.state.modalDetailObject.customerCallingNumber)}</span></p>
               <p className="order-history-box-text-heading">Deliver To</p>
-              <p className="order-history-box-specification-text">{this.state.modalDetailObject.orderAddress}</p>
+              <p className="order-history-box-specification-text">{this.state.modalDetailObject.customerAddress}</p>
               <p className="order-history-box-text-heading">Delivery Agent Name <span className="order-history-box-text">Pawan Singh</span></p>
               <p className="order-history-box-text-heading">Delivery Agent Phone Number <span className="order-history-box-text"> 8439395179</span></p>
             </div>
@@ -207,12 +197,12 @@ export class OrderHistoryPage extends React.PureComponent {
   }
 }
 
-OrderHistoryPage.propTypes = {
+OrderDetails.propTypes = {
   dispatch: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = createStructuredSelector({
-  orderHistoryPage: makeSelectOrderHistoryPage(),
+  orderDetails: makeSelectOrderDetails(),
 });
 
 function mapDispatchToProps(dispatch) {
@@ -226,11 +216,11 @@ const withConnect = connect(
   mapDispatchToProps,
 );
 
-const withReducer = injectReducer({ key: 'orderHistoryPage', reducer });
-const withSaga = injectSaga({ key: 'orderHistoryPage', saga });
+const withReducer = injectReducer({ key: 'orderDetails', reducer });
+const withSaga = injectSaga({ key: 'orderDetails', saga });
 
 export default compose(
   withReducer,
   withSaga,
   withConnect,
-)(OrderHistoryPage);
+)(OrderDetails);
