@@ -35,7 +35,7 @@ export class HomePage extends React.PureComponent {
 
   state = {
     customerDetails: {},
-    isLoading: true
+    isLoading: false
   }
 
   componentWillMount() {

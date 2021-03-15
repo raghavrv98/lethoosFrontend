@@ -187,7 +187,7 @@ export class CheckoutPage extends React.PureComponent {
 
     let mailDetails = {
       shopName: orderHistoryCopy.shopName,
-      shopImage : orderHistoryCopy.shopImage,
+      shopImage: orderHistoryCopy.shopImage,
       shopAddress: orderHistoryCopy.shopAddress,
       shopMobileNumber: orderHistoryCopy.shopMobileNumber,
       customerName: customerDetails.name,
@@ -342,8 +342,22 @@ export class CheckoutPage extends React.PureComponent {
                       <label className="box-label" htmlFor="inputlg">Select Area</label>
                       <select className="area-box" onChange={this.inputChangeHandler} value={this.state.payload.orderHistory.area} id="area" required>
                         <option value="Other20">Other</option>
-                        <option value="kosi10">kosi</option>
-                        <option value="jindal20">Jindal</option>
+                        <option value="aryaNagar10">Arya Nagar</option>
+                        <option value="ramNagar10">Ram Nagar</option>
+                        <option value="gopalNagar10">Gopal Nagar</option>
+                        <option value="baldevGanj10">Baldev Ganj</option>
+                        <option value="shekhanMohalla10">Shekhan Mohalla</option>
+                        <option value="khedaUpar10">Kheda Upar</option>
+                        <option value="talabShahi10">Talab Shahi</option>
+                        <option value="lalaRamMarg10">Lala Ram Marg</option>
+                        <option value="kaliMandir10">Kali Mandir</option>
+                        <option value="bhatuColony10">Bhatu Colony</option>
+                        <option value="nandgaonRoad20">Nandgaon Road</option>
+                        <option value="newAnajMandi20">New Anaj Mandi</option>
+                        <option value="jindalGateNoOne20">Jindal Gate no. 1</option>
+                        <option value="jindalGateNoTwo20">Jindal Gate no. 2</option>
+                        <option value="krishnaColony20">Krishna Colony</option>
+                        <option value="agrawalColony20">Agrawal Colony</option>
                         <option value="narsiVillage20">Narsi Village</option>
                         <option value="gopalBagh20">Gopal Bagh</option>
                         <option value="kamlaNagar20">Kamla Nagar</option>
