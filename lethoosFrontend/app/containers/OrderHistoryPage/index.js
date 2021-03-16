@@ -120,6 +120,7 @@ export class OrderHistoryPage extends React.PureComponent {
               <React.Fragment>
                 {this.state.customerDetails.orderHistory.map((val, index) =>
                   <div key={index} className="col-md-3 no-padding">
+                    {val.isOrderCancel && < img className="order-cancel-img" src={require('../../assets/images/cancel.png')} />}
                     <div className="order-history-box">
                       <div className="row">
                         <div className="col-md-3">

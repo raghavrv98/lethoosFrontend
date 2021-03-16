@@ -42,7 +42,7 @@ export class OrderDetails extends React.PureComponent {
     }
     this.setState({
       customerDetails
-    }, () => this.orderDetailsHandler())
+    }, () => this.orderDetailsHandler(), this.customerDetailsHandler())
   }
 
   detailsModalHandler = (val) => {
@@ -51,6 +51,28 @@ export class OrderDetails extends React.PureComponent {
       detailsModal: true,
       modalDetailObject: val
     })
+  }
+
+  customerDetailsHandler = () => {
+    let customerDetails = JSON.parse(sessionStorage.getItem("customerDetails")) ? JSON.parse(sessionStorage.getItem("customerDetails")) : this.state.customerDetails;
+    let url = window.API_URL + `/customerLogin/${customerDetails._id}`;
+    axios.get(url)
+      .then((res) => {
+        const customerDetails = res.data;
+        sessionStorage.setItem("customerDetails", JSON.stringify(customerDetails))
+        this.setState({
+          customerDetails,
+          isLoader: true
+        })
+      })
+      .catch((error) => {
+        this.setState({
+          isLoader: false,
+          message: "Some Error Occured",
+          isMessageModal: true,
+          type: "failure"
+        })
+      });
   }
 
   grandTotalBill = (totalBill, delivery, discount) => {
@@ -100,6 +122,52 @@ export class OrderDetails extends React.PureComponent {
     })
   }
 
+  orderCancelHandler = (customerId, isOrderCancel, orderId, customerOrderNumber) => {
+    let customerDetails = JSON.parse(sessionStorage.getItem("customerDetails")) ? JSON.parse(sessionStorage.getItem("customerDetails")) : this.state.customerDetails;
+    customerDetails.orderHistory.find(val => val.orderNumber == customerOrderNumber).isOrderCancel = !customerDetails.orderHistory.find(val => val.orderNumber == customerOrderNumber).isOrderCancel
+
+    let url = window.API_URL + `/customerLogin/orderCancel/${customerId}`;
+    axios.patch(url, customerDetails)
+      .then((res) => {
+        this.setState({
+          isLoader: false,
+          message: "Order status updated successfully",
+          isMessageModal: true,
+          type: "success"
+        }, () => this.modalCloseHandler())
+      })
+      .catch((error) => {
+        // let message = errorHandler(error);
+        this.setState({
+          isLoader: false,
+          message: "Some Error Occured",
+          isMessageModal: true,
+          type: "failure"
+        })
+      });
+
+    let payload = { isOrderCancel: !isOrderCancel }
+    url = window.API_URL + `/customerLogin/orderDetails/orderCancel/${orderId}`;
+    axios.patch(url, payload)
+      .then((res) => {
+        this.setState({
+          isLoader: false,
+          message: "Order status updated successfully",
+          isMessageModal: true,
+          type: "success"
+        }, () => this.modalCloseHandler(), this.orderDetailsHandler())
+      })
+      .catch((error) => {
+        // let message = errorHandler(error);
+        this.setState({
+          isLoader: false,
+          message: "Some Error Occured",
+          isMessageModal: true,
+          type: "failure"
+        })
+      });
+  }
+
   render() {
     return (
       <div>
@@ -107,7 +175,6 @@ export class OrderDetails extends React.PureComponent {
           <title>OrderDetailsPage</title>
           <meta name="description" content="Description of OrderHistoryPage" />
         </Helmet>
-
         <Header />
 
         <p className="offers-heading">Daily Orders Details ({this.state.orderDetails && this.state.orderDetails.length})</p>
@@ -115,10 +182,11 @@ export class OrderDetails extends React.PureComponent {
           {this.state.isLoader ?
             <div className="lds-dual-ring"></div>
             :
-            this.state.orderDetails.length > 0 ?
+            this.state.orderDetails && this.state.orderDetails.length > 0 ?
               <React.Fragment>
                 {this.state.orderDetails.map((val, index) =>
                   <div key={index} className="col-md-3 no-padding">
+                    {val.isOrderCancel && < img className="order-cancel-img" src={require('../../assets/images/cancel.png')} />}
                     <div className="order-history-box">
                       <div className="row">
                         <div className="col-md-3">
@@ -130,9 +198,13 @@ export class OrderDetails extends React.PureComponent {
                         </div>
                       </div>
                       <hr />
-                      <p className="mr-b-10"><span className="order-history-box-text-heading">Order Number :</span><span className="order-history-box-text">{val.customerOrderNumber}</span></p>
+                      <p className="mr-b-10"><span className="order-history-box-text-heading">Customer Name :</span><span className="order-history-box-text">{val.customerName}</span></p>
+                      <p className="mr-b-10"><span className="order-history-box-text-heading">Customer Order Number :</span><span className="order-history-box-text">{val.customerOrderNumber}</span></p>
                       <p className="mr-b-10"><span className="order-history-box-text-heading">Order Date :</span><span className="order-history-box-text">{val.customerOrderDate ? moment(val.customerOrderDate).format("DD MMM YYYY HH : mm") : "NA"}</span></p>
-                      <div className="text-center"><button type="button" onClick={() => this.detailsModalHandler(val)} className="order-history-box-btn"><span className="order-history-box-btn-text">View Details</span></button></div>
+                      <div className="text-center">
+                        <span className="text-center"><button type="button" onClick={() => this.detailsModalHandler(val)} className="order-history-box-btn"><span className="order-history-box-btn-text">View Details</span></button></span>
+                        <span className="text-center mr-l-15p"><button type="button" onClick={() => this.orderCancelHandler(val.customerId, val.isOrderCancel, val._id, val.customerOrderNumber)} className="order-history-box-btn"><span className="order-history-box-btn-text">Cancel Order</span></button></span>
+                      </div>
                     </div>
                   </div>
                 )}
@@ -170,13 +242,14 @@ export class OrderDetails extends React.PureComponent {
               {this.state.modalDetailObject.customerOrders.map((val, index) => <p className="font-size-30" key={index}>{val}</p>)}
               <p className="order-history-box-text-heading mr-t-15">Other Specifications</p>
               <p className="order-history-box-specification-text">{this.state.modalDetailObject.orderSpecifications ? this.state.modalDetailObject.orderSpecifications : "NA"}</p>
-              <p className="order-history-box-text-heading mr-t-45"> Item Total <span className="order-history-box-text"> {this.state.modalDetailObject.customerTotalAmount - this.state.modalDetailObject.customerDeliveryCharges}</span></p>
+              <p className="order-history-box-text-heading mr-t-45"> Item Total <span className="order-history-box-text"> {this.state.modalDetailObject.customerTotalAmount}</span></p>
               <p className="order-history-box-text-heading">Coupon Code <span className="order-history-box-text"> {this.state.modalDetailObject.customerCoupon ? this.state.modalDetailObject.customerCoupon : "NA"}</span></p>
               <p className="order-history-box-text-heading">Total Discount <span className="order-history-box-text"> - {this.state.modalDetailObject.customerTotalDiscount}</span></p>
               <p className="order-history-box-text-heading">Delivery Charge <span className="order-history-box-text"> + {this.state.modalDetailObject.customerDeliveryCharges}</span></p>
-              <p className="order-history-box-text-heading text-color">Grand Total <span className="order-history-box-text"> {this.state.modalDetailObject.customerTotalAmount}</span></p>
+              <p className="order-history-box-text-heading text-color">Grand Total <span className="order-history-box-text"> {this.state.modalDetailObject.customerTotalAmount - this.state.modalDetailObject.customerTotalDiscount + parseInt(this.state.modalDetailObject.customerDeliveryCharges)}</span></p>
               <hr />
-              <p className="order-history-box-text-heading">Order Number <span className="order-history-box-text"> {this.state.modalDetailObject.customerOrderNumber}</span></p>
+              <p className="order-history-box-text-heading">Customer Order Number <span className="order-history-box-text"> {this.state.modalDetailObject.customerOrderNumber}</span></p>
+              <p className="order-history-box-text-heading">Customer Name <span className="order-history-box-text"> {this.state.modalDetailObject.customerName}</span></p>
               <p className="order-history-box-text-heading">Payment <span className="order-history-box-text"> {this.state.modalDetailObject.customerPaymentMethod}</span></p>
               <p className="order-history-box-text-heading">Date <span className="order-history-box-text"> {this.state.modalDetailObject.customerOrderDate ? moment(this.state.modalDetailObject.customerOrderDate).format("DD MMM YYYY HH : mm") : "NA"}</span></p>
               <p className="order-history-box-text-heading">Phone Number <span className="order-history-box-text"> {this.sameMobileNumberCheckHandler(this.state.modalDetailObject.customerNumber, this.state.modalDetailObject.customerCallingNumber)}</span></p>

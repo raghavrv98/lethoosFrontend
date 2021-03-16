@@ -9,6 +9,14 @@ html {
 	scroll-behavior: smooth !important;
 }
 
+.pd-r-0 {
+	padding-right: 0px !important;
+}
+
+.mr-l-15p {
+	margin-left: 15% !important;
+}
+
 .mr-r-15 {
 	margin-right: 15px;
 }
@@ -21,7 +29,7 @@ html {
 	margin-right: 5px;
 }
 
-.mr-b-20{
+.mr-b-20 {
 	margin-bottom: 20px !important;
 }
 
@@ -49,8 +57,8 @@ html {
 	margin-left: -20px;
 }
 
-.mr-b-40{
-margin-bottom: 40px !important;
+.mr-b-40 {
+	margin-bottom: 40px !important;
 }
 
 .sticky-top {
@@ -123,7 +131,7 @@ margin-bottom: 40px !important;
 .box {
 	width: 100%;
 	background-color: #ffffff;
-	border-radius:5px;
+	border-radius: 5px;
 	padding: 20px;
 	border-color: #d3d5df;
 	box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
@@ -376,7 +384,7 @@ hr {
 	right: 0%;
 }
 
-.order-history-box-specification-text{
+.order-history-box-specification-text {
 	word-wrap: break-word;
 	color: #000;
 	font-size: 25px;
@@ -432,7 +440,7 @@ hr {
 	.shop-image {
 		width: 100%;
 		height: 150px;
-		border-radius:5px;
+		border-radius: 5px;
 	}
 	.shop-time {
 		font-size: 15px;
@@ -723,7 +731,7 @@ hr {
 		font-size: 15px;
 		margin-left: 25px;
 		border: 1px solid brown;
-		border-radius:5px;
+		border-radius: 5px;
 		padding: 5px 16px;
 	}
 	.profile-page-area-box {
@@ -939,7 +947,8 @@ hr {
 		min-height: 70vh;
 		border-radius: 5px;
 		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
-		padding: 30px;
+		padding: 20px;
+		position: relative;
 	}
 	.order-history-box {
 		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
@@ -963,13 +972,13 @@ hr {
 	}
 	.order-history-box-btn {
 		height: 35px;
-		width: 50%;
 		border: 1px solid orange;
 		border-radius: 5px;
 		text-align: center;
 		padding: 0px;
 		bottom: 23%;
 		margin: 10px 0px;
+		padding: 5px;
 	}
 	.order-history-box-btn:hover {
 		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, 1);
@@ -1045,7 +1054,7 @@ hr {
 		width: 100%;
 		height: 200px;
 		padding: 10px;
-		border-radius : 5px;
+		border-radius: 5px;
 	}
 	.status-text {
 		font-size: 20px;
@@ -1082,7 +1091,7 @@ hr {
 		font-size: 16px;
 		margin: 15px 0px;
 	}
-	.offers-expired-img {
+	.offers-expired-img, .order-cancel-img {
 		position: absolute;
 		height: 135px;
 		top: 50%;
@@ -1123,16 +1132,17 @@ hr {
 	.msg-modal-box-position {
 		position: absolute;
 		top: 24%;
-		right: 14%;
-		height: 40px;
-		width: 75%;
-		font-size: 20px;
-		border-radius:5px;
+		right: 10%;
+		/* height: 70px; */
+		/* width: 70%; */
+		font-size: 15px;
+		border-radius: 5px;
 		padding: 5px 10px;
 	}
 	.msg-modal-times-position {
 		float: right;
 		cursor: pointer;
+		margin-left: 20px;
 	}
 	.shop-details-minus-btn {
 		margin-right: 15px;
@@ -1152,7 +1162,7 @@ hr {
 		font-size: 12px;
 		padding: 6px;
 		background: orange;
-		border-radius : 5px;
+		border-radius: 5px;
 		margin-left: 13px;
 	}
 	.same-as-above-btn:focus {
@@ -1224,7 +1234,7 @@ hr {
 	.shop-image {
 		width: 100%;
 		height: 215px;
-		border-radius:5px;
+		border-radius: 5px;
 	}
 	.shop-address {
 		font-size: 17px;
@@ -1698,6 +1708,7 @@ hr {
 		border-radius: 5px;
 		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
 		padding: 10px 30px 30px;
+		position: relative;
 	}
 	.order-history-box {
 		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
@@ -1705,7 +1716,7 @@ hr {
 		border-radius: 5px;
 		margin-right: 20px;
 		margin-top: 20px;
-		padding: 20px;
+		padding: 10px;
 		min-height: 370px;
 	}
 	.order-history-box-heading {
@@ -1723,7 +1734,6 @@ hr {
 	}
 	.order-history-box-btn {
 		height: 50px;
-		width: 40%;
 		border: 1px solid orange;
 		border-radius: 5px;
 		text-align: center;
@@ -1841,7 +1851,7 @@ hr {
 		width: 100%;
 		height: 400px;
 		padding: 10px;
-		border-radius : 5px;
+		border-radius: 5px;
 	}
 	.status-text {
 		font-size: 35px;
@@ -1856,13 +1866,16 @@ hr {
 		font-size: 30px;
 		margin: 15px 0px;
 	}
-	.offers-expired-img {
+	.offers-expired-img, .order-cancel-img {
 		position: absolute;
 		height: 216px;
 		top: 50%;
 		transform: translate(-50%, -50%);
 		left: 50%;
 		opacity: 0.5;
+	}
+	.order-cancel-img {
+		top: 30%;
 	}
 	.shop-closed-tag, .shopDetails-closed-tag {
 		height: 30px;
@@ -1896,7 +1909,7 @@ hr {
 		height: 50px;
 		width: 400px;
 		font-size: 26px;
-		border-radius:5px;
+		border-radius: 5px;
 		padding: 5px 20px;
 	}
 	.msg-modal-times-position {
@@ -1924,7 +1937,7 @@ hr {
 		font-size: 20px;
 		padding: 10px 10px;
 		background: orange;
-		border-radius : 5px;
+		border-radius: 5px;
 		margin-left: 200px;
 	}
 	.same-as-above-btn:focus {

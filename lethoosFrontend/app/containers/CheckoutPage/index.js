@@ -176,6 +176,7 @@ export class CheckoutPage extends React.PureComponent {
 
     payload.orderHistory = customerDetails.orderHistory
     payload.coupon = customerDetails.coupon
+    orderHistoryCopy.isOrderCancel = false
     payload.orderHistory.push(orderHistoryCopy)
 
     let orders = []
@@ -191,18 +192,20 @@ export class CheckoutPage extends React.PureComponent {
       shopAddress: orderHistoryCopy.shopAddress,
       shopMobileNumber: orderHistoryCopy.shopMobileNumber,
       customerName: customerDetails.name,
+      customerId: customerDetails._id,
       customerAddress: orderHistoryCopy.orderAddress,
       customerNumber: customerDetails.mobileNumber,
       customerCallingNumber: orderHistoryCopy.orderAlternateMobileNumber,
       customerCoupon: orderHistoryCopy.coupon,
       customerPaymentMethod: payload.paymentMethod,
       customerTotalDiscount: orderHistoryCopy.totalDiscount,
-      customerTotalAmount: orderHistoryCopy.total + parseInt(orderHistoryCopy.area.slice(-2) - orderHistoryCopy.totalDiscount),
+      customerTotalAmount: orderHistoryCopy.total,
       customerArea: orderHistoryCopy.area.slice(0, -2),
       customerOrderNumber: orderHistoryCopy.orderNumber,
       customerOrderDate: orderHistoryCopy.orderDate,
       orderSpecifications: orderHistoryCopy.otherSpecifications,
       customerOrders: orders,
+      isOrderCancel: false,
       customerDeliveryCharges: orderHistoryCopy.area.slice(-2),
     }
 
@@ -344,6 +347,7 @@ export class CheckoutPage extends React.PureComponent {
                         <option value="Other20">Other</option>
                         <option value="aryaNagar10">Arya Nagar</option>
                         <option value="ramNagar10">Ram Nagar</option>
+                        <option value="punjabiColony10">Punjabi Colony</option>
                         <option value="gopalNagar10">Gopal Nagar</option>
                         <option value="baldevGanj10">Baldev Ganj</option>
                         <option value="shekhanMohalla10">Shekhan Mohalla</option>
