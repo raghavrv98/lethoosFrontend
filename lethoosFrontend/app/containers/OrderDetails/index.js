@@ -123,18 +123,16 @@ export class OrderDetails extends React.PureComponent {
   }
 
   orderCancelHandler = (customerId, isOrderCancel, orderId, customerOrderNumber) => {
-    let customerDetails = JSON.parse(sessionStorage.getItem("customerDetails")) ? JSON.parse(sessionStorage.getItem("customerDetails")) : this.state.customerDetails;
-    customerDetails.orderHistory.find(val => val.orderNumber == customerOrderNumber).isOrderCancel = !customerDetails.orderHistory.find(val => val.orderNumber == customerOrderNumber).isOrderCancel
-
+    let payload = { isOrderCancel: !isOrderCancel, customerOrderNumber }
     let url = window.API_URL + `/customerLogin/orderCancel/${customerId}`;
-    axios.patch(url, customerDetails)
+    axios.patch(url, payload)
       .then((res) => {
         this.setState({
-          isLoader: false,
+          isLoader: true,
           message: "Order status updated successfully",
           isMessageModal: true,
           type: "success"
-        }, () => this.modalCloseHandler())
+        }, () => this.modalCloseHandler(), this.orderDetailsUpdateHandler(isOrderCancel, orderId))
       })
       .catch((error) => {
         // let message = errorHandler(error);
@@ -145,13 +143,16 @@ export class OrderDetails extends React.PureComponent {
           type: "failure"
         })
       });
+  }
+
+  orderDetailsUpdateHandler = (isOrderCancel, orderId) => {
 
     let payload = { isOrderCancel: !isOrderCancel }
-    url = window.API_URL + `/customerLogin/orderDetails/orderCancel/${orderId}`;
+    let url = window.API_URL + `/customerLogin/orderDetails/orderCancel/${orderId}`;
     axios.patch(url, payload)
       .then((res) => {
         this.setState({
-          isLoader: false,
+          isLoader: true,
           message: "Order status updated successfully",
           isMessageModal: true,
           type: "success"
