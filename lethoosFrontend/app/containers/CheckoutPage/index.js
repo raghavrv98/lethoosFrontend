@@ -166,7 +166,7 @@ export class CheckoutPage extends React.PureComponent {
     let index = customerDetails.coupon.findIndex(val => val.name == orderHistoryCopy.coupon)
 
     if (index != -1) {
-      customerDetails.coupon[index].redeemAttempt = parseInt(customerDetails.coupon[index].redeemAttempt) - 1
+      customerDetails.coupon[index].redeemAttempt = (customerDetails.coupon[index].redeemAttempt).toString() == '0' ? 0 : parseInt(customerDetails.coupon[index].redeemAttempt) - 1
     }
 
     payload.name = customerDetails.name

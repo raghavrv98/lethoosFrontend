@@ -5,6 +5,104 @@ body {
 	background-color: #F5F5F5;
 }
 
+.loading {
+	position: absolute;
+	height: 60px;
+    left: 50%;
+    top: 50%;
+    width: 50%;
+	font-size: 25px;
+	font-weight: 600;
+	background-color: #F5EBDF;
+	border-radius: 10px;
+	box-shadow: 0 4px 20px 0 rgb(218 220 230 / 60%);
+    transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.loading span>i {
+	position: absolute;
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	-webkit-animation: wait 4s infinite;
+	-moz-animation: wait 4s infinite;
+	-o-animation: wait 4s infinite;
+	animation: wait 4s infinite;
+}
+
+.loading span>i:nth-of-type(1) {
+	left: -28px;
+	background: yellow;
+}
+
+.loading span>i:nth-of-type(2) {
+	left: -21px;
+	-webkit-animation-delay: 0.8s;
+	animation-delay: 0.8s;
+	background: lightgreen;
+}
+
+@-webkit-keyframes wait {
+	0% {
+		left: -7px
+	}
+	30% {
+		left: 52px
+	}
+	60% {
+		left: 22px
+	}
+	100% {
+		left: 100px
+	}
+}
+
+@-moz-keyframes wait {
+	0% {
+		left: -7px
+	}
+	30% {
+		left: 52px
+	}
+	60% {
+		left: 22px
+	}
+	100% {
+		left: 100px
+	}
+}
+
+@-o-keyframes wait {
+	0% {
+		left: -7px
+	}
+	30% {
+		left: 52px
+	}
+	60% {
+		left: 22px
+	}
+	100% {
+		left: 100px
+	}
+}
+
+@keyframes wait {
+	0% {
+		left: -7px
+	}
+	30% {
+		left: 52px
+	}
+	60% {
+		left: 22px
+	}
+	100% {
+		left: 100px
+	}
+}
+
 html {
 	scroll-behavior: smooth !important;
 }
@@ -534,6 +632,19 @@ hr {
 		font-size: 15px;
 		text-align: center;
 	}
+
+	.success-text {
+		color: green;
+		font-size: 15px;
+		text-align: center;
+	}
+
+	.error-text {
+		color: red;
+		font-size: 15px;
+		text-align: center;
+	}
+
 	.shop-header-name, .shop-header-address, .shop-header-time {
 		font-size: 25px;
 		text-align: center;

@@ -46,7 +46,9 @@ export class LoginPage extends React.PureComponent {
       payload,
       isDetailsIncorrect: false,
       isUserExist: false,
-      isMessageModal: false
+      isMessageModal: false,
+      isSMSSent: false,
+      isSMSSentError: false,
     })
   }
 
@@ -64,7 +66,8 @@ export class LoginPage extends React.PureComponent {
           this.setState({
             isUserExist: true,
             isLoader: false,
-            isDetailsIncorrect: false
+            isDetailsIncorrect: false,
+            isCaptchaLoading: false
           })
         }
       })
@@ -73,7 +76,8 @@ export class LoginPage extends React.PureComponent {
           isLoader: false,
           message: "Some Error Occured",
           isMessageModal: true,
-          type: "failure"
+          type: "failure",
+          isCaptchaLoading: false
         })
       });
   }
@@ -141,8 +145,40 @@ export class LoginPage extends React.PureComponent {
       },
       isDetailsIncorrect: false,
       isUserExist: false,
-      isMessageModal: false
+      isMessageModal: false,
+      isSMSSent: false,
+      isSMSSentError: false
     })
+  }
+
+  resetPassword = (payload) => {
+    let url = window.API_URL + "/customerLogin/forgotPassword";
+    axios.post(url, payload)
+      .then((res) => {
+        const data = res.data.data;
+        if (data.length > 0) {
+          this.setState({
+            isSMSSent: true,
+            isLoader: false,
+            isSMSSentError: false
+          })
+        }
+        else {
+          this.setState({
+            isSMSSent: false,
+            isLoader: false,
+            isSMSSentError: true
+          })
+        }
+      })
+      .catch((error) => {
+        this.setState({
+          isLoader: false,
+          message: "Some Error Occured",
+          isMessageModal: true,
+          type: "failure"
+        })
+      });
   }
 
   onSubmitHandler = id => {
@@ -153,6 +189,7 @@ export class LoginPage extends React.PureComponent {
 
     this.setState({
       isLoader: true,
+      isCaptchaLoading: true,
       isDetailsIncorrect: false,
       isUserExist: false
     }, () => id == "signUp" ? this.customerSignUp(payload) : id == "login" ? this.customerLogin(payload) : this.resetPassword(payload))
@@ -163,9 +200,12 @@ export class LoginPage extends React.PureComponent {
       'size': 'invisible',
       'callback': (response) => {
         // reCAPTCHA solved, allow signInWithPhoneNumber.
-        this.onSignInSubmit();
+        // this.onSignInSubmit();
       }
     });
+    this.setState({
+      isCaptchaLoading: true
+    })
   }
 
   onSignInSubmit = (event) => {
@@ -178,21 +218,26 @@ export class LoginPage extends React.PureComponent {
         // SMS sent. Prompt user to type the code from the message, then sign the
         // user in with confirmationResult.confirm(code).
         window.confirmationResult = confirmationResult;
-
+        this.setState({
+          isCaptchaLoading: false
+        })
         const code = window.prompt('Enter OTP');
         confirmationResult.confirm(code).then((result) => {
           // User signed in successfully.
           const user = result.user;
-          console.log('user: ', user);
           this.onSubmitHandler('signUp')
           // ... 
         }).catch((error) => {
           // User couldn't sign in (bad verification code?)
           console.log('error: ', error);
           this.setState({
-            message: "Incorrect OTP",
+            message: "Incorrect OTP. Please try again",
             isMessageModal: true,
             type: "failure"
+          }, () => {
+            setTimeout(() => {
+              window.location.reload()
+            }, 1500);
           })
 
         });
@@ -200,9 +245,13 @@ export class LoginPage extends React.PureComponent {
         console.log('error: ', error);
         // Error; SMS not sent
         this.setState({
-          message: "SMS not sent. Please Refresh",
+          message: "Error Occurs. Please try again",
           isMessageModal: true,
           type: "failure"
+        }, () => {
+          setTimeout(() => {
+            window.location.reload()
+          }, 1500);
         })
       });
   }
@@ -224,7 +273,7 @@ export class LoginPage extends React.PureComponent {
             <div id="recaptcha-container"></div>
             <label></label>
             {this.state.isDetailsIncorrect && <p className="incorrect-password-text">Incorrect Mobile Number or Password</p>}
-            {this.state.isUserExist && <p className="incorrect-password-text">User Already Exist</p>}
+            {this.state.isUserExist && <p className="incorrect-password-text">User Already Exist<br />Please Login</p>}
             {this.state.isLoader ? <div className="lds-dual-ring"></div> :
               this.state.boxContent === "login" ?
                 <form className="mr-t-45" onSubmit={() => this.onSubmitHandler('login')}>
@@ -241,38 +290,49 @@ export class LoginPage extends React.PureComponent {
                   </div>
                 </form> :
                 this.state.boxContent === "signUp" ?
-                  <form className="mr-t-45" id="signUp" onSubmit={this.onSignInSubmit}>
-                    <div className="form-group">
-                      <label className="box-label" htmlFor="inputlg">Name</label>
-                      <input value={this.state.payload.name} id="name" onChange={this.inputChangeHandler} className="form-control input-lg" type="text" required />
-                    </div>
-                    <div className="form-group">
-                      <label className="box-label" htmlFor="inputlg">Mobile Number</label>
-                      <input value={this.state.payload.mobileNumber} pattern="[1-9]{1}[0-9]{9}" title="Enter 10 digit mobile number" id="mobileNumber" onChange={this.inputChangeHandler} className="form-control input-lg" type="tel" required />
-                    </div>
-                    <div className="form-group">
-                      <label className="box-label" htmlFor="inputlg">Password</label>
-                      <input value={this.state.payload.password} id="password" onChange={this.inputChangeHandler} className="form-control input-lg" type="password" required />
-                    </div>
-                    <div className="form-group">
-                      <button type="submit" className="btn btn-warning login-button">Sign Up</button>
-                    </div>
-                  </form>
-                  :
-                  <div className="reset-password-text">
-                    <p> Please Contact Admin.</p>
-                    <p> Send Your Password request on Whatsapp at 8192095423.</p>
-                  </div>
+                  <React.Fragment>
 
-              // <form className="mr-tb-45" id="resetPassword" onSubmit={this.onSubmitHandler}>
-              //   <div className="form-group">
-              //     <label className="box-label" htmlFor="inputlg">Mobile Number</label>
-              //     <input value={this.state.payload.mobileNumber} id="mobileNumber" onChange={this.inputChangeHandler} className="form-control input-lg" type="tel" required />
-              //   </div>
-              //   <div className="form-group">
-              //     <button type="submit" className="btn btn-warning login-button">Send Password</button>
-              //   </div>
-              // </form>
+                    {this.state.isCaptchaLoading && <div className="loading">
+                      <p>Please wait</p>
+                      <span><i></i><i></i></span>
+                    </div>}
+
+                    <form className="mr-t-45" id="signUp" onSubmit={this.onSignInSubmit}>
+                      <div className="form-group">
+                        <label className="box-label" htmlFor="inputlg">Name</label>
+                        <input value={this.state.payload.name} id="name" onChange={this.inputChangeHandler} className="form-control input-lg" type="text" required />
+                      </div>
+                      <div className="form-group">
+                        <label className="box-label" htmlFor="inputlg">Mobile Number</label>
+                        <input value={this.state.payload.mobileNumber} pattern="[1-9]{1}[0-9]{9}" title="Enter 10 digit mobile number" id="mobileNumber" onChange={this.inputChangeHandler} className="form-control input-lg" type="tel" required />
+                      </div>
+                      <div className="form-group">
+                        <label className="box-label" htmlFor="inputlg">Password</label>
+                        <input value={this.state.payload.password} id="password" onChange={this.inputChangeHandler} className="form-control input-lg" type="password" required />
+                      </div>
+                      <div className="form-group">
+                        <button type="submit" disabled={this.state.isCaptchaLoading} className="btn btn-warning login-button">Sign Up</button>
+                      </div>
+                    </form>
+                  </React.Fragment>
+                  :
+                  // <div className="reset-password-text">
+                  //   <p> Please Contact Admin.</p>
+                  //   <p> Send Your Password request on Whatsapp at 8192095423.</p>
+                  // </div>
+                  <React.Fragment>
+                    {this.state.isSMSSent && <p className="success-text">SMS sent<br />Please check text message</p>}
+                    {this.state.isSMSSentError && <p className="error-text">Incorrect Mobile Number</p>}
+                    <form className="mr-tb-45" id="resetPassword" onSubmit={this.onSubmitHandler}>
+                      <div className="form-group">
+                        <label className="box-label" htmlFor="inputlg">Mobile Number</label>
+                        <input value={this.state.payload.mobileNumber} id="mobileNumber" onChange={this.inputChangeHandler} className="form-control input-lg" type="tel" required />
+                      </div>
+                      <div className="form-group">
+                        <button type="submit" className="btn btn-warning login-button">Send Password</button>
+                      </div>
+                    </form>
+                  </React.Fragment>
             }
 
             {this.state.boxContent !== "login" && !this.state.isLoader && <p onClick={this.changeContentHandler} id="login" className="reset-password"> Login</p>}
