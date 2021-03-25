@@ -49,6 +49,7 @@ export class LoginPage extends React.PureComponent {
       isMessageModal: false,
       isSMSSent: false,
       isSMSSentError: false,
+      isCaptchaLoading: false
     })
   }
 
@@ -147,7 +148,8 @@ export class LoginPage extends React.PureComponent {
       isUserExist: false,
       isMessageModal: false,
       isSMSSent: false,
-      isSMSSentError: false
+      isSMSSentError: false,
+      isCaptchaLoading: false
     })
   }
 
@@ -160,14 +162,16 @@ export class LoginPage extends React.PureComponent {
           this.setState({
             isSMSSent: true,
             isLoader: false,
-            isSMSSentError: false
+            isSMSSentError: false,
+            isCaptchaLoading: false
           })
         }
         else {
           this.setState({
             isSMSSent: false,
             isLoader: false,
-            isSMSSentError: true
+            isSMSSentError: true,
+            isCaptchaLoading: false
           })
         }
       })
