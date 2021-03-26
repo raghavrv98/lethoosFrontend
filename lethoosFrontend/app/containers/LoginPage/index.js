@@ -204,7 +204,7 @@ export class LoginPage extends React.PureComponent {
       'size': 'invisible',
       'callback': (response) => {
         // reCAPTCHA solved, allow signInWithPhoneNumber.
-        // this.onSignInSubmit();
+        this.onSignInSubmit();
       }
     });
     this.setState({
@@ -249,7 +249,7 @@ export class LoginPage extends React.PureComponent {
         console.log('error: ', error);
         // Error; SMS not sent
         this.setState({
-          message: "Error Occurs. Please try again",
+          message: "Error Occurs. Please try again later",
           isMessageModal: true,
           type: "failure"
         }, () => {
