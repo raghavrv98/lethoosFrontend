@@ -252,10 +252,6 @@ export class LoginPage extends React.PureComponent {
           message: "Error Occurs. Please try again later",
           isMessageModal: true,
           type: "failure"
-        }, () => {
-          setTimeout(() => {
-            window.location.reload()
-          }, 1500);
         })
       });
   }
