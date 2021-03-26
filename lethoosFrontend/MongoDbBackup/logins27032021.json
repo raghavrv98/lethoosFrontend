@@ -1,0 +1,4391 @@
+[{
+  "_id": {
+    "$oid": "603fa4033cf77837862b67f9"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Chinese Fast Food",
+      "shopAddress": "Near Railway Station",
+      "shopMobileNumber": "8755580426",
+      "shopImage": "https://previews.123rf.com/images/artisticco/artisticco1701/artisticco170100013/69367031-a-vector-illustration-of-fast-food-restaurant.jpg",
+      "orders": [
+        {
+          "itemNo": 39,
+          "item": "Manchurain",
+          "halfQuantity": 1,
+          "price": "30",
+          "isHalfSelected": true
+        },
+        {
+          "itemNo": 31,
+          "item": "Spring Roll",
+          "halfQuantity": 1,
+          "price": "15",
+          "isHalfSelected": true
+        },
+        {
+          "itemNo": 6,
+          "item": "Hakka Noodles",
+          "halfQuantity": 1,
+          "price": "35",
+          "isHalfSelected": true
+        }
+      ],
+      "coupon": "",
+      "total": 80,
+      "area": "kosi10",
+      "orderNumber": 1,
+      "totalDiscount": 0,
+      "orderDate": 1615038120227,
+      "orderAddress": "Lala Ram Marg Near Ambedkar Park",
+      "orderAlternateMobileNumber": "9997004269"
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "WEL10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1614956292064,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1614725795541,
+  "name": "Shruti 3",
+  "mobileNumber": "9997004269",
+  "password": "shruti@1730",
+  "__v": 0,
+  "paymentMethod": "Cash On Delivery",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "60407333989e264b5b0505a2"
+  },
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "WEL10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615009332261,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1614814145885,
+  "name": "puneet sharma",
+  "mobileNumber": "9548005376",
+  "password": "puneet@2305",
+  "__v": 0,
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "60409e7be7859e547f2a35d0"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Food Fusion",
+      "shopAddress": "It's a Virtual Shop",
+      "shopMobileNumber": "8192095423",
+      "shopImage": "https://previews.123rf.com/images/vectorshots/vectorshots1308/vectorshots130800001/21233529-food-shop-cartoon-business-vector-character.jpg",
+      "orders": [
+        {
+          "itemNo": 1,
+          "item": "Half & Half Pizza",
+          "quantity": 1,
+          "price": "130",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 2,
+          "item": "Bread Pizza",
+          "quantity": 2,
+          "price": "50",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 4,
+          "item": "Burgerizza",
+          "quantity": 1,
+          "price": "50",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "WEL10",
+      "total": 280,
+      "area": "kosi10",
+      "orderNumber": 1,
+      "totalDiscount": 10,
+      "orderDate": 1614847713499,
+      "orderAddress": "Baldev ganj",
+      "orderAlternateMobileNumber": "8439395179"
+    },
+    {
+      "shopName": "Food Fusion",
+      "shopAddress": "It's a Virtual Shop",
+      "shopMobileNumber": "8192095423",
+      "shopImage": "https://previews.123rf.com/images/vectorshots/vectorshots1308/vectorshots130800001/21233529-food-shop-cartoon-business-vector-character.jpg",
+      "orders": [
+        {
+          "itemNo": 1,
+          "item": "Half & Half Pizza",
+          "quantity": 1,
+          "price": "130",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 2,
+          "item": "Bread Pizza",
+          "quantity": 1,
+          "price": "50",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 3,
+          "item": "Patties Pizza",
+          "quantity": 1,
+          "price": "60",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "WEL10",
+      "total": 240,
+      "area": "kosi10",
+      "orderNumber": 2,
+      "totalDiscount": 0,
+      "orderDate": 1614849691125,
+      "orderAddress": "Baldev ganj",
+      "orderAlternateMobileNumber": "8439395179"
+    },
+    {
+      "shopName": "Maa Bhagwati Pizza and Cheese Patties Shop",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "7579313372",
+      "shopImage": "https://cdn1.iconfinder.com/data/icons/supermarket-cafe-and-stores/50/47-512.png",
+      "orders": [
+        {
+          "itemNo": 1,
+          "item": "Veg Pizza",
+          "quantity": 1,
+          "price": "100",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 2,
+          "item": "Spicy Pizza",
+          "quantity": 1,
+          "price": "110",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "WEL10",
+      "total": 210,
+      "area": "kosi10",
+      "orderNumber": 3,
+      "totalDiscount": 0,
+      "orderDate": 1614849788540,
+      "orderAddress": "Baldev ganj",
+      "orderAlternateMobileNumber": "8439395179"
+    },
+    {
+      "shopName": "Shree Ji Fast Food And Chaap Corner",
+      "shopAddress": "Near police Chowki",
+      "shopMobileNumber": "9045131311",
+      "shopImage": "https://media.istockphoto.com/vectors/food-store-building-vector-illustration-grocery-shop-facade-vector-id617369906",
+      "orders": [
+        {
+          "itemNo": 6,
+          "item": "Achari Chaap",
+          "quantity": 1,
+          "price": "140",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 5,
+          "item": "Lemon Chaap",
+          "quantity": 1,
+          "price": "140",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 4,
+          "item": "Haryali Chaap",
+          "quantity": 1,
+          "price": "140",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 10,
+          "item": "Malai Paneer Tikka",
+          "quantity": 1,
+          "price": "180",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 8,
+          "item": "Stuff Malai Chaap",
+          "quantity": 1,
+          "price": "160",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 9,
+          "item": "Paneer Tikka",
+          "quantity": 1,
+          "price": "170",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 7,
+          "item": "Stuff Masala Chaap",
+          "quantity": 1,
+          "price": "160",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 10,
+          "item": "Malai Paneer Tikka",
+          "halfQuantity": 1,
+          "price": "100",
+          "isHalfSelected": true
+        },
+        {
+          "itemNo": 9,
+          "item": "Paneer Tikka",
+          "halfQuantity": 1,
+          "price": "90",
+          "isHalfSelected": true
+        }
+      ],
+      "coupon": "",
+      "total": 1280,
+      "area": "kosi10",
+      "orderNumber": 4,
+      "totalDiscount": 0,
+      "orderDate": 1614850859282,
+      "orderAddress": "Baldev ganj",
+      "orderAlternateMobileNumber": "8439395179"
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "WEL10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615020412641,
+      "redeemAttempt": -2,
+      "amount": 10
+    }
+  ],
+  "date": 1614847090791,
+  "name": "Pawan",
+  "mobileNumber": "8439395179",
+  "password": "1234556",
+  "__v": 0,
+  "address": "Baldev ganj",
+  "alternateMobileNumber": "8439395179",
+  "area": "kosi10",
+  "paymentMethod": "Cash On Delivery",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "6040ad65756ac35580722ee4"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Jain Pizza & Bakery",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "9870900050",
+      "shopImage": "https://p7.hiclipart.com/preview/812/527/724/pizza-fast-food-italian-cuisine-illustration-cartoon-casual-pizza-physical-shop-png.jpg",
+      "orders": [
+        {
+          "itemNo": 15,
+          "item": "Red Sauce Pasta",
+          "quantity": 1,
+          "price": "100",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 41,
+          "item": "Dry Manchurian",
+          "quantity": 1,
+          "price": "80",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 53,
+          "item": "Honey Chilli Potato",
+          "quantity": 1,
+          "price": "100",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 28,
+          "item": "Cheese Patties",
+          "quantity": 1,
+          "price": "25",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "",
+      "total": 305,
+      "area": "other20",
+      "orderNumber": 1,
+      "totalDiscount": 0,
+      "orderDate": 1615125974394,
+      "orderAddress": "1891,kheda moholla,near jain temple,paani ki tanki",
+      "orderAlternateMobileNumber": "8273031518"
+    },
+    {
+      "shopName": "Jain Pizza & Bakery",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "9870900050",
+      "shopImage": "https://p7.hiclipart.com/preview/812/527/724/pizza-fast-food-italian-cuisine-illustration-cartoon-casual-pizza-physical-shop-png.jpg",
+      "orders": [
+        {
+          "itemNo": 41,
+          "item": "Dry Manchurian",
+          "quantity": 1,
+          "price": "80",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 53,
+          "item": "Honey Chilli Potato",
+          "quantity": 1,
+          "price": "100",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 55,
+          "item": "Hakka Noodles",
+          "quantity": 1,
+          "price": "120",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "WEL10",
+      "total": 300,
+      "area": "shekhanMohalla10",
+      "orderNumber": 2,
+      "totalDiscount": 10,
+      "orderDate": 1615817310328,
+      "orderAddress": "1891,kheda Moholla, Near Jain Temple Paani Ki Tanki Ke Pass",
+      "orderAlternateMobileNumber": "8273031518"
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "WEL10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1616024229907,
+      "redeemAttempt": 0,
+      "amount": 10
+    },
+    {
+      "name": "OFFER20",
+      "description": "20 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615520767095,
+      "redeemAttempt": 1,
+      "amount": 20
+    }
+  ],
+  "date": 1614849208955,
+  "name": "Vartika",
+  "mobileNumber": "8273031518",
+  "password": "#soni@12345",
+  "__v": 0,
+  "paymentMethod": "Cash On Delivery",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "6040af26756ac35580722ee5"
+  },
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "WEL10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615024678692,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1614849208955,
+  "name": "Akash jain",
+  "mobileNumber": "8266860714",
+  "password": "anshujain",
+  "__v": 0,
+  "address": "Hardevganj Kosi Kalan Mathura",
+  "alternateMobileNumber": "8266860714",
+  "area": "kosi10",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "6040af8b756ac35580722ee7"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Jain Pizza & Bakery",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "9870900050",
+      "shopImage": "https://p7.hiclipart.com/preview/812/527/724/pizza-fast-food-italian-cuisine-illustration-cartoon-casual-pizza-physical-shop-png.jpg",
+      "orders": [
+        {
+          "itemNo": 29,
+          "item": "Paneer & Sweet Corn",
+          "quantity": 2,
+          "price": "35",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "WEL10",
+      "total": 70,
+      "area": "kosi10",
+      "otherSpecifications": "1 onion nd 1 without onion",
+      "orderNumber": 1,
+      "totalDiscount": 10,
+      "orderDate": 1614852915668,
+      "orderAddress": "Nandhan dhava ke pas maa Bhagwati telecom",
+      "orderAlternateMobileNumber": "7248100600"
+    },
+    {
+      "shopName": "Jain Pizza & Bakery",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "9870900050",
+      "shopImage": "https://p7.hiclipart.com/preview/812/527/724/pizza-fast-food-italian-cuisine-illustration-cartoon-casual-pizza-physical-shop-png.jpg",
+      "orders": [
+        {
+          "itemNo": 29,
+          "item": "Paneer & Sweet Corn",
+          "quantity": 8,
+          "price": "35",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "WEL10",
+      "total": 280,
+      "area": "kosi10",
+      "otherSpecifications": "1 बिना प्याज\n7 प्याज वाली",
+      "orderNumber": 2,
+      "totalDiscount": 0,
+      "orderDate": 1615211306920,
+      "orderAddress": "Maa Bhagwati telecom near nandhan dhava ",
+      "orderAlternateMobileNumber": "7248100600"
+    },
+    {
+      "shopName": "Jain Pizza & Bakery",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "9870900050",
+      "shopImage": "https://p7.hiclipart.com/preview/812/527/724/pizza-fast-food-italian-cuisine-illustration-cartoon-casual-pizza-physical-shop-png.jpg",
+      "orders": [
+        {
+          "itemNo": 29,
+          "item": "Paneer & Sweet Corn",
+          "quantity": 8,
+          "price": "35",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "",
+      "total": 280,
+      "area": "other20",
+      "otherSpecifications": "7 प्याज वाली 1 बिना प्याज",
+      "orderNumber": 3,
+      "totalDiscount": 0,
+      "orderDate": 1615904796984,
+      "orderAddress": "Maa Bhagwati telecom near nandhan dhava",
+      "orderAlternateMobileNumber": "7248100600",
+      "isOrderCancel": false
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "WEL10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615024779658,
+      "redeemAttempt": -1,
+      "amount": 10
+    }
+  ],
+  "date": 1614849208955,
+  "name": "Hemant",
+  "mobileNumber": "7248100600",
+  "password": "aaa111",
+  "__v": 0,
+  "paymentMethod": "Cash On Delivery",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "6040b962756ac35580722eed"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Food Fusion",
+      "shopAddress": "It's a Virtual Shop",
+      "shopMobileNumber": "8192095423",
+      "shopImage": "https://previews.123rf.com/images/vectorshots/vectorshots1308/vectorshots130800001/21233529-food-shop-cartoon-business-vector-character.jpg",
+      "orders": [
+        {
+          "itemNo": 4,
+          "item": "Burgerizza",
+          "quantity": 1,
+          "price": "50",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "",
+      "total": 50,
+      "area": "lalaRamMarg10",
+      "orderNumber": 1,
+      "totalDiscount": 0,
+      "orderDate": 1615902544251,
+      "orderAddress": "Near sharma homeopathic mavassal petch kosi kalan",
+      "orderAlternateMobileNumber": "9639599588",
+      "isOrderCancel": false
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "WEL10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615027298675,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1614849208955,
+  "name": "Lakshya",
+  "mobileNumber": "9639599588",
+  "password": "lethoos",
+  "__v": 0,
+  "paymentMethod": "Cash On Delivery",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "6040ba74756ac35580722ef0"
+  },
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "WEL10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615027572845,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1614849208955,
+  "name": "Shraddha",
+  "mobileNumber": "7060354573",
+  "password": "2604neha",
+  "__v": 0,
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "6040c71e756ac35580722ef5"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Friends Fast Food - FFF",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "8791681511",
+      "shopImage": "https://cdn1.vectorstock.com/i/1000x1000/01/25/cartoon-fast-food-restaurant-small-shop-business-vector-18620125.jpg",
+      "orders": [
+        {
+          "itemNo": 10,
+          "item": "Veg Chowmein",
+          "quantity": 1,
+          "price": "30",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "",
+      "total": 30,
+      "area": "kosi10",
+      "orderNumber": 1,
+      "totalDiscount": 0,
+      "orderDate": 1614869068589,
+      "orderAddress": "Sarai shahi kosi kalan",
+      "orderAlternateMobileNumber": "9045191147"
+    },
+    {
+      "shopName": "Friends Fast Food - FFF",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "8791681511",
+      "shopImage": "https://cdn1.vectorstock.com/i/1000x1000/01/25/cartoon-fast-food-restaurant-small-shop-business-vector-18620125.jpg",
+      "orders": [
+        {
+          "itemNo": 10,
+          "item": "Veg Chowmein",
+          "quantity": 1,
+          "price": "30",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "",
+      "total": 30,
+      "area": "kosi10",
+      "orderNumber": 2,
+      "totalDiscount": 0,
+      "orderDate": 1615384118511,
+      "orderAddress": "Sarai shahi kosi kalan",
+      "orderAlternateMobileNumber": "9045191147"
+    },
+    {
+      "shopName": "Classic pizza corner",
+      "shopAddress": "opposite syndicate Bank, Mavassal petch",
+      "shopMobileNumber": "8477005144",
+      "shopImage": "https://cdn5.vectorstock.com/i/thumb-large/67/39/a-fastfood-restaurant-vector-1136739.jpg",
+      "orders": [
+        {
+          "itemNo": 1,
+          "item": "Veg butter burger",
+          "quantity": 2,
+          "price": "40",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "",
+      "total": 80,
+      "area": "kosi10",
+      "orderNumber": 3,
+      "totalDiscount": 0,
+      "orderDate": 1615648547324,
+      "orderAddress": "Sarai shahi kosi kalan",
+      "orderAlternateMobileNumber": "9045191147"
+    },
+    {
+      "shopName": "Jain Pizza & Bakery",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "9870900050",
+      "shopImage": "https://p7.hiclipart.com/preview/812/527/724/pizza-fast-food-italian-cuisine-illustration-cartoon-casual-pizza-physical-shop-png.jpg",
+      "orders": [
+        {
+          "itemNo": 30,
+          "item": "Veggie Special",
+          "quantity": 1,
+          "price": "45",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "",
+      "total": 45,
+      "area": "kosi10",
+      "otherSpecifications": "Sarai shahi oil expellor par",
+      "orderNumber": 4,
+      "totalDiscount": 0,
+      "orderDate": 1615818522682,
+      "orderAddress": "Sarai shahi kosi kalan",
+      "orderAlternateMobileNumber": "9045191147"
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "WEL10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615030814712,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1614849208955,
+  "name": "Tapan",
+  "mobileNumber": "9045191147",
+  "password": "3344",
+  "__v": 0,
+  "address": "Sarai shahi kosi kalan",
+  "alternateMobileNumber": "9045191147",
+  "area": "kosi10",
+  "paymentMethod": "Cash On Delivery",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "6040c7b2756ac35580722ef6"
+  },
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [],
+  "date": 1614849208955,
+  "name": "Utkarsh Bhojan",
+  "mobileNumber": "8899111366",
+  "password": "utkarsh88",
+  "__v": 0,
+  "address": "New Transport Nagar Bathain Gate Flyover ke Paar 100 meter towards Delhi Kosikalan Mathura 281403",
+  "alternateMobileNumber": "9897457878",
+  "area": "bathenGate20",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "6040d184756ac35580722f01"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Jain Pizza & Bakery",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "9870900050",
+      "shopImage": "https://p7.hiclipart.com/preview/812/527/724/pizza-fast-food-italian-cuisine-illustration-cartoon-casual-pizza-physical-shop-png.jpg",
+      "orders": [
+        {
+          "itemNo": 28,
+          "item": "Cheese Patties",
+          "quantity": 1,
+          "price": "25",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 48,
+          "item": "Chilli Potato",
+          "quantity": 1,
+          "price": "80",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "WEL10",
+      "total": 105,
+      "area": "kosi10",
+      "otherSpecifications": "Extra vegetable",
+      "orderNumber": 1,
+      "totalDiscount": 10,
+      "orderDate": 1614865919512,
+      "orderAddress": "Bichhoriya",
+      "orderAlternateMobileNumber": "7060281601"
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "WEL10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615033476515,
+      "redeemAttempt": 0,
+      "amount": 10
+    }
+  ],
+  "date": 1614849208955,
+  "name": "Jay Agrawal",
+  "mobileNumber": "7060281601",
+  "password": "7060281601",
+  "__v": 0,
+  "paymentMethod": "Cash On Delivery",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "6040d1ec756ac35580722f03"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Chinese Fast Food",
+      "shopAddress": "Near Railway Station",
+      "shopMobileNumber": "8755580426",
+      "shopImage": "https://previews.123rf.com/images/artisticco/artisticco1701/artisticco170100013/69367031-a-vector-illustration-of-fast-food-restaurant.jpg",
+      "orders": [
+        {
+          "itemNo": 49,
+          "item": "Special Biryani",
+          "quantity": 1,
+          "price": "80",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "WEL10",
+      "total": 80,
+      "area": "jindal20",
+      "orderNumber": 1,
+      "totalDiscount": 10,
+      "orderDate": 1614937874316,
+      "orderAddress": "Jindal gate no 2, nandgoan road, Kosi",
+      "orderAlternateMobileNumber": "8077408602"
+    },
+    {
+      "shopName": "Maa Bhagwati Pizza and Cheese Patties Shop",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "7579313372",
+      "shopImage": "https://cdn1.iconfinder.com/data/icons/supermarket-cafe-and-stores/50/47-512.png",
+      "orders": [
+        {
+          "itemNo": 21,
+          "item": "Special Jalebi (100 gm)",
+          "quantity": 2,
+          "price": "10",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 15,
+          "item": "Veg Patties",
+          "quantity": 4,
+          "price": "20",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "WEL10",
+      "total": 100,
+      "area": "jindal20",
+      "orderNumber": 2,
+      "totalDiscount": 0,
+      "orderDate": 1614938049757,
+      "orderAddress": "Jindal gate no 2, nandgoan road, Kosi",
+      "orderAlternateMobileNumber": "8077408602"
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "WEL10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615033580553,
+      "redeemAttempt": -1,
+      "amount": 10
+    }
+  ],
+  "date": 1614849208955,
+  "name": "Vinay giri",
+  "mobileNumber": "8077408602",
+  "password": "8077408602",
+  "__v": 0,
+  "address": "Jindal gate no 2, nandgoan road, Kosi",
+  "alternateMobileNumber": "8077408602",
+  "area": "jindal20",
+  "paymentMethod": "Online",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "6040d4a4756ac35580722f08"
+  },
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "WEL10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615034278504,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1614849208955,
+  "name": "Robin thakur",
+  "mobileNumber": "8273757328",
+  "password": "Sjsm1010",
+  "__v": 0,
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "6040fcde756ac35580722f1c"
+  },
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "WEL10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615044575693,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1614849208955,
+  "name": "Nikhil khandelwal",
+  "mobileNumber": "8937879361",
+  "password": "Nikhil",
+  "__v": 0,
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "6040feca756ac35580722f22"
+  },
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "WEL10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615045067001,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1614849208955,
+  "name": "Vaishali Jain",
+  "mobileNumber": "9799061161",
+  "password": "Vjain979906@",
+  "__v": 0,
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "60410c28756ac35580722f28"
+  },
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "WEL10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615048488968,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1614849208955,
+  "name": "Divya Khandelwal",
+  "mobileNumber": "7895542503",
+  "password": "sweetie",
+  "__v": 0,
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "60417d26756ac35580722f31"
+  },
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "WEL10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615077414471,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1614849208955,
+  "name": "Krishan Gopal Bindal",
+  "mobileNumber": "9917613452",
+  "password": "K@309265",
+  "__v": 0,
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "6041a2926f137663479174cd"
+  },
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [],
+  "date": 1614910890326,
+  "name": "Sonu",
+  "mobileNumber": "8279440228",
+  "password": "9818628401",
+  "__v": 0,
+  "address": "Bharat puriya petch , near shishu mandir , kosi kalan ",
+  "alternateMobileNumber": "8279440228",
+  "area": "kosi10",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "6041e43c6f137663479174d4"
+  },
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "WEL10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1616972953604,
+      "redeemAttempt": 0,
+      "amount": 10
+    }
+  ],
+  "date": 1614910890326,
+  "name": "Raghav",
+  "mobileNumber": "8630422423",
+  "password": "00000",
+  "__v": 0,
+  "paymentMethod": "Cash On Delivery",
+  "accountType": "admin",
+  "address": "Baldev Ganj",
+  "alternateMobileNumber": "8630422423"
+},{
+  "_id": {
+    "$oid": "60420b59553770679fb04f6a"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Raja ji",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "7417136170",
+      "shopImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8Pi5kHFzUUKdA1VQ2u3maWRvV4dKe2UNpbQ&usqp=CAU",
+      "orders": [
+        {
+          "itemNo": 1,
+          "item": "Veg Chowmein",
+          "quantity": 1,
+          "price": "35",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 2,
+          "item": "Special Burger",
+          "quantity": 1,
+          "price": "20",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "WEL10",
+      "total": 55,
+      "area": "kosi10",
+      "otherSpecifications": "Hot and extra vegetables",
+      "orderNumber": 1,
+      "totalDiscount": 10,
+      "orderDate": 1614941237118,
+      "orderAddress": "Bichhoria",
+      "orderAlternateMobileNumber": "8899632230"
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "WEL10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615113818103,
+      "redeemAttempt": 0,
+      "amount": 10
+    }
+  ],
+  "date": 1614931217210,
+  "name": "Harshita",
+  "mobileNumber": "8899632230",
+  "password": "8899632230",
+  "__v": 0,
+  "paymentMethod": "Cash On Delivery",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "60421767553770679fb04f6f"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Maa Bhagwati Pizza and Cheese Patties Shop",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "7579313372",
+      "shopImage": "https://cdn1.iconfinder.com/data/icons/supermarket-cafe-and-stores/50/47-512.png",
+      "orders": [
+        {
+          "itemNo": 16,
+          "item": "Sweet Corn Patties",
+          "quantity": 3,
+          "price": "30",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "",
+      "total": 90,
+      "area": "kosi10",
+      "orderNumber": 1,
+      "totalDiscount": 0,
+      "orderDate": 1614944245799,
+      "orderAddress": "Krishan dham colony bijli ghar k piche nandgaon road kosi kalan",
+      "orderAlternateMobileNumber": "8475991615"
+    }
+  ],
+  "notifications": [],
+  "coupon": [],
+  "date": 1614931217210,
+  "name": "Tarun sharma",
+  "mobileNumber": "8475991615",
+  "password": "123456",
+  "__v": 0,
+  "paymentMethod": "Cash On Delivery",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "60421acd553770679fb04f73"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Food Fusion",
+      "shopAddress": "It's a Virtual Shop",
+      "shopMobileNumber": "8192095423",
+      "shopImage": "https://previews.123rf.com/images/vectorshots/vectorshots1308/vectorshots130800001/21233529-food-shop-cartoon-business-vector-character.jpg",
+      "orders": [
+        {
+          "itemNo": 7,
+          "item": "Dosa-Idli Combo",
+          "quantity": 1,
+          "price": "80",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "WEL10",
+      "total": 80,
+      "area": "kosi10",
+      "orderNumber": 1,
+      "totalDiscount": 10,
+      "orderDate": 1615020219188,
+      "orderAddress": "501/24\nHardevganj",
+      "orderAlternateMobileNumber": "8077982617"
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "WEL10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615117773257,
+      "redeemAttempt": 0,
+      "amount": 10
+    }
+  ],
+  "date": 1614931217210,
+  "name": "Deepak jain",
+  "mobileNumber": "8077982617",
+  "password": "deeshi132",
+  "__v": 0,
+  "address": "501/24\nHardevganj",
+  "alternateMobileNumber": "8077982617",
+  "area": "kosi10",
+  "paymentMethod": "Cash On Delivery",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "60423974553770679fb04f78"
+  },
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "WEL10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615125620818,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1614931217210,
+  "name": "Nupur",
+  "mobileNumber": "9412827316",
+  "password": "9412827316",
+  "__v": 0,
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "6042519c553770679fb04f7a"
+  },
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "WEL10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615131804734,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1614931217210,
+  "name": "Baini",
+  "mobileNumber": "9873366957",
+  "password": "12345",
+  "__v": 0,
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "60433b522461786eb0841ffe"
+  },
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "WEL10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615191634779,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1614975673074,
+  "name": "mayank agrawal",
+  "mobileNumber": "8126089501",
+  "password": "mayank#123",
+  "__v": 0,
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "60433e482461786eb0842001"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Chaska Family Restaurant",
+      "shopAddress": "Bhagwati Road, Near Subhash Park",
+      "shopMobileNumber": "7015510259",
+      "shopImage": "https://i.pinimg.com/736x/20/27/0f/20270fdb19d0c0925c3d0ca3cb6280c8.jpg",
+      "orders": [
+        {
+          "itemNo": 40,
+          "item": "Paneer Masala Dosa",
+          "quantity": 1,
+          "price": "70",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 49,
+          "item": "Veg Idli Sambhar",
+          "quantity": 1,
+          "price": "50",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "",
+      "total": 120,
+      "area": "jindal20",
+      "orderNumber": 1,
+      "totalDiscount": 0,
+      "orderDate": 1615198635469,
+      "orderAddress": "E-1/2 Jindal saw ltd kosi kalan",
+      "orderAlternateMobileNumber": "9520051497"
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "WEL10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615192392463,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1614975673074,
+  "name": "Vanshika Upadhyay",
+  "mobileNumber": "9520051497",
+  "password": "vanshi@2002",
+  "__v": 0,
+  "paymentMethod": "Cash On Delivery",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "604342a62461786eb0842006"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Friends Fast Food - FFF",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "8791681511",
+      "shopImage": "https://cdn1.vectorstock.com/i/1000x1000/01/25/cartoon-fast-food-restaurant-small-shop-business-vector-18620125.jpg",
+      "orders": [
+        {
+          "itemNo": 10,
+          "item": "Veg Chowmein",
+          "quantity": 1,
+          "price": "30",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 2,
+          "item": "Fried Momos",
+          "quantity": 1,
+          "price": "40",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 22,
+          "item": "Chilli Potato",
+          "quantity": 1,
+          "price": "60",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "WEL10",
+      "total": 130,
+      "area": "kosi10",
+      "orderNumber": 1,
+      "totalDiscount": 10,
+      "orderDate": 1615021022826,
+      "orderAddress": "Lala ram petch, near Sabun factory",
+      "orderAlternateMobileNumber": "6397797113"
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "WEL10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615193510532,
+      "redeemAttempt": 0,
+      "amount": 10
+    }
+  ],
+  "date": 1614975673074,
+  "name": "Kirti Goyal",
+  "mobileNumber": "6397797113",
+  "password": "Kirti_0202",
+  "__v": 0,
+  "paymentMethod": "Cash On Delivery",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "60434ee82461786eb0842029"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Maa Bhagwati Pizza and Cheese Patties Shop",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "7579313372",
+      "shopImage": "https://cdn1.iconfinder.com/data/icons/supermarket-cafe-and-stores/50/47-512.png",
+      "orders": [
+        {
+          "itemNo": 4,
+          "item": "Onion Capsicum Pizza",
+          "quantity": 1,
+          "price": "120",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 16,
+          "item": "Sweet Corn Patties",
+          "quantity": 2,
+          "price": "30",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "",
+      "total": 180,
+      "area": "other20",
+      "orderNumber": 1,
+      "totalDiscount": 0,
+      "orderDate": 1615626464218,
+      "orderAddress": "Kullmal petrol pump cross road service road deepak rice mill\n",
+      "orderAlternateMobileNumber": "7088971992"
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "WEL10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615196648796,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1614975673074,
+  "name": "Rajesh",
+  "mobileNumber": "7417462024",
+  "password": "viratkohli100",
+  "__v": 0,
+  "paymentMethod": "Cash On Delivery",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "60437cd82461786eb084202b"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Jain Pizza & Bakery",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "9870900050",
+      "shopImage": "https://p7.hiclipart.com/preview/812/527/724/pizza-fast-food-italian-cuisine-illustration-cartoon-casual-pizza-physical-shop-png.jpg",
+      "orders": [
+        {
+          "itemNo": 19,
+          "item": "Aloo Tikki Burger",
+          "quantity": 1,
+          "price": "35",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 20,
+          "item": "Veg Burger",
+          "quantity": 1,
+          "price": "45",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 24,
+          "item": "Butter Pav Bhaji",
+          "quantity": 1,
+          "price": "60",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "90669",
+      "total": 140,
+      "area": "kosi10",
+      "orderNumber": 1,
+      "totalDiscount": 0,
+      "orderDate": 1615035774631,
+      "orderAddress": "Bachpan play school",
+      "orderAlternateMobileNumber": "6398380252"
+    }
+  ],
+  "notifications": [],
+  "coupon": [],
+  "date": 1614975673074,
+  "name": "Vishakha Agrawal",
+  "mobileNumber": "6398380252",
+  "password": "070898",
+  "__v": 0,
+  "paymentMethod": "Cash On Delivery",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "60437e0b2461786eb084202f"
+  },
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "WEL10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615208715923,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1614975673074,
+  "name": "Harish singh",
+  "mobileNumber": "7536889216",
+  "password": "7536889216",
+  "__v": 0,
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "6043893d2461786eb0842038"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Jain Pizza & Bakery",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "9870900050",
+      "shopImage": "https://p7.hiclipart.com/preview/812/527/724/pizza-fast-food-italian-cuisine-illustration-cartoon-casual-pizza-physical-shop-png.jpg",
+      "orders": [
+        {
+          "itemNo": 58,
+          "item": "Veggie Delight",
+          "halfQuantity": 1,
+          "price": "120",
+          "isHalfSelected": true
+        },
+        {
+          "itemNo": 19,
+          "item": "Aloo Tikki Burger",
+          "quantity": 1,
+          "price": "35",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "",
+      "total": 155,
+      "area": "other20",
+      "orderNumber": 1,
+      "totalDiscount": 0,
+      "orderDate": 1615038895291,
+      "orderAddress": "In front of Sheetal Radios, Shekhan Chauraha, Bhagwati Road",
+      "orderAlternateMobileNumber": "6398866066"
+    },
+    {
+      "shopName": "Jain Pizza & Bakery",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "9870900050",
+      "shopImage": "https://p7.hiclipart.com/preview/812/527/724/pizza-fast-food-italian-cuisine-illustration-cartoon-casual-pizza-physical-shop-png.jpg",
+      "orders": [
+        {
+          "itemNo": 29,
+          "item": "Paneer & Sweet Corn",
+          "quantity": 2,
+          "price": "35",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 32,
+          "item": "French Fries",
+          "quantity": 1,
+          "price": "50",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "",
+      "total": 120,
+      "area": "kosi10",
+      "orderNumber": 2,
+      "totalDiscount": 0,
+      "orderDate": 1615548382004,
+      "orderAddress": "Dayashankar Agrawal Ghee wale,\nNear Dauji Mandir, Baldev Ganj",
+      "orderAlternateMobileNumber": "6398866066"
+    }
+  ],
+  "notifications": [],
+  "coupon": [],
+  "date": 1614975673074,
+  "name": "Kapeesh Garg",
+  "mobileNumber": "6398866066",
+  "password": "12345",
+  "__v": 0,
+  "paymentMethod": "Online",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "604389842461786eb0842039"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Chaska Family Restaurant",
+      "shopAddress": "Bhagwati Road, Near Subhash Park",
+      "shopMobileNumber": "7015510259",
+      "shopImage": "https://i.pinimg.com/736x/20/27/0f/20270fdb19d0c0925c3d0ca3cb6280c8.jpg",
+      "orders": [
+        {
+          "itemNo": 14,
+          "item": "Manchurian Dry",
+          "quantity": 1,
+          "price": "60",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 4,
+          "item": "Veg Burger",
+          "quantity": 2,
+          "price": "25",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 5,
+          "item": "Pizza Patties",
+          "quantity": 1,
+          "price": "30",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 37,
+          "item": "Plain Dosa",
+          "quantity": 1,
+          "price": "30",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "WEL10",
+      "total": 170,
+      "area": "kosi10",
+      "orderNumber": 1,
+      "totalDiscount": 10,
+      "orderDate": 1615119125395,
+      "orderAddress": "1145 Arya Nagar Gali Number 2\nNear Parth Dental Care (Kosi Kalan) 281403 (Uttar Pradesh)",
+      "orderAlternateMobileNumber": "9027907563"
+    },
+    {
+      "shopName": "Maa Bhagwati Pizza and Cheese Patties Shop",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "7579313372",
+      "shopImage": "https://cdn1.iconfinder.com/data/icons/supermarket-cafe-and-stores/50/47-512.png",
+      "orders": [
+        {
+          "itemNo": 15,
+          "item": "Veg Patties",
+          "quantity": 2,
+          "price": "20",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 21,
+          "item": "Special Jalebi (100 gm)",
+          "quantity": 1,
+          "price": "10",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "",
+      "total": 50,
+      "area": "kosi10",
+      "orderNumber": 2,
+      "totalDiscount": 0,
+      "orderDate": 1615120125927,
+      "orderAddress": "1145 Arya Nagar Gali Number 2\nNear Parth Dental Care (Kosi Kalan) 281403 (Uttar Pradesh)",
+      "orderAlternateMobileNumber": "9027907563"
+    },
+    {
+      "shopName": "Maa Bhagwati Pizza and Cheese Patties Shop",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "7579313372",
+      "shopImage": "https://cdn1.iconfinder.com/data/icons/supermarket-cafe-and-stores/50/47-512.png",
+      "orders": [
+        {
+          "itemNo": 15,
+          "item": "Veg Patties",
+          "quantity": 2,
+          "price": "20",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "",
+      "total": 40,
+      "area": "aryaNagar10",
+      "orderNumber": 3,
+      "totalDiscount": 0,
+      "orderDate": 1615984696403,
+      "orderAddress": "1145 Arya Nagar Gali Number 2\nNear Parth Dental Care (Kosi Kalan) 281403 (Uttar Pradesh)",
+      "orderAlternateMobileNumber": "9027907563",
+      "isOrderCancel": false
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "WEL10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615211652793,
+      "redeemAttempt": 0,
+      "amount": 10
+    }
+  ],
+  "date": 1614975673074,
+  "name": "Parth Mittal",
+  "mobileNumber": "9027907563",
+  "password": "ABCD@0123",
+  "__v": 0,
+  "address": "1145 Arya Nagar Gali Number 2\nNear Parth Dental Care (Kosi Kalan) 281403 (Uttar Pradesh)",
+  "alternateMobileNumber": "9027907563",
+  "area": "kosi10",
+  "paymentMethod": "Cash On Delivery",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "604390a62461786eb0842043"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Jain Pizza & Bakery",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "9870900050",
+      "shopImage": "https://p7.hiclipart.com/preview/812/527/724/pizza-fast-food-italian-cuisine-illustration-cartoon-casual-pizza-physical-shop-png.jpg",
+      "orders": [
+        {
+          "itemNo": 16,
+          "item": "White Sauce Pasta",
+          "quantity": 1,
+          "price": "120",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 19,
+          "item": "Aloo Tikki Burger",
+          "quantity": 1,
+          "price": "35",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 24,
+          "item": "Butter Pav Bhaji",
+          "quantity": 1,
+          "price": "60",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 37,
+          "item": "Spring Roll",
+          "quantity": 1,
+          "price": "60",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 48,
+          "item": "Chilli Potato",
+          "quantity": 1,
+          "price": "80",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 55,
+          "item": "Hakka Noodles",
+          "quantity": 1,
+          "price": "120",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 66,
+          "item": "Veggie Supreme",
+          "halfQuantity": 1,
+          "price": "180",
+          "isHalfSelected": true
+        }
+      ],
+      "coupon": "WEL10",
+      "total": 655,
+      "area": "other20",
+      "otherSpecifications": "Less spucy",
+      "orderNumber": 1,
+      "totalDiscount": 10,
+      "orderDate": 1615040953029,
+      "orderAddress": "A-2 , SHAMKEN COLONY",
+      "orderAlternateMobileNumber": "9897510408"
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "WEL10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615213478937,
+      "redeemAttempt": 0,
+      "amount": 10
+    }
+  ],
+  "date": 1614975673074,
+  "name": "Kuldeep Bajaj",
+  "mobileNumber": "9897510408",
+  "password": "Superkosi",
+  "__v": 0,
+  "paymentMethod": "Cash On Delivery",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "6043bf942461786eb0842051"
+  },
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "WEL10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615225493254,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1614975673074,
+  "name": "Vivek jain",
+  "mobileNumber": "9870900050",
+  "password": "food1234",
+  "__v": 0,
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "60447aab2461786eb0842056"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Maa Bhagwati Pizza and Cheese Patties Shop",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "7579313372",
+      "shopImage": "https://cdn1.iconfinder.com/data/icons/supermarket-cafe-and-stores/50/47-512.png",
+      "orders": [
+        {
+          "itemNo": 15,
+          "item": "Veg Patties",
+          "quantity": 5,
+          "price": "20",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "",
+      "total": 100,
+      "area": "gopalBagh20",
+      "orderNumber": 1,
+      "totalDiscount": 0,
+      "orderDate": 1615988888896,
+      "orderAddress": "Gopal bagh giraj maharaj colony ponia ki Koti",
+      "orderAlternateMobileNumber": "8755434204",
+      "isOrderCancel": false
+    },
+    {
+      "shopName": "Maa Bhagwati Pizza and Cheese Patties Shop",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "7579313372",
+      "shopImage": "https://cdn1.iconfinder.com/data/icons/supermarket-cafe-and-stores/50/47-512.png",
+      "orders": [
+        {
+          "itemNo": 16,
+          "item": "Sweet Corn Patties",
+          "quantity": 3,
+          "price": "30",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "",
+      "total": 90,
+      "area": "gopalBagh20",
+      "orderNumber": 2,
+      "totalDiscount": 0,
+      "orderDate": 1616420395104,
+      "orderAddress": "Gopal bagh kosi kalan ponia ki koti pani plant ke pass",
+      "orderAlternateMobileNumber": "8755434204",
+      "isOrderCancel": false
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "WEL10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615273387862,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1614975673074,
+  "name": "Lakhan singh",
+  "mobileNumber": "8755434204",
+  "password": "8755434204",
+  "__v": 0,
+  "paymentMethod": "Cash On Delivery",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "6044da4f2461786eb0842092"
+  },
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "WEL10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615297871799,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1614975673074,
+  "name": "Yug",
+  "mobileNumber": "9917178886",
+  "password": "bhramab",
+  "__v": 0,
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "6044f08f2461786eb08420a5"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Chinese Fast Food",
+      "shopAddress": "Near Railway Station",
+      "shopMobileNumber": "8755580426",
+      "shopImage": "https://previews.123rf.com/images/artisticco/artisticco1701/artisticco170100013/69367031-a-vector-illustration-of-fast-food-restaurant.jpg",
+      "orders": [
+        {
+          "itemNo": 39,
+          "item": "Manchurain",
+          "halfQuantity": 1,
+          "price": "30",
+          "isHalfSelected": true
+        },
+        {
+          "itemNo": 26,
+          "item": "Paneer Tikka",
+          "halfQuantity": 1,
+          "price": "60",
+          "isHalfSelected": true
+        },
+        {
+          "itemNo": 34,
+          "item": "Egg Roll",
+          "halfQuantity": 1,
+          "price": "30",
+          "isHalfSelected": true
+        }
+      ],
+      "coupon": "",
+      "total": 120,
+      "area": "talabShahi10",
+      "otherSpecifications": "Finger in egg roll",
+      "orderNumber": 1,
+      "totalDiscount": 0,
+      "orderDate": 1615991171052,
+      "orderAddress": "Bichhoriya",
+      "orderAlternateMobileNumber": "8923023726",
+      "isOrderCancel": false
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "WEL10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615303567885,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1614975673074,
+  "name": "Avdhesh",
+  "mobileNumber": "8923023726",
+  "password": "8923023726",
+  "__v": 0,
+  "paymentMethod": "Cash On Delivery",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "6045c52f2461786eb08420af"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Saini Chat Bhandar",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "8006739841",
+      "shopImage": "https://image.shutterstock.com/image-vector/street-food-vendor-offers-traditional-260nw-636740854.jpg",
+      "orders": [
+        {
+          "itemNo": 1,
+          "item": "Masala Dosa",
+          "quantity": 1,
+          "price": "50",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 6,
+          "item": "Paneer Chilla",
+          "quantity": 1,
+          "price": "50",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "WEL10",
+      "total": 100,
+      "area": "kosi10",
+      "otherSpecifications": "Without Onion and without garlic",
+      "orderNumber": 1,
+      "totalDiscount": 10,
+      "orderDate": 1615202651878,
+      "orderAddress": "S/o Kailash Basaiya, H.No. 4030A, Lalaram Pech, Near Soap Factory, Kosi Kalan (Mathura)",
+      "orderAlternateMobileNumber": "7669153043"
+    },
+    {
+      "shopName": "Garg's Bakery",
+      "shopAddress": "Baldev Ganj, Near Gyasi Halwai",
+      "shopMobileNumber": "7500282901",
+      "shopImage": "https://previews.123rf.com/images/mknoxgray/mknoxgray1904/mknoxgray190400010/121194154-cake-shop-a-party-without-cake-is-just-a-meeting-cartoon-vector-illustration.jpg",
+      "orders": [
+        {
+          "itemNo": 3,
+          "item": "Pineapple - 1 pond",
+          "quantity": 1,
+          "price": "150",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "OFFER10",
+      "total": 150,
+      "area": "kosi10",
+      "otherSpecifications": "Please write congratulations on the cake",
+      "orderNumber": 2,
+      "totalDiscount": 10,
+      "orderDate": 1615464957605,
+      "orderAddress": "S/o Kailash Basaiya, H.No. 4030A, Lalaram Pech, Near Soap Factory, Kosi Kalan (Mathura)",
+      "orderAlternateMobileNumber": "7669153043"
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "WEL10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615357999918,
+      "redeemAttempt": 0,
+      "amount": 10
+    },
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615520887114,
+      "redeemAttempt": 0,
+      "amount": 10
+    }
+  ],
+  "date": 1614975673074,
+  "name": "Mudit",
+  "mobileNumber": "7669153043",
+  "password": "AGGpulkit1!",
+  "__v": 0,
+  "paymentMethod": "Cash On Delivery",
+  "address": "S/o Kailash Basaiya, H.No. 4030A, Lalaram Pech, Near Soap Factory, Kosi Kalan (Mathura)",
+  "alternateMobileNumber": "7669153043",
+  "area": "kosi10",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "60462e922461786eb08420e4"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Jain Pizza & Bakery",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "9870900050",
+      "shopImage": "https://p7.hiclipart.com/preview/812/527/724/pizza-fast-food-italian-cuisine-illustration-cartoon-casual-pizza-physical-shop-png.jpg",
+      "orders": [
+        {
+          "itemNo": 20,
+          "item": "Veg Burger",
+          "quantity": 3,
+          "price": "45",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "",
+      "total": 135,
+      "area": "kosi10",
+      "orderNumber": 1,
+      "totalDiscount": 0,
+      "orderDate": 1615212298931,
+      "orderAddress": "1445/5 Arya Nagar , kosi , near lifeline hospital\n",
+      "orderAlternateMobileNumber": "8439673072"
+    },
+    {
+      "shopName": "Jain Pizza & Bakery",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "9870900050",
+      "shopImage": "https://p7.hiclipart.com/preview/812/527/724/pizza-fast-food-italian-cuisine-illustration-cartoon-casual-pizza-physical-shop-png.jpg",
+      "orders": [
+        {
+          "itemNo": 1,
+          "item": "Chocolate Shake",
+          "quantity": 1,
+          "price": "70",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 21,
+          "item": "Paneer Burger",
+          "quantity": 1,
+          "price": "50",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 30,
+          "item": "Veggie Special",
+          "quantity": 1,
+          "price": "45",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "",
+      "total": 165,
+      "area": "kosi10",
+      "orderNumber": 2,
+      "totalDiscount": 0,
+      "orderDate": 1615637185281,
+      "orderAddress": "1445/5 Arya nagar , kosi",
+      "orderAlternateMobileNumber": "8439673072"
+    },
+    {
+      "shopName": "Jain Pizza & Bakery",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "9870900050",
+      "shopImage": "https://p7.hiclipart.com/preview/812/527/724/pizza-fast-food-italian-cuisine-illustration-cartoon-casual-pizza-physical-shop-png.jpg",
+      "orders": [
+        {
+          "itemNo": 6,
+          "item": "Kit Kat Shake",
+          "quantity": 1,
+          "price": "100",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 20,
+          "item": "Veg Burger",
+          "quantity": 1,
+          "price": "45",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "",
+      "total": 145,
+      "area": "aryaNagar10",
+      "otherSpecifications": "Send 2 straws",
+      "orderNumber": 3,
+      "totalDiscount": 0,
+      "orderDate": 1616159001507,
+      "orderAddress": "1445/5 Arya nagar, kosi",
+      "orderAlternateMobileNumber": "8439673072",
+      "isOrderCancel": false
+    }
+  ],
+  "notifications": [],
+  "coupon": [],
+  "date": 1614975673074,
+  "name": "Simarjeet singh",
+  "mobileNumber": "8439673072",
+  "password": "simarjeet1109",
+  "__v": 0,
+  "paymentMethod": "Cash On Delivery",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "604717d02461786eb08420f4"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Friends Fast Food - FFF",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "8791681511",
+      "shopImage": "https://cdn1.vectorstock.com/i/1000x1000/01/25/cartoon-fast-food-restaurant-small-shop-business-vector-18620125.jpg",
+      "orders": [
+        {
+          "itemNo": 11,
+          "item": "Paneer Chowmein",
+          "halfQuantity": 1,
+          "price": "30",
+          "isHalfSelected": true
+        }
+      ],
+      "coupon": "",
+      "total": 30,
+      "area": "kosi10",
+      "orderNumber": 1,
+      "totalDiscount": 0,
+      "orderDate": 1615278515541,
+      "orderAddress": "Gopal nagar near purana nursing home ",
+      "orderAlternateMobileNumber": "8449500427"
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "WEL10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615444689195,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1614975673074,
+  "name": "Tanya",
+  "mobileNumber": "8449500427",
+  "password": "bhanja",
+  "__v": 0,
+  "paymentMethod": "Cash On Delivery",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "60475bd82461786eb084210a"
+  },
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "WEL10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615462105356,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1614975673074,
+  "name": "Aashi Garg",
+  "mobileNumber": "8445435888",
+  "password": "Merceph@0509",
+  "__v": 0,
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "604772002461786eb084210d"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Jain Pizza & Bakery",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "9870900050",
+      "shopImage": "https://p7.hiclipart.com/preview/812/527/724/pizza-fast-food-italian-cuisine-illustration-cartoon-casual-pizza-physical-shop-png.jpg",
+      "orders": [
+        {
+          "itemNo": 28,
+          "item": "Cheese Patties",
+          "quantity": 17,
+          "price": "25",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "",
+      "total": 425,
+      "area": "kosi10",
+      "otherSpecifications": "2 patties without onion and garlic\n15 with onion and garlic",
+      "orderNumber": 1,
+      "totalDiscount": 0,
+      "orderDate": 1615295204336,
+      "orderAddress": "4256,rukmani bhavan\nHardevganj",
+      "orderAlternateMobileNumber": "8439359300"
+    }
+  ],
+  "notifications": [],
+  "coupon": [],
+  "date": 1614975673074,
+  "name": "Ruchi",
+  "mobileNumber": "8439359300",
+  "password": "ruchi123",
+  "__v": 0,
+  "paymentMethod": "Cash On Delivery",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "6048c5e884c4e62e458f83fd"
+  },
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615554792974,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1615348664798,
+  "name": "Shivanshu",
+  "mobileNumber": "9548161819",
+  "password": "shivanshu",
+  "__v": 0,
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "6048e52684c4e62e458f8404"
+  },
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615562790672,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1615348664798,
+  "name": "Ricky Singh",
+  "mobileNumber": "9897413111",
+  "password": "Ricky173314",
+  "__v": 0,
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "604a44d384c4e62e458f8416"
+  },
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615652819740,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1615348664798,
+  "name": "D",
+  "mobileNumber": "7895282245",
+  "password": "8881212",
+  "__v": 0,
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "604c95ca84c4e62e458f8431"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Food Fusion",
+      "shopAddress": "It's a Virtual Shop",
+      "shopMobileNumber": "8192095423",
+      "shopImage": "https://previews.123rf.com/images/vectorshots/vectorshots1308/vectorshots130800001/21233529-food-shop-cartoon-business-vector-character.jpg",
+      "orders": [
+        {
+          "itemNo": 12,
+          "item": "Fried Rice Manchurian",
+          "quantity": 1,
+          "price": "60",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "OFFER10",
+      "total": 60,
+      "area": "kosi10",
+      "orderNumber": 1,
+      "totalDiscount": 10,
+      "orderDate": 1615728876667,
+      "orderAddress": "4657, Gopal Nagar kosi kalan",
+      "orderAlternateMobileNumber": "6398152933"
+    },
+    {
+      "shopName": "Chinese Fast Food",
+      "shopAddress": "Near Railway Station",
+      "shopMobileNumber": "8755580426",
+      "shopImage": "https://previews.123rf.com/images/artisticco/artisticco1701/artisticco170100013/69367031-a-vector-illustration-of-fast-food-restaurant.jpg",
+      "orders": [
+        {
+          "itemNo": 39,
+          "item": "Manchurain",
+          "halfQuantity": 1,
+          "price": "30",
+          "isHalfSelected": true
+        },
+        {
+          "itemNo": 12,
+          "item": "Gravy Momos",
+          "halfQuantity": 1,
+          "price": "30",
+          "isHalfSelected": true
+        },
+        {
+          "itemNo": 16,
+          "item": "Small Grill Burger",
+          "quantity": 1,
+          "price": "30",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "",
+      "total": 90,
+      "area": "kosi10",
+      "orderNumber": 2,
+      "totalDiscount": 0,
+      "orderDate": 1615810785934,
+      "orderAddress": "4657, Gopal Nagar kosi kalan",
+      "orderAlternateMobileNumber": "6398152933"
+    },
+    {
+      "shopName": "Food Fusion",
+      "shopAddress": "It's a Virtual Shop",
+      "shopMobileNumber": "8192095423",
+      "shopImage": "https://previews.123rf.com/images/vectorshots/vectorshots1308/vectorshots130800001/21233529-food-shop-cartoon-business-vector-character.jpg",
+      "orders": [
+        {
+          "itemNo": 10,
+          "item": "Manchurian Mix",
+          "quantity": 1,
+          "price": "80",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "",
+      "total": 80,
+      "area": "gopalNagar10",
+      "orderNumber": 3,
+      "totalDiscount": 0,
+      "orderDate": 1616152733501,
+      "orderAddress": "4657, Gopal Nagar kosi kalan",
+      "orderAlternateMobileNumber": "6398152933",
+      "isOrderCancel": false
+    },
+    {
+      "shopName": "Food Fusion",
+      "shopAddress": "It's a Virtual Shop",
+      "shopMobileNumber": "8192095423",
+      "shopImage": "https://previews.123rf.com/images/vectorshots/vectorshots1308/vectorshots130800001/21233529-food-shop-cartoon-business-vector-character.jpg",
+      "orders": [
+        {
+          "itemNo": 8,
+          "item": "Burger Combo",
+          "quantity": 1,
+          "price": "80",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "",
+      "total": 80,
+      "area": "gopalNagar10",
+      "orderNumber": 4,
+      "totalDiscount": 0,
+      "orderDate": 1616583578158,
+      "orderAddress": "4657, Gopal Nagar kosi kalan",
+      "orderAlternateMobileNumber": "6398152933",
+      "isOrderCancel": false
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615804618560,
+      "redeemAttempt": 0,
+      "amount": 10
+    }
+  ],
+  "date": 1615348664798,
+  "name": "Shalini",
+  "mobileNumber": "6398152933",
+  "password": "1302shalini",
+  "__v": 0,
+  "address": "4657, Gopal Nagar kosi kalan",
+  "alternateMobileNumber": "6398152933",
+  "area": "gopalNagar10",
+  "paymentMethod": "Cash On Delivery",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "604ca6f484c4e62e458f8435"
+  },
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615809012939,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1615348664798,
+  "name": "Kalpna jain",
+  "mobileNumber": "8755533453",
+  "password": "jain",
+  "__v": 0,
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "604ca93a84c4e62e458f8440"
+  },
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615809595078,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1615348664798,
+  "name": "Mayank garg",
+  "mobileNumber": "7351460511",
+  "password": "MAYA#123",
+  "__v": 0,
+  "address": "House no.552 maniram vas vislokar gali kosi kalan mathura",
+  "alternateMobileNumber": "7351460511",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "604cb37a84c4e62e458f844c"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Jain Pizza & Bakery",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "9870900050",
+      "shopImage": "https://p7.hiclipart.com/preview/812/527/724/pizza-fast-food-italian-cuisine-illustration-cartoon-casual-pizza-physical-shop-png.jpg",
+      "orders": [
+        {
+          "itemNo": 19,
+          "item": "Aloo Tikki Burger",
+          "quantity": 2,
+          "price": "35",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 33,
+          "item": "Veg Momos",
+          "quantity": 1,
+          "price": "50",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "",
+      "total": 120,
+      "area": "kosi10",
+      "orderNumber": 1,
+      "totalDiscount": 0,
+      "orderDate": 1615639932270,
+      "orderAddress": "Lala ram petch, ghanta ghar ,kosi kalan near soap factory ",
+      "orderAlternateMobileNumber": "8077109419"
+    },
+    {
+      "shopName": "Jain Pizza & Bakery",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "9870900050",
+      "shopImage": "https://p7.hiclipart.com/preview/812/527/724/pizza-fast-food-italian-cuisine-illustration-cartoon-casual-pizza-physical-shop-png.jpg",
+      "orders": [
+        {
+          "itemNo": 19,
+          "item": "Aloo Tikki Burger",
+          "quantity": 2,
+          "price": "35",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 33,
+          "item": "Veg Momos",
+          "quantity": 1,
+          "price": "50",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "",
+      "total": 120,
+      "area": "lalaRamMarg10",
+      "otherSpecifications": "Fried momos",
+      "orderNumber": 2,
+      "totalDiscount": 0,
+      "orderDate": 1616153689099,
+      "orderAddress": "Lala ram petch, ghantaghar\n",
+      "orderAlternateMobileNumber": "8077109419",
+      "isOrderCancel": false
+    }
+  ],
+  "notifications": [],
+  "coupon": [],
+  "date": 1615348664798,
+  "name": "Mohit Agrawal",
+  "mobileNumber": "8077109419",
+  "password": "mohit0403",
+  "__v": 0,
+  "paymentMethod": "Cash On Delivery",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "604cbd4f84c4e62e458f8451"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Jain Pizza & Bakery",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "9870900050",
+      "shopImage": "https://p7.hiclipart.com/preview/812/527/724/pizza-fast-food-italian-cuisine-illustration-cartoon-casual-pizza-physical-shop-png.jpg",
+      "orders": [
+        {
+          "itemNo": 22,
+          "item": "Cheese Burger",
+          "quantity": 2,
+          "price": "60",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "OFFER10",
+      "total": 120,
+      "area": "narsiVillage20",
+      "orderNumber": 1,
+      "totalDiscount": 10,
+      "orderDate": 1615720292678,
+      "orderAddress": "H.No. 94 Narsi Village Kosi Kalan",
+      "orderAlternateMobileNumber": "8979892252"
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615814736000,
+      "redeemAttempt": 0,
+      "amount": 10
+    }
+  ],
+  "date": 1615348664798,
+  "name": "Sachin Sharma",
+  "mobileNumber": "8979892252",
+  "password": "Aryan@347",
+  "__v": 0,
+  "paymentMethod": "Cash On Delivery",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "604cbf7f84c4e62e458f8458"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Saini Chat Bhandar",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "8006739841",
+      "shopImage": "https://image.shutterstock.com/image-vector/street-food-vendor-offers-traditional-260nw-636740854.jpg",
+      "orders": [
+        {
+          "itemNo": 1,
+          "item": "Masala Dosa",
+          "quantity": 2,
+          "price": "50",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "",
+      "total": 100,
+      "area": "other20",
+      "orderNumber": 1,
+      "totalDiscount": 0,
+      "orderDate": 1615642965482,
+      "orderAddress": "Lala Ram petch near sabun factory",
+      "orderAlternateMobileNumber": "8445266331"
+    },
+    {
+      "shopName": "Saini Chat Bhandar",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "8006739841",
+      "shopImage": "https://image.shutterstock.com/image-vector/street-food-vendor-offers-traditional-260nw-636740854.jpg",
+      "orders": [
+        {
+          "itemNo": 1,
+          "item": "Masala Dosa",
+          "quantity": 1,
+          "price": "50",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "",
+      "total": 50,
+      "area": "other20",
+      "orderNumber": 2,
+      "totalDiscount": 0,
+      "orderDate": 1615643796954,
+      "orderAddress": "Lala Ram petch near sabun factory",
+      "orderAlternateMobileNumber": "8445266331"
+    },
+    {
+      "shopName": "Jain Pizza & Bakery",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "9870900050",
+      "shopImage": "https://p7.hiclipart.com/preview/812/527/724/pizza-fast-food-italian-cuisine-illustration-cartoon-casual-pizza-physical-shop-png.jpg",
+      "orders": [
+        {
+          "itemNo": 28,
+          "item": "Cheese Patties",
+          "quantity": 2,
+          "price": "25",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "",
+      "total": 50,
+      "area": "other20",
+      "orderNumber": 3,
+      "totalDiscount": 0,
+      "orderDate": 1615645024365,
+      "orderAddress": "Lala Ram petch Kosi kalan",
+      "orderAlternateMobileNumber": "8445266331"
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615815295649,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1615348664798,
+  "name": "Shweta Agrawal",
+  "mobileNumber": "8445266331",
+  "password": "1234",
+  "__v": 0,
+  "paymentMethod": "Cash On Delivery",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "604d78a884c4e62e458f847d"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Jain Pizza & Bakery",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "9870900050",
+      "shopImage": "https://p7.hiclipart.com/preview/812/527/724/pizza-fast-food-italian-cuisine-illustration-cartoon-casual-pizza-physical-shop-png.jpg",
+      "orders": [
+        {
+          "itemNo": 46,
+          "item": "Veg Noodles",
+          "quantity": 1,
+          "price": "80",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 48,
+          "item": "Chilli Potato",
+          "quantity": 1,
+          "price": "80",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "",
+      "total": 160,
+      "area": "kosi10",
+      "orderNumber": 1,
+      "totalDiscount": 0,
+      "orderDate": 1615732094233,
+      "orderAddress": "Punjabi colony",
+      "orderAlternateMobileNumber": "7037685756"
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615862697105,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1615348664798,
+  "name": "Lakshya kalra",
+  "mobileNumber": "7037685756",
+  "password": "Kalra",
+  "__v": 0,
+  "paymentMethod": "Cash On Delivery",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "604d899284c4e62e458f847e"
+  },
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615867026363,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1615348664798,
+  "name": "Rohit",
+  "mobileNumber": "8279907301",
+  "password": "ishugarg",
+  "__v": 0,
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "604dbba5f4e890791c84f5bb"
+  },
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615879845832,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1615703145844,
+  "name": "Ishu",
+  "mobileNumber": "8171046484",
+  "password": "ISHU1234",
+  "__v": 0,
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "604de439f4e890791c84f5ca"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Jain Pizza & Bakery",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "9870900050",
+      "shopImage": "https://p7.hiclipart.com/preview/812/527/724/pizza-fast-food-italian-cuisine-illustration-cartoon-casual-pizza-physical-shop-png.jpg",
+      "orders": [
+        {
+          "itemNo": 28,
+          "item": "Cheese Patties",
+          "quantity": 3,
+          "price": "25",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "OFFER10",
+      "total": 75,
+      "area": "kosi10",
+      "otherSpecifications": "Ketchup Astra",
+      "orderNumber": 1,
+      "totalDiscount": 10,
+      "orderDate": 1615717993479,
+      "orderAddress": "Agarwal Colony  nandgaon road Kosi Kalan Mathura",
+      "orderAlternateMobileNumber": "8006043532"
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615890233709,
+      "redeemAttempt": 0,
+      "amount": 10
+    }
+  ],
+  "date": 1615703145844,
+  "name": "Lovekesh kumar",
+  "mobileNumber": "8006043532",
+  "password": "akku@123",
+  "__v": 0,
+  "paymentMethod": "Cash On Delivery",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "604e1023f4e890791c84f5d9"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Jain Pizza & Bakery",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "9870900050",
+      "shopImage": "https://p7.hiclipart.com/preview/812/527/724/pizza-fast-food-italian-cuisine-illustration-cartoon-casual-pizza-physical-shop-png.jpg",
+      "orders": [
+        {
+          "itemNo": 30,
+          "item": "Veggie Special",
+          "quantity": 1,
+          "price": "45",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "",
+      "total": 45,
+      "area": "kosi10",
+      "orderNumber": 1,
+      "totalDiscount": 0,
+      "orderDate": 1615728791760,
+      "orderAddress": "Shekhan gali Rk tairlor k samne",
+      "orderAlternateMobileNumber": "9258402689"
+    }
+  ],
+  "notifications": [],
+  "coupon": [],
+  "date": 1615703145844,
+  "name": "Govind",
+  "mobileNumber": "9258402689",
+  "password": "999780e64o",
+  "__v": 0,
+  "paymentMethod": "Cash On Delivery",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "604e1b9df4e890791c84f5e5"
+  },
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615904414224,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1615703145844,
+  "name": "Brijesh",
+  "mobileNumber": "9045479433",
+  "password": "brijesh888",
+  "__v": 0,
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "604f4c8df4e890791c84f5fa"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Jain Pizza & Bakery",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "9870900050",
+      "shopImage": "https://p7.hiclipart.com/preview/812/527/724/pizza-fast-food-italian-cuisine-illustration-cartoon-casual-pizza-physical-shop-png.jpg",
+      "orders": [
+        {
+          "itemNo": 28,
+          "item": "Cheese Patties",
+          "quantity": 2,
+          "price": "25",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "OFFER10",
+      "total": 50,
+      "area": "kosi10",
+      "orderNumber": 1,
+      "totalDiscount": 10,
+      "orderDate": 1615809923431,
+      "orderAddress": "Nandgaon road new Agarwal Colony Kosi Kalan Mathura",
+      "orderAlternateMobileNumber": "9520794525"
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615982477525,
+      "redeemAttempt": 0,
+      "amount": 10
+    }
+  ],
+  "date": 1615703145844,
+  "name": "Lovekesh kumar",
+  "mobileNumber": "9520794525",
+  "password": "akku@123",
+  "__v": 0,
+  "paymentMethod": "Cash On Delivery",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "604f4df0f4e890791c84f600"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Chinese Fast Food",
+      "shopAddress": "Near Railway Station",
+      "shopMobileNumber": "8755580426",
+      "shopImage": "https://previews.123rf.com/images/artisticco/artisticco1701/artisticco170100013/69367031-a-vector-illustration-of-fast-food-restaurant.jpg",
+      "orders": [
+        {
+          "itemNo": 34,
+          "item": "Egg Roll",
+          "quantity": 1,
+          "price": "50",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "OFFER10",
+      "total": 50,
+      "area": "other20",
+      "orderNumber": 1,
+      "totalDiscount": 10,
+      "orderDate": 1615810224416,
+      "orderAddress": "Nandgaon road new Agarwal Colony Kosi Kalan MathuraLand gaon road new Agarwal Colony Kosi Kalan Mathura",
+      "orderAlternateMobileNumber": "7500041167"
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1615982832836,
+      "redeemAttempt": 0,
+      "amount": 10
+    }
+  ],
+  "date": 1615703145844,
+  "name": "Jatin",
+  "mobileNumber": "7500041167",
+  "password": "akku@123",
+  "__v": 0,
+  "paymentMethod": "Cash On Delivery",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "60509a99f71bdb19a1c27d51"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Maa Bhagwati Pizza and Cheese Patties Shop",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "7579313372",
+      "shopImage": "https://cdn1.iconfinder.com/data/icons/supermarket-cafe-and-stores/50/47-512.png",
+      "orders": [
+        {
+          "itemNo": 1,
+          "item": "Veg Pizza",
+          "quantity": 1,
+          "price": "100",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 2,
+          "item": "Spicy Pizza",
+          "quantity": 1,
+          "price": "110",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "",
+      "total": 210,
+      "area": "gopalNagar10",
+      "otherSpecifications": "Extra cheese",
+      "orderNumber": 1,
+      "totalDiscount": 0,
+      "orderDate": 1615895444139,
+      "orderAddress": "Kiran aachal, chulha chakki ke samne ,gopal nagar kosikalan",
+      "orderAlternateMobileNumber": "8630233033",
+      "isOrderCancel": false
+    }
+  ],
+  "notifications": [],
+  "coupon": [],
+  "date": 1615873822544,
+  "name": "Radhika",
+  "mobileNumber": "7060362258",
+  "password": "radhika",
+  "__v": 0,
+  "paymentMethod": "Cash On Delivery",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "6050bd64f71bdb19a1c27d6b"
+  },
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1616076901107,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1615873822544,
+  "name": "Ankita",
+  "mobileNumber": "7417725527",
+  "password": "ankita@1234",
+  "__v": 0,
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "6051b006f71bdb19a1c27d81"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Maa Bhagwati Pizza and Cheese Patties Shop",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "7579313372",
+      "shopImage": "https://cdn1.iconfinder.com/data/icons/supermarket-cafe-and-stores/50/47-512.png",
+      "orders": [
+        {
+          "itemNo": 17,
+          "item": "Mushroom Patties",
+          "quantity": 2,
+          "price": "30",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "",
+      "total": 60,
+      "area": "agrawalColony20",
+      "orderNumber": 1,
+      "totalDiscount": 0,
+      "orderDate": 1615971364779,
+      "orderAddress": "Near bijli Ghar, Nandgaon road Agrawal Colony",
+      "orderAlternateMobileNumber": "9050129890",
+      "isOrderCancel": false
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1616139014492,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1615873822544,
+  "name": "KRISHNA SURESH",
+  "mobileNumber": "8963934417",
+  "password": "kISHAN@27",
+  "__v": 0,
+  "paymentMethod": "Online",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "6051b34ef71bdb19a1c27d83"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Jain Pizza & Bakery",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "9870900050",
+      "shopImage": "https://p7.hiclipart.com/preview/812/527/724/pizza-fast-food-italian-cuisine-illustration-cartoon-casual-pizza-physical-shop-png.jpg",
+      "orders": [
+        {
+          "itemNo": 28,
+          "item": "Cheese Patties",
+          "quantity": 2,
+          "price": "25",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "",
+      "total": 50,
+      "area": "baldevGanj10",
+      "orderNumber": 1,
+      "totalDiscount": 0,
+      "orderDate": 1616757513151,
+      "orderAddress": "Sarafa bazzar halwai waali gali near bharat milap chowk ",
+      "orderAlternateMobileNumber": "8791220920",
+      "isOrderCancel": false
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1616139854390,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1615873822544,
+  "name": "Devanshi",
+  "mobileNumber": "8791220920",
+  "password": "12345",
+  "__v": 0,
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "6051de6ef71bdb19a1c27d97"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Friends Fast Food - FFF",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "8791681511",
+      "shopImage": "https://cdn1.vectorstock.com/i/1000x1000/01/25/cartoon-fast-food-restaurant-small-shop-business-vector-18620125.jpg",
+      "orders": [
+        {
+          "itemNo": 26,
+          "item": "Manchurian Gravy",
+          "halfQuantity": 1,
+          "price": "40",
+          "isHalfSelected": true
+        },
+        {
+          "itemNo": 6,
+          "item": "Veg Burger",
+          "quantity": 3,
+          "price": "20",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 1,
+          "item": "Steam Momos",
+          "quantity": 1,
+          "price": "30",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 22,
+          "item": "Chilli Potato",
+          "halfQuantity": 1,
+          "price": "35",
+          "isHalfSelected": true
+        }
+      ],
+      "coupon": "OFFER10",
+      "total": 165,
+      "area": "talabShahi10",
+      "orderNumber": 1,
+      "totalDiscount": 10,
+      "orderDate": 1615978423883,
+      "orderAddress": "Bicchoria's, brahman puri, talab shahi",
+      "orderAlternateMobileNumber": "8279453592",
+      "isOrderCancel": false
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1616150895030,
+      "redeemAttempt": 0,
+      "amount": 10
+    }
+  ],
+  "date": 1615873822544,
+  "name": "Hina Garg",
+  "mobileNumber": "8279453592",
+  "password": "098765",
+  "__v": 0,
+  "paymentMethod": "Cash On Delivery",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "605318e2f71bdb19a1c27dba"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Jain Pizza & Bakery",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "9870900050",
+      "shopImage": "https://p7.hiclipart.com/preview/812/527/724/pizza-fast-food-italian-cuisine-illustration-cartoon-casual-pizza-physical-shop-png.jpg",
+      "orders": [
+        {
+          "itemNo": 5,
+          "item": "Oreo Shake",
+          "quantity": 1,
+          "price": "100",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 61,
+          "item": "Paneer Mania",
+          "halfQuantity": 1,
+          "price": "140",
+          "isHalfSelected": true
+        },
+        {
+          "itemNo": 29,
+          "item": "Paneer & Sweet Corn",
+          "quantity": 1,
+          "price": "35",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "OFFER10",
+      "total": 275,
+      "area": "other20",
+      "orderNumber": 1,
+      "totalDiscount": 10,
+      "orderDate": 1616059031112,
+      "orderAddress": "Shalimar road hira hospital ke samane wali rcc road pe shalimar bazar sales office.",
+      "orderAlternateMobileNumber": "8791014292",
+      "isOrderCancel": false
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1616231395272,
+      "redeemAttempt": 0,
+      "amount": 10
+    }
+  ],
+  "date": 1615873822544,
+  "name": "Vivek",
+  "mobileNumber": "8791014292",
+  "password": "7017602961",
+  "__v": 0,
+  "paymentMethod": "Online",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "6053425af71bdb19a1c27dc3"
+  },
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1616242010388,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1615873822544,
+  "name": "Deepak agarwal",
+  "mobileNumber": "9990064500",
+  "password": "deepak2376",
+  "__v": 0,
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "605342adf71bdb19a1c27dc4"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Chinese Fast Food",
+      "shopAddress": "Near Railway Station",
+      "shopMobileNumber": "8755580426",
+      "shopImage": "https://previews.123rf.com/images/artisticco/artisticco1701/artisticco170100013/69367031-a-vector-illustration-of-fast-food-restaurant.jpg",
+      "orders": [
+        {
+          "itemNo": 36,
+          "item": "Chaap Roll",
+          "quantity": 1,
+          "price": "100",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "OFFER10",
+      "total": 100,
+      "area": "aryaNagar10",
+      "otherSpecifications": "Make it more spicy",
+      "orderNumber": 1,
+      "totalDiscount": 10,
+      "orderDate": 1616069502327,
+      "orderAddress": "Goyal Hospital pe de jaa bhai",
+      "orderAlternateMobileNumber": "8923206187",
+      "isOrderCancel": false
+    },
+    {
+      "shopName": "Friends Fast Food - FFF",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "8791681511",
+      "shopImage": "https://cdn1.vectorstock.com/i/1000x1000/01/25/cartoon-fast-food-restaurant-small-shop-business-vector-18620125.jpg",
+      "orders": [
+        {
+          "itemNo": 14,
+          "item": "Single Egg Roll",
+          "quantity": 1,
+          "price": "35",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "",
+      "total": 35,
+      "area": "aryaNagar10",
+      "otherSpecifications": "Make it more spicy",
+      "orderNumber": 2,
+      "totalDiscount": 0,
+      "orderDate": 1616331782531,
+      "orderAddress": "Goyal Hospital pe de jaa bhai",
+      "orderAlternateMobileNumber": "8923206187",
+      "isOrderCancel": false
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1616242094187,
+      "redeemAttempt": 0,
+      "amount": 10
+    }
+  ],
+  "date": 1615873822544,
+  "name": "Mohit Sharma",
+  "mobileNumber": "8923206187",
+  "password": "weeknd137e",
+  "__v": 0,
+  "paymentMethod": "Online",
+  "address": "Goyal Hospital pe de jaa bhai",
+  "alternateMobileNumber": "8923206187",
+  "area": "aryaNagar10",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "60535c8ff71bdb19a1c27dcf"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Asli Pappu Dhaba (Old)",
+      "shopAddress": "Near Bathengate",
+      "shopMobileNumber": "9897413111",
+      "shopImage": "https://cdn5.vectorstock.com/i/1000x1000/87/54/welcome-to-hotel-cartoon-poster-vector-19788754.jpg",
+      "orders": [
+        {
+          "itemNo": 36,
+          "item": "Paneer Butter Masala",
+          "quantity": 1,
+          "price": "200",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "OFFER10",
+      "total": 200,
+      "area": "other20",
+      "otherSpecifications": "No ",
+      "orderNumber": 1,
+      "totalDiscount": 10,
+      "orderDate": 1616076136327,
+      "orderAddress": "Pradhan tower in front of kulla mall petropump kosi kalan Mathura ",
+      "orderAlternateMobileNumber": "9720001532",
+      "isOrderCancel": false
+    },
+    {
+      "shopName": "Saini Chat Bhandar",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "8006739841",
+      "shopImage": "https://image.shutterstock.com/image-vector/street-food-vendor-offers-traditional-260nw-636740854.jpg",
+      "orders": [
+        {
+          "itemNo": 2,
+          "item": "Paneer Masala Dosa",
+          "quantity": 1,
+          "price": "60",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 4,
+          "item": "Pav bhaaji",
+          "quantity": 1,
+          "price": "50",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "",
+      "total": 110,
+      "area": "other20",
+      "otherSpecifications": "Onion needed, extra bhaji ",
+      "orderNumber": 2,
+      "totalDiscount": 0,
+      "orderDate": 1616420637120,
+      "orderAddress": "Pradhan tower in front of kulla mall petropump kosi kalan Mathura ",
+      "orderAlternateMobileNumber": "9720001532",
+      "isOrderCancel": false
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1616248719867,
+      "redeemAttempt": 0,
+      "amount": 10
+    }
+  ],
+  "date": 1615873822544,
+  "name": "Bhagat Singh",
+  "mobileNumber": "9720001532",
+  "password": "2000",
+  "__v": 0,
+  "paymentMethod": "Cash On Delivery",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "6054bd77f71bdb19a1c27df3"
+  },
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1616339063317,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1615873822544,
+  "name": "Rishabh",
+  "mobileNumber": "8953288343",
+  "password": "akku@123",
+  "__v": 0,
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "6055f5f6f71bdb19a1c27e05"
+  },
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1616419063172,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1615873822544,
+  "name": "Himanshi",
+  "mobileNumber": "9997808403",
+  "password": "iamhimanshi",
+  "__v": 0,
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "6055f6eef71bdb19a1c27e06"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Chinese Fast Food",
+      "shopAddress": "Near Railway Station",
+      "shopMobileNumber": "8755580426",
+      "shopImage": "https://previews.123rf.com/images/artisticco/artisticco1701/artisticco170100013/69367031-a-vector-illustration-of-fast-food-restaurant.jpg",
+      "orders": [
+        {
+          "itemNo": 16,
+          "item": "Small Grill Burger",
+          "quantity": 3,
+          "price": "30",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "",
+      "total": 90,
+      "area": "other20",
+      "orderNumber": 1,
+      "totalDiscount": 0,
+      "orderDate": 1616246677488,
+      "orderAddress": "Arya nagar near life line hospital",
+      "orderAlternateMobileNumber": "9149343437",
+      "isOrderCancel": false
+    },
+    {
+      "shopName": "Friends Fast Food - FFF",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "8791681511",
+      "shopImage": "https://cdn1.vectorstock.com/i/1000x1000/01/25/cartoon-fast-food-restaurant-small-shop-business-vector-18620125.jpg",
+      "orders": [
+        {
+          "itemNo": 2,
+          "item": "Fried Momos",
+          "quantity": 1,
+          "price": "40",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 3,
+          "item": "Afghani Momos",
+          "quantity": 2,
+          "price": "70",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 19,
+          "item": "Spring Roll",
+          "quantity": 1,
+          "price": "40",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 22,
+          "item": "Chilli Potato",
+          "quantity": 1,
+          "price": "60",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "",
+      "total": 280,
+      "area": "other20",
+      "orderNumber": 2,
+      "totalDiscount": 0,
+      "orderDate": 1616246753905,
+      "orderAddress": "Arya nagar near life line hospital",
+      "orderAlternateMobileNumber": "9149343437",
+      "isOrderCancel": false
+    }
+  ],
+  "notifications": [],
+  "coupon": [],
+  "date": 1615873822544,
+  "name": "Rajni",
+  "mobileNumber": "9149343437",
+  "password": "rajnijn123",
+  "__v": 0,
+  "paymentMethod": "Cash On Delivery",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "6056a701f71bdb19a1c27e13"
+  },
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1616464385997,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1615873822544,
+  "name": "Yash Nagpal",
+  "mobileNumber": "8979009991",
+  "password": "25198yash",
+  "__v": 0,
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "6056ffa9f71bdb19a1c27e1d"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Chinese Fast Food",
+      "shopAddress": "Near Railway Station",
+      "shopMobileNumber": "8755580426",
+      "shopImage": "https://previews.123rf.com/images/artisticco/artisticco1701/artisticco170100013/69367031-a-vector-illustration-of-fast-food-restaurant.jpg",
+      "orders": [
+        {
+          "itemNo": 7,
+          "item": "Steam Momos",
+          "quantity": 1,
+          "price": "30",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 31,
+          "item": "Spring Roll",
+          "quantity": 1,
+          "price": "30",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 18,
+          "item": "Butter Burger",
+          "quantity": 1,
+          "price": "40",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "OFFER10",
+      "total": 100,
+      "area": "aryaNagar10",
+      "orderNumber": 1,
+      "totalDiscount": 10,
+      "orderDate": 1616314701409,
+      "orderAddress": "Mandir ke samna life line hospital arya nagar kosi kalan",
+      "orderAlternateMobileNumber": "9084347719",
+      "isOrderCancel": false
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1616487081583,
+      "redeemAttempt": 0,
+      "amount": 10
+    }
+  ],
+  "date": 1615873822544,
+  "name": "Piyush",
+  "mobileNumber": "9084347719",
+  "password": "piyush9084",
+  "__v": 0,
+  "paymentMethod": "Cash On Delivery",
+  "address": "Mandir ke samna life line hospital arya nagar kosi kalan ",
+  "alternateMobileNumber": "9084347719",
+  "area": "aryaNagar10",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "60572e6af71bdb19a1c27e25"
+  },
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1616499050711,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1615873822544,
+  "name": "Vikrant",
+  "mobileNumber": "7417044434",
+  "password": "mikusingh",
+  "__v": 0,
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "60573081f71bdb19a1c27e2b"
+  },
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1616499586027,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1615873822544,
+  "name": "Nishtha",
+  "mobileNumber": "9149357809",
+  "password": "1234",
+  "__v": 0,
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "605736ebf71bdb19a1c27e2c"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Chinese Fast Food",
+      "shopAddress": "Near Railway Station",
+      "shopMobileNumber": "8755580426",
+      "shopImage": "https://previews.123rf.com/images/artisticco/artisticco1701/artisticco170100013/69367031-a-vector-illustration-of-fast-food-restaurant.jpg",
+      "orders": [
+        {
+          "itemNo": 7,
+          "item": "Steam Momos",
+          "quantity": 1,
+          "price": "30",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 19,
+          "item": "Grill Burger",
+          "quantity": 1,
+          "price": "40",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 31,
+          "item": "Spring Roll",
+          "quantity": 1,
+          "price": "30",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 22,
+          "item": "Afghani Chaap",
+          "halfQuantity": 1,
+          "price": "60",
+          "isHalfSelected": true
+        }
+      ],
+      "coupon": "OFFER10",
+      "total": 160,
+      "area": "gopalBagh20",
+      "orderNumber": 1,
+      "totalDiscount": 10,
+      "orderDate": 1616329047141,
+      "orderAddress": "C/o Lalit Kumar advocate behind ITCW Agrasen nagar Kosi Kalan",
+      "orderAlternateMobileNumber": "9997882476",
+      "isOrderCancel": false
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1616501227884,
+      "redeemAttempt": 0,
+      "amount": 10
+    }
+  ],
+  "date": 1615873822544,
+  "name": "Naveen Singhal",
+  "mobileNumber": "9997882476",
+  "password": "9997882476",
+  "__v": 0,
+  "paymentMethod": "Online",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "60573e8ef71bdb19a1c27e33"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Shree Ji Fast Food And Chaap Corner",
+      "shopAddress": "Near police Chowki",
+      "shopMobileNumber": "9045131311",
+      "shopImage": "https://media.istockphoto.com/vectors/food-store-building-vector-illustration-grocery-shop-facade-vector-id617369906",
+      "orders": [
+        {
+          "itemNo": 2,
+          "item": "Masala Chaap",
+          "halfQuantity": 1,
+          "price": "80",
+          "isHalfSelected": true
+        }
+      ],
+      "coupon": "",
+      "total": 80,
+      "area": "baldevGanj10",
+      "otherSpecifications": "With onion and spicy ",
+      "orderNumber": 1,
+      "totalDiscount": 0,
+      "orderDate": 1616330465510,
+      "orderAddress": "4407,Baldev ganj,kosi",
+      "orderAlternateMobileNumber": "7895812802",
+      "isOrderCancel": false
+    }
+  ],
+  "notifications": [],
+  "coupon": [],
+  "date": 1615873822544,
+  "name": "Priyam Bansal",
+  "mobileNumber": "7895812802",
+  "password": "Hello@12345",
+  "__v": 0,
+  "paymentMethod": "Cash On Delivery",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "60574c50f71bdb19a1c27e3e"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Jain Pizza & Bakery",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "9870900050",
+      "shopImage": "https://p7.hiclipart.com/preview/812/527/724/pizza-fast-food-italian-cuisine-illustration-cartoon-casual-pizza-physical-shop-png.jpg",
+      "orders": [
+        {
+          "itemNo": 62,
+          "item": "Onion Capsicum",
+          "halfQuantity": 1,
+          "price": "140",
+          "isHalfSelected": true
+        },
+        {
+          "itemNo": 20,
+          "item": "Veg Burger",
+          "quantity": 1,
+          "price": "45",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "",
+      "total": 185,
+      "area": "aryaNagar10",
+      "otherSpecifications": "Little spicy",
+      "orderNumber": 1,
+      "totalDiscount": 0,
+      "orderDate": 1616334316624,
+      "orderAddress": "1445/5 arya nagar ,kosi",
+      "orderAlternateMobileNumber": "9045555643",
+      "isOrderCancel": false
+    }
+  ],
+  "notifications": [],
+  "coupon": [],
+  "date": 1615873822544,
+  "name": "Simar",
+  "mobileNumber": "9045555643",
+  "password": "simarjeet",
+  "__v": 0,
+  "paymentMethod": "Cash On Delivery",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "605753b7f71bdb19a1c27e43"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Jain Pizza & Bakery",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "9870900050",
+      "shopImage": "https://p7.hiclipart.com/preview/812/527/724/pizza-fast-food-italian-cuisine-illustration-cartoon-casual-pizza-physical-shop-png.jpg",
+      "orders": [
+        {
+          "itemNo": 69,
+          "item": "Cheese And Corn Pizza",
+          "halfQuantity": 1,
+          "price": "180",
+          "isHalfSelected": true
+        }
+      ],
+      "coupon": "",
+      "total": 180,
+      "area": "lalaRamMarg10",
+      "orderNumber": 1,
+      "totalDiscount": 0,
+      "orderDate": 1616336608249,
+      "orderAddress": "109/1 panchsheel colony near tularam dr gali no. 1",
+      "orderAlternateMobileNumber": "8979907909",
+      "isOrderCancel": false
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1616508599849,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1615873822544,
+  "name": "vivek Parashar",
+  "mobileNumber": "8979907909",
+  "password": "VIvek123@",
+  "__v": 0,
+  "paymentMethod": "Cash On Delivery",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "6057555df71bdb19a1c27e44"
+  },
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1616509022176,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1615873822544,
+  "name": "Ghanshyam",
+  "mobileNumber": "9045260206",
+  "password": "12345",
+  "__v": 0,
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "6058978ef71bdb19a1c27e61"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Classic pizza corner",
+      "shopAddress": "opposite syndicate Bank, Mavassal petch",
+      "shopMobileNumber": "8477005144",
+      "shopImage": "https://cdn5.vectorstock.com/i/thumb-large/67/39/a-fastfood-restaurant-vector-1136739.jpg",
+      "orders": [
+        {
+          "itemNo": 2,
+          "item": "Butter paneer burger",
+          "quantity": 1,
+          "price": "45",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 9,
+          "item": "Special cheese patties",
+          "quantity": 1,
+          "price": "40",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 21,
+          "item": "Chilli potato",
+          "halfQuantity": 1,
+          "price": "30",
+          "isHalfSelected": true
+        }
+      ],
+      "coupon": "OFFER10",
+      "total": 115,
+      "area": "jindalGateNoOne20",
+      "orderNumber": 1,
+      "totalDiscount": 10,
+      "orderDate": 1616418936551,
+      "orderAddress": "jindal gate number 1",
+      "orderAlternateMobileNumber": "9625689511",
+      "isOrderCancel": false
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1616591502545,
+      "redeemAttempt": 0,
+      "amount": 10
+    }
+  ],
+  "date": 1615873822544,
+  "name": "sanju",
+  "mobileNumber": "9625689511",
+  "password": "123456",
+  "__v": 0,
+  "paymentMethod": "Cash On Delivery",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "6058a9a7f71bdb19a1c27e77"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Garg's Bakery",
+      "shopAddress": "Baldev Ganj, Near Gyasi Halwai",
+      "shopMobileNumber": "7500282901",
+      "shopImage": "https://previews.123rf.com/images/mknoxgray/mknoxgray1904/mknoxgray190400010/121194154-cake-shop-a-party-without-cake-is-just-a-meeting-cartoon-vector-illustration.jpg",
+      "orders": [
+        {
+          "itemNo": 3,
+          "item": "Pineapple - 1 pond",
+          "quantity": 1,
+          "price": "150",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "OFFER10",
+      "total": 150,
+      "area": "other20",
+      "orderNumber": 1,
+      "totalDiscount": 10,
+      "orderDate": 1616423481548,
+      "orderAddress": "Bank colony kosi kalan",
+      "orderAlternateMobileNumber": "9583093943",
+      "isOrderCancel": false
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1616596136255,
+      "redeemAttempt": 0,
+      "amount": 10
+    }
+  ],
+  "date": 1615873822544,
+  "name": "Gaurav",
+  "mobileNumber": "7535877772",
+  "password": "kkkk1111",
+  "__v": 0,
+  "paymentMethod": "Online",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "6059bce9f71bdb19a1c27e8f"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Friends Fast Food - FFF",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "8791681511",
+      "shopImage": "https://cdn1.vectorstock.com/i/1000x1000/01/25/cartoon-fast-food-restaurant-small-shop-business-vector-18620125.jpg",
+      "orders": [
+        {
+          "itemNo": 7,
+          "item": "Egg Burger",
+          "quantity": 1,
+          "price": "30",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 2,
+          "item": "Fried Momos",
+          "quantity": 1,
+          "price": "40",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "",
+      "total": 70,
+      "area": "narsiVillage20",
+      "orderNumber": 1,
+      "totalDiscount": 0,
+      "orderDate": 1616493952350,
+      "orderAddress": "77, narsi village, shalimar road, kosi kalan, mathura.",
+      "orderAlternateMobileNumber": "7017834233",
+      "isOrderCancel": false
+    },
+    {
+      "shopName": "Chinese Fast Food",
+      "shopAddress": "Near Railway Station",
+      "shopMobileNumber": "8755580426",
+      "shopImage": "https://previews.123rf.com/images/artisticco/artisticco1701/artisticco170100013/69367031-a-vector-illustration-of-fast-food-restaurant.jpg",
+      "orders": [
+        {
+          "itemNo": 3,
+          "item": "Egg Noodles",
+          "halfQuantity": 1,
+          "price": "30",
+          "isHalfSelected": true
+        },
+        {
+          "itemNo": 8,
+          "item": "Soya Momos",
+          "halfQuantity": 1,
+          "price": "20",
+          "isHalfSelected": true
+        }
+      ],
+      "coupon": "",
+      "total": 50,
+      "area": "narsiVillage20",
+      "otherSpecifications": "Bas jaldi le aao",
+      "orderNumber": 2,
+      "totalDiscount": 0,
+      "orderDate": 1616663374606,
+      "orderAddress": "77, narsi village, shalimar road, kosi kalan, mathura",
+      "orderAlternateMobileNumber": "8864863651",
+      "isOrderCancel": false
+    }
+  ],
+  "notifications": [],
+  "coupon": [],
+  "date": 1615873822544,
+  "name": "Kushagra bansal",
+  "mobileNumber": "7017834233",
+  "password": "opbansal",
+  "__v": 0,
+  "paymentMethod": "Cash On Delivery",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "605a1e18f71bdb19a1c27ea9"
+  },
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1616691480851,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1615873822544,
+  "name": "Ayushi  jain",
+  "mobileNumber": "7060703004",
+  "password": "adityayushi",
+  "__v": 0,
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "605b4f5ce1e8d5226a7b6ff9"
+  },
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1616769628896,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1616530303756,
+  "name": "Varun Pratap Singh",
+  "mobileNumber": "7818808482",
+  "password": "17varun",
+  "__v": 0,
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "605b528be1e8d5226a7b6ffc"
+  },
+  "orderHistory": [
+    {
+      "shopName": "Jain Pizza & Bakery",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "9870900050",
+      "shopImage": "https://p7.hiclipart.com/preview/812/527/724/pizza-fast-food-italian-cuisine-illustration-cartoon-casual-pizza-physical-shop-png.jpg",
+      "orders": [
+        {
+          "itemNo": 68,
+          "item": "Peppy Paneer",
+          "halfQuantity": 1,
+          "price": "180",
+          "isHalfSelected": true
+        }
+      ],
+      "coupon": "",
+      "total": 180,
+      "area": "baldevGanj10",
+      "otherSpecifications": "Spicy",
+      "orderNumber": 1,
+      "totalDiscount": 0,
+      "orderDate": 1616597756231,
+      "orderAddress": "Agrawal Medical Store",
+      "orderAlternateMobileNumber": "9897153405",
+      "isOrderCancel": false
+    }
+  ],
+  "notifications": [],
+  "coupon": [],
+  "date": 1616530303756,
+  "name": "Deeksha Agrawal",
+  "mobileNumber": "9897153405",
+  "password": "abcd",
+  "__v": 0,
+  "paymentMethod": "Cash On Delivery",
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "605b5e69e1e8d5226a7b7000"
+  },
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1616773481661,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1616530303756,
+  "name": "Vaibhav gaur",
+  "mobileNumber": "8433016755",
+  "password": "vaibhavdon",
+  "__v": 0,
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "605c2e22e1e8d5226a7b700e"
+  },
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1616826658568,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1616530303756,
+  "name": "punendra",
+  "mobileNumber": "9716601512",
+  "password": "1234567",
+  "__v": 0,
+  "accountType": "user"
+},{
+  "_id": {
+    "$oid": "605d6ae9d6cdbf6bc074ade9"
+  },
+  "accountType": "user",
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [],
+  "date": 1616708850131,
+  "name": "Mithlesh sen ",
+  "mobileNumber": "7668857227",
+  "password": "12345",
+  "__v": 0,
+  "address": "Kulla mal petrol pamp ke samne  prtap nagar kosi Kalan mathura 281403",
+  "alternateMobileNumber": "7668857227"
+},{
+  "_id": {
+    "$oid": "605ddf66d6cdbf6bc074ae01"
+  },
+  "accountType": "user",
+  "orderHistory": [
+    {
+      "shopName": "Jain Pizza & Bakery",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "9870900050",
+      "shopImage": "https://p7.hiclipart.com/preview/812/527/724/pizza-fast-food-italian-cuisine-illustration-cartoon-casual-pizza-physical-shop-png.jpg",
+      "orders": [
+        {
+          "itemNo": 48,
+          "item": "Chilli Potato",
+          "quantity": 1,
+          "price": "80",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 37,
+          "item": "Spring Roll",
+          "quantity": 1,
+          "price": "60",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "",
+      "total": 140,
+      "area": "other20",
+      "orderNumber": 1,
+      "totalDiscount": 0,
+      "orderDate": 1616765569497,
+      "orderAddress": "Rukmani bhawan, hardev gunj , kosi kalan",
+      "orderAlternateMobileNumber": "7217499355",
+      "isOrderCancel": false
+    }
+  ],
+  "notifications": [],
+  "coupon": [],
+  "date": 1616708850131,
+  "name": "Unnati agrawal",
+  "mobileNumber": "7217499355",
+  "password": "unnatiagrawal",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "605df419d6cdbf6bc074ae07"
+  },
+  "accountType": "user",
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1616942875282,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1616708850131,
+  "name": "Poonam",
+  "mobileNumber": "8279370514",
+  "password": "82764",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "605e0837d6cdbf6bc074ae0b"
+  },
+  "accountType": "user",
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1616948023502,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "date": 1616708850131,
+  "name": "Vishal sharma",
+  "mobileNumber": "8864861735",
+  "password": "sharmavidhal",
+  "__v": 0
+}]

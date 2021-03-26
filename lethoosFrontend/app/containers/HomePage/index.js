@@ -26,6 +26,7 @@ import OffersPage from '../../containers/OffersPage/Loadable';
 import OrderHistoryPage from '../../containers/OrderHistoryPage/Loadable';
 import ProfilePage from '../../containers/ProfilePage/Loadable';
 import AdminPage from '../../containers/AdminPage/Loadable';
+import UsersList from '../../containers/UsersList/Loadable';
 import NotFoundPage from '../../components/NotFoundPage/Loadable'
 import AdminShopEdit from '../../containers/AdminShopEdit/Loadable'
 import OrderDetails from '../../containers/OrderDetails/Loadable'
@@ -93,6 +94,7 @@ export class HomePage extends React.PureComponent {
             <Route exact path="/orderHistoryPage" render={props => <OrderHistoryPage {...props} />} />
             <Route exact path="/profilePage" render={props => <ProfilePage {...props} />} />
             <Route exact path="/adminPage" render={props => <AdminPage {...props} />} />
+            <Route exact path="/usersList" render={props => <UsersList {...props} />} />
             <Route exact path="/admin/shopDetails/:id" render={props => <AdminShopEdit {...props} />} />
             <Route path="/error404" render={props => <NotFoundPage {...props} />} />
             <Route component={NotFoundPage} />

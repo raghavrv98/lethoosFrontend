@@ -155,7 +155,7 @@ export class OrderHistoryPage extends React.PureComponent {
             </button>
             <div className="modal-content order-history-modal">
               <div className="modal-header">
-                <h5 className="modal-title confirm-modal-heading" id="exampleModalLabel">Order Details</h5>
+                <h5 className="modal-title confirm-modal-heading">Order Details</h5>
               </div>
               <div className="row">
                 <div className="col-md-3">

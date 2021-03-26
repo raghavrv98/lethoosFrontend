@@ -103,6 +103,35 @@ body {
 	}
 }
 
+/* scroll bar  */
+
+/* width */
+
+::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+  }
+  
+  /* Track */
+  
+  ::-webkit-scrollbar-track {
+	background: #f1f1f1;
+	border-radius: 10px !important;
+  }
+  
+  /* Handle */
+  
+  ::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 10px !important;
+  }
+  
+  /* Handle on hover */
+  
+  ::-webkit-scrollbar-thumb:hover {
+	background: #555;
+  }
+
 html {
 	scroll-behavior: smooth !important;
 }
@@ -240,7 +269,7 @@ html {
 footer {
 	/* background-color: #f8f9fa;
 	height: 40px;
-	position: fixed;
+	position: absolute;
 	bottom: 0;
 	width: 100%; */
 }
@@ -489,6 +518,11 @@ hr {
 }
 
 @media only screen and (max-width: 768px) {
+
+	.react-table-outer{
+		padding: 10px;
+	}
+
 	.nav-desktop-view {
 		display: none;
 	}
@@ -887,15 +921,13 @@ hr {
 		border: none !important;
 	}
 	.confirm-modal-close {
-		margin-top: -45px !important;
-		margin-right: -20px;
 		font-size: 25px;
 		color: black;
 		opacity: 1;
 		position: absolute;
-		top: 7%;
+		top: -5%;
 		z-index: 1;
-		right: 9%;
+		right: -2%;
 	}
 	.confirm-modal-no {
 		position: absolute;
@@ -1301,6 +1333,11 @@ hr {
 }
 
 @media only screen and (min-width: 769px) {
+
+	.react-table-outer{
+		padding: 50px;
+	}
+
 	.nav-mob-view {
 		display: none;
 	}
@@ -1672,15 +1709,13 @@ hr {
 		border: none !important;
 	}
 	.confirm-modal-close {
-		margin-top: -70px !important;
-		margin-right: -25px;
 		font-size: 35px;
 		color: black;
 		opacity: 1;
 		position: absolute;
-		top: 9%;
+		top: -5%;
 		z-index: 1;
-		right: 6%;
+		right: -2%;
 	}
 	.confirm-modal-no {
 		position: absolute;

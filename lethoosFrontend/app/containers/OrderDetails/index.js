@@ -45,14 +45,6 @@ export class OrderDetails extends React.PureComponent {
     }, () => this.orderDetailsHandler(), this.customerDetailsHandler())
   }
 
-  detailsModalHandler = (val) => {
-    itemTotal = 0
-    this.setState({
-      detailsModal: true,
-      modalDetailObject: val
-    })
-  }
-
   customerDetailsHandler = () => {
     let customerDetails = JSON.parse(sessionStorage.getItem("customerDetails")) ? JSON.parse(sessionStorage.getItem("customerDetails")) : this.state.customerDetails;
     let url = window.API_URL + `/customerLogin/${customerDetails._id}`;
@@ -73,10 +65,6 @@ export class OrderDetails extends React.PureComponent {
           type: "failure"
         })
       });
-  }
-
-  grandTotalBill = (totalBill, delivery, discount) => {
-    return (parseInt(totalBill) + parseInt(delivery)) - parseInt(discount)
   }
 
   orderDetailsHandler = () => {
@@ -106,6 +94,19 @@ export class OrderDetails extends React.PureComponent {
       })
     }, 1000);
   }
+
+  detailsModalHandler = (val) => {
+    itemTotal = 0
+    this.setState({
+      detailsModal: true,
+      modalDetailObject: val
+    })
+  }
+
+  grandTotalBill = (totalBill, delivery, discount) => {
+    return (parseInt(totalBill) + parseInt(delivery)) - parseInt(discount)
+  }
+
 
   sameMobileNumberCheckHandler = (mobileNumber, alternateMobileNumber) => {
     if (alternateMobileNumber === mobileNumber) {
@@ -226,7 +227,7 @@ export class OrderDetails extends React.PureComponent {
             </button>
             <div className="modal-content order-history-modal">
               <div className="modal-header">
-                <h5 className="modal-title confirm-modal-heading" id="exampleModalLabel">Order Details</h5>
+                <h5 className="modal-title confirm-modal-heading">Order Details</h5>
               </div>
               <div className="row">
                 <div className="col-md-3">

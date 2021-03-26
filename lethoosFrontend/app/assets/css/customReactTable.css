@@ -1,0 +1,202 @@
+
+@media only screen {
+    /* custom react table */
+    .customReactTableBox {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 20px;
+    }
+    .customReactTable.ReactTable {
+        border: 0;
+    }
+    .customReactTable.ReactTable .rt-thead.-filters {
+        background-color: white;
+        border: 0;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.1) !important;
+        margin-bottom: 5px;
+    }
+    .customReactTable.ReactTable .rt-thead.-filters .rt-th {
+        /* border-right: 1px solid rgba(0, 0, 0, 0.05) !important; */
+        padding: 10px 15px 10px 15px;
+    }
+    .customReactTable.ReactTable .rt-thead.-filters .rt-th:last-child {
+        border-right-color: transparent !important;
+    }
+    .customReactTable.ReactTable .rt-thead.-header {
+        box-shadow: none;
+        background-color: #EEEEEE;
+        margin-bottom: 6px;
+    }
+    .customReactTable.ReactTable .rt-thead.-header .rt-th {
+        font-size: 0.96em;
+        padding: 10px 15px !important;
+        text-align: left;
+        color: black;
+        z-index: 1;
+        background-color: #EEEEEE;
+        border-right-color: rgba(0, 0, 0, 0.05);
+        font-weight: 500;
+    }
+    .customReactTable.ReactTable .rt-thead.-header .rt-th:first-child {
+        border-top-left-radius: 4px;
+    }
+    .customReactTable.ReactTable .rt-thead.-header .rt-th:last-child {
+        border-top-right-radius: 4px;
+    }
+    .customReactTable.ReactTable .rt-tbody .rt-td {
+        padding: 9px 15px !important;
+        border-right-color: rgba(0, 0, 0, 0.05);
+    }
+    .customReactTable.ReactTable .rt-tbody .rt-td:last-child {
+        border-right-color: transparent !important;
+    }
+    .customReactTable.ReactTable .rt-tbody .rt-tr-group {
+        background-color: #ffffff;
+        color: black;
+        font-size: 0.96em;
+        border: 0;
+        margin-bottom: 5px;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.05) !important;
+        border-radius: 3px;
+        transition: all ease-in-out 0.2s;
+    }
+    .customReactTable.ReactTable .rt-tbody .rt-tr-group:hover {
+        color: black;
+        background: rgba(0, 0, 0, 0.01);
+        transition: all ease-in-out 0.2s;
+    }
+    .customReactTable.ReactTable.hoverCursorDefault .rt-tbody .rt-tr-group:hover {
+        cursor: default !important;
+    }
+    .customReactTable.ReactTable .-pagination {
+        border: none;
+        padding: 4px 8px;
+        align-items: center;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, .1);
+        border-radius: 6px;
+        background-color: white;
+    }
+    
+    .customReactTable.ReactTable .-pagination .-previous button, .customReactTable.ReactTable .-pagination .-next button {
+        position: relative;
+        color: #FFFFFF;
+        font-size: 16px;
+        padding: 6px 12px;
+        border-radius: 5px;
+        background-color: #f17b58;
+        text-transform: capitalize;
+        transition: all ease-in-out 0.3s;
+        cursor: pointer;
+        border: none;
+        box-shadow: 2px 2px 4px rgba(0,0,0,.2);
+    }
+    
+    .customReactTable.ReactTable .-pagination .-previous button:hover, .customReactTable.ReactTable .-pagination .-next button:hover {
+        transition: all ease-in-out 0.3s;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+    }
+    
+    .customReactTable.ReactTable .-pagination .-next {
+        text-align: right;
+    }
+    
+    .customReactTable.ReactTable .-pagination .-previous {
+        text-align: left;
+    }
+    
+    .customReactTable.ReactTable .-pagination .-center {
+        justify-content: center
+    }
+    
+    .customReactTable.ReactTable .-pagination .-pageInfo, .customReactTable.ReactTable .-pagination input, .customReactTable.ReactTable .-pagination select {
+        color: black;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    
+    .customReactTable.ReactTable .-pagination button:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+    
+     .customReactTable.ReactTable .-loading {
+        background: rgba(255, 255, 255, 0.8);
+        z-index: 1;
+    }
+    .customReactTable.ReactTable .-loading>div {
+        font-size: 24px;
+        color: orange;
+    }
+    
+    .customReactTable.ReactTable .rt-noData {
+        transform: translate(-50%, -50%) !important;
+        color: black;
+        font-size: 16px;
+        padding: 5px;
+        background-color: white;
+    }
+    .customReactTable .button-group {
+        position: absolute !important;
+    }
+    .table.customHTMLTable {
+        border-collapse: separate;
+        border-spacing: 0 8px;
+        margin-bottom: 0;
+    }
+    .table.customHTMLTable thead th {
+        border: 0;
+        font-size: 0.96em;
+        text-align: left;
+        color: black;
+        background-color: #EEEEEE;
+        border-right: 1px solid rgba(0, 0, 0, 0.05);
+        font-weight: 500;
+        border-spacing: 10px;
+    }
+    .table.fixedTableHeader thead th{
+        position: sticky;
+        top: 0;
+    }
+    .table.customHTMLTable thead th:last-child {
+        border-top-right-radius: 4px;
+        border-right-color: transparent;
+    }
+    .table.customHTMLTable thead th:first-child {
+        border-top-left-radius: 4px;
+    }
+    .table.customHTMLTable tbody tr {
+        background-color: #ffffff;
+        border: 0;
+        font-size: 0.96em;
+        color: black;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.05) !important;
+        border-radius: 3px;
+        transition: all ease-in-out 0.2s;
+    }
+    .table.customHTMLTable tbody tr:hover {
+        background-color: transparent;
+        color: black;
+        transition: all ease-in-out 0.2s;
+    }
+    .table.customHTMLTable tbody tr td {
+        border: 0;
+        border-right: 1px solid rgba(0, 0, 0, 0.05);
+    }
+    .table.customHTMLTable tbody tr td:last-child {
+        border-right: transparent;
+    }
+
+    .noDataTable{
+        font-size: 16px;
+        padding: 40px 20px !important;
+        text-align: center;
+        color: black;
+      }
+}
+
+@media only screen and (max-width: 991.98px) {
+    .customReactTableBox {
+        width: 100%;
+        font-size: 15px;
+    }
+}

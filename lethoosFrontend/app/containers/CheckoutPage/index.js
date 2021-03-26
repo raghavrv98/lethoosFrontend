@@ -22,7 +22,6 @@ import Header from '../../components/Header/Loadable'
 import axios from 'axios';
 import { cloneDeep } from 'lodash';
 import { errorHandler } from "../../utils/customUtils";
-import moment from 'moment';
 
 /* eslint-disable react/prefer-stateless-function */
 export class CheckoutPage extends React.PureComponent {
@@ -434,7 +433,7 @@ export class CheckoutPage extends React.PureComponent {
             <div className="modal-dialog" role="document">
               <div className="modal-content">
                 <div className="modal-header">
-                  <h5 className="modal-title confirm-modal-heading" id="exampleModalLabel">Order Confirmation</h5>
+                  <h5 className="modal-title confirm-modal-heading">Order Confirmation</h5>
                   <button type="button" className="close confirm-modal-close" onClick={this.modalCloseHandler}>
                     <i className="fa fa-times-circle" aria-hidden="true"></i>
                   </button>

@@ -376,7 +376,7 @@ export class ShopDetails extends React.PureComponent {
             <div className="modal-dialog" role="document">
               <div className="modal-content">
                 <div className="modal-header">
-                  <h5 className="modal-title confirm-modal-heading" id="exampleModalLabel">Items already in cart</h5>
+                  <h5 className="modal-title confirm-modal-heading">Items already in cart</h5>
                   <button type="button" className="close confirm-modal-close" onClick={this.modalCloseHandler}>
                     <i className="fa fa-times-circle" aria-hidden="true"></i>
                   </button>

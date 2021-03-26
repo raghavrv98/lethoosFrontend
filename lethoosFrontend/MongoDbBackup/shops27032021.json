@@ -1,0 +1,5551 @@
+[{
+  "_id": {
+    "$oid": "60158c52cae4f74ac879c944"
+  },
+  "details": [
+    {
+      "name": "Vanilla Cake - 1 pond",
+      "itemsAvailable": "1",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F693494.jpg&q=85",
+      "fullPrice": "150",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 1
+    },
+    {
+      "name": "Strawberry - 1 pond",
+      "itemsAvailable": "1",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F693494.jpg&q=85",
+      "fullPrice": "150",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 2
+    },
+    {
+      "name": "Pineapple - 1 pond",
+      "itemsAvailable": "1",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F693494.jpg&q=85",
+      "fullPrice": "150",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 3
+    },
+    {
+      "name": "Chocolate - 1 pond",
+      "itemsAvailable": "1",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F693494.jpg&q=85",
+      "fullPrice": "150",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 4
+    },
+    {
+      "name": "Black Forest - 1 pond",
+      "itemsAvailable": "1",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F693494.jpg&q=85",
+      "fullPrice": "150",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 5
+    },
+    {
+      "name": "Vanilla Cake - 2 pond",
+      "itemsAvailable": "1",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F693494.jpg&q=85",
+      "fullPrice": "260",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 6
+    },
+    {
+      "name": "Strawberry - 2 pond",
+      "itemsAvailable": "1",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F693494.jpg&q=85",
+      "fullPrice": "260",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 7
+    },
+    {
+      "name": "Pineapple - 2 pond",
+      "itemsAvailable": "1",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F693494.jpg&q=85",
+      "fullPrice": "280",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 8
+    },
+    {
+      "name": "Chocolate - 2 pond",
+      "itemsAvailable": "1",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F693494.jpg&q=85",
+      "fullPrice": "300",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 9
+    },
+    {
+      "name": "Black Forest - 2 pond",
+      "itemsAvailable": "1",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F693494.jpg&q=85",
+      "fullPrice": "320",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 10
+    },
+    {
+      "name": "Pineapple Pastry",
+      "itemsAvailable": "1",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F693494.jpg&q=85",
+      "fullPrice": "10",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 11
+    },
+    {
+      "name": "Chocolate Pastry",
+      "itemsAvailable": "1",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F693494.jpg&q=85",
+      "fullPrice": "10",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 12
+    },
+    {
+      "name": "Kulche (6 Pcs)",
+      "itemsAvailable": "1",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F693494.jpg&q=85",
+      "fullPrice": "25",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 13
+    },
+    {
+      "name": "Pav (12 Pcs)",
+      "itemsAvailable": "1",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F693494.jpg&q=85",
+      "fullPrice": "40",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 14
+    },
+    {
+      "name": "Burger (6 Pcs)",
+      "itemsAvailable": "1",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F693494.jpg&q=85",
+      "fullPrice": "20",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 15
+    },
+    {
+      "name": "Pizza (2 Pcs)",
+      "itemsAvailable": "1",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F693494.jpg&q=85",
+      "fullPrice": "40",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 16
+    },
+    {
+      "name": "Patties",
+      "itemsAvailable": "1",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F693494.jpg&q=85",
+      "fullPrice": "10",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 17
+    },
+    {
+      "name": "Mix Veg Patties",
+      "itemsAvailable": "1",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F693494.jpg&q=85",
+      "fullPrice": "20",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 18
+    }
+  ],
+  "date": 1612024872625,
+  "isActive": true,
+  "imageName": "gargsBakery",
+  "name": "Garg's Bakery",
+  "mobileNumber": "7500282901",
+  "address": "Baldev Ganj, Near Gyasi Halwai",
+  "image": "https://previews.123rf.com/images/mknoxgray/mknoxgray1904/mknoxgray190400010/121194154-cake-shop-a-party-without-cake-is-just-a-meeting-cartoon-vector-illustration.jpg",
+  "status": true,
+  "priority": "2",
+  "time": "2:00 PM to 8:00 PM",
+  "description": "Famous for Bakery items and Cakes.",
+  "rating": "5",
+  "discount": "NA",
+  "deliveryTime": "40 Min",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6030052075afe50004cc7b3c"
+  },
+  "details": [
+    {
+      "name": "Half & Half Pizza",
+      "itemsAvailable": "1",
+      "image": "halfPizza.jfif",
+      "fullPrice": "130",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 1
+    },
+    {
+      "name": "Bread Pizza",
+      "itemsAvailable": "1",
+      "image": "breadPizza.jfif",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 2
+    },
+    {
+      "name": "Patties Pizza",
+      "itemsAvailable": "1",
+      "image": "pattiesPizza.jfif",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 3
+    },
+    {
+      "name": "Burgerizza",
+      "itemsAvailable": "1",
+      "image": "burgerPizza.jfif",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 4
+    },
+    {
+      "name": "Burgerizza Pro",
+      "itemsAvailable": "1",
+      "image": "specialburgerPizza.jpg",
+      "fullPrice": "70",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 5
+    },
+    {
+      "name": "Cheese Burger",
+      "itemsAvailable": "1",
+      "image": "cheeseBurger.jfif",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 6
+    },
+    {
+      "name": "Dosa-Idli Combo",
+      "itemsAvailable": "1",
+      "image": "southCombo.jfif",
+      "fullPrice": "80",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 7
+    },
+    {
+      "name": "Burger Combo",
+      "itemsAvailable": "1",
+      "image": "burgerCombo.jpg",
+      "fullPrice": "80",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 8
+    },
+    {
+      "name": "Manchurian Mix",
+      "itemsAvailable": "1",
+      "image": "manchurainMix.jpg",
+      "fullPrice": "80",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 10
+    },
+    {
+      "name": "Potato Spring",
+      "itemsAvailable": "1",
+      "image": "chilliPotatoSpringRoll.jpg",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 11
+    },
+    {
+      "name": "Fried Rice Manchurian",
+      "itemsAvailable": "1",
+      "image": "friedRiceManchurian.jfif",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 12
+    },
+    {
+      "name": "Veg Momos Noodles",
+      "itemsAvailable": "1",
+      "image": "momosNoodles.jfif",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 13
+    }
+  ],
+  "date": 1613758061352,
+  "isActive": true,
+  "imageName": "foodFusion",
+  "name": "Food Fusion",
+  "mobileNumber": "8192095423",
+  "address": "It's a Virtual Shop",
+  "image": "https://previews.123rf.com/images/vectorshots/vectorshots1308/vectorshots130800001/21233529-food-shop-cartoon-business-vector-character.jpg",
+  "status": true,
+  "priority": "1",
+  "time": "2:00 PM to 8:00 PM",
+  "description": "Different Combinations of food including North Indian, South Indian, Italian.",
+  "rating": "5",
+  "discount": "NA",
+  "__v": 0,
+  "deliveryTime": "40 Min"
+},{
+  "_id": {
+    "$oid": "6030279d8ac15f0004a4ff29"
+  },
+  "details": [
+    {
+      "name": "Veg Pizza",
+      "itemsAvailable": "1",
+      "image": "https://b.zmtcdn.com/data/pictures/2/3401142/5bc08c51612e05490a86b79b06537aa7.jpg",
+      "fullPrice": "100",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 1
+    },
+    {
+      "name": "Spicy Pizza",
+      "itemsAvailable": "1",
+      "image": "https://b.zmtcdn.com/data/pictures/2/3401142/5bc08c51612e05490a86b79b06537aa7.jpg",
+      "fullPrice": "110",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 2
+    },
+    {
+      "name": "Onion Pizza",
+      "itemsAvailable": "1",
+      "image": "https://b.zmtcdn.com/data/pictures/2/3401142/5bc08c51612e05490a86b79b06537aa7.jpg",
+      "fullPrice": "120",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 3
+    },
+    {
+      "name": "Onion Capsicum Pizza",
+      "itemsAvailable": "1",
+      "image": "https://b.zmtcdn.com/data/pictures/2/3401142/5bc08c51612e05490a86b79b06537aa7.jpg",
+      "fullPrice": "120",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 4
+    },
+    {
+      "name": "Tomato Pizza",
+      "itemsAvailable": "1",
+      "image": "https://b.zmtcdn.com/data/pictures/2/3401142/5bc08c51612e05490a86b79b06537aa7.jpg",
+      "fullPrice": "120",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 5
+    },
+    {
+      "name": "Paneer Lachcha Pizza",
+      "itemsAvailable": "1",
+      "image": "https://b.zmtcdn.com/data/pictures/2/3401142/5bc08c51612e05490a86b79b06537aa7.jpg",
+      "fullPrice": "130",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 6
+    },
+    {
+      "name": "Sweet Corn Pizza",
+      "itemsAvailable": "1",
+      "image": "https://b.zmtcdn.com/data/pictures/2/3401142/5bc08c51612e05490a86b79b06537aa7.jpg",
+      "fullPrice": "130",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 7
+    },
+    {
+      "name": "Mushroom Pizza",
+      "itemsAvailable": "1",
+      "image": "https://b.zmtcdn.com/data/pictures/2/3401142/5bc08c51612e05490a86b79b06537aa7.jpg",
+      "fullPrice": "140",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 8
+    },
+    {
+      "name": "Sweet Corn Cream Pizza",
+      "itemsAvailable": "1",
+      "image": "https://b.zmtcdn.com/data/pictures/2/3401142/5bc08c51612e05490a86b79b06537aa7.jpg",
+      "fullPrice": "140",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 9
+    },
+    {
+      "name": "Paneer Tikka Pizza",
+      "itemsAvailable": "1",
+      "image": "https://b.zmtcdn.com/data/pictures/2/3401142/5bc08c51612e05490a86b79b06537aa7.jpg",
+      "fullPrice": "140",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 10
+    },
+    {
+      "name": "Mix Veg Pizza",
+      "itemsAvailable": "1",
+      "image": "https://b.zmtcdn.com/data/pictures/2/3401142/5bc08c51612e05490a86b79b06537aa7.jpg",
+      "fullPrice": "150",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 11
+    },
+    {
+      "name": "Double Cheese Pizza",
+      "itemsAvailable": "1",
+      "image": "https://b.zmtcdn.com/data/pictures/2/3401142/5bc08c51612e05490a86b79b06537aa7.jpg",
+      "fullPrice": "180",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 12
+    },
+    {
+      "name": "Cheese Burst Pizza",
+      "itemsAvailable": "1",
+      "image": "https://b.zmtcdn.com/data/pictures/2/3401142/5bc08c51612e05490a86b79b06537aa7.jpg",
+      "fullPrice": "200",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 13
+    },
+    {
+      "name": "Special Indian Pizza",
+      "itemsAvailable": "1",
+      "image": "https://b.zmtcdn.com/data/pictures/2/3401142/5bc08c51612e05490a86b79b06537aa7.jpg",
+      "fullPrice": "250",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 14
+    },
+    {
+      "name": "Veg Patties",
+      "itemsAvailable": "1",
+      "image": "https://b.zmtcdn.com/data/pictures/2/3401142/5bc08c51612e05490a86b79b06537aa7.jpg",
+      "fullPrice": "20",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 15
+    },
+    {
+      "name": "Sweet Corn Patties",
+      "itemsAvailable": "1",
+      "image": "https://b.zmtcdn.com/data/pictures/2/3401142/5bc08c51612e05490a86b79b06537aa7.jpg",
+      "fullPrice": "30",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 16
+    },
+    {
+      "name": "Mushroom Patties",
+      "itemsAvailable": "1",
+      "image": "https://b.zmtcdn.com/data/pictures/2/3401142/5bc08c51612e05490a86b79b06537aa7.jpg",
+      "fullPrice": "30",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 17
+    },
+    {
+      "name": "Butter Patties",
+      "itemsAvailable": "1",
+      "image": "https://b.zmtcdn.com/data/pictures/2/3401142/5bc08c51612e05490a86b79b06537aa7.jpg",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 18
+    },
+    {
+      "name": "Paneer Patties",
+      "itemsAvailable": "1",
+      "image": "https://b.zmtcdn.com/data/pictures/2/3401142/5bc08c51612e05490a86b79b06537aa7.jpg",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 19
+    },
+    {
+      "name": "Special Patties",
+      "itemsAvailable": "1",
+      "image": "https://b.zmtcdn.com/data/pictures/2/3401142/5bc08c51612e05490a86b79b06537aa7.jpg",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 20
+    },
+    {
+      "name": "Special Jalebi (100 gm)",
+      "itemsAvailable": "1",
+      "image": "https://b.zmtcdn.com/data/pictures/2/3401142/5bc08c51612e05490a86b79b06537aa7.jpg",
+      "fullPrice": "10",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 21
+    }
+  ],
+  "date": 1613763683948,
+  "isActive": true,
+  "imageName": "maaBhagwati",
+  "name": "Maa Bhagwati Pizza and Cheese Patties Shop",
+  "mobileNumber": "7579313372",
+  "address": "Near Ghantaghar",
+  "image": "https://cdn1.iconfinder.com/data/icons/supermarket-cafe-and-stores/50/47-512.png",
+  "status": true,
+  "priority": "3",
+  "time": "2:00 PM to 8:00 PM",
+  "description": "Best cheese patties and cheese pizzas.",
+  "rating": "5",
+  "discount": "NA",
+  "__v": 0,
+  "deliveryTime": "40 Min"
+},{
+  "_id": {
+    "$oid": "60302a438ac15f0004a4ff2a"
+  },
+  "details": [
+    {
+      "name": "Malai Chaap",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "140",
+      "halfPrice": "80",
+      "halfAvailable": true,
+      "itemNo": 1
+    },
+    {
+      "name": "Masala Chaap",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "140",
+      "halfPrice": "80",
+      "halfAvailable": true,
+      "itemNo": 2
+    },
+    {
+      "name": "Afghani Chaap",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "140",
+      "halfPrice": "80",
+      "halfAvailable": true,
+      "itemNo": 3
+    },
+    {
+      "name": "Haryali Chaap",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "140",
+      "halfPrice": "80",
+      "halfAvailable": true,
+      "itemNo": 4
+    },
+    {
+      "name": "Lemon Chaap",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "140",
+      "halfPrice": "80",
+      "halfAvailable": true,
+      "itemNo": 5
+    },
+    {
+      "name": "Achari Chaap",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "140",
+      "halfPrice": "80",
+      "halfAvailable": true,
+      "itemNo": 6
+    },
+    {
+      "name": "Stuff Masala Chaap",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "160",
+      "halfPrice": "90",
+      "halfAvailable": true,
+      "itemNo": 7
+    },
+    {
+      "name": "Stuff Malai Chaap",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "160",
+      "halfPrice": "90",
+      "halfAvailable": true,
+      "itemNo": 8
+    },
+    {
+      "name": "Paneer Tikka",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "170",
+      "halfPrice": "90",
+      "halfAvailable": true,
+      "itemNo": 9
+    },
+    {
+      "name": "Malai Paneer Tikka",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "180",
+      "halfPrice": "100",
+      "halfAvailable": true,
+      "itemNo": 10
+    }
+  ],
+  "date": 1613763683948,
+  "isActive": true,
+  "imageName": "shreeJi",
+  "name": "Shree Ji Fast Food And Chaap Corner",
+  "mobileNumber": "9045131311",
+  "address": "Near police Chowki",
+  "image": "https://media.istockphoto.com/vectors/food-store-building-vector-illustration-grocery-shop-facade-vector-id617369906",
+  "status": true,
+  "priority": "4",
+  "time": "4:00 PM to 8:00 PM",
+  "description": "Specially for chaap and have more varieties then any other shop.",
+  "rating": "5",
+  "discount": "NA",
+  "__v": 0,
+  "deliveryTime": "40 Min"
+},{
+  "_id": {
+    "$oid": "6030326c8ac15f0004a4ff2b"
+  },
+  "details": [
+    {
+      "name": "Steam Momos",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "30",
+      "halfPrice": "20",
+      "halfAvailable": true,
+      "itemNo": 1
+    },
+    {
+      "name": "Fried Momos",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "40",
+      "halfPrice": "20",
+      "halfAvailable": true,
+      "itemNo": 2
+    },
+    {
+      "name": "Afghani Momos",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "70",
+      "halfPrice": "40",
+      "halfAvailable": true,
+      "itemNo": 3
+    },
+    {
+      "name": "Gravy Momos",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "70",
+      "halfPrice": "40",
+      "halfAvailable": true,
+      "itemNo": 4
+    },
+    {
+      "name": "Tandoori Momos",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "70",
+      "halfPrice": "40",
+      "halfAvailable": true,
+      "itemNo": 5
+    },
+    {
+      "name": "Veg Burger",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "20",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 6
+    },
+    {
+      "name": "Egg Burger",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "30",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 7
+    },
+    {
+      "name": "Butter Burger",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 8
+    },
+    {
+      "name": "Butter Egg Burger",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 9
+    },
+    {
+      "name": "Veg Chowmein",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "30",
+      "halfPrice": "20",
+      "halfAvailable": true,
+      "itemNo": 10
+    },
+    {
+      "name": "Paneer Chowmein",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "50",
+      "halfPrice": "30",
+      "halfAvailable": true,
+      "itemNo": 11
+    },
+    {
+      "name": "Butter Chowmein",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "50",
+      "halfPrice": "30",
+      "halfAvailable": true,
+      "itemNo": 12
+    },
+    {
+      "name": "Egg Chowmein",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "50",
+      "halfPrice": "30",
+      "halfAvailable": true,
+      "itemNo": 13
+    },
+    {
+      "name": "Single Egg Roll",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "35",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 14
+    },
+    {
+      "name": "Double Egg Roll",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 15
+    },
+    {
+      "name": "Butter Egg Roll",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 16
+    },
+    {
+      "name": "Egg Chowmein",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "50",
+      "halfPrice": "30",
+      "halfAvailable": true,
+      "itemNo": 17
+    },
+    {
+      "name": "Veg Roll",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "20",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 18
+    },
+    {
+      "name": "Spring Roll",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "40",
+      "halfPrice": "20",
+      "halfAvailable": true,
+      "itemNo": 19
+    },
+    {
+      "name": "Kathi Roll",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "30",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 20
+    },
+    {
+      "name": "Paneer Roll",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "50",
+      "halfPrice": "40",
+      "halfAvailable": true,
+      "itemNo": 21
+    },
+    {
+      "name": "Chilli Potato",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "60",
+      "halfPrice": "35",
+      "halfAvailable": true,
+      "itemNo": 22
+    },
+    {
+      "name": "Chilli Paneer",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "100",
+      "halfPrice": "50",
+      "halfAvailable": true,
+      "itemNo": 23
+    },
+    {
+      "name": "Honey Chilli Potato",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "60",
+      "halfPrice": "40",
+      "halfAvailable": true,
+      "itemNo": 24
+    },
+    {
+      "name": "Manchurian Dry",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "80",
+      "halfPrice": "40",
+      "halfAvailable": true,
+      "itemNo": 25
+    },
+    {
+      "name": "Manchurian Gravy",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "80",
+      "halfPrice": "40",
+      "halfAvailable": true,
+      "itemNo": 26
+    },
+    {
+      "name": "French Fries",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "40",
+      "halfPrice": "20",
+      "halfAvailable": true,
+      "itemNo": 27
+    },
+    {
+      "name": "Hot and sour soup",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "70",
+      "halfPrice": "40",
+      "halfAvailable": true,
+      "itemNo": 28
+    },
+    {
+      "name": "Veg Chopsy",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "70",
+      "halfPrice": "40",
+      "halfAvailable": true,
+      "itemNo": 29
+    },
+    {
+      "name": "Tomato Soup",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "70",
+      "halfPrice": "40",
+      "halfAvailable": true,
+      "itemNo": 30
+    },
+    {
+      "name": "Egg Curry",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "120",
+      "halfPrice": "70",
+      "halfAvailable": true,
+      "itemNo": 31
+    },
+    {
+      "name": "Chilli Chaap",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "130",
+      "halfPrice": "70",
+      "halfAvailable": true,
+      "itemNo": 32
+    },
+    {
+      "name": "Afghani Chaap",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "130",
+      "halfPrice": "70",
+      "halfAvailable": true,
+      "itemNo": 33
+    },
+    {
+      "name": "Gravy Chaap",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "130",
+      "halfPrice": "70",
+      "halfAvailable": true,
+      "itemNo": 34
+    },
+    {
+      "name": "Tandoori Chaap",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "130",
+      "halfPrice": "70",
+      "halfAvailable": true,
+      "itemNo": 35
+    },
+    {
+      "name": "Paneer Tikka",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
+      "fullPrice": "150",
+      "halfPrice": "80",
+      "halfAvailable": true,
+      "itemNo": 36
+    }
+  ],
+  "date": 1613763683948,
+  "isActive": true,
+  "imageName": "fff",
+  "name": "Friends Fast Food - FFF",
+  "mobileNumber": "8791681511",
+  "address": "Near Ghantaghar",
+  "image": "https://cdn1.vectorstock.com/i/1000x1000/01/25/cartoon-fast-food-restaurant-small-shop-business-vector-18620125.jpg",
+  "status": true,
+  "priority": "5",
+  "time": "2:00 PM to 8:00 PM",
+  "description": "Specially For Chinese and Chaap",
+  "rating": "5",
+  "discount": "NA",
+  "__v": 0,
+  "deliveryTime": "40 Min"
+},{
+  "_id": {
+    "$oid": "603194d3f142f700047a8c2c"
+  },
+  "details": [
+    {
+      "name": "Simple Noodles",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "40",
+      "halfPrice": "20",
+      "halfAvailable": true,
+      "itemNo": 1
+    },
+    {
+      "name": "Butter Noodles",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "60",
+      "halfPrice": "30",
+      "halfAvailable": true,
+      "itemNo": 2
+    },
+    {
+      "name": "Egg Noodles",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "60",
+      "halfPrice": "30",
+      "halfAvailable": true,
+      "itemNo": 3
+    },
+    {
+      "name": "Singapuri Noodles",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "60",
+      "halfPrice": "30",
+      "halfAvailable": true,
+      "itemNo": 4
+    },
+    {
+      "name": "Garlic Noodles",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "60",
+      "halfPrice": "30",
+      "halfAvailable": true,
+      "itemNo": 5
+    },
+    {
+      "name": "Hakka Noodles",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "70",
+      "halfPrice": "35",
+      "halfAvailable": true,
+      "itemNo": 6
+    },
+    {
+      "name": "Steam Momos",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "30",
+      "halfPrice": "20",
+      "halfAvailable": true,
+      "itemNo": 7
+    },
+    {
+      "name": "Soya Momos",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "30",
+      "halfPrice": "20",
+      "halfAvailable": true,
+      "itemNo": 8
+    },
+    {
+      "name": "Fry Momos",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "40",
+      "halfPrice": "20",
+      "halfAvailable": true,
+      "itemNo": 9
+    },
+    {
+      "name": "Afghani Momos",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "60",
+      "halfPrice": "30",
+      "halfAvailable": true,
+      "itemNo": 10
+    },
+    {
+      "name": "Tandoori Momos",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "60",
+      "halfPrice": "30",
+      "halfAvailable": true,
+      "itemNo": 11
+    },
+    {
+      "name": "Gravy Momos",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "60",
+      "halfPrice": "30",
+      "halfAvailable": true,
+      "itemNo": 12
+    },
+    {
+      "name": "Paneer Momos",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "60",
+      "halfPrice": "30",
+      "halfAvailable": true,
+      "itemNo": 13
+    },
+    {
+      "name": "Paneer Afghani Momos",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "80",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 14
+    },
+    {
+      "name": "Veggie Burger",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "25",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 15
+    },
+    {
+      "name": "Small Grill Burger",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "30",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 16
+    },
+    {
+      "name": "Egg Burger",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "40",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 17
+    },
+    {
+      "name": "Butter Burger",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "40",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 18
+    },
+    {
+      "name": "Grill Burger",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "40",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 19
+    },
+    {
+      "name": "Maharaja Burger",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 20
+    },
+    {
+      "name": "Special Maharaja Burger",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "80",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 21
+    },
+    {
+      "name": "Afghani Chaap",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "120",
+      "halfPrice": "60",
+      "halfAvailable": true,
+      "itemNo": 22
+    },
+    {
+      "name": "Malai Chaap",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "120",
+      "halfPrice": "60",
+      "halfAvailable": true,
+      "itemNo": 23
+    },
+    {
+      "name": "Tandoori Chaap",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "120",
+      "halfPrice": "60",
+      "halfAvailable": true,
+      "itemNo": 24
+    },
+    {
+      "name": "Gravy Chaap",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "130",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 25
+    },
+    {
+      "name": "Paneer Tikka",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "120",
+      "halfPrice": "60",
+      "halfAvailable": true,
+      "itemNo": 26
+    },
+    {
+      "name": "Shahi Paneer",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "130",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 27
+    },
+    {
+      "name": "Mix Veg Pizza",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "100",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 28
+    },
+    {
+      "name": "Special Pizza",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "150",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 29
+    },
+    {
+      "name": "Cheese Pizza",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "180",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 30
+    },
+    {
+      "name": "Spring Roll",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "30",
+      "halfPrice": "15",
+      "halfAvailable": true,
+      "itemNo": 31
+    },
+    {
+      "name": "Veg Roll",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "40",
+      "halfPrice": "20",
+      "halfAvailable": true,
+      "itemNo": 32
+    },
+    {
+      "name": "Kathi Roll",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "40",
+      "halfPrice": "30",
+      "halfAvailable": true,
+      "itemNo": 33
+    },
+    {
+      "name": "Egg Roll",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "50",
+      "halfPrice": "30",
+      "halfAvailable": true,
+      "itemNo": 34
+    },
+    {
+      "name": "Paneer Roll",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "70",
+      "halfPrice": "35",
+      "halfAvailable": true,
+      "itemNo": 35
+    },
+    {
+      "name": "Chaap Roll",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "100",
+      "halfPrice": "60",
+      "halfAvailable": true,
+      "itemNo": 36
+    },
+    {
+      "name": "Finger Chips",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "40",
+      "halfPrice": "20",
+      "halfAvailable": true,
+      "itemNo": 37
+    },
+    {
+      "name": "Chilli Potato",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "60",
+      "halfPrice": "30",
+      "halfAvailable": true,
+      "itemNo": 38
+    },
+    {
+      "name": "Manchurain",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "60",
+      "halfPrice": "30",
+      "halfAvailable": true,
+      "itemNo": 39
+    },
+    {
+      "name": "Chilli Gobhi",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "80",
+      "halfPrice": "40",
+      "halfAvailable": true,
+      "itemNo": 40
+    },
+    {
+      "name": "Chilli Paneer",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "100",
+      "halfPrice": "50",
+      "halfAvailable": true,
+      "itemNo": 41
+    },
+    {
+      "name": "Egg Curry",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "130",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 42
+    },
+    {
+      "name": "Simple Sandwich",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 43
+    },
+    {
+      "name": "Vegetable Sandwich",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "80",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 44
+    },
+    {
+      "name": "Egg Sandwich",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "80",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 45
+    },
+    {
+      "name": "Paneer Biryani",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "60",
+      "halfPrice": "30",
+      "halfAvailable": true,
+      "itemNo": 46
+    },
+    {
+      "name": "Chaap Biryani",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "60",
+      "halfPrice": "30",
+      "halfAvailable": true,
+      "itemNo": 47
+    },
+    {
+      "name": "Egg Biryani",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "60",
+      "halfPrice": "30",
+      "halfAvailable": true,
+      "itemNo": 48
+    },
+    {
+      "name": "Special Biryani",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "80",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 49
+    }
+  ],
+  "date": 1613862096191,
+  "isActive": true,
+  "imageName": "chinese",
+  "name": "Chinese Fast Food",
+  "mobileNumber": "8755580426",
+  "address": "Near Railway Station",
+  "image": "https://previews.123rf.com/images/artisticco/artisticco1701/artisticco170100013/69367031-a-vector-illustration-of-fast-food-restaurant.jpg",
+  "status": true,
+  "priority": "6",
+  "time": "2:00 PM to 8:00 PM",
+  "description": "Old and First Chinese shop in kosi kalan. Specially For Chinese and Chaap",
+  "rating": "5",
+  "discount": "NA",
+  "__v": 0,
+  "deliveryTime": "40 Min"
+},{
+  "_id": {
+    "$oid": "60319bcaf142f700047a8c2d"
+  },
+  "details": [
+    {
+      "name": "Veg butter burger",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "40",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 1
+    },
+    {
+      "name": "Butter paneer burger",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "45",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 2
+    },
+    {
+      "name": "Cheese burger",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 3
+    },
+    {
+      "name": "Paneer mushroom burger",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 4
+    },
+    {
+      "name": "Double patties burger",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "70",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 5
+    },
+    {
+      "name": "Cheese patties",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "20",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 6
+    },
+    {
+      "name": "Veg corn paneer cheese patties",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "30",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 7
+    },
+    {
+      "name": "Mushroom cheese patties",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "30",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 8
+    },
+    {
+      "name": "Special cheese patties",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "40",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 9
+    },
+    {
+      "name": "Cocktail cheese patties",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 10
+    },
+    {
+      "name": "King butter cheese patties",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 11
+    },
+    {
+      "name": "Steam momos",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "30",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 12
+    },
+    {
+      "name": "Fry momos",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "40",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 13
+    },
+    {
+      "name": "Malai momos",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 14
+    },
+    {
+      "name": "Veg roll",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "20",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 15
+    },
+    {
+      "name": "Egg roll",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "30",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 16
+    },
+    {
+      "name": "Double egg roll",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 17
+    },
+    {
+      "name": "Special butter egg roll",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 18
+    },
+    {
+      "name": "Egg chowmein",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "50",
+      "halfPrice": "30",
+      "halfAvailable": true,
+      "itemNo": 19
+    },
+    {
+      "name": "Veg chowmein",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "40",
+      "halfPrice": "20",
+      "halfAvailable": true,
+      "itemNo": 20
+    },
+    {
+      "name": "Chilli potato",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "60",
+      "halfPrice": "30",
+      "halfAvailable": true,
+      "itemNo": 21
+    },
+    {
+      "name": "Manchurian",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "60",
+      "halfPrice": "30",
+      "halfAvailable": true,
+      "itemNo": 22
+    },
+    {
+      "name": "Chilli paneer",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "120",
+      "halfPrice": "70",
+      "halfAvailable": true,
+      "itemNo": 23
+    },
+    {
+      "name": "Onion pizza",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "89",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 24
+    },
+    {
+      "name": "Onion-capsicum pizza",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "99",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 25
+    },
+    {
+      "name": "Tomato-capsicum pizza",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "99",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 26
+    },
+    {
+      "name": "Spicy veg pizza",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "110",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 27
+    },
+    {
+      "name": "Mix veg corn pizza",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "120",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 28
+    },
+    {
+      "name": "Plain paneer pizza",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "120",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 29
+    },
+    {
+      "name": "Mix black olive pizza",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "130",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 30
+    },
+    {
+      "name": "Double cheese corn pizza",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "140",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 31
+    },
+    {
+      "name": "Mast mashroom pizza",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "140",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 32
+    },
+    {
+      "name": "Mix special pizza",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "150",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 33
+    },
+    {
+      "name": "Pepi paneer pizza",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "150",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 34
+    },
+    {
+      "name": "Paneer makhani",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "160",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 35
+    },
+    {
+      "name": "Margherita pizza",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "180",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 36
+    },
+    {
+      "name": "Double margherita",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "200",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 37
+    },
+    {
+      "name": "Cheese burst",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "200",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 38
+    },
+    {
+      "name": "Special indian",
+      "itemsAvailable": "1",
+      "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
+      "fullPrice": "250",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 39
+    }
+  ],
+  "date": 1613862096191,
+  "imageName": "classic",
+  "name": "Classic pizza corner",
+  "mobileNumber": "8477005144",
+  "address": "opposite syndicate Bank, Mavassal petch",
+  "image": "https://cdn5.vectorstock.com/i/thumb-large/67/39/a-fastfood-restaurant-vector-1136739.jpg",
+  "status": true,
+  "priority": "7",
+  "time": "2:00 PM to 8:00 PM",
+  "description": "Famous for its Burgers and Pizza's",
+  "rating": "5",
+  "discount": "NA",
+  "__v": 0,
+  "isActive": true,
+  "deliveryTime": "40 Min"
+},{
+  "_id": {
+    "$oid": "6031a6bd214de1000400376b"
+  },
+  "details": [
+    {
+      "name": "Chocolate Shake",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "70",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 1
+    },
+    {
+      "name": "Vanilla Shake",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "70",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 2
+    },
+    {
+      "name": "Cold Coffee",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "70",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 3
+    },
+    {
+      "name": "Peanut Butter Shake",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "70",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 4
+    },
+    {
+      "name": "Oreo Shake",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "100",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 5
+    },
+    {
+      "name": "Kit Kat Shake",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "100",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 6
+    },
+    {
+      "name": "Dark Brownie",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "120",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 7
+    },
+    {
+      "name": "Banana Shake",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "80",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 8
+    },
+    {
+      "name": "Chiku Shake",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "90",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 9
+    },
+    {
+      "name": "Mango Shake",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "100",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 10
+    },
+    {
+      "name": "Filter Coffee",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "40",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 11
+    },
+    {
+      "name": "Cappuccino",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 12
+    },
+    {
+      "name": "Cafe Mocha",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "70",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 13
+    },
+    {
+      "name": "Hazelnut",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "80",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 14
+    },
+    {
+      "name": "Red Sauce Pasta",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "100",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 15
+    },
+    {
+      "name": "White Sauce Pasta",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "120",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 16
+    },
+    {
+      "name": "Mix Sauce Pasta",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "140",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 17
+    },
+    {
+      "name": "Paneer Makhani Pasta",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "150",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 18
+    },
+    {
+      "name": "Aloo Tikki Burger",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "35",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 19
+    },
+    {
+      "name": "Veg Burger",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "45",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 20
+    },
+    {
+      "name": "Paneer Burger",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 21
+    },
+    {
+      "name": "Cheese Burger",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 22
+    },
+    {
+      "name": "Double Patty Burger",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "80",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 23
+    },
+    {
+      "name": "Butter Pav Bhaji",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 24
+    },
+    {
+      "name": "Paneer Pav Bhaji",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "80",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 25
+    },
+    {
+      "name": "Masala Pav Bhaji",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "80",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 26
+    },
+    {
+      "name": "Cheese Pav Bhaji",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "100",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 27
+    },
+    {
+      "name": "Cheese Patties",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "25",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 28
+    },
+    {
+      "name": "Paneer & Sweet Corn",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "35",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 29
+    },
+    {
+      "name": "Veggie Special",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "45",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 30
+    },
+    {
+      "name": "Pizza Patties",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 31
+    },
+    {
+      "name": "French Fries",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 32
+    },
+    {
+      "name": "Veg Momos",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 33
+    },
+    {
+      "name": "Paneer Momos",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "80",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 34
+    },
+    {
+      "name": "Veg Roll",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 35
+    },
+    {
+      "name": "Kathi Roll",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 36
+    },
+    {
+      "name": "Spring Roll",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 37
+    },
+    {
+      "name": "Veg Loaded Maggi",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 38
+    },
+    {
+      "name": "Masala Maggi",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 39
+    },
+    {
+      "name": "Veg Paper Salt",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "80",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 40
+    },
+    {
+      "name": "Dry Manchurian",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "80",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 41
+    },
+    {
+      "name": "Paneer Maggi",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "80",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 42
+    },
+    {
+      "name": "Veg Wheat Momos",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "80",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 43
+    },
+    {
+      "name": "Chilli Gobhi",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "80",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 44
+    },
+    {
+      "name": "Fried Rice",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "80",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 45
+    },
+    {
+      "name": "Veg Noodles",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "80",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 46
+    },
+    {
+      "name": "Paneer Noodles",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "100",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 47
+    },
+    {
+      "name": "Chilli Potato",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "80",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 48
+    },
+    {
+      "name": "Gravy Manchurian",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "100",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 49
+    },
+    {
+      "name": "Paneer Wheat Momos",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "100",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 50
+    },
+    {
+      "name": "Singapuri Noodles",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "100",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 51
+    },
+    {
+      "name": "Dark Gravy Momos",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "100",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 52
+    },
+    {
+      "name": "Honey Chilli Potato",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "100",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 53
+    },
+    {
+      "name": "Dry Chilli Paneer",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "120",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 54
+    },
+    {
+      "name": "Hakka Noodles",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "120",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 55
+    },
+    {
+      "name": "Dark Gravy Paneer Momos",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "120",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 56
+    },
+    {
+      "name": "Gravy Chilli Paneer",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "140",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 57
+    },
+    {
+      "name": "Veggie Delight",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "180",
+      "halfPrice": "120",
+      "halfAvailable": true,
+      "itemNo": 58
+    },
+    {
+      "name": "Onion Pizza",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "190",
+      "halfPrice": "130",
+      "halfAvailable": true,
+      "itemNo": 59
+    },
+    {
+      "name": "Veggie Spice",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "190",
+      "halfPrice": "130",
+      "halfAvailable": true,
+      "itemNo": 60
+    },
+    {
+      "name": "Paneer Mania",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "200",
+      "halfPrice": "140",
+      "halfAvailable": true,
+      "itemNo": 61
+    },
+    {
+      "name": "Onion Capsicum",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "200",
+      "halfPrice": "140",
+      "halfAvailable": true,
+      "itemNo": 62
+    },
+    {
+      "name": "Tomato Capsicum",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "190",
+      "halfPrice": "140",
+      "halfAvailable": true,
+      "itemNo": 63
+    },
+    {
+      "name": "Cheese Delight",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "220",
+      "halfPrice": "160",
+      "halfAvailable": true,
+      "itemNo": 64
+    },
+    {
+      "name": "Paneer Lachcha",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "220",
+      "halfPrice": "160",
+      "halfAvailable": true,
+      "itemNo": 65
+    },
+    {
+      "name": "Veggie Supreme",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "260",
+      "halfPrice": "180",
+      "halfAvailable": true,
+      "itemNo": 66
+    },
+    {
+      "name": "Paneer Makhani",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "260",
+      "halfPrice": "180",
+      "halfAvailable": true,
+      "itemNo": 67
+    },
+    {
+      "name": "Peppy Paneer",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "260",
+      "halfPrice": "180",
+      "halfAvailable": true,
+      "itemNo": 68
+    },
+    {
+      "name": "Cheese And Corn Pizza",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "260",
+      "halfPrice": "180",
+      "halfAvailable": true,
+      "itemNo": 69
+    },
+    {
+      "name": "Margherita Regular",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "280",
+      "halfPrice": "200",
+      "halfAvailable": true,
+      "itemNo": 70
+    },
+    {
+      "name": "Chef Special",
+      "itemsAvailable": "1",
+      "image": "https://i0.wp.com/dinnersdishesanddesserts.com/wp-content/uploads/2018/06/Chocolate-Milkshakes-square.jpg?fit=600%2C604&ssl=1",
+      "fullPrice": "400",
+      "halfPrice": "280",
+      "halfAvailable": true,
+      "itemNo": 71
+    }
+  ],
+  "date": 1613866681507,
+  "imageName": "jainPizza",
+  "name": "Jain Pizza & Bakery",
+  "mobileNumber": "9870900050",
+  "address": "Near Ghantaghar",
+  "image": "https://p7.hiclipart.com/preview/812/527/724/pizza-fast-food-italian-cuisine-illustration-cartoon-casual-pizza-physical-shop-png.jpg",
+  "status": true,
+  "priority": "8",
+  "time": "2:00 PM to 8:00 PM",
+  "description": "Famous for its Burgers, Pizza's and Shakes",
+  "rating": "5",
+  "discount": "NA",
+  "__v": 0,
+  "isActive": true,
+  "deliveryTime": "60 Min"
+},{
+  "_id": {
+    "$oid": "6031b143f9bfbf0004db1ac2"
+  },
+  "details": [
+    {
+      "name": "Veg Burger",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "40",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 1
+    },
+    {
+      "name": "Paneer Burger",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 2
+    },
+    {
+      "name": "Cheese Burger",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 3
+    },
+    {
+      "name": "Tandoori Burger",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "70",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 4
+    },
+    {
+      "name": "Double Tikki Burger",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "80",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 5
+    },
+    {
+      "name": "Cheese Patties",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "20",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 6
+    },
+    {
+      "name": "Sweet Corn Patties",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "30",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 7
+    },
+    {
+      "name": "Special Patties",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "40",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 8
+    },
+    {
+      "name": "Pizza Patties",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 9
+    },
+    {
+      "name": "Garlic Bread",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 10
+    },
+    {
+      "name": "Cheese Garlic Bread",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "80",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 11
+    },
+    {
+      "name": "Gravy Chaap",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "100",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 12
+    },
+    {
+      "name": "Dry Chaap",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "120",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 13
+    },
+    {
+      "name": "Afghani Chaap",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "120",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 14
+    },
+    {
+      "name": "Shahi Chaap",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "200",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 15
+    },
+    {
+      "name": "Butter Pavbhaji",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "40",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 16
+    },
+    {
+      "name": "Masala Butter Pavbhaji",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 17
+    },
+    {
+      "name": "Kuclcha Pizza",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 18
+    },
+    {
+      "name": "Mix Veg Pizza",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "100",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 19
+    },
+    {
+      "name": "Spicy Pizza",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "110",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 20
+    },
+    {
+      "name": "Onion Pizza",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "110",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 21
+    },
+    {
+      "name": "Onion Capsicum",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "120",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 22
+    },
+    {
+      "name": "Paneer Lacha",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "130",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 23
+    },
+    {
+      "name": "Mast Mashroom",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "150",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 24
+    },
+    {
+      "name": "Special Mix Veg",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "130",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 25
+    },
+    {
+      "name": "Paneer Makhani",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "150",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 26
+    },
+    {
+      "name": "Cheese Burst",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "200",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 27
+    },
+    {
+      "name": "Italian Pizza",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "200",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 28
+    },
+    {
+      "name": "Gotiya Special Pizza",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "250",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 29
+    },
+    {
+      "name": "Veg Wrap",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 30
+    },
+    {
+      "name": "Paneer Wrap",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 31
+    },
+    {
+      "name": "Cheese Wrap",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "80",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 32
+    },
+    {
+      "name": "Pasta Wrap",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "250",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 33
+    },
+    {
+      "name": "White Sauce Pasta Wrap",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "250",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 34
+    },
+    {
+      "name": "Potato Toast",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 35
+    },
+    {
+      "name": "Paneer Toast",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "80",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 36
+    },
+    {
+      "name": "Punjabi Sandwich",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "40",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 37
+    },
+    {
+      "name": "Gotiya Special Sandwich",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "40",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 38
+    },
+    {
+      "name": "Grill Sandwich",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 39
+    },
+    {
+      "name": "Pizza Sandwich",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "80",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 40
+    },
+    {
+      "name": "Hot Dog",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "30",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 41
+    },
+    {
+      "name": "Paneer Platter",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 42
+    },
+    {
+      "name": "Veg Maggi",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "40",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 43
+    },
+    {
+      "name": "Butter Maggi",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 44
+    },
+    {
+      "name": "Cheese Maggi",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 45
+    },
+    {
+      "name": "Special Maggi",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "70",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 46
+    },
+    {
+      "name": "Matar Paneer",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "120",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 47
+    },
+    {
+      "name": "Paneer Bhurji",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "150",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 48
+    },
+    {
+      "name": "Kadhai Paneer",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "150",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 49
+    },
+    {
+      "name": "Tomato Soup",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "20",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 50
+    },
+    {
+      "name": "Special Butter Tomato Soup",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "30",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 51
+    },
+    {
+      "name": "Paneer Momos",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "40",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 52
+    },
+    {
+      "name": "Chilli Fry Momos",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 53
+    },
+    {
+      "name": "Grill Momos",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 54
+    },
+    {
+      "name": "Veg Noodles",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 55
+    },
+    {
+      "name": "Sweet Corn Noodles",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 56
+    },
+    {
+      "name": "Mushroom Noodles",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "70",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 57
+    },
+    {
+      "name": "stuff Paneer Kulche",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "30",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 58
+    },
+    {
+      "name": "Veg Fried Rice",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 59
+    },
+    {
+      "name": "White Sause Pasta",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "100",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 60
+    },
+    {
+      "name": "Veg Spring Roll",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 61
+    },
+    {
+      "name": "Veg Roll",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "40",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 62
+    },
+    {
+      "name": "Pizza Roll",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "70",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 63
+    },
+    {
+      "name": "Chilli Potato",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 64
+    },
+    {
+      "name": "Honey Chilli Potato",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 65
+    },
+    {
+      "name": "Chilli Paneer Dry",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "80",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 66
+    },
+    {
+      "name": "Chilli Paneer Gravy",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "90",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 67
+    },
+    {
+      "name": "Manchurian Dry",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 68
+    },
+    {
+      "name": "Manchurian Gravy",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "70",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 69
+    }
+  ],
+  "date": 1613869377588,
+  "imageName": "gotiya",
+  "name": "Gotiya Fast Food",
+  "mobileNumber": "9634507008",
+  "address": "Near Bharat Milap Chowk",
+  "image": "https://thumbs.dreamstime.com/b/fast-food-store-front-view-orandge-background-vector-illustration-83976351.jpg",
+  "status": true,
+  "priority": "9",
+  "time": "2:00 PM to 8:00 PM",
+  "description": "Famous for its multiple and special items",
+  "rating": "5",
+  "discount": "NA",
+  "__v": 0,
+  "isActive": false,
+  "deliveryTime": "40 Min"
+},{
+  "_id": {
+    "$oid": "60324a14f7e99c0004d084f6"
+  },
+  "details": [
+    {
+      "name": "Veg Noodles",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "50",
+      "halfPrice": "30",
+      "halfAvailable": true,
+      "itemNo": 1
+    },
+    {
+      "name": "Paneer Noodles",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "60",
+      "halfPrice": "40",
+      "halfAvailable": true,
+      "itemNo": 2
+    },
+    {
+      "name": "Steam Momos",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "40",
+      "halfPrice": "20",
+      "halfAvailable": true,
+      "itemNo": 3
+    },
+    {
+      "name": "Fried Momos",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "50",
+      "halfPrice": "30",
+      "halfAvailable": true,
+      "itemNo": 4
+    },
+    {
+      "name": "Dumpling with mayo",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "80",
+      "halfPrice": "40",
+      "halfAvailable": true,
+      "itemNo": 5
+    },
+    {
+      "name": "Spring Roll",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "50",
+      "halfPrice": "30",
+      "halfAvailable": true,
+      "itemNo": 6
+    },
+    {
+      "name": "Honey Chilli Potato (Dry)",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "80",
+      "halfPrice": "50",
+      "halfAvailable": true,
+      "itemNo": 7
+    },
+    {
+      "name": "Honey Chilli Potato (Gravy)",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "80",
+      "halfPrice": "50",
+      "halfAvailable": true,
+      "itemNo": 8
+    },
+    {
+      "name": "Chilli Potato (Dry)",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "60",
+      "halfPrice": "40",
+      "halfAvailable": true,
+      "itemNo": 9
+    },
+    {
+      "name": "Chilli Potato (Gravy)",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "60",
+      "halfPrice": "40",
+      "halfAvailable": true,
+      "itemNo": 10
+    },
+    {
+      "name": "Chilli Paneer (Dry)",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "120",
+      "halfPrice": "70",
+      "halfAvailable": true,
+      "itemNo": 11
+    },
+    {
+      "name": "Chilli Paneer (Gravy)",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "120",
+      "halfPrice": "70",
+      "halfAvailable": true,
+      "itemNo": 12
+    },
+    {
+      "name": "Honey Chilli Potato (Dry)",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "80",
+      "halfPrice": "50",
+      "halfAvailable": true,
+      "itemNo": 13
+    },
+    {
+      "name": "Manchurain (Dry)",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "80",
+      "halfPrice": "50",
+      "halfAvailable": true,
+      "itemNo": 14
+    },
+    {
+      "name": "Manchurain (Gravy)",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "80",
+      "halfPrice": "50",
+      "halfAvailable": true,
+      "itemNo": 15
+    },
+    {
+      "name": "French Fries",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 16
+    },
+    {
+      "name": "Cheese Patties",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "30",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 17
+    },
+    {
+      "name": "Cheese Patties with Golden Corn",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "30",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 18
+    },
+    {
+      "name": "Cheese Paneer Patties",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "40",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 19
+    },
+    {
+      "name": "Cheese Cocktail Patties",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 20
+    },
+    {
+      "name": "Pizza Patties",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "70",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 21
+    },
+    {
+      "name": "Classic Burger",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 22
+    },
+    {
+      "name": "Premium Burger",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 23
+    },
+    {
+      "name": "Veg Sandwich",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "40",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 24
+    },
+    {
+      "name": "Cheese Grilled Sandwich",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 25
+    },
+    {
+      "name": "Red sauce Pasta",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "80",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 26
+    },
+    {
+      "name": "White sauce Pasta",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "100",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 27
+    },
+    {
+      "name": "Paneer Pasta",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "120",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 28
+    },
+    {
+      "name": "Onion Capsicum Tomato Pizza",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "120",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 29
+    },
+    {
+      "name": "Golden Corn Pizza",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "140",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 30
+    },
+    {
+      "name": "Paneer Pizza",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "160",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 31
+    },
+    {
+      "name": "Extra Paneer Pizza",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "190",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 32
+    },
+    {
+      "name": "Farm-House Pizza",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpfbQ-_rpI_K9rG9YShZZXEYY9XE7_lcT_g&usqp=CAU",
+      "fullPrice": "220",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 33
+    }
+  ],
+  "date": 1613908497708,
+  "imageName": "radhaRani",
+  "name": "Radha Rani Bombay Pizza And Pasta",
+  "mobileNumber": "9873366957",
+  "address": "Near Hi college, Nandgaon road",
+  "image": "https://cdn4.vectorstock.com/i/1000x1000/96/78/24-hours-street-shop-icon-cartoon-style-vector-21369678.jpg",
+  "status": true,
+  "priority": "10",
+  "time": "2:00 PM to 8:00 PM",
+  "description": "Famous for its Pizza, and Chinese Food",
+  "rating": "5",
+  "discount": "NA",
+  "__v": 0,
+  "isActive": true,
+  "deliveryTime": "40 Min"
+},{
+  "_id": {
+    "$oid": "60324de4f7e99c0004d084f7"
+  },
+  "details": [
+    {
+      "name": "Masala Dosa",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKSD5DZ6sIkitbgTLp8g-TBzs4FM0Gi6Po0g&usqp=CAU",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 1
+    },
+    {
+      "name": "Paneer Masala Dosa",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKSD5DZ6sIkitbgTLp8g-TBzs4FM0Gi6Po0g&usqp=CAU",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 2
+    },
+    {
+      "name": "Idli sambhar",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKSD5DZ6sIkitbgTLp8g-TBzs4FM0Gi6Po0g&usqp=CAU",
+      "fullPrice": "30",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 3
+    },
+    {
+      "name": "Pav bhaaji",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKSD5DZ6sIkitbgTLp8g-TBzs4FM0Gi6Po0g&usqp=CAU",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 4
+    },
+    {
+      "name": "Chilla",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKSD5DZ6sIkitbgTLp8g-TBzs4FM0Gi6Po0g&usqp=CAU",
+      "fullPrice": "30",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 5
+    },
+    {
+      "name": "Paneer Chilla",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKSD5DZ6sIkitbgTLp8g-TBzs4FM0Gi6Po0g&usqp=CAU",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 6
+    }
+  ],
+  "date": 1613908497708,
+  "imageName": "saini",
+  "name": "Saini Chat Bhandar",
+  "mobileNumber": "8006739841",
+  "address": "Near Ghantaghar",
+  "image": "https://image.shutterstock.com/image-vector/street-food-vendor-offers-traditional-260nw-636740854.jpg",
+  "status": true,
+  "priority": "11",
+  "time": "2:00 PM to 8:00 PM",
+  "description": "Famous for its Masala Dosa and Pav Bhaji",
+  "rating": "5",
+  "discount": "NA",
+  "__v": 0,
+  "isActive": true,
+  "deliveryTime": "40 Min"
+},{
+  "_id": {
+    "$oid": "6032528af7e99c0004d084fb"
+  },
+  "details": [
+    {
+      "name": "Veg Chowmein",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7noOKp-C1uWTAZ6I56G7-m-AIyL7B8NfE-w&usqp=CAU",
+      "fullPrice": "35",
+      "halfPrice": "20",
+      "halfAvailable": true,
+      "itemNo": 1
+    },
+    {
+      "name": "Special Burger",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7noOKp-C1uWTAZ6I56G7-m-AIyL7B8NfE-w&usqp=CAU",
+      "fullPrice": "20",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 2
+    },
+    {
+      "name": "Patties (Tadke Wali)",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7noOKp-C1uWTAZ6I56G7-m-AIyL7B8NfE-w&usqp=CAU",
+      "fullPrice": "30",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 3
+    },
+    {
+      "name": "Patties (Cheese)",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7noOKp-C1uWTAZ6I56G7-m-AIyL7B8NfE-w&usqp=CAU",
+      "fullPrice": "20",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 4
+    },
+    {
+      "name": "Tikki",
+      "itemsAvailable": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7noOKp-C1uWTAZ6I56G7-m-AIyL7B8NfE-w&usqp=CAU",
+      "fullPrice": "30",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 5
+    }
+  ],
+  "date": 1613908497708,
+  "imageName": "rajaJi",
+  "name": "Raja ji",
+  "mobileNumber": "7417136170",
+  "address": "Near Ghantaghar",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8Pi5kHFzUUKdA1VQ2u3maWRvV4dKe2UNpbQ&usqp=CAU",
+  "status": true,
+  "priority": "12",
+  "time": "4:00 PM to 8:00 PM",
+  "description": "Famous for its Burger and Patties",
+  "rating": "5",
+  "discount": "NA",
+  "__v": 0,
+  "isActive": true,
+  "deliveryTime": "40 Min"
+},{
+  "_id": {
+    "$oid": "6032664ed61cc90004b7fd9f"
+  },
+  "details": [
+    {
+      "name": "Aloo paratha(Amul Butter)",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 1
+    },
+    {
+      "name": "Mooli paratha(Amul Butter)",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 2
+    },
+    {
+      "name": "Gobhi paratha(Amul Butter)",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 3
+    },
+    {
+      "name": "Paneer paratha(Amul Butter)",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "70",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 4
+    },
+    {
+      "name": "Mixed paratha(Amul Butter)",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "70",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 5
+    },
+    {
+      "name": "Plain paratha(Amul Butter)",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 6
+    },
+    {
+      "name": "Lachacha paratha(Amul Butter)",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "40",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 7
+    },
+    {
+      "name": "Onion paratha(Amul Butter)",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "70",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 8
+    },
+    {
+      "name": "Steamed Rice",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "90",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 9
+    },
+    {
+      "name": "Jeera Rice",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "100",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 10
+    },
+    {
+      "name": "Veg Pulav",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "140",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 11
+    },
+    {
+      "name": "Fried Rice",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "120",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 12
+    },
+    {
+      "name": "Shahi Paneer (Sweet Spicy)",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "160",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 13
+    },
+    {
+      "name": "Matar Paneer",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "150",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 14
+    },
+    {
+      "name": "Palak Paneer",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "140",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 15
+    },
+    {
+      "name": "Kadhai Paneer",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "190",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 16
+    },
+    {
+      "name": "Mix Veg",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "130",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 17
+    },
+    {
+      "name": "Matar Mushroom",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "160",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 18
+    },
+    {
+      "name": "Kadhai Mushroom",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "200",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 19
+    },
+    {
+      "name": "Mushroom Butter Masala",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "210",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 20
+    },
+    {
+      "name": "Dal Makhani (Urd Rajma)",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "160",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 21
+    },
+    {
+      "name": "Dal Fry",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "110",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 22
+    },
+    {
+      "name": "Dal Urd Chana Fry",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "160",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 23
+    },
+    {
+      "name": "Dal Puchranga",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "150",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 24
+    },
+    {
+      "name": "Chana Masala",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "150",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 25
+    },
+    {
+      "name": "Malai Kofta (Sweet Spicy)",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "180",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 26
+    },
+    {
+      "name": "Dum Aloo (Sweet Spicy)",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "150",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 27
+    },
+    {
+      "name": "Kadhi Pakora",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "120",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 28
+    },
+    {
+      "name": "Baigan Bharta",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "120",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 29
+    },
+    {
+      "name": "Bhindi Pyaz",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "120",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 30
+    },
+    {
+      "name": "Gobhi Aloo",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "100",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 31
+    },
+    {
+      "name": "shimla Mirch Aloo",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "120",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 32
+    },
+    {
+      "name": "Matar Aloo",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "120",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 33
+    },
+    {
+      "name": "Jeera Aloo",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "110",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 34
+    },
+    {
+      "name": "Paneer Bhujiya",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "200",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 35
+    },
+    {
+      "name": "Paneer Butter Masala",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "200",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 36
+    },
+    {
+      "name": "Paneer Lababdar",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "200",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 37
+    },
+    {
+      "name": "Paneer Tikka Masala",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "220",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 38
+    },
+    {
+      "name": "Chilli Gobhi",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "120",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 39
+    },
+    {
+      "name": "Chilli Paneer",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "200",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 40
+    },
+    {
+      "name": "Chilli Mushroom",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "200",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 41
+    },
+    {
+      "name": "Sigdi ki Gobhi",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "150",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 42
+    },
+    {
+      "name": "Plain Naan",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "40",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 43
+    },
+    {
+      "name": "Butter Naan",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "45",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 44
+    },
+    {
+      "name": "Garlic Naan",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 45
+    },
+    {
+      "name": "Aloo Pyaz Naan",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "70",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 46
+    },
+    {
+      "name": "Aloo Naan",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 47
+    },
+    {
+      "name": "Plain Roti",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "10",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 48
+    },
+    {
+      "name": "Butter Roti",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "15",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 49
+    },
+    {
+      "name": "Missi Roti Butter",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "30",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 50
+    },
+    {
+      "name": "Missi Roti Onion",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "35",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 51
+    },
+    {
+      "name": "Ajyaen Roti",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "20",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 52
+    },
+    {
+      "name": "Aloo Paratha (Desi Ghee)",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "90",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 53
+    },
+    {
+      "name": "Mooli Paratha (Desi Ghee)",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "90",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 54
+    },
+    {
+      "name": "Gobhi Paratha (Desi Ghee)",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "90",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 55
+    },
+    {
+      "name": "Paneer Paratha (Desi Ghee)",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "110",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 56
+    },
+    {
+      "name": "Mixed Paratha (Desi Ghee)",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "110",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 57
+    },
+    {
+      "name": "Plain Paratha (Desi Ghee)",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "80",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 58
+    },
+    {
+      "name": "Lachcha Paratha (Desi Ghee)",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 59
+    },
+    {
+      "name": "Green Salad",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 60
+    },
+    {
+      "name": "Potato Salad",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "120",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 61
+    },
+    {
+      "name": "Tomato Salad",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "90",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 62
+    },
+    {
+      "name": "Fresh Paneer (Half)",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "100",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 63
+    },
+    {
+      "name": "Papad (Dry)",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "20",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 64
+    },
+    {
+      "name": "Papad (Fry)",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "25",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 65
+    },
+    {
+      "name": "Papad (Masala)",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "40",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 66
+    },
+    {
+      "name": "Mix Raita",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "90",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 67
+    },
+    {
+      "name": "Boondi Raita",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "90",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 68
+    },
+    {
+      "name": "Plain Curd",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "70",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 69
+    },
+    {
+      "name": "Pineapple Raita",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "120",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 70
+    },
+    {
+      "name": "Paneer Salad",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "150",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 71
+    },
+    {
+      "name": "Kuchumar Salad",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "150",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 72
+    },
+    {
+      "name": "Paneer Pakora",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "150",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 73
+    },
+    {
+      "name": "Mix Pakora",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "140",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 74
+    },
+    {
+      "name": "Aloo Pakora",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "120",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 75
+    },
+    {
+      "name": "Gobhi Pakora",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "130",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 76
+    },
+    {
+      "name": "Onion Pakora",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "140",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 77
+    },
+    {
+      "name": "Mushroom Tikka",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "200",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 78
+    },
+    {
+      "name": "Chilli Paneer",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "200",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 79
+    },
+    {
+      "name": "Tandoori Aloo Chat",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "150",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 80
+    },
+    {
+      "name": "Tandoori Aloo Tikka",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "150",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 81
+    },
+    {
+      "name": "Tandoori Mushroom Tikka",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "200",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 82
+    },
+    {
+      "name": "Tandoori Paneer Tikka",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "200",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 83
+    },
+    {
+      "name": "Tandoori Chhaap",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "190",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 84
+    },
+    {
+      "name": "Tandoori Mushroom",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "190",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 85
+    },
+    {
+      "name": "Mushroom Malai",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "210",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 86
+    },
+    {
+      "name": "Punjabi Mushroom",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "200",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 87
+    },
+    {
+      "name": "Afghani Mushroom",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "200",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 88
+    },
+    {
+      "name": "Afghani Chaap",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "190",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 89
+    },
+    {
+      "name": "Malai Chaap",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "210",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 90
+    },
+    {
+      "name": "Punjabi Chaap",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "200",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 91
+    },
+    {
+      "name": "Paneer Tikka",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "200",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 92
+    },
+    {
+      "name": "Punjabi Paneer Tikka",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "200",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 93
+    },
+    {
+      "name": "Malai Paneer Tikka",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "210",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 94
+    },
+    {
+      "name": "APD Tandoori Platter",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "320",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 95
+    }
+  ],
+  "date": 1613915723471,
+  "imageName": "asliPappuDhaba",
+  "name": "Asli Pappu Dhaba (Old)",
+  "mobileNumber": "9897413111",
+  "address": "Near Bathengate",
+  "image": "https://cdn5.vectorstock.com/i/1000x1000/87/54/welcome-to-hotel-cartoon-poster-vector-19788754.jpg",
+  "status": true,
+  "priority": "13",
+  "time": "2:00 PM to 8:00 PM",
+  "description": "Famous for its North Indian Food",
+  "rating": "5",
+  "discount": "NA",
+  "__v": 0,
+  "isActive": true,
+  "deliveryTime": "40 Min"
+},{
+  "_id": {
+    "$oid": "603273d96a64a2000452c973"
+  },
+  "details": [
+    {
+      "name": "Plain Patties",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "15",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 1
+    },
+    {
+      "name": "Veg Patties",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "25",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 2
+    },
+    {
+      "name": "Cream Patties",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "25",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 3
+    },
+    {
+      "name": "Veg Burger",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "25",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 4
+    },
+    {
+      "name": "Pizza Patties",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "30",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 5
+    },
+    {
+      "name": "Paneer Patties",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "30",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 6
+    },
+    {
+      "name": "Plain Maggi",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "30",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 7
+    },
+    {
+      "name": "Veg Chowmein",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "30",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 8
+    },
+    {
+      "name": "Veg Momos",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "40",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 9
+    },
+    {
+      "name": "Paneer Momos",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 10
+    },
+    {
+      "name": "Paneer Chowmein",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 11
+    },
+    {
+      "name": "Finger Chips",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 12
+    },
+    {
+      "name": "SingaPuri Chowmein",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 13
+    },
+    {
+      "name": "Manchurian Dry",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 14
+    },
+    {
+      "name": "Gobhi Manchurian",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "70",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 15
+    },
+    {
+      "name": "Chilli Potato",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "70",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 16
+    },
+    {
+      "name": "Honey Chilli Potato",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "70",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 17
+    },
+    {
+      "name": "Chilli Paneer Dry",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "80",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 18
+    },
+    {
+      "name": "Fried Rice",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "80",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 19
+    },
+    {
+      "name": "Chilli Paneer Gravy",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "90",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 20
+    },
+    {
+      "name": "Tomato Pizza",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "80",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 21
+    },
+    {
+      "name": "Onion Pizza",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "100",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 22
+    },
+    {
+      "name": "Capsicum Pizza",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "110",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 23
+    },
+    {
+      "name": "Sweet Corn Pizza",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "150",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 24
+    },
+    {
+      "name": "Mix Veg",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "110",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 25
+    },
+    {
+      "name": "Baby Corn Pizza",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "150",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 26
+    },
+    {
+      "name": "Paneer Pizza",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "150",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 27
+    },
+    {
+      "name": "Overloaded Pizza",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "180",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 28
+    },
+    {
+      "name": "Tandoori Pizza",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "180",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 29
+    },
+    {
+      "name": "Spring Roll",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "30",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 30
+    },
+    {
+      "name": "Veg Roll",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "40",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 31
+    },
+    {
+      "name": "Egg Roll",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 32
+    },
+    {
+      "name": "Paneer Roll",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 33
+    },
+    {
+      "name": "Soya Tikka Roll",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 34
+    },
+    {
+      "name": "Mushroom Tikka Roll",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "70",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 35
+    },
+    {
+      "name": "Mix Roll",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "100",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 36
+    },
+    {
+      "name": "Plain Dosa",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "30",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 37
+    },
+    {
+      "name": "Masala Dosa",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "40",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 38
+    },
+    {
+      "name": "Mushroom Masala Dosa",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 39
+    },
+    {
+      "name": "Paneer Masala Dosa",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "70",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 40
+    },
+    {
+      "name": "Mushroom Paneer Dosa",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "70",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 41
+    },
+    {
+      "name": "Rava Dosa",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "80",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 42
+    },
+    {
+      "name": "Veg Noodle Dosa",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "80",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 43
+    },
+    {
+      "name": "Spring Roll Dosa",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "100",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 44
+    },
+    {
+      "name": "Pizza Dosa",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "120",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 45
+    },
+    {
+      "name": "Palak Masala Dosa",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "120",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 46
+    },
+    {
+      "name": "Palak Paneer Dosa",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "150",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 47
+    },
+    {
+      "name": "Idli Sambhar",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "40",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 48
+    },
+    {
+      "name": "Veg Idli Sambhar",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 49
+    },
+    {
+      "name": "Paneer Idli Sambhar",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 50
+    },
+    {
+      "name": "Sambhar vada",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 51
+    },
+    {
+      "name": "Plain Uttapam",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 52
+    },
+    {
+      "name": "Veg Uttapam",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 53
+    },
+    {
+      "name": "Onion Uttapam",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "70",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 54
+    },
+    {
+      "name": "Tomato Uttapam",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "80",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 55
+    },
+    {
+      "name": "Paneer Uttapam",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "100",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 56
+    },
+    {
+      "name": "Potato Ball",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "90",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 57
+    },
+    {
+      "name": "Hara Bhara Kebab",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "90",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 58
+    },
+    {
+      "name": "Cheese Balls",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "130",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 59
+    },
+    {
+      "name": "Veg Cutlet",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "130",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 60
+    },
+    {
+      "name": "Paneer Tikka",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "140",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 61
+    },
+    {
+      "name": "Veg Seekh Kebab",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "130",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 62
+    },
+    {
+      "name": "Tandoori Chaap",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "150",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 63
+    },
+    {
+      "name": "Malai Chaap",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "150",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 64
+    },
+    {
+      "name": "Afghani Chaap",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "150",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 65
+    },
+    {
+      "name": "Achari Chaap",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "150",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 66
+    },
+    {
+      "name": "Paneer Haryali Tikka",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "150",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 67
+    },
+    {
+      "name": "Mushroom Tikka",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "160",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 68
+    },
+    {
+      "name": "Roasted Papad",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "10",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 69
+    },
+    {
+      "name": "Masala Papad",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "15",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 70
+    },
+    {
+      "name": "Kachumbar Salad",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "30",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 71
+    },
+    {
+      "name": "Pyaz Salad",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "30",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 72
+    },
+    {
+      "name": "Green Salad",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "40",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 73
+    },
+    {
+      "name": "Chach Sweet/Salted",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "20",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 74
+    },
+    {
+      "name": "Plain Dahi",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "30",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 75
+    },
+    {
+      "name": "Plain Raita",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "40",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 76
+    },
+    {
+      "name": "Boondi Raita",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 77
+    },
+    {
+      "name": "Lassi Sweet/Salted",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 78
+    },
+    {
+      "name": "Pineapple Raita",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "80",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 79
+    },
+    {
+      "name": "Mix Fruit Raita",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "100",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 80
+    },
+    {
+      "name": "Mix Raita",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 81
+    },
+    {
+      "name": "Daal Fry",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 82
+    },
+    {
+      "name": "Aloo Jeera",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "90",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 83
+    },
+    {
+      "name": "Kashmiri Dum Aloo",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "100",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 84
+    },
+    {
+      "name": "Kashmiri Dum Aloo",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "100",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 85
+    },
+    {
+      "name": "Mix Veg",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "100",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 86
+    },
+    {
+      "name": "Aloo Gobhi Masala",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "120",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 87
+    },
+    {
+      "name": "Dal Makhani",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "130",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 88
+    },
+    {
+      "name": "Chole Chana Masala",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "130",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 89
+    },
+    {
+      "name": "Rajma Masala",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "130",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 90
+    },
+    {
+      "name": "Aloo Matar Gravy",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "130",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 91
+    },
+    {
+      "name": "Gravy Chaap",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "140",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 92
+    },
+    {
+      "name": "Shahi Paneer",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "150",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 93
+    },
+    {
+      "name": "Matar Mushroom",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "150",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 94
+    },
+    {
+      "name": "Matar Paneer",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "150",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 95
+    },
+    {
+      "name": "Achari Chaap Masala",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "150",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 96
+    },
+    {
+      "name": "Kadhai Paneer",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "160",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 97
+    },
+    {
+      "name": "Paneer Butter Masala",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "160",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 98
+    },
+    {
+      "name": "Kadhai Mushroom",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "160",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 99
+    },
+    {
+      "name": "Handi Paneer",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "160",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 100
+    },
+    {
+      "name": "Palak Paneer",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "160",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 101
+    },
+    {
+      "name": "Achari Paneer",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "160",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 102
+    },
+    {
+      "name": "Mushroom Masala",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "180",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 103
+    },
+    {
+      "name": "Special Chaap Masala",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "190",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 104
+    },
+    {
+      "name": "Plain Roti",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "5",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 105
+    },
+    {
+      "name": "Butter Roti",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "7",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 106
+    },
+    {
+      "name": "Plain Naan",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "15",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 107
+    },
+    {
+      "name": "Missi Roti",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "20",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 108
+    },
+    {
+      "name": "Butter Naan",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "20",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 109
+    },
+    {
+      "name": "Plain Rice",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "50",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 110
+    },
+    {
+      "name": "Jeera Rice",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 111
+    },
+    {
+      "name": "Kadhai Mushroom",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "160",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 112
+    },
+    {
+      "name": "Veg Pulav",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "60",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 113
+    },
+    {
+      "name": "Chole Rice",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "70",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 114
+    },
+    {
+      "name": "Rajma Rice",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "70",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 115
+    },
+    {
+      "name": "Veg Biryani",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "80",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 116
+    },
+    {
+      "name": "Hyderabadi Biryani",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "100",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 117
+    },
+    {
+      "name": "Peas Pulav",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "100",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 118
+    },
+    {
+      "name": "Paneer Pulav",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "110",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 119
+    },
+    {
+      "name": "Shahi Pulav",
+      "itemsAvailable": "1",
+      "image": "https://cdn.cdnparenting.com/articles/2020/01/19152919/Aloo-Paratha-Recipe.jpg",
+      "fullPrice": "110",
+      "halfPrice": "",
+      "halfAvailable": false,
+      "itemNo": 120
+    }
+  ],
+  "date": 1613919190828,
+  "imageName": "chaska",
+  "name": "Chaska Family Restaurant",
+  "mobileNumber": "7015510259",
+  "address": "Bhagwati Road, Near Subhash Park",
+  "image": "https://i.pinimg.com/736x/20/27/0f/20270fdb19d0c0925c3d0ca3cb6280c8.jpg",
+  "status": true,
+  "priority": "14",
+  "time": "2:00 PM to 8:00 PM",
+  "description": "All Foods are at one Restaurant, including South Indian, Chinese, North Indian.",
+  "rating": "5",
+  "discount": "NA",
+  "__v": 0,
+  "isActive": false,
+  "deliveryTime": "40 Min"
+}]

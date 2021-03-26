@@ -28,3 +28,16 @@ export function* errorHandler(error, errorType) {
 		yield put({ type: errorType, error: error.message ? error.message : error });
 	}
 }
+
+function startsWithNumber(row, value) {
+	let slicedValue = row.slice(0, value.length)
+	return slicedValue == value
+  }
+
+export function filterCaseInsensitive(filter, row) {
+	const id = filter.pivotId || filter.id;
+	return (
+	  typeof (row[id]) == 'string' ?
+		row[id].toLowerCase().startsWith(filter.value.toLowerCase()) : startsWithNumber(String(row[id]), String(filter.value))
+	);
+  }

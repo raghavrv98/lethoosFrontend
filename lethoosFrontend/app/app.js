@@ -29,8 +29,14 @@ import 'file-loader?name=.htaccess!./.htaccess'; // eslint-disable-line import/e
 
 import configureStore from './configureStore';
 
-// Css
+// CSS
 import '../app/assets/css/main.css'
+
+//React table
+import '../app/assets/css/customReactTable.css'
+import 'react-table-v6/react-table.css'
+
+
 
 // Import i18n messages
 import { translationMessages } from './i18n';
