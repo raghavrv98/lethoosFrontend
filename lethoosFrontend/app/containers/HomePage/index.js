@@ -29,6 +29,7 @@ import AdminPage from '../../containers/AdminPage/Loadable';
 import UsersList from '../../containers/UsersList/Loadable';
 import NotFoundPage from '../../components/NotFoundPage/Loadable'
 import AdminShopEdit from '../../containers/AdminShopEdit/Loadable'
+import AdminUserEdit from '../../containers/AdminUserEdit/Loadable'
 import OrderDetails from '../../containers/OrderDetails/Loadable'
 
 /* eslint-disable react/prefer-stateless-function */
@@ -96,6 +97,7 @@ export class HomePage extends React.PureComponent {
             <Route exact path="/adminPage" render={props => <AdminPage {...props} />} />
             <Route exact path="/usersList" render={props => <UsersList {...props} />} />
             <Route exact path="/admin/shopDetails/:id" render={props => <AdminShopEdit {...props} />} />
+            <Route exact path="/admin/userDetails/:id" render={props => <AdminUserEdit {...props} />} />
             <Route path="/error404" render={props => <NotFoundPage {...props} />} />
             <Route component={NotFoundPage} />
           </Switch>
