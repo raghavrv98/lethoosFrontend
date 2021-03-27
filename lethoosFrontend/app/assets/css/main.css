@@ -5,6 +5,14 @@ body {
 	background-color: #F5F5F5;
 }
 
+video{
+	width: 100%;
+}
+
+.modal{
+	overflow: initial !important;
+}
+
 .loading {
 	position: absolute;
 	height: 60px;
@@ -543,6 +551,12 @@ hr {
 }
 
 @media only screen and (max-width: 768px) {
+
+	.help-section{
+		font-size: 15px;
+		color: cornflowerblue;
+		text-align: center;
+	}
 
 	.react-table-outer{
 		padding: 10px;
@@ -2055,6 +2069,13 @@ hr {
 		float: right;
 		margin-right: 20px;
 		margin-bottom: 30px;
+	}
+
+	.help-section{
+		font-size: 30px;
+		color: cornflowerblue;
+		text-align: center;
+		margin-bottom: 20px;
 	}
 
 	.shop-closed-tag, .shopDetails-closed-tag {
