@@ -194,7 +194,7 @@ export class OrderDetails extends React.PureComponent {
                         <div className="col-md-3">
                           <img className="order-history-box-image" src={val.shopImage} />
                         </div>
-                        <div className="col-md-9">
+                        <div className="col-md-9 text-right">
                           <p className="order-history-box-heading">{val.shopName}</p>
                           <p className="order-history-box-text-heading">{val.shopAddress}</p>
                         </div>

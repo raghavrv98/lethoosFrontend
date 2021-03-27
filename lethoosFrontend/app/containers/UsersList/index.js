@@ -185,11 +185,11 @@ export class UsersList extends React.PureComponent {
       filterable: false,
       Cell: row => (
         <div>
-          <button type="button" className="btn-transparent" onClick={() => this.props.history.push(`/manageRoleNavigation/${row.original.id}`)}>
+          <button type="button" className="btn-transparent" onClick={() => this.props.history.push(`/manageRoleNavigation/${row.original._id}`)}>
             <i className="fa fa-sign-in" />
           </button>
 
-          <button type="button" className="btn-transparent text-success" onClick={() => { this.props.history.push(`/addOrEditRole/${row.original.id}`); }}>
+          <button type="button" className="btn-transparent text-success" onClick={() => { this.props.history.push(`/admin/userDetails/${row.original._id}`); }}>
             <i className="fa fa-pencil-square-o" />
           </button>
 
