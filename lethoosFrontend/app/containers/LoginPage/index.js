@@ -279,8 +279,8 @@ export class LoginPage extends React.PureComponent {
           <span className="loginbox">
             <img className="login-box-icon img-responsive" src={require('../../assets/images/logo.png')} />
             <div className="help-section">
-              <div><i class="fa fa-info-circle" aria-hidden="true"></i><span onClick={() => this.setState({ ismodalOpen: true })}> Video Tutorial</span></div>
-              <div><a href="https://api.whatsapp.com/send?phone=918630422423"><i class="fa fa-headphones" aria-hidden="true"></i><span> Customer Support</span></a></div>
+              <div><i class="fa fa-info-circle" aria-hidden="true"></i><span className="help-section-text" onClick={() => this.setState({ ismodalOpen: true })}> Video Tutorial</span></div>
+              <div><a href="https://api.whatsapp.com/send?phone=918630422423"><i class="fa fa-headphones" aria-hidden="true"></i><span className="help-section-text"> Customer Support</span></a></div>
             </div>
             <p className="welcome-message">Welcome To The Land Of Tastiest Food</p>
             {this.state.ismodalOpen && < CommonModalBox heading="Video Tutorial" onClose={this.commonModalBoxCloseHanlder} />}

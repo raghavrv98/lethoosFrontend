@@ -121,6 +121,15 @@ export class AdminPage extends React.PureComponent {
                 </div>
               </div>
 
+              <div className="row mr-b-30">
+                <div className="col-md-4">
+                  <p className="status-text">Petrol Management</p>
+                </div>
+                <div className="col-md-4">
+                  <button type="button" onClick={() => this.props.history.push(`/petrolDetails`)} className="btn btn-info admin-shop-status-btn">Petrol Details</button>
+                </div>
+              </div>
+
               <div className="row">
 
                 {this.state.shops.length > 0 ?

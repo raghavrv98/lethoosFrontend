@@ -5,26 +5,35 @@ body {
 	background-color: #F5F5F5;
 }
 
-video{
+video {
 	width: 100%;
+	max-height: 660px;
 }
 
-.modal{
+a {
+	text-decoration: none !important;
+}
+
+.modal {
 	overflow: initial !important;
+}
+
+.add-btn {
+	margin-left: 10px;
 }
 
 .loading {
 	position: absolute;
 	height: 60px;
-    left: 50%;
-    top: 50%;
-    width: 50%;
+	left: 50%;
+	top: 50%;
+	width: 50%;
 	font-size: 25px;
 	font-weight: 600;
 	background-color: #F5EBDF;
 	border-radius: 10px;
 	box-shadow: 0 4px 20px 0 rgb(218 220 230 / 60%);
-    transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 	text-align: center;
 }
 
@@ -118,27 +127,27 @@ video{
 ::-webkit-scrollbar {
 	width: 6px;
 	height: 6px;
-  }
-  
-  /* Track */
-  
-  ::-webkit-scrollbar-track {
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
 	background: #f1f1f1;
 	border-radius: 10px !important;
-  }
-  
-  /* Handle */
-  
-  ::-webkit-scrollbar-thumb {
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
 	background: #888;
 	border-radius: 10px !important;
-  }
-  
-  /* Handle on hover */
-  
-  ::-webkit-scrollbar-thumb:hover {
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
 	background: #555;
-  }
+}
 
 html {
 	scroll-behavior: smooth !important;
@@ -148,7 +157,7 @@ html {
 	padding-right: 0px !important;
 }
 
-.m-0{
+.m-0 {
 	margin: 0px !important;
 }
 
@@ -529,39 +538,28 @@ hr {
 	font-size: 25px;
 }
 
-.radio-btn{
-	height: 30px;
-	width: 30px;
-	cursor: pointer;
-}
-
-.account-type-text{
-	font-size: 30px;
-	margin-right: 10px;
-	margin-left: 5px;
-}
-
-.admin-box-outer{
+.admin-box-outer {
 	height: 400px;
 	overflow: auto;
 }
 
-.no-content-box{
-
-}
-
 @media only screen and (max-width: 768px) {
-
-	.help-section{
+	.account-type-text {
+		font-size: 15px;
+		margin-right: 10px;
+		margin-left: 5px;
+	}
+	.help-section {
 		font-size: 15px;
 		color: cornflowerblue;
 		text-align: center;
 	}
-
-	.react-table-outer{
+	.help-section-text {
+		cursor: pointer;
+	}
+	.react-table-outer {
 		padding: 10px;
 	}
-
 	.nav-desktop-view {
 		display: none;
 	}
@@ -705,19 +703,16 @@ hr {
 		font-size: 15px;
 		text-align: center;
 	}
-
 	.success-text {
 		color: green;
 		font-size: 15px;
 		text-align: center;
 	}
-
 	.error-text {
 		color: red;
 		font-size: 15px;
 		text-align: center;
 	}
-
 	.shop-header-name, .shop-header-address, .shop-header-time {
 		font-size: 25px;
 		text-align: center;
@@ -1227,7 +1222,7 @@ hr {
 		border-radius: 5px;
 		background-color: white;
 		padding: 30px;
-		min-height: 500px;
+		min-height: 435px;
 	}
 	.admin-shop-outer {
 		padding: 10px;
@@ -1370,14 +1365,35 @@ hr {
 		top: 50%;
 		left: 50%;
 	}
+
+	.add-btn-css {
+		color: white;
+		background: orange;
+		border: none;
+	}
 }
 
 @media only screen and (min-width: 769px) {
-
-	.react-table-outer{
-		padding: 50px;
+	
+	.add-btn-css {
+		color: white;
+		background: orange;
+		border: none;
+		height: 40px;
+		width: 80px;
+		float: right;
+		margin-right: 50px;
+		font-size: 20px;
 	}
 
+	.account-type-text {
+		font-size: 30px;
+		margin-right: 10px;
+		margin-left: 5px;
+	}
+	.react-table-outer {
+		padding: 50px;
+	}
 	.nav-mob-view {
 		display: none;
 	}
@@ -2064,20 +2080,20 @@ hr {
 	.order-cancel-img {
 		top: 40%;
 	}
-
-	.admin-edit-user-btn{
+	.admin-edit-user-btn {
 		float: right;
 		margin-right: 20px;
 		margin-bottom: 30px;
 	}
-
-	.help-section{
+	.help-section {
 		font-size: 30px;
 		color: cornflowerblue;
 		text-align: center;
 		margin-bottom: 20px;
 	}
-
+	.help-section-text {
+		cursor: pointer;
+	}
 	.shop-closed-tag, .shopDetails-closed-tag {
 		height: 30px;
 		width: 53px;

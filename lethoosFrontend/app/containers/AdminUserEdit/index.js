@@ -76,7 +76,6 @@ export class AdminUserEdit extends React.PureComponent {
     let id = event.target.id
     userDetails[id] = event.target.checked
 
-    console.log('userDetails: ', userDetails);
     this.setState({
       userDetails
     })
@@ -84,7 +83,6 @@ export class AdminUserEdit extends React.PureComponent {
 
   userDetailsUpdateApiHandler = () => {
     var userDetails = cloneDeep(this.state.userDetails)
-    console.log('userDetails:---- ', userDetails);
     let url = window.API_URL + `/customerLogin/${this.props.match.params.id}`;
     axios.patch(url, userDetails)
       .then((res) => {
@@ -174,9 +172,9 @@ export class AdminUserEdit extends React.PureComponent {
                       <div className="form-group">
                         <label className="box-label" htmlFor="inputlg">AccountType</label>
                         <div>
-                          <input type="radio" className="radio-btn" value="admin" checked={this.state.userDetails.accountType === 'admin'} required id="accountType" name="accountType" onChange={this.accountTypeChangeHandler} /><span className="account-type-text">Admin</span>
-                          <input type="radio" className="radio-btn" value="deliveryRider" checked={this.state.userDetails.accountType === 'deliveryRider'} required id="accountType" name="accountType" onChange={this.accountTypeChangeHandler} /><span className="account-type-text">Delivery Rider</span>
-                          <input type="radio" className="radio-btn" value="user" checked={this.state.userDetails.accountType === 'user'} required id="accountType" name="accountType" onChange={this.accountTypeChangeHandler} /><span className="account-type-text">User</span>
+                          <input type="radio" className="radio-btn-size" value="admin" checked={this.state.userDetails.accountType === 'admin'} required id="accountType" name="accountType" onChange={this.accountTypeChangeHandler} /><span className="account-type-text">Admin</span>
+                          <input type="radio" className="radio-btn-size" value="deliveryRider" checked={this.state.userDetails.accountType === 'deliveryRider'} required id="accountType" name="accountType" onChange={this.accountTypeChangeHandler} /><span className="account-type-text">Delivery Rider</span>
+                          <input type="radio" className="radio-btn-size" value="user" checked={this.state.userDetails.accountType === 'user'} required id="accountType" name="accountType" onChange={this.accountTypeChangeHandler} /><span className="account-type-text">User</span>
                         </div>
                       </div>
                       <div className="form-group">
