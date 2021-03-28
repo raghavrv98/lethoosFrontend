@@ -22,6 +22,7 @@ import { cloneDeep } from 'lodash';
 import axios from 'axios';
 import { errorHandler } from "../../utils/customUtils";
 import MessageModal from '../../components/MessageModal';
+import CommonModalBox from '../../components/CommonModalBox';
 
 import firebase from './../../firebase'
 
@@ -36,7 +37,8 @@ export class LoginPage extends React.PureComponent {
       name: "",
       mobileNumber: "",
       password: ""
-    }
+    },
+    ismodalOpen: false
   }
 
   inputChangeHandler = event => {
@@ -131,9 +133,16 @@ export class LoginPage extends React.PureComponent {
   modalCloseHandler = () => {
     setTimeout(() => {
       this.setState({
-        isMessageModal: false
+        isMessageModal: false,
+        ismodalOpen: false
       })
     }, 1000);
+  }
+
+  commonModalBoxCloseHanlder = () => {
+    this.setState({
+      ismodalOpen: false
+    })
   }
 
   changeContentHandler = event => {
@@ -269,7 +278,12 @@ export class LoginPage extends React.PureComponent {
           <img className="loginBackground" src={require('../../assets/images/loginBackground.jpg')} />
           <span className="loginbox">
             <img className="login-box-icon img-responsive" src={require('../../assets/images/logo.png')} />
+            <div className="help-section">
+              <div><i class="fa fa-info-circle" aria-hidden="true"></i><span className="help-section-text" onClick={() => this.setState({ ismodalOpen: true })}> Video Tutorial</span></div>
+              <div><a href="https://api.whatsapp.com/send?phone=918630422423"><i class="fa fa-headphones" aria-hidden="true"></i><span className="help-section-text"> Customer Support</span></a></div>
+            </div>
             <p className="welcome-message">Welcome To The Land Of Tastiest Food</p>
+            {this.state.ismodalOpen && < CommonModalBox heading="Video Tutorial" onClose={this.commonModalBoxCloseHanlder} />}
             <div id="recaptcha-container"></div>
             <label></label>
             {this.state.isDetailsIncorrect && <p className="incorrect-password-text">Incorrect Mobile Number or Password</p>}
