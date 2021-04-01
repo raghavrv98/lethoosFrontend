@@ -50,6 +50,14 @@
       "validity": 1614956292064,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1614725795541,
@@ -58,7 +66,8 @@
   "password": "shruti@1730",
   "__v": 0,
   "paymentMethod": "Cash On Delivery",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "60407333989e264b5b0505a2"
@@ -73,6 +82,14 @@
       "validity": 1615009332261,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1614814145885,
@@ -80,7 +97,8 @@
   "mobileNumber": "9548005376",
   "password": "puneet@2305",
   "__v": 0,
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "60409e7be7859e547f2a35d0"
@@ -279,6 +297,14 @@
       "validity": 1615020412641,
       "redeemAttempt": -2,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1614847090791,
@@ -286,11 +312,9 @@
   "mobileNumber": "8439395179",
   "password": "1234556",
   "__v": 0,
-  "address": "Baldev ganj",
-  "alternateMobileNumber": "8439395179",
-  "area": "kosi10",
   "paymentMethod": "Cash On Delivery",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "6040ad65756ac35580722ee4"
@@ -395,6 +419,14 @@
       "validity": 1615520767095,
       "redeemAttempt": 1,
       "amount": 20
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1614849208955,
@@ -403,7 +435,8 @@
   "password": "#soni@12345",
   "__v": 0,
   "paymentMethod": "Cash On Delivery",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "6040af26756ac35580722ee5"
@@ -418,6 +451,14 @@
       "validity": 1615024678692,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1614849208955,
@@ -425,10 +466,8 @@
   "mobileNumber": "8266860714",
   "password": "anshujain",
   "__v": 0,
-  "address": "Hardevganj Kosi Kalan Mathura",
-  "alternateMobileNumber": "8266860714",
-  "area": "kosi10",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "6040af8b756ac35580722ee7"
@@ -517,6 +556,14 @@
       "validity": 1615024779658,
       "redeemAttempt": -1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1614849208955,
@@ -525,7 +572,8 @@
   "password": "aaa111",
   "__v": 0,
   "paymentMethod": "Cash On Delivery",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "6040b962756ac35580722eed"
@@ -565,6 +613,14 @@
       "validity": 1615027298675,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1614849208955,
@@ -573,7 +629,8 @@
   "password": "lethoos",
   "__v": 0,
   "paymentMethod": "Cash On Delivery",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "6040ba74756ac35580722ef0"
@@ -588,6 +645,14 @@
       "validity": 1615027572845,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1614849208955,
@@ -595,7 +660,8 @@
   "mobileNumber": "7060354573",
   "password": "2604neha",
   "__v": 0,
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "6040c71e756ac35580722ef5"
@@ -704,6 +770,14 @@
       "validity": 1615030814712,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1614849208955,
@@ -711,27 +785,32 @@
   "mobileNumber": "9045191147",
   "password": "3344",
   "__v": 0,
-  "address": "Sarai shahi kosi kalan",
-  "alternateMobileNumber": "9045191147",
-  "area": "kosi10",
   "paymentMethod": "Cash On Delivery",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "6040c7b2756ac35580722ef6"
   },
   "orderHistory": [],
   "notifications": [],
-  "coupon": [],
+  "coupon": [
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
   "date": 1614849208955,
   "name": "Utkarsh Bhojan",
   "mobileNumber": "8899111366",
   "password": "utkarsh88",
   "__v": 0,
-  "address": "New Transport Nagar Bathain Gate Flyover ke Paar 100 meter towards Delhi Kosikalan Mathura 281403",
-  "alternateMobileNumber": "9897457878",
-  "area": "bathenGate20",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "6040d184756ac35580722f01"
@@ -778,6 +857,14 @@
       "validity": 1615033476515,
       "redeemAttempt": 0,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1614849208955,
@@ -786,7 +873,8 @@
   "password": "7060281601",
   "__v": 0,
   "paymentMethod": "Cash On Delivery",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "6040d1ec756ac35580722f03"
@@ -855,6 +943,14 @@
       "validity": 1615033580553,
       "redeemAttempt": -1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1614849208955,
@@ -862,11 +958,9 @@
   "mobileNumber": "8077408602",
   "password": "8077408602",
   "__v": 0,
-  "address": "Jindal gate no 2, nandgoan road, Kosi",
-  "alternateMobileNumber": "8077408602",
-  "area": "jindal20",
   "paymentMethod": "Online",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "6040d4a4756ac35580722f08"
@@ -881,6 +975,14 @@
       "validity": 1615034278504,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1614849208955,
@@ -888,7 +990,8 @@
   "mobileNumber": "8273757328",
   "password": "Sjsm1010",
   "__v": 0,
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "6040fcde756ac35580722f1c"
@@ -903,6 +1006,14 @@
       "validity": 1615044575693,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1614849208955,
@@ -910,7 +1021,8 @@
   "mobileNumber": "8937879361",
   "password": "Nikhil",
   "__v": 0,
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "6040feca756ac35580722f22"
@@ -925,6 +1037,14 @@
       "validity": 1615045067001,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1614849208955,
@@ -932,7 +1052,8 @@
   "mobileNumber": "9799061161",
   "password": "Vjain979906@",
   "__v": 0,
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "60410c28756ac35580722f28"
@@ -947,6 +1068,14 @@
       "validity": 1615048488968,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1614849208955,
@@ -954,7 +1083,8 @@
   "mobileNumber": "7895542503",
   "password": "sweetie",
   "__v": 0,
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "60417d26756ac35580722f31"
@@ -969,6 +1099,14 @@
       "validity": 1615077414471,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1614849208955,
@@ -976,23 +1114,31 @@
   "mobileNumber": "9917613452",
   "password": "K@309265",
   "__v": 0,
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "6041a2926f137663479174cd"
   },
   "orderHistory": [],
   "notifications": [],
-  "coupon": [],
+  "coupon": [
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
   "date": 1614910890326,
   "name": "Sonu",
   "mobileNumber": "8279440228",
   "password": "9818628401",
   "__v": 0,
-  "address": "Bharat puriya petch , near shishu mandir , kosi kalan ",
-  "alternateMobileNumber": "8279440228",
-  "area": "kosi10",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "6041e43c6f137663479174d4"
@@ -1004,8 +1150,32 @@
       "name": "WEL10",
       "description": "10 rupees off",
       "offeredBy": "Le Thoos",
-      "validity": 1616972953604,
-      "redeemAttempt": 0,
+      "validity": 1619992953604,
+      "redeemAttempt": 9,
+      "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618600967468,
+      "redeemAttempt": 1,
+      "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601066582,
+      "redeemAttempt": 10,
+      "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
       "amount": 10
     }
   ],
@@ -1016,8 +1186,7 @@
   "__v": 0,
   "paymentMethod": "Cash On Delivery",
   "accountType": "admin",
-  "address": "Baldev Ganj",
-  "alternateMobileNumber": "8630422423"
+  "status": true
 },{
   "_id": {
     "$oid": "60420b59553770679fb04f6a"
@@ -1064,6 +1233,14 @@
       "validity": 1615113818103,
       "redeemAttempt": 0,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1614931217210,
@@ -1072,7 +1249,8 @@
   "password": "8899632230",
   "__v": 0,
   "paymentMethod": "Cash On Delivery",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "60421767553770679fb04f6f"
@@ -1103,14 +1281,24 @@
     }
   ],
   "notifications": [],
-  "coupon": [],
+  "coupon": [
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
   "date": 1614931217210,
   "name": "Tarun sharma",
   "mobileNumber": "8475991615",
   "password": "123456",
   "__v": 0,
   "paymentMethod": "Cash On Delivery",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "60421acd553770679fb04f73"
@@ -1149,6 +1337,14 @@
       "validity": 1615117773257,
       "redeemAttempt": 0,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1614931217210,
@@ -1156,11 +1352,9 @@
   "mobileNumber": "8077982617",
   "password": "deeshi132",
   "__v": 0,
-  "address": "501/24\nHardevganj",
-  "alternateMobileNumber": "8077982617",
-  "area": "kosi10",
   "paymentMethod": "Cash On Delivery",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "60423974553770679fb04f78"
@@ -1175,6 +1369,14 @@
       "validity": 1615125620818,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1614931217210,
@@ -1182,7 +1384,8 @@
   "mobileNumber": "9412827316",
   "password": "9412827316",
   "__v": 0,
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "6042519c553770679fb04f7a"
@@ -1197,6 +1400,14 @@
       "validity": 1615131804734,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1614931217210,
@@ -1204,7 +1415,8 @@
   "mobileNumber": "9873366957",
   "password": "12345",
   "__v": 0,
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "60433b522461786eb0841ffe"
@@ -1219,6 +1431,14 @@
       "validity": 1615191634779,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1614975673074,
@@ -1226,7 +1446,8 @@
   "mobileNumber": "8126089501",
   "password": "mayank#123",
   "__v": 0,
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "60433e482461786eb0842001"
@@ -1272,6 +1493,14 @@
       "validity": 1615192392463,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1614975673074,
@@ -1280,7 +1509,8 @@
   "password": "vanshi@2002",
   "__v": 0,
   "paymentMethod": "Cash On Delivery",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "604342a62461786eb0842006"
@@ -1333,6 +1563,14 @@
       "validity": 1615193510532,
       "redeemAttempt": 0,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1614975673074,
@@ -1341,7 +1579,8 @@
   "password": "Kirti_0202",
   "__v": 0,
   "paymentMethod": "Cash On Delivery",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "60434ee82461786eb0842029"
@@ -1387,6 +1626,14 @@
       "validity": 1615196648796,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1614975673074,
@@ -1395,7 +1642,8 @@
   "password": "viratkohli100",
   "__v": 0,
   "paymentMethod": "Cash On Delivery",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "60437cd82461786eb084202b"
@@ -1440,14 +1688,24 @@
     }
   ],
   "notifications": [],
-  "coupon": [],
+  "coupon": [
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
   "date": 1614975673074,
   "name": "Vishakha Agrawal",
   "mobileNumber": "6398380252",
   "password": "070898",
   "__v": 0,
   "paymentMethod": "Cash On Delivery",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "60437e0b2461786eb084202f"
@@ -1462,6 +1720,14 @@
       "validity": 1615208715923,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1614975673074,
@@ -1469,7 +1735,8 @@
   "mobileNumber": "7536889216",
   "password": "7536889216",
   "__v": 0,
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "6043893d2461786eb0842038"
@@ -1537,14 +1804,24 @@
     }
   ],
   "notifications": [],
-  "coupon": [],
+  "coupon": [
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
   "date": 1614975673074,
   "name": "Kapeesh Garg",
   "mobileNumber": "6398866066",
   "password": "12345",
   "__v": 0,
   "paymentMethod": "Online",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "604389842461786eb0842039"
@@ -1647,6 +1924,44 @@
       "orderAddress": "1145 Arya Nagar Gali Number 2\nNear Parth Dental Care (Kosi Kalan) 281403 (Uttar Pradesh)",
       "orderAlternateMobileNumber": "9027907563",
       "isOrderCancel": false
+    },
+    {
+      "shopName": "Friends Fast Food - FFF",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "8791681511",
+      "shopImage": "https://cdn1.vectorstock.com/i/1000x1000/01/25/cartoon-fast-food-restaurant-small-shop-business-vector-18620125.jpg",
+      "orders": [
+        {
+          "itemNo": 25,
+          "item": "Manchurian Dry",
+          "halfQuantity": 1,
+          "price": "40",
+          "isHalfSelected": true
+        },
+        {
+          "itemNo": 19,
+          "item": "Spring Roll",
+          "halfQuantity": 1,
+          "price": "20",
+          "isHalfSelected": true
+        },
+        {
+          "itemNo": 6,
+          "item": "Veg Burger",
+          "quantity": 2,
+          "price": "20",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "",
+      "total": 100,
+      "area": "kosi10",
+      "orderNumber": 4,
+      "totalDiscount": 0,
+      "orderDate": 1617273766281,
+      "orderAddress": "1145 Arya Nagar Gali Number 2\nNear Parth Dental Care (Kosi Kalan) 281403 (Uttar Pradesh)",
+      "orderAlternateMobileNumber": "9027907563",
+      "isOrderCancel": false
     }
   ],
   "notifications": [],
@@ -1658,6 +1973,14 @@
       "validity": 1615211652793,
       "redeemAttempt": 0,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1614975673074,
@@ -1665,11 +1988,9 @@
   "mobileNumber": "9027907563",
   "password": "ABCD@0123",
   "__v": 0,
-  "address": "1145 Arya Nagar Gali Number 2\nNear Parth Dental Care (Kosi Kalan) 281403 (Uttar Pradesh)",
-  "alternateMobileNumber": "9027907563",
-  "area": "kosi10",
   "paymentMethod": "Cash On Delivery",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "604390a62461786eb0842043"
@@ -1751,6 +2072,14 @@
       "validity": 1615213478937,
       "redeemAttempt": 0,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1614975673074,
@@ -1759,7 +2088,8 @@
   "password": "Superkosi",
   "__v": 0,
   "paymentMethod": "Cash On Delivery",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "6043bf942461786eb0842051"
@@ -1774,6 +2104,14 @@
       "validity": 1615225493254,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1614975673074,
@@ -1781,7 +2119,8 @@
   "mobileNumber": "9870900050",
   "password": "food1234",
   "__v": 0,
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "60447aab2461786eb0842056"
@@ -1845,6 +2184,14 @@
       "validity": 1615273387862,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1614975673074,
@@ -1853,7 +2200,8 @@
   "password": "8755434204",
   "__v": 0,
   "paymentMethod": "Cash On Delivery",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "6044da4f2461786eb0842092"
@@ -1868,6 +2216,14 @@
       "validity": 1615297871799,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1614975673074,
@@ -1875,7 +2231,8 @@
   "mobileNumber": "9917178886",
   "password": "bhramab",
   "__v": 0,
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "6044f08f2461786eb08420a5"
@@ -1930,6 +2287,14 @@
       "validity": 1615303567885,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1614975673074,
@@ -1938,7 +2303,8 @@
   "password": "8923023726",
   "__v": 0,
   "paymentMethod": "Cash On Delivery",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "6045c52f2461786eb08420af"
@@ -2017,6 +2383,14 @@
       "validity": 1615520887114,
       "redeemAttempt": 0,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1614975673074,
@@ -2025,10 +2399,8 @@
   "password": "AGGpulkit1!",
   "__v": 0,
   "paymentMethod": "Cash On Delivery",
-  "address": "S/o Kailash Basaiya, H.No. 4030A, Lalaram Pech, Near Soap Factory, Kosi Kalan (Mathura)",
-  "alternateMobileNumber": "7669153043",
-  "area": "kosi10",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "60462e922461786eb08420e4"
@@ -2128,14 +2500,24 @@
     }
   ],
   "notifications": [],
-  "coupon": [],
+  "coupon": [
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
   "date": 1614975673074,
   "name": "Simarjeet singh",
   "mobileNumber": "8439673072",
   "password": "simarjeet1109",
   "__v": 0,
   "paymentMethod": "Cash On Delivery",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "604717d02461786eb08420f4"
@@ -2174,6 +2556,14 @@
       "validity": 1615444689195,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1614975673074,
@@ -2182,7 +2572,8 @@
   "password": "bhanja",
   "__v": 0,
   "paymentMethod": "Cash On Delivery",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "60475bd82461786eb084210a"
@@ -2197,6 +2588,14 @@
       "validity": 1615462105356,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1614975673074,
@@ -2204,7 +2603,8 @@
   "mobileNumber": "8445435888",
   "password": "Merceph@0509",
   "__v": 0,
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "604772002461786eb084210d"
@@ -2236,14 +2636,24 @@
     }
   ],
   "notifications": [],
-  "coupon": [],
+  "coupon": [
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
   "date": 1614975673074,
   "name": "Ruchi",
   "mobileNumber": "8439359300",
   "password": "ruchi123",
   "__v": 0,
   "paymentMethod": "Cash On Delivery",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "6048c5e884c4e62e458f83fd"
@@ -2258,6 +2668,14 @@
       "validity": 1615554792974,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1615348664798,
@@ -2265,7 +2683,8 @@
   "mobileNumber": "9548161819",
   "password": "shivanshu",
   "__v": 0,
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "6048e52684c4e62e458f8404"
@@ -2280,6 +2699,14 @@
       "validity": 1615562790672,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1615348664798,
@@ -2287,7 +2714,8 @@
   "mobileNumber": "9897413111",
   "password": "Ricky173314",
   "__v": 0,
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "604a44d384c4e62e458f8416"
@@ -2302,6 +2730,14 @@
       "validity": 1615652819740,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1615348664798,
@@ -2309,7 +2745,8 @@
   "mobileNumber": "7895282245",
   "password": "8881212",
   "__v": 0,
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "604c95ca84c4e62e458f8431"
@@ -2433,6 +2870,14 @@
       "validity": 1615804618560,
       "redeemAttempt": 0,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1615348664798,
@@ -2440,11 +2885,9 @@
   "mobileNumber": "6398152933",
   "password": "1302shalini",
   "__v": 0,
-  "address": "4657, Gopal Nagar kosi kalan",
-  "alternateMobileNumber": "6398152933",
-  "area": "gopalNagar10",
   "paymentMethod": "Cash On Delivery",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "604ca6f484c4e62e458f8435"
@@ -2459,6 +2902,14 @@
       "validity": 1615809012939,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1615348664798,
@@ -2466,7 +2917,8 @@
   "mobileNumber": "8755533453",
   "password": "jain",
   "__v": 0,
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "604ca93a84c4e62e458f8440"
@@ -2481,6 +2933,14 @@
       "validity": 1615809595078,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1615348664798,
@@ -2488,9 +2948,8 @@
   "mobileNumber": "7351460511",
   "password": "MAYA#123",
   "__v": 0,
-  "address": "House no.552 maniram vas vislokar gali kosi kalan mathura",
-  "alternateMobileNumber": "7351460511",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "604cb37a84c4e62e458f844c"
@@ -2557,17 +3016,52 @@
       "orderAddress": "Lala ram petch, ghantaghar\n",
       "orderAlternateMobileNumber": "8077109419",
       "isOrderCancel": false
+    },
+    {
+      "shopName": "Jain Pizza & Bakery",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "9870900050",
+      "shopImage": "https://p7.hiclipart.com/preview/812/527/724/pizza-fast-food-italian-cuisine-illustration-cartoon-casual-pizza-physical-shop-png.jpg",
+      "orders": [
+        {
+          "itemNo": 33,
+          "item": "Veg Momos",
+          "quantity": 2,
+          "price": "50",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "",
+      "total": 100,
+      "area": "lalaRamMarg10",
+      "otherSpecifications": "",
+      "orderNumber": 3,
+      "totalDiscount": 0,
+      "orderDate": 1617272735640,
+      "orderAddress": "Lala ram petch near soap factory  kosi kalan",
+      "orderAlternateMobileNumber": "8077109419",
+      "isOrderCancel": false
     }
   ],
   "notifications": [],
-  "coupon": [],
+  "coupon": [
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
   "date": 1615348664798,
   "name": "Mohit Agrawal",
   "mobileNumber": "8077109419",
   "password": "mohit0403",
   "__v": 0,
   "paymentMethod": "Cash On Delivery",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "604cbd4f84c4e62e458f8451"
@@ -2606,6 +3100,14 @@
       "validity": 1615814736000,
       "redeemAttempt": 0,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1615348664798,
@@ -2614,7 +3116,8 @@
   "password": "Aryan@347",
   "__v": 0,
   "paymentMethod": "Cash On Delivery",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "604cbf7f84c4e62e458f8458"
@@ -2699,6 +3202,14 @@
       "validity": 1615815295649,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1615348664798,
@@ -2707,7 +3218,8 @@
   "password": "1234",
   "__v": 0,
   "paymentMethod": "Cash On Delivery",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "604d78a884c4e62e458f847d"
@@ -2753,6 +3265,14 @@
       "validity": 1615862697105,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1615348664798,
@@ -2761,7 +3281,8 @@
   "password": "Kalra",
   "__v": 0,
   "paymentMethod": "Cash On Delivery",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "604d899284c4e62e458f847e"
@@ -2776,6 +3297,14 @@
       "validity": 1615867026363,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1615348664798,
@@ -2783,7 +3312,8 @@
   "mobileNumber": "8279907301",
   "password": "ishugarg",
   "__v": 0,
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "604dbba5f4e890791c84f5bb"
@@ -2798,6 +3328,14 @@
       "validity": 1615879845832,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1615703145844,
@@ -2805,7 +3343,8 @@
   "mobileNumber": "8171046484",
   "password": "ISHU1234",
   "__v": 0,
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "604de439f4e890791c84f5ca"
@@ -2845,6 +3384,14 @@
       "validity": 1615890233709,
       "redeemAttempt": 0,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1615703145844,
@@ -2853,7 +3400,8 @@
   "password": "akku@123",
   "__v": 0,
   "paymentMethod": "Cash On Delivery",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "604e1023f4e890791c84f5d9"
@@ -2884,14 +3432,24 @@
     }
   ],
   "notifications": [],
-  "coupon": [],
+  "coupon": [
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
   "date": 1615703145844,
   "name": "Govind",
   "mobileNumber": "9258402689",
   "password": "999780e64o",
   "__v": 0,
   "paymentMethod": "Cash On Delivery",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "604e1b9df4e890791c84f5e5"
@@ -2906,6 +3464,14 @@
       "validity": 1615904414224,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1615703145844,
@@ -2913,7 +3479,8 @@
   "mobileNumber": "9045479433",
   "password": "brijesh888",
   "__v": 0,
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "604f4c8df4e890791c84f5fa"
@@ -2952,6 +3519,14 @@
       "validity": 1615982477525,
       "redeemAttempt": 0,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1615703145844,
@@ -2960,7 +3535,8 @@
   "password": "akku@123",
   "__v": 0,
   "paymentMethod": "Cash On Delivery",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "604f4df0f4e890791c84f600"
@@ -2999,6 +3575,14 @@
       "validity": 1615982832836,
       "redeemAttempt": 0,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1615703145844,
@@ -3007,7 +3591,8 @@
   "password": "akku@123",
   "__v": 0,
   "paymentMethod": "Cash On Delivery",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "60509a99f71bdb19a1c27d51"
@@ -3047,14 +3632,24 @@
     }
   ],
   "notifications": [],
-  "coupon": [],
+  "coupon": [
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
   "date": 1615873822544,
   "name": "Radhika",
   "mobileNumber": "7060362258",
   "password": "radhika",
   "__v": 0,
   "paymentMethod": "Cash On Delivery",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "6050bd64f71bdb19a1c27d6b"
@@ -3069,6 +3664,14 @@
       "validity": 1616076901107,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1615873822544,
@@ -3076,7 +3679,8 @@
   "mobileNumber": "7417725527",
   "password": "ankita@1234",
   "__v": 0,
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "6051b006f71bdb19a1c27d81"
@@ -3116,6 +3720,14 @@
       "validity": 1616139014492,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1615873822544,
@@ -3124,7 +3736,8 @@
   "password": "kISHAN@27",
   "__v": 0,
   "paymentMethod": "Online",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "6051b34ef71bdb19a1c27d83"
@@ -3164,6 +3777,14 @@
       "validity": 1616139854390,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1615873822544,
@@ -3171,7 +3792,8 @@
   "mobileNumber": "8791220920",
   "password": "12345",
   "__v": 0,
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "6051de6ef71bdb19a1c27d97"
@@ -3232,6 +3854,14 @@
       "validity": 1616150895030,
       "redeemAttempt": 0,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1615873822544,
@@ -3240,7 +3870,8 @@
   "password": "098765",
   "__v": 0,
   "paymentMethod": "Cash On Delivery",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "605318e2f71bdb19a1c27dba"
@@ -3294,6 +3925,14 @@
       "validity": 1616231395272,
       "redeemAttempt": 0,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1615873822544,
@@ -3302,7 +3941,8 @@
   "password": "7017602961",
   "__v": 0,
   "paymentMethod": "Online",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "6053425af71bdb19a1c27dc3"
@@ -3317,6 +3957,14 @@
       "validity": 1616242010388,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1615873822544,
@@ -3324,7 +3972,8 @@
   "mobileNumber": "9990064500",
   "password": "deepak2376",
   "__v": 0,
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "605342adf71bdb19a1c27dc4"
@@ -3390,6 +4039,14 @@
       "validity": 1616242094187,
       "redeemAttempt": 0,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1615873822544,
@@ -3398,10 +4055,8 @@
   "password": "weeknd137e",
   "__v": 0,
   "paymentMethod": "Online",
-  "address": "Goyal Hospital pe de jaa bhai",
-  "alternateMobileNumber": "8923206187",
-  "area": "aryaNagar10",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "60535c8ff71bdb19a1c27dcf"
@@ -3474,6 +4129,14 @@
       "validity": 1616248719867,
       "redeemAttempt": 0,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1615873822544,
@@ -3482,7 +4145,8 @@
   "password": "2000",
   "__v": 0,
   "paymentMethod": "Cash On Delivery",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "6054bd77f71bdb19a1c27df3"
@@ -3497,6 +4161,14 @@
       "validity": 1616339063317,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1615873822544,
@@ -3504,7 +4176,8 @@
   "mobileNumber": "8953288343",
   "password": "akku@123",
   "__v": 0,
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "6055f5f6f71bdb19a1c27e05"
@@ -3519,6 +4192,14 @@
       "validity": 1616419063172,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1615873822544,
@@ -3526,7 +4207,8 @@
   "mobileNumber": "9997808403",
   "password": "iamhimanshi",
   "__v": 0,
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "6055f6eef71bdb19a1c27e06"
@@ -3603,14 +4285,24 @@
     }
   ],
   "notifications": [],
-  "coupon": [],
+  "coupon": [
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
   "date": 1615873822544,
   "name": "Rajni",
   "mobileNumber": "9149343437",
   "password": "rajnijn123",
   "__v": 0,
   "paymentMethod": "Cash On Delivery",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "6056a701f71bdb19a1c27e13"
@@ -3625,6 +4317,14 @@
       "validity": 1616464385997,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1615873822544,
@@ -3632,7 +4332,8 @@
   "mobileNumber": "8979009991",
   "password": "25198yash",
   "__v": 0,
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "6056ffa9f71bdb19a1c27e1d"
@@ -3686,6 +4387,14 @@
       "validity": 1616487081583,
       "redeemAttempt": 0,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1615873822544,
@@ -3694,10 +4403,8 @@
   "password": "piyush9084",
   "__v": 0,
   "paymentMethod": "Cash On Delivery",
-  "address": "Mandir ke samna life line hospital arya nagar kosi kalan ",
-  "alternateMobileNumber": "9084347719",
-  "area": "aryaNagar10",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "60572e6af71bdb19a1c27e25"
@@ -3712,6 +4419,14 @@
       "validity": 1616499050711,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1615873822544,
@@ -3719,7 +4434,8 @@
   "mobileNumber": "7417044434",
   "password": "mikusingh",
   "__v": 0,
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "60573081f71bdb19a1c27e2b"
@@ -3734,6 +4450,14 @@
       "validity": 1616499586027,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1615873822544,
@@ -3741,7 +4465,8 @@
   "mobileNumber": "9149357809",
   "password": "1234",
   "__v": 0,
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "605736ebf71bdb19a1c27e2c"
@@ -3802,6 +4527,14 @@
       "validity": 1616501227884,
       "redeemAttempt": 0,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1615873822544,
@@ -3810,7 +4543,8 @@
   "password": "9997882476",
   "__v": 0,
   "paymentMethod": "Online",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "60573e8ef71bdb19a1c27e33"
@@ -3843,14 +4577,24 @@
     }
   ],
   "notifications": [],
-  "coupon": [],
+  "coupon": [
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
   "date": 1615873822544,
   "name": "Priyam Bansal",
   "mobileNumber": "7895812802",
   "password": "Hello@12345",
   "__v": 0,
   "paymentMethod": "Cash On Delivery",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "60574c50f71bdb19a1c27e3e"
@@ -3890,14 +4634,24 @@
     }
   ],
   "notifications": [],
-  "coupon": [],
+  "coupon": [
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
   "date": 1615873822544,
   "name": "Simar",
   "mobileNumber": "9045555643",
   "password": "simarjeet",
   "__v": 0,
   "paymentMethod": "Cash On Delivery",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "605753b7f71bdb19a1c27e43"
@@ -3937,6 +4691,14 @@
       "validity": 1616508599849,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1615873822544,
@@ -3945,7 +4707,8 @@
   "password": "VIvek123@",
   "__v": 0,
   "paymentMethod": "Cash On Delivery",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "6057555df71bdb19a1c27e44"
@@ -3960,6 +4723,14 @@
       "validity": 1616509022176,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1615873822544,
@@ -3967,7 +4738,8 @@
   "mobileNumber": "9045260206",
   "password": "12345",
   "__v": 0,
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "6058978ef71bdb19a1c27e61"
@@ -4021,6 +4793,14 @@
       "validity": 1616591502545,
       "redeemAttempt": 0,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1615873822544,
@@ -4029,7 +4809,8 @@
   "password": "123456",
   "__v": 0,
   "paymentMethod": "Cash On Delivery",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "6058a9a7f71bdb19a1c27e77"
@@ -4069,6 +4850,14 @@
       "validity": 1616596136255,
       "redeemAttempt": 0,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1615873822544,
@@ -4077,7 +4866,8 @@
   "password": "kkkk1111",
   "__v": 0,
   "paymentMethod": "Online",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "6059bce9f71bdb19a1c27e8f"
@@ -4148,14 +4938,24 @@
     }
   ],
   "notifications": [],
-  "coupon": [],
+  "coupon": [
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
   "date": 1615873822544,
   "name": "Kushagra bansal",
   "mobileNumber": "7017834233",
   "password": "opbansal",
   "__v": 0,
   "paymentMethod": "Cash On Delivery",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "605a1e18f71bdb19a1c27ea9"
@@ -4170,6 +4970,14 @@
       "validity": 1616691480851,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1615873822544,
@@ -4177,7 +4985,8 @@
   "mobileNumber": "7060703004",
   "password": "adityayushi",
   "__v": 0,
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "605b4f5ce1e8d5226a7b6ff9"
@@ -4192,6 +5001,14 @@
       "validity": 1616769628896,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1616530303756,
@@ -4199,7 +5016,8 @@
   "mobileNumber": "7818808482",
   "password": "17varun",
   "__v": 0,
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "605b528be1e8d5226a7b6ffc"
@@ -4232,14 +5050,24 @@
     }
   ],
   "notifications": [],
-  "coupon": [],
+  "coupon": [
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
   "date": 1616530303756,
   "name": "Deeksha Agrawal",
   "mobileNumber": "9897153405",
   "password": "abcd",
   "__v": 0,
   "paymentMethod": "Cash On Delivery",
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "605b5e69e1e8d5226a7b7000"
@@ -4254,6 +5082,14 @@
       "validity": 1616773481661,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1616530303756,
@@ -4261,7 +5097,8 @@
   "mobileNumber": "8433016755",
   "password": "vaibhavdon",
   "__v": 0,
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "605c2e22e1e8d5226a7b700e"
@@ -4276,6 +5113,14 @@
       "validity": 1616826658568,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
   "date": 1616530303756,
@@ -4283,7 +5128,8 @@
   "mobileNumber": "9716601512",
   "password": "1234567",
   "__v": 0,
-  "accountType": "user"
+  "accountType": "user",
+  "status": true
 },{
   "_id": {
     "$oid": "605d6ae9d6cdbf6bc074ade9"
@@ -4291,14 +5137,22 @@
   "accountType": "user",
   "orderHistory": [],
   "notifications": [],
-  "coupon": [],
+  "coupon": [
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "status": true,
   "date": 1616708850131,
   "name": "Mithlesh sen ",
   "mobileNumber": "7668857227",
   "password": "12345",
-  "__v": 0,
-  "address": "Kulla mal petrol pamp ke samne  prtap nagar kosi Kalan mathura 281403",
-  "alternateMobileNumber": "7668857227"
+  "__v": 0
 },{
   "_id": {
     "$oid": "605ddf66d6cdbf6bc074ae01"
@@ -4338,7 +5192,17 @@
     }
   ],
   "notifications": [],
-  "coupon": [],
+  "coupon": [
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "status": true,
   "date": 1616708850131,
   "name": "Unnati agrawal",
   "mobileNumber": "7217499355",
@@ -4359,8 +5223,17 @@
       "validity": 1616942875282,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
+  "status": true,
   "date": 1616708850131,
   "name": "Poonam",
   "mobileNumber": "8279370514",
@@ -4381,11 +5254,1060 @@
       "validity": 1616948023502,
       "redeemAttempt": 1,
       "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
     }
   ],
+  "status": true,
   "date": 1616708850131,
   "name": "Vishal sharma",
   "mobileNumber": "8864861735",
   "password": "sharmavidhal",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "605efdef465a420a2a7ee824"
+  },
+  "accountType": "user",
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1617010927547,
+      "redeemAttempt": 1,
+      "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "status": true,
+  "date": 1616834735324,
+  "name": "Aman",
+  "mobileNumber": "9927082688",
+  "password": "ajamanjain1994",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "605f2dd1465a420a2a7ee82b"
+  },
+  "accountType": "user",
+  "orderHistory": [
+    {
+      "shopName": "Jain Pizza & Bakery",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "9870900050",
+      "shopImage": "https://p7.hiclipart.com/preview/812/527/724/pizza-fast-food-italian-cuisine-illustration-cartoon-casual-pizza-physical-shop-png.jpg",
+      "orders": [
+        {
+          "itemNo": 29,
+          "item": "Paneer & Sweet Corn",
+          "quantity": 2,
+          "price": "35",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "OFFER10",
+      "total": 70,
+      "area": "other20",
+      "orderNumber": 1,
+      "totalDiscount": 10,
+      "orderDate": 1616850518389,
+      "orderAddress": "Bhagwati telecom near na nd an dhaba",
+      "orderAlternateMobileNumber": "9058110130",
+      "isOrderCancel": false
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1617023185429,
+      "redeemAttempt": 0,
+      "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "status": true,
+  "date": 1616834735324,
+  "name": "Vinod",
+  "mobileNumber": "9058110130",
+  "password": "kkkk1111",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60606c4e00876025c880dd98"
+  },
+  "accountType": "user",
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1617104718260,
+      "redeemAttempt": 1,
+      "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "status": true,
+  "date": 1616926600458,
+  "name": "Varun Pratap Singh",
+  "mobileNumber": "8475038511",
+  "password": "17vps",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60606d2a00876025c880dd99"
+  },
+  "accountType": "user",
+  "orderHistory": [
+    {
+      "shopName": "Maa Bhagwati Pizza and Cheese Patties Shop",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "7579313372",
+      "shopImage": "https://cdn1.iconfinder.com/data/icons/supermarket-cafe-and-stores/50/47-512.png",
+      "orders": [
+        {
+          "itemNo": 1,
+          "item": "Veg Pizza",
+          "quantity": 1,
+          "price": "100",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 16,
+          "item": "Sweet Corn Patties",
+          "quantity": 2,
+          "price": "30",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "OFFER10",
+      "total": 160,
+      "area": "other20",
+      "orderNumber": 1,
+      "totalDiscount": 10,
+      "orderDate": 1616932295596,
+      "orderAddress": "Gopal bagh",
+      "orderAlternateMobileNumber": "9557571013",
+      "isOrderCancel": false
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1617104938969,
+      "redeemAttempt": 0,
+      "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "status": true,
+  "date": 1616926600458,
+  "name": "Hemendra",
+  "mobileNumber": "9557571013",
+  "password": "love@123",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6060779d00876025c880ddad"
+  },
+  "accountType": "user",
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1617107613635,
+      "redeemAttempt": 1,
+      "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "status": true,
+  "date": 1616926600458,
+  "name": "Laxman",
+  "mobileNumber": "9540330623",
+  "password": "12345",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60607e8700876025c880ddbf"
+  },
+  "accountType": "user",
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1617109384206,
+      "redeemAttempt": 1,
+      "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "status": true,
+  "date": 1616926600458,
+  "name": "Rajni",
+  "mobileNumber": "8474945904",
+  "password": "rajnijain123",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "606095a500876025c880ddd3"
+  },
+  "accountType": "user",
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1617115301436,
+      "redeemAttempt": 1,
+      "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "status": true,
+  "date": 1616926600458,
+  "name": "Vedant",
+  "mobileNumber": "8077620033",
+  "password": "12345",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6060b8fd00876025c880ddd9"
+  },
+  "accountType": "user",
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1617124350290,
+      "redeemAttempt": 1,
+      "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "status": true,
+  "date": 1616926600458,
+  "name": "Anil Agrawal",
+  "mobileNumber": "9319359349",
+  "password": "1967",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6061bb4400876025c880ddf2"
+  },
+  "accountType": "user",
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1617190468955,
+      "redeemAttempt": 1,
+      "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "status": true,
+  "date": 1616926600458,
+  "name": "Ankit",
+  "mobileNumber": "8287555565",
+  "password": "12345",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6061de3800876025c880ddfe"
+  },
+  "accountType": "user",
+  "orderHistory": [
+    {
+      "shopName": "Food Fusion",
+      "shopAddress": "It's a Virtual Shop",
+      "shopMobileNumber": "8192095423",
+      "shopImage": "https://previews.123rf.com/images/vectorshots/vectorshots1308/vectorshots130800001/21233529-food-shop-cartoon-business-vector-character.jpg",
+      "orders": [
+        {
+          "itemNo": 4,
+          "item": "Burgerizza",
+          "quantity": 1,
+          "price": "50",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 12,
+          "item": "Fried Rice Manchurian",
+          "quantity": 1,
+          "price": "60",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 13,
+          "item": "Veg Momos Noodles",
+          "quantity": 1,
+          "price": "50",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "OFFER10",
+      "total": 160,
+      "area": "other20",
+      "orderNumber": 1,
+      "totalDiscount": 10,
+      "orderDate": 1617026886356,
+      "orderAddress": "Varun dental clinic jonty wali gali",
+      "orderAlternateMobileNumber": "7351076000",
+      "isOrderCancel": false
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1617199433017,
+      "redeemAttempt": 0,
+      "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "status": true,
+  "date": 1616926600458,
+  "name": "Payal",
+  "mobileNumber": "8979596917",
+  "password": "payal123@",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6062bd3c00876025c880de13"
+  },
+  "accountType": "user",
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1617256508579,
+      "redeemAttempt": 1,
+      "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "status": true,
+  "date": 1616926600458,
+  "name": "Priyam",
+  "mobileNumber": "9639868204",
+  "password": "Hello@12345",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6062f02300876025c880de1a"
+  },
+  "accountType": "user",
+  "orderHistory": [
+    {
+      "shopName": "Friends Fast Food - FFF",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "8791681511",
+      "shopImage": "https://cdn1.vectorstock.com/i/1000x1000/01/25/cartoon-fast-food-restaurant-small-shop-business-vector-18620125.jpg",
+      "orders": [
+        {
+          "itemNo": 1,
+          "item": "Steam Momos",
+          "quantity": 2,
+          "price": "30",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 18,
+          "item": "Veg Roll",
+          "quantity": 2,
+          "price": "20",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 20,
+          "item": "Kathi Roll",
+          "quantity": 2,
+          "price": "30",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 26,
+          "item": "Manchurian Gravy",
+          "halfQuantity": 1,
+          "price": "40",
+          "isHalfSelected": true
+        },
+        {
+          "itemNo": 10,
+          "item": "Veg Chowmein",
+          "quantity": 1,
+          "price": "30",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "OFFER10",
+      "total": 230,
+      "area": "gopalNagar10",
+      "orderNumber": 1,
+      "totalDiscount": 10,
+      "orderDate": 1617104273465,
+      "orderAddress": "4657,gopal nagar\nkosi kalan",
+      "orderAlternateMobileNumber": "9548161819",
+      "isOrderCancel": false
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1617269540050,
+      "redeemAttempt": 0,
+      "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "status": true,
+  "date": 1616926600458,
+  "name": "priya agrawal",
+  "mobileNumber": "7011845540",
+  "password": "Priya@500",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6064358f00876025c880de80"
+  },
+  "accountType": "user",
+  "orderHistory": [
+    {
+      "shopName": "Jain Pizza & Bakery",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "9870900050",
+      "shopImage": "https://p7.hiclipart.com/preview/812/527/724/pizza-fast-food-italian-cuisine-illustration-cartoon-casual-pizza-physical-shop-png.jpg",
+      "orders": [
+        {
+          "itemNo": 29,
+          "item": "Paneer & Sweet Corn",
+          "quantity": 5,
+          "price": "35",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "OFFER10",
+      "total": 175,
+      "area": "punjabiColony10",
+      "otherSpecifications": "1 Bina pyaz",
+      "orderNumber": 1,
+      "totalDiscount": 10,
+      "orderDate": 1617180189768,
+      "orderAddress": "Bhagwati telecon near Nandan dhaba",
+      "orderAlternateMobileNumber": "7668550756",
+      "isOrderCancel": false
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1617352848058,
+      "redeemAttempt": 0,
+      "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "status": true,
+  "date": 1616926600458,
+  "name": "Paras",
+  "mobileNumber": "7668550756",
+  "password": "kkkk@1111",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6064411800876025c880de9a"
+  },
+  "accountType": "user",
+  "orderHistory": [
+    {
+      "shopName": "Maa Bhagwati Pizza and Cheese Patties Shop",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "7579313372",
+      "shopImage": "https://cdn1.iconfinder.com/data/icons/supermarket-cafe-and-stores/50/47-512.png",
+      "orders": [
+        {
+          "itemNo": 1,
+          "item": "Veg Pizza",
+          "quantity": 1,
+          "price": "100",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 3,
+          "item": "Onion Pizza",
+          "quantity": 1,
+          "price": "120",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "",
+      "total": 220,
+      "area": "other20",
+      "orderNumber": 1,
+      "totalDiscount": 0,
+      "orderDate": 1617183133433,
+      "orderAddress": "Deepak rice mill kullamal petrol pump road se sidha rasta ",
+      "orderAlternateMobileNumber": "7088971992",
+      "isOrderCancel": false
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "status": true,
+  "date": 1616926600458,
+  "name": "Rajesh",
+  "mobileNumber": "7983023338",
+  "password": "viratkohli",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "606442ec00876025c880dea0"
+  },
+  "accountType": "user",
+  "orderHistory": [
+    {
+      "shopName": "Jain Pizza & Bakery",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "9870900050",
+      "shopImage": "https://p7.hiclipart.com/preview/812/527/724/pizza-fast-food-italian-cuisine-illustration-cartoon-casual-pizza-physical-shop-png.jpg",
+      "orders": [
+        {
+          "itemNo": 29,
+          "item": "Paneer & Sweet Corn",
+          "quantity": 3,
+          "price": "35",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "OFFER10",
+      "total": 105,
+      "area": "punjabiColony10",
+      "orderNumber": 1,
+      "totalDiscount": 10,
+      "orderDate": 1617183555453,
+      "orderAddress": "Bhagwati Telecom near nandan dhaba",
+      "orderAlternateMobileNumber": "8218272180",
+      "isOrderCancel": false
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1617356268300,
+      "redeemAttempt": 0,
+      "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "status": true,
+  "date": 1616926600458,
+  "name": "Gaurav",
+  "mobileNumber": "8218272180",
+  "password": "kkkk@1111",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "606473da00876025c880dec3"
+  },
+  "accountType": "user",
+  "orderHistory": [
+    {
+      "shopName": "Friends Fast Food - FFF",
+      "shopAddress": "Near Ghantaghar",
+      "shopMobileNumber": "8791681511",
+      "shopImage": "https://cdn1.vectorstock.com/i/1000x1000/01/25/cartoon-fast-food-restaurant-small-shop-business-vector-18620125.jpg",
+      "orders": [
+        {
+          "itemNo": 6,
+          "item": "Veg Burger",
+          "quantity": 2,
+          "price": "20",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 18,
+          "item": "Veg Roll",
+          "quantity": 2,
+          "price": "20",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 19,
+          "item": "Spring Roll",
+          "halfQuantity": 1,
+          "price": "20",
+          "isHalfSelected": true
+        },
+        {
+          "itemNo": 22,
+          "item": "Chilli Potato",
+          "halfQuantity": 2,
+          "price": "35",
+          "isHalfSelected": true
+        },
+        {
+          "itemNo": 1,
+          "item": "Steam Momos",
+          "quantity": 2,
+          "price": "30",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 25,
+          "item": "Manchurian Dry",
+          "halfQuantity": 1,
+          "price": "40",
+          "isHalfSelected": true
+        }
+      ],
+      "coupon": "",
+      "total": 270,
+      "area": "gopalNagar10",
+      "orderNumber": 1,
+      "totalDiscount": 0,
+      "orderDate": 1617196907036,
+      "orderAddress": "Choraha,right me,handpump ke pass",
+      "orderAlternateMobileNumber": "9997495532",
+      "isOrderCancel": false
+    },
+    {
+      "shopName": "Chinese Fast Food",
+      "shopAddress": "Near Railway Station",
+      "shopMobileNumber": "8755580426",
+      "shopImage": "https://previews.123rf.com/images/artisticco/artisticco1701/artisticco170100013/69367031-a-vector-illustration-of-fast-food-restaurant.jpg",
+      "orders": [
+        {
+          "itemNo": 39,
+          "item": "Manchurain",
+          "halfQuantity": 1,
+          "price": "30",
+          "isHalfSelected": true
+        }
+      ],
+      "coupon": "",
+      "total": 30,
+      "area": "gopalNagar10",
+      "orderNumber": 2,
+      "totalDiscount": 0,
+      "orderDate": 1617200440340,
+      "orderAddress": "Choraha",
+      "orderAlternateMobileNumber": "9997495532",
+      "isOrderCancel": false
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1617368794468,
+      "redeemAttempt": 1,
+      "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "status": true,
+  "date": 1616926600458,
+  "name": "D",
+  "mobileNumber": "9997495532",
+  "password": "9997495532",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6064a4ac00876025c880def5"
+  },
+  "accountType": "user",
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1617381292875,
+      "redeemAttempt": 1,
+      "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "status": true,
+  "date": 1616926600458,
+  "name": "Krishna",
+  "mobileNumber": "9193442244",
+  "password": "kishan@27",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60656e410e35f86845361ed8"
+  },
+  "accountType": "user",
+  "orderHistory": [
+    {
+      "shopName": "Food Fusion",
+      "shopAddress": "It's a Virtual Shop",
+      "shopMobileNumber": "8192095423",
+      "shopImage": "https://previews.123rf.com/images/vectorshots/vectorshots1308/vectorshots130800001/21233529-food-shop-cartoon-business-vector-character.jpg",
+      "orders": [
+        {
+          "itemNo": 1,
+          "item": "Half & Half Pizza",
+          "quantity": 1,
+          "price": "130",
+          "isHalfSelected": false
+        },
+        {
+          "itemNo": 2,
+          "item": "Bread Pizza",
+          "quantity": 1,
+          "price": "50",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "OFFER10",
+      "total": 180,
+      "area": "other20",
+      "orderNumber": 1,
+      "totalDiscount": 10,
+      "orderDate": 1617260194763,
+      "orderAddress": "Baldev Ganj",
+      "orderAlternateMobileNumber": "8192095423",
+      "isOrderCancel": false
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1617432897736,
+      "redeemAttempt": 0,
+      "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "status": true,
+  "name": "Sample",
+  "mobileNumber": "8192095423",
+  "password": "2020",
+  "date": 1617260097437,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6065a27c0e35f86845361f1c"
+  },
+  "accountType": "user",
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "status": true,
+  "name": "Naman Agrawal",
+  "mobileNumber": "9599355536",
+  "password": "abcd123",
+  "date": 1617273468848,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6065a68f0e35f86845361f22"
+  },
+  "accountType": "user",
+  "orderHistory": [
+    {
+      "shopName": "Food Fusion",
+      "shopAddress": "It's a Virtual Shop",
+      "shopMobileNumber": "8192095423",
+      "shopImage": "https://previews.123rf.com/images/vectorshots/vectorshots1308/vectorshots130800001/21233529-food-shop-cartoon-business-vector-character.jpg",
+      "orders": [
+        {
+          "itemNo": 11,
+          "item": "Potato Spring",
+          "quantity": 1,
+          "price": "60",
+          "isHalfSelected": false
+        }
+      ],
+      "coupon": "OFFER10",
+      "total": 60,
+      "area": "baldevGanj10",
+      "otherSpecifications": "With onion and more spicy",
+      "orderNumber": 1,
+      "totalDiscount": 10,
+      "orderDate": 1617275379452,
+      "orderAddress": "H no. 4440, near shiv mandir,  baldev ganj, kosi kalan , mathura",
+      "orderAlternateMobileNumber": "7895926119",
+      "isOrderCancel": false
+    }
+  ],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1617447311548,
+      "redeemAttempt": 0,
+      "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "status": true,
+  "name": "Nidhi Bindal",
+  "mobileNumber": "7895926119",
+  "password": "7895926119nidhi",
+  "date": 1617274511232,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6065da8b0e35f86845361f29"
+  },
+  "accountType": "user",
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1617460619990,
+      "redeemAttempt": 1,
+      "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "status": true,
+  "name": "Dhruv Goyal",
+  "mobileNumber": "9105656561",
+  "password": "Ishita.2000",
+  "date": 1617287819240,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6065f0160e35f86845361f35"
+  },
+  "accountType": "user",
+  "orderHistory": [],
+  "notifications": [],
+  "coupon": [
+    {
+      "name": "OFFER10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1617466134611,
+      "redeemAttempt": 1,
+      "amount": 10
+    },
+    {
+      "name": "FREE10",
+      "description": "10 rupees off",
+      "offeredBy": "Le Thoos",
+      "validity": 1618601179691,
+      "redeemAttempt": 1,
+      "amount": 10
+    }
+  ],
+  "status": true,
+  "name": "Praveen jain",
+  "mobileNumber": "9520195308",
+  "password": "jainsomya992@",
+  "date": 1617293334474,
   "__v": 0
 }]

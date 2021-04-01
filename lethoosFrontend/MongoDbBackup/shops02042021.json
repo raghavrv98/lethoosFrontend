@@ -328,7 +328,7 @@
       "name": "Spicy Pizza",
       "itemsAvailable": "1",
       "image": "https://b.zmtcdn.com/data/pictures/2/3401142/5bc08c51612e05490a86b79b06537aa7.jpg",
-      "fullPrice": "110",
+      "fullPrice": "120",
       "halfPrice": "",
       "halfAvailable": false,
       "itemNo": 2
@@ -337,7 +337,7 @@
       "name": "Onion Pizza",
       "itemsAvailable": "1",
       "image": "https://b.zmtcdn.com/data/pictures/2/3401142/5bc08c51612e05490a86b79b06537aa7.jpg",
-      "fullPrice": "120",
+      "fullPrice": "130",
       "halfPrice": "",
       "halfAvailable": false,
       "itemNo": 3
@@ -346,7 +346,7 @@
       "name": "Onion Capsicum Pizza",
       "itemsAvailable": "1",
       "image": "https://b.zmtcdn.com/data/pictures/2/3401142/5bc08c51612e05490a86b79b06537aa7.jpg",
-      "fullPrice": "120",
+      "fullPrice": "130",
       "halfPrice": "",
       "halfAvailable": false,
       "itemNo": 4
@@ -355,7 +355,7 @@
       "name": "Tomato Pizza",
       "itemsAvailable": "1",
       "image": "https://b.zmtcdn.com/data/pictures/2/3401142/5bc08c51612e05490a86b79b06537aa7.jpg",
-      "fullPrice": "120",
+      "fullPrice": "130",
       "halfPrice": "",
       "halfAvailable": false,
       "itemNo": 5
@@ -364,7 +364,7 @@
       "name": "Paneer Lachcha Pizza",
       "itemsAvailable": "1",
       "image": "https://b.zmtcdn.com/data/pictures/2/3401142/5bc08c51612e05490a86b79b06537aa7.jpg",
-      "fullPrice": "130",
+      "fullPrice": "140",
       "halfPrice": "",
       "halfAvailable": false,
       "itemNo": 6
@@ -373,7 +373,7 @@
       "name": "Sweet Corn Pizza",
       "itemsAvailable": "1",
       "image": "https://b.zmtcdn.com/data/pictures/2/3401142/5bc08c51612e05490a86b79b06537aa7.jpg",
-      "fullPrice": "130",
+      "fullPrice": "140",
       "halfPrice": "",
       "halfAvailable": false,
       "itemNo": 7
@@ -382,7 +382,7 @@
       "name": "Mushroom Pizza",
       "itemsAvailable": "1",
       "image": "https://b.zmtcdn.com/data/pictures/2/3401142/5bc08c51612e05490a86b79b06537aa7.jpg",
-      "fullPrice": "140",
+      "fullPrice": "150",
       "halfPrice": "",
       "halfAvailable": false,
       "itemNo": 8
@@ -391,7 +391,7 @@
       "name": "Sweet Corn Cream Pizza",
       "itemsAvailable": "1",
       "image": "https://b.zmtcdn.com/data/pictures/2/3401142/5bc08c51612e05490a86b79b06537aa7.jpg",
-      "fullPrice": "140",
+      "fullPrice": "150",
       "halfPrice": "",
       "halfAvailable": false,
       "itemNo": 9
@@ -400,7 +400,7 @@
       "name": "Paneer Tikka Pizza",
       "itemsAvailable": "1",
       "image": "https://b.zmtcdn.com/data/pictures/2/3401142/5bc08c51612e05490a86b79b06537aa7.jpg",
-      "fullPrice": "140",
+      "fullPrice": "130",
       "halfPrice": "",
       "halfAvailable": false,
       "itemNo": 10
@@ -409,7 +409,7 @@
       "name": "Mix Veg Pizza",
       "itemsAvailable": "1",
       "image": "https://b.zmtcdn.com/data/pictures/2/3401142/5bc08c51612e05490a86b79b06537aa7.jpg",
-      "fullPrice": "150",
+      "fullPrice": "160",
       "halfPrice": "",
       "halfAvailable": false,
       "itemNo": 11
@@ -418,7 +418,7 @@
       "name": "Double Cheese Pizza",
       "itemsAvailable": "1",
       "image": "https://b.zmtcdn.com/data/pictures/2/3401142/5bc08c51612e05490a86b79b06537aa7.jpg",
-      "fullPrice": "180",
+      "fullPrice": "190",
       "halfPrice": "",
       "halfAvailable": false,
       "itemNo": 12
@@ -427,7 +427,7 @@
       "name": "Cheese Burst Pizza",
       "itemsAvailable": "1",
       "image": "https://b.zmtcdn.com/data/pictures/2/3401142/5bc08c51612e05490a86b79b06537aa7.jpg",
-      "fullPrice": "200",
+      "fullPrice": "210",
       "halfPrice": "",
       "halfAvailable": false,
       "itemNo": 13
@@ -436,7 +436,7 @@
       "name": "Special Indian Pizza",
       "itemsAvailable": "1",
       "image": "https://b.zmtcdn.com/data/pictures/2/3401142/5bc08c51612e05490a86b79b06537aa7.jpg",
-      "fullPrice": "250",
+      "fullPrice": "260",
       "halfPrice": "",
       "halfAvailable": false,
       "itemNo": 14
@@ -469,19 +469,19 @@
       "itemNo": 17
     },
     {
-      "name": "Butter Patties",
+      "name": "Butter Cheese Patties",
       "itemsAvailable": "1",
       "image": "https://b.zmtcdn.com/data/pictures/2/3401142/5bc08c51612e05490a86b79b06537aa7.jpg",
-      "fullPrice": "50",
+      "fullPrice": "60",
       "halfPrice": "",
       "halfAvailable": false,
       "itemNo": 18
     },
     {
-      "name": "Paneer Patties",
+      "name": "Cheese Paneer Patties",
       "itemsAvailable": "1",
       "image": "https://b.zmtcdn.com/data/pictures/2/3401142/5bc08c51612e05490a86b79b06537aa7.jpg",
-      "fullPrice": "50",
+      "fullPrice": "60",
       "halfPrice": "",
       "halfAvailable": false,
       "itemNo": 19
@@ -490,7 +490,7 @@
       "name": "Special Patties",
       "itemsAvailable": "1",
       "image": "https://b.zmtcdn.com/data/pictures/2/3401142/5bc08c51612e05490a86b79b06537aa7.jpg",
-      "fullPrice": "60",
+      "fullPrice": "70",
       "halfPrice": "",
       "halfAvailable": false,
       "itemNo": 20
@@ -499,7 +499,7 @@
       "name": "Special Jalebi (100 gm)",
       "itemsAvailable": "1",
       "image": "https://b.zmtcdn.com/data/pictures/2/3401142/5bc08c51612e05490a86b79b06537aa7.jpg",
-      "fullPrice": "10",
+      "fullPrice": "15",
       "halfPrice": "",
       "halfAvailable": false,
       "itemNo": 21
@@ -640,8 +640,8 @@
       "name": "Steam Momos",
       "itemsAvailable": "1",
       "image": "https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg",
-      "fullPrice": "30",
-      "halfPrice": "20",
+      "fullPrice": "40",
+      "halfPrice": "30",
       "halfAvailable": true,
       "itemNo": 1
     },
@@ -649,8 +649,8 @@
       "name": "Fried Momos",
       "itemsAvailable": "1",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
-      "fullPrice": "40",
-      "halfPrice": "20",
+      "fullPrice": "50",
+      "halfPrice": "30",
       "halfAvailable": true,
       "itemNo": 2
     },
@@ -658,8 +658,8 @@
       "name": "Afghani Momos",
       "itemsAvailable": "1",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
-      "fullPrice": "70",
-      "halfPrice": "40",
+      "fullPrice": "80",
+      "halfPrice": "50",
       "halfAvailable": true,
       "itemNo": 3
     },
@@ -667,8 +667,8 @@
       "name": "Gravy Momos",
       "itemsAvailable": "1",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
-      "fullPrice": "70",
-      "halfPrice": "40",
+      "fullPrice": "80",
+      "halfPrice": "50",
       "halfAvailable": true,
       "itemNo": 4
     },
@@ -676,8 +676,8 @@
       "name": "Tandoori Momos",
       "itemsAvailable": "1",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
-      "fullPrice": "70",
-      "halfPrice": "40",
+      "fullPrice": "80",
+      "halfPrice": "50",
       "halfAvailable": true,
       "itemNo": 5
     },
@@ -694,7 +694,7 @@
       "name": "Egg Burger",
       "itemsAvailable": "1",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
-      "fullPrice": "30",
+      "fullPrice": "40",
       "halfPrice": "",
       "halfAvailable": false,
       "itemNo": 7
@@ -721,8 +721,8 @@
       "name": "Veg Chowmein",
       "itemsAvailable": "1",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
-      "fullPrice": "30",
-      "halfPrice": "20",
+      "fullPrice": "40",
+      "halfPrice": "30",
       "halfAvailable": true,
       "itemNo": 10
     },
@@ -730,8 +730,8 @@
       "name": "Paneer Chowmein",
       "itemsAvailable": "1",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
-      "fullPrice": "50",
-      "halfPrice": "30",
+      "fullPrice": "60",
+      "halfPrice": "40",
       "halfAvailable": true,
       "itemNo": 11
     },
@@ -748,8 +748,8 @@
       "name": "Egg Chowmein",
       "itemsAvailable": "1",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
-      "fullPrice": "50",
-      "halfPrice": "30",
+      "fullPrice": "60",
+      "halfPrice": "40",
       "halfAvailable": true,
       "itemNo": 13
     },
@@ -757,7 +757,7 @@
       "name": "Single Egg Roll",
       "itemsAvailable": "1",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
-      "fullPrice": "35",
+      "fullPrice": "40",
       "halfPrice": "",
       "halfAvailable": false,
       "itemNo": 14
@@ -766,7 +766,7 @@
       "name": "Double Egg Roll",
       "itemsAvailable": "1",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
-      "fullPrice": "50",
+      "fullPrice": "60",
       "halfPrice": "",
       "halfAvailable": false,
       "itemNo": 15
@@ -775,7 +775,7 @@
       "name": "Butter Egg Roll",
       "itemsAvailable": "1",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
-      "fullPrice": "60",
+      "fullPrice": "70",
       "halfPrice": "",
       "halfAvailable": false,
       "itemNo": 16
@@ -784,8 +784,8 @@
       "name": "Egg Chowmein",
       "itemsAvailable": "1",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
-      "fullPrice": "50",
-      "halfPrice": "30",
+      "fullPrice": "60",
+      "halfPrice": "40",
       "halfAvailable": true,
       "itemNo": 17
     },
@@ -802,8 +802,8 @@
       "name": "Spring Roll",
       "itemsAvailable": "1",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
-      "fullPrice": "40",
-      "halfPrice": "20",
+      "fullPrice": "50",
+      "halfPrice": "30",
       "halfAvailable": true,
       "itemNo": 19
     },
@@ -811,7 +811,7 @@
       "name": "Kathi Roll",
       "itemsAvailable": "1",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
-      "fullPrice": "30",
+      "fullPrice": "40",
       "halfPrice": "",
       "halfAvailable": false,
       "itemNo": 20
@@ -820,7 +820,7 @@
       "name": "Paneer Roll",
       "itemsAvailable": "1",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
-      "fullPrice": "50",
+      "fullPrice": "60",
       "halfPrice": "40",
       "halfAvailable": true,
       "itemNo": 21
@@ -830,7 +830,7 @@
       "itemsAvailable": "1",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
       "fullPrice": "60",
-      "halfPrice": "35",
+      "halfPrice": "40",
       "halfAvailable": true,
       "itemNo": 22
     },
@@ -838,8 +838,8 @@
       "name": "Chilli Paneer",
       "itemsAvailable": "1",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
-      "fullPrice": "100",
-      "halfPrice": "50",
+      "fullPrice": "110",
+      "halfPrice": "60",
       "halfAvailable": true,
       "itemNo": 23
     },
@@ -883,8 +883,8 @@
       "name": "Hot and sour soup",
       "itemsAvailable": "1",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
-      "fullPrice": "70",
-      "halfPrice": "40",
+      "fullPrice": "80",
+      "halfPrice": "50",
       "halfAvailable": true,
       "itemNo": 28
     },
@@ -892,8 +892,8 @@
       "name": "Veg Chopsy",
       "itemsAvailable": "1",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkv_uAy_60NOWL7UsGalGOkO3URa-OMKSUg&usqp=CAU",
-      "fullPrice": "70",
-      "halfPrice": "40",
+      "fullPrice": "80",
+      "halfPrice": "50",
       "halfAvailable": true,
       "itemNo": 29
     },
@@ -3475,7 +3475,7 @@
       "name": "Chilla",
       "itemsAvailable": "1",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKSD5DZ6sIkitbgTLp8g-TBzs4FM0Gi6Po0g&usqp=CAU",
-      "fullPrice": "30",
+      "fullPrice": "40",
       "halfPrice": "",
       "halfAvailable": false,
       "itemNo": 5
