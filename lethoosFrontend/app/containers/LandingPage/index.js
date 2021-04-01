@@ -35,7 +35,6 @@ export class LandingPage extends React.PureComponent {
 
   componentDidMount() {
     this.getShops()
-    this.getcustomerDetails()
     setTimeout(() => {
       this.setState({
         isNotifyBoxOpen: true
@@ -51,7 +50,7 @@ export class LandingPage extends React.PureComponent {
         shops.sort((a, b) => (a.priority - b.priority))
 
         var shopsCount = shops.filter(val => val.isActive).length
-        this.setState({ shops, isLoader: false, shopsCount });
+        this.setState({ shops, isLoader: false, shopsCount }, () => this.getcustomerDetails());
       })
       .catch((error) => {
         this.setState({
@@ -73,7 +72,7 @@ export class LandingPage extends React.PureComponent {
         sessionStorage.setItem("customerDetails", JSON.stringify(customerDetails))
         this.setState({
           customerDetails,
-          isLoader: true
+          isLoader: false
         })
       })
       .catch((error) => {
