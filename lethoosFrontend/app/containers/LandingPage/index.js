@@ -30,7 +30,7 @@ export class LandingPage extends React.PureComponent {
   state = {
     shops: [],
     isLoader: true,
-    isNotifyBoxOpen: false
+    isNotifyBoxOpen: true
   }
 
   componentDidMount() {
@@ -69,6 +69,7 @@ export class LandingPage extends React.PureComponent {
       .then((res) => {
         let customerDetails = res.data
         customerDetails.coupon.map(val => val.copied = undefined)
+        customerDetails.address ? customerDetails.address = customerDetails.address : customerDetails.address = ''
         sessionStorage.setItem("customerDetails", JSON.stringify(customerDetails))
         this.setState({
           customerDetails,
