@@ -37,6 +37,18 @@ a {
 	text-align: center;
 }
 
+.modal-dialog-notify-box{
+	position: absolute;
+	width: 93%;
+	top: 30%;
+	margin: 10px;
+}
+
+.notify-icon-size{
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+
 .loading span>i {
 	position: absolute;
 	height: 15px;
@@ -959,9 +971,9 @@ hr {
 		color: black;
 		opacity: 1;
 		position: absolute;
-		top: -5%;
+		top: 0%;
 		z-index: 1;
-		right: -2%;
+		right: 0%;
 	}
 	.confirm-modal-no {
 		position: absolute;
@@ -1769,9 +1781,9 @@ hr {
 		color: black;
 		opacity: 1;
 		position: absolute;
-		top: -5%;
+		top: 0%;
 		z-index: 1;
-		right: -2%;
+		right: 0%;
 	}
 	.confirm-modal-no {
 		position: absolute;

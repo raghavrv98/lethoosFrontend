@@ -349,6 +349,7 @@ export class CheckoutPage extends React.PureComponent {
                         <option value="punjabiColony10">Punjabi Colony</option>
                         <option value="gopalNagar10">Gopal Nagar</option>
                         <option value="baldevGanj10">Baldev Ganj</option>
+                        <option value="baldevGanj10">Bus Stand</option>
                         <option value="shekhanMohalla10">Shekhan Mohalla</option>
                         <option value="khedaUpar10">Kheda Upar</option>
                         <option value="talabShahi10">Talab Shahi</option>
@@ -366,6 +367,7 @@ export class CheckoutPage extends React.PureComponent {
                         <option value="kamlaNagar20">Kamla Nagar</option>
                         <option value="bathenGate20">Bathen Gate</option>
                         <option value="keshavKunj30">Keshav Kunj</option>
+                        <option value="keshavKunj30">Kullamal Petrol Pump</option>
                       </select>
                     </div>
                     <div className="form-group">
