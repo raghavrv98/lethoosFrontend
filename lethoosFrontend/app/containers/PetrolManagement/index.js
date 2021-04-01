@@ -141,6 +141,13 @@ export class PetrolManagement extends React.PureComponent {
       filterable: true,
     },
     {
+      Header: 'Date',
+      accessor: 'date',
+      Cell: row => (
+        <div>{moment(row.original.date).format("DD MMM YYYY HH:mm")}</div>
+      )
+    },
+    {
       Header: 'Previous Km',
       accessor: 'previousKm',
       filterable: true,

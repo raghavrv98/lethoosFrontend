@@ -24,7 +24,6 @@ function CommonModalBox(props) {
           </div>
           <div className="modal-body confirm-modal-body">
             <video controls src={require('../../assets/images/video2.mp4')}>
-              Your browser does not support the video tag.
           </video>
           </div>
         </div>
