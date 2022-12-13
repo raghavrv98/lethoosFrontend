@@ -8,23 +8,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Helmet } from 'react-helmet';
-import { FormattedMessage } from 'react-intl';
 import { createStructuredSelector } from 'reselect';
 import { compose } from 'redux';
 
 import injectSaga from 'utils/injectSaga';
 import injectReducer from 'utils/injectReducer';
+import { cloneDeep } from 'lodash';
+import axios from 'axios';
 import makeSelectLoginPage from './selectors';
 import reducer from './reducer';
 import saga from './saga';
-import messages from './messages';
-import { cloneDeep } from 'lodash';
-import axios from 'axios';
-import { errorHandler } from "../../utils/customUtils";
 import MessageModal from '../../components/MessageModal';
 import CommonModalBox from '../../components/CommonModalBox';
 
-import firebase from './../../firebase'
+import firebase from "../../firebase"
 
 /* eslint-disable react/prefer-stateless-function */
 export class LoginPage extends React.PureComponent {
@@ -36,13 +33,14 @@ export class LoginPage extends React.PureComponent {
     payload: {
       name: "",
       mobileNumber: "",
-      password: ""
+      password: "",
     },
-    ismodalOpen: false
+    ismodalOpen: false,
   }
 
   inputChangeHandler = event => {
-    let payload = cloneDeep(this.state.payload)
+    // eslint-disable-next-line react/no-access-state-in-setstate
+    const payload = cloneDeep(this.state.payload)
     payload[event.target.id] = event.target.value
     this.setState({
       payload,
@@ -51,18 +49,22 @@ export class LoginPage extends React.PureComponent {
       isMessageModal: false,
       isSMSSent: false,
       isSMSSentError: false,
-      isCaptchaLoading: false
+      isCaptchaLoading: false,
     })
   }
 
   customerSignUp = (payload) => {
-    let url = window.API_URL + "/customerLogin";
+    const url = `${window.API_URL}/customerLogin`;
+    console.log('url: ', url);
     axios.post(url, payload)
       .then((res) => {
         const customerDetails = res.data.data;
+        console.log('customerDetails: ', customerDetails);
         if (Object.keys(customerDetails).length > 0) {
           sessionStorage.setItem("customerDetails", JSON.stringify(customerDetails))
+          // eslint-disable-next-line no-unused-expressions
           customerDetails.coupon.length === 0 && this.addingDiscountCopuons()
+          // eslint-disable-next-line react/prop-types
           this.props.history.push('/landingPage')
         }
         else {
@@ -70,23 +72,23 @@ export class LoginPage extends React.PureComponent {
             isUserExist: true,
             isLoader: false,
             isDetailsIncorrect: false,
-            isCaptchaLoading: false
+            isCaptchaLoading: false,
           })
         }
       })
-      .catch((error) => {
+      .catch(() => {
         this.setState({
           isLoader: false,
           message: "Some Error Occured",
           isMessageModal: true,
           type: "failure",
-          isCaptchaLoading: false
+          isCaptchaLoading: false,
         })
       });
   }
 
   customerLogin = (payload) => {
-    let url = window.API_URL + "/customerCheck";
+    const url = `${window.API_URL}/customerCheck`;
     axios.post(url, payload)
       .then((res) => {
         const customerDetails = res.data.data;
@@ -98,34 +100,36 @@ export class LoginPage extends React.PureComponent {
           this.setState({
             isDetailsIncorrect: true,
             isLoader: false,
-            isUserExist: false
+            isUserExist: false,
           })
         }
       })
-      .catch((error) => {
+      .catch(() => {
         this.setState({
           isLoader: false,
           message: "Some Error Occured",
           isMessageModal: true,
-          type: "failure"
+          type: "failure",
         })
       });
   }
 
 
   addingDiscountCopuons = () => {
-    let id = JSON.parse(sessionStorage.getItem('customerDetails'))._id
-    let url = window.API_URL + `/customerLogin/coupons/${id}`;
+    // eslint-disable-next-line no-underscore-dangle
+    const id = JSON.parse(sessionStorage.getItem('customerDetails'))._id
+    const url = `${window.API_URL}/customerLogin/coupons/${id}`;
     axios.patch(url, {})
       .then((res) => {
         const couponAdded = res.data;
+        console.log('couponAdded: ', couponAdded);
       })
-      .catch((error) => {
+      .catch(() => {
         this.setState({
           isLoader: false,
           message: "Some Error Occured",
           isMessageModal: true,
-          type: "failure"
+          type: "failure",
         })
       });
   }
@@ -134,14 +138,14 @@ export class LoginPage extends React.PureComponent {
     setTimeout(() => {
       this.setState({
         isMessageModal: false,
-        ismodalOpen: false
+        ismodalOpen: false,
       })
     }, 1000);
   }
 
   commonModalBoxCloseHanlder = () => {
     this.setState({
-      ismodalOpen: false
+      ismodalOpen: false,
     })
   }
 
@@ -151,28 +155,29 @@ export class LoginPage extends React.PureComponent {
       payload: {
         name: "",
         mobileNumber: "",
-        password: ""
+        password: "",
       },
       isDetailsIncorrect: false,
       isUserExist: false,
       isMessageModal: false,
       isSMSSent: false,
       isSMSSentError: false,
-      isCaptchaLoading: false
+      isCaptchaLoading: false,
     })
   }
 
   resetPassword = (payload) => {
-    let url = window.API_URL + "/customerLogin/forgotPassword";
+    const url = `${window.API_URL}/customerLogin/forgotPassword`;
     axios.post(url, payload)
       .then((res) => {
+        // eslint-disable-next-line prefer-destructuring
         const data = res.data.data;
         if (data.length > 0) {
           this.setState({
             isSMSSent: true,
             isLoader: false,
             isSMSSentError: false,
-            isCaptchaLoading: false
+            isCaptchaLoading: false,
           })
         }
         else {
@@ -180,22 +185,22 @@ export class LoginPage extends React.PureComponent {
             isSMSSent: false,
             isLoader: false,
             isSMSSentError: true,
-            isCaptchaLoading: false
+            isCaptchaLoading: false,
           })
         }
       })
-      .catch((error) => {
+      .catch(() => {
         this.setState({
           isLoader: false,
           message: "Some Error Occured",
           isMessageModal: true,
-          type: "failure"
+          type: "failure",
         })
       });
   }
 
   onSubmitHandler = id => {
-    let payload = cloneDeep(this.state.payload)
+    const payload = cloneDeep(this.state.payload)
     payload.name = payload.name.trim()
     payload.mobileNumber = payload.mobileNumber.trim()
     payload.password = payload.password.trim()
@@ -204,65 +209,68 @@ export class LoginPage extends React.PureComponent {
       isLoader: true,
       isCaptchaLoading: true,
       isDetailsIncorrect: false,
-      isUserExist: false
-    }, () => id == "signUp" ? this.customerSignUp(payload) : id == "login" ? this.customerLogin(payload) : this.resetPassword(payload))
+      isUserExist: false,
+      // eslint-disable-next-line no-nested-ternary
+    }, () => id === "signUp" ? this.customerSignUp(payload) : id === "login" ? this.customerLogin(payload) : this.resetPassword(payload))
   }
 
   setUpRecaptcha = () => {
     window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container', {
       'size': 'invisible',
-      'callback': (response) => {
+      'callback': () => {
         // reCAPTCHA solved, allow signInWithPhoneNumber.
         this.onSignInSubmit();
-      }
+      },
     });
     this.setState({
-      isCaptchaLoading: true
+      isCaptchaLoading: true,
     })
   }
 
   onSignInSubmit = (event) => {
     event.preventDefault();
-    this.setUpRecaptcha();
-    const phoneNumber = `+91${this.state.payload.mobileNumber}`;
-    const appVerifier = window.recaptchaVerifier;
-    firebase.auth().signInWithPhoneNumber(phoneNumber, appVerifier)
-      .then((confirmationResult) => {
-        // SMS sent. Prompt user to type the code from the message, then sign the
-        // user in with confirmationResult.confirm(code).
-        window.confirmationResult = confirmationResult;
-        this.setState({
-          isCaptchaLoading: false
-        })
-        const code = window.prompt('Enter OTP');
-        confirmationResult.confirm(code).then((result) => {
-          // User signed in successfully.
-          const user = result.user;
-          this.onSubmitHandler('signUp')
-          // ... 
-        }).catch((error) => {
-          // User couldn't sign in (bad verification code?)
-          console.log('error: ', error);
-          this.setState({
-            message: "Incorrect OTP. Please try again",
-            isMessageModal: true,
-            type: "failure"
-          }, () => {
-            setTimeout(() => {
-              window.location.reload()
-            }, 1500);
-          })
+    this.onSubmitHandler('signUp')
+    // this.setUpRecaptcha();
+    // const phoneNumber = `+91${this.state.payload.mobileNumber}`;
+    // const appVerifier = window.recaptchaVerifier;
+    // firebase.auth().signInWithPhoneNumber(phoneNumber, appVerifier)
+    //   .then((confirmationResult) => {
+    //     // SMS sent. Prompt user to type the code from the message, then sign the
+    //     // user in with confirmationResult.confirm(code).
+    //     window.confirmationResult = confirmationResult;
+    //     this.setState({
+    //       isCaptchaLoading: false,
+    //     })
+    //     // eslint-disable-next-line no-alert
+    //     const code = window.prompt('Enter OTP');
+    //     confirmationResult.confirm(code).then(() => {
+    //       // User signed in successfully.
+    //       // const user = result.user;
+    //       this.onSubmitHandler('signUp')
+    //       // ... 
+    //     }).catch((error) => {
+    //       // User couldn't sign in (bad verification code?)
+    //       console.log('error: ', error);
+    //       this.setState({
+    //         message: "Incorrect OTP. Please try again",
+    //         isMessageModal: true,
+    //         type: "failure",
+    //       }, () => {
+    //         setTimeout(() => {
+    //           window.location.reload()
+    //         }, 1500);
+    //       })
 
-        });
-      }).catch((error) => {
-        console.log('error: ', error);
-        // Error; SMS not sent
-        this.setState({
-          message: "Error Occurs. Please try again later",
-          isMessageModal: true,
-          type: "failure"
-        })
-      });
+    //     });
+    //   }).catch((error) => {
+    //     console.log('error: ', error);
+    //     // Error; SMS not sent
+    //     this.setState({
+    //       message: "Error Occurs. Please try again later",
+    //       isMessageModal: true,
+    //       type: "failure",
+    //     })
+    //   });
   }
 
 
