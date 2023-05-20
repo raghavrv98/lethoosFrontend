@@ -14,11 +14,11 @@ a {
 	text-decoration: none !important;
 }
 
-.mr-0{
+.mr-0 {
 	margin: 0px !important;
 }
 
-.input-sm{
+.input-sm {
 	height: 20px !important;
 }
 
@@ -43,10 +43,6 @@ a {
 	box-shadow: 0 4px 20px 0 rgb(218 220 230 / 60%);
 	transform: translate(-50%, -50%);
 	text-align: center;
-}
-
-.modal-dialog{
-	width: 400px !important;
 }
 
 .modal-dialog-notify-box {
@@ -88,12 +84,15 @@ a {
 	0% {
 		left: -7px
 	}
+
 	30% {
 		left: 52px
 	}
+
 	60% {
 		left: 22px
 	}
+
 	100% {
 		left: 100px
 	}
@@ -103,12 +102,15 @@ a {
 	0% {
 		left: -7px
 	}
+
 	30% {
 		left: 52px
 	}
+
 	60% {
 		left: 22px
 	}
+
 	100% {
 		left: 100px
 	}
@@ -118,12 +120,15 @@ a {
 	0% {
 		left: -7px
 	}
+
 	30% {
 		left: 52px
 	}
+
 	60% {
 		left: 22px
 	}
+
 	100% {
 		left: 100px
 	}
@@ -133,12 +138,15 @@ a {
 	0% {
 		left: -7px
 	}
+
 	30% {
 		left: 52px
 	}
+
 	60% {
 		left: 22px
 	}
+
 	100% {
 		left: 100px
 	}
@@ -365,6 +373,7 @@ footer .text {
 	0% {
 		transform: rotate(0deg);
 	}
+
 	100% {
 		transform: rotate(360deg);
 	}
@@ -377,13 +386,16 @@ footer .text {
 	padding: 30px 215px;
 }
 
-.shop-header-name, .shop-header-address, .shop-header-time {
+.shop-header-name,
+.shop-header-address,
+.shop-header-time {
 	margin: 0px;
 	font-size: 50px;
 	color: white;
 }
 
-.shop-header-address, .shop-header-time {
+.shop-header-address,
+.shop-header-time {
 	font-size: 18px;
 }
 
@@ -568,34 +580,47 @@ hr {
 }
 
 @media only screen and (max-width: 768px) {
+
+	.mt-10 {
+		margin-top: 10%
+	}
+
 	.account-type-text {
 		font-size: 15px;
 		margin-right: 10px;
 		margin-left: 5px;
 	}
+
 	.help-section {
 		font-size: 15px;
 		color: cornflowerblue;
 		text-align: center;
 	}
+
 	.help-section-text {
 		cursor: pointer;
 	}
+
 	.react-table-outer {
 		padding: 10px;
 	}
+
 	.nav-desktop-view {
 		display: none;
 	}
+
 	.sidenav {
 		padding-top: 15px;
 	}
+
 	.sidenav a {
 		font-size: 18px;
 	}
+
 	.logo {
 		height: 40px;
 	}
+
 	.header {
 		height: 80px;
 		width: 100%;
@@ -603,6 +628,7 @@ hr {
 		padding: 10px;
 		position: relative;
 	}
+
 	.logo-text {
 		display: inline-block;
 		font-size: 15px;
@@ -610,46 +636,57 @@ hr {
 		top: 30%;
 		left: 20%;
 	}
+
 	.nav-items {
 		font-size: 14px;
 		position: absolute;
 		right: 0px;
 		top: 28px;
 	}
+
 	.nav-mr {
 		margin-right: 12px;
 	}
+
 	.nav-items :hover {
 		color: orange;
 		cursor: pointer;
 	}
+
 	.count-text {
 		font-size: 15px;
 		font-weight: 600;
 	}
+
 	.content-padding {
 		padding: 0px 15px;
 	}
+
 	.shop-image {
 		width: 100%;
 		height: 150px;
 		border-radius: 5px;
 	}
+
 	.shop-time {
 		font-size: 15px;
 	}
+
 	.shop-time-heading {
 		font-size: 15px;
 		font-weight: 600;
 	}
+
 	.shop-address {
 		font-size: 15px;
 	}
+
 	.shop-heading {
 		font-size: 18px;
 		margin-top: 20px;
 		font-weight: 600;
 	}
+
 	.loginBanner {
 		width: 50%;
 		position: absolute;
@@ -657,6 +694,7 @@ hr {
 		top: 0;
 		height: 100%;
 	}
+
 	.loginbox {
 		width: 85%;
 		position: absolute;
@@ -668,15 +706,18 @@ hr {
 		padding: 30px 50px;
 		min-height: 300px;
 	}
+
 	.loginPage {
-		height: 100vh!important;
+		height: 100vh !important;
 		background: #fff;
 		width: 100%;
-		margin: 0px!important;
+		margin: 0px !important;
 	}
+
 	.display-none {
 		display: none !important;
 	}
+
 	.welcome-message {
 		font-size: 15px;
 		font-weight: 600;
@@ -684,21 +725,26 @@ hr {
 		text-align: center;
 		margin: 15px 0px;
 	}
+
 	.box-label {
 		font-size: 15px;
 		color: brown;
 		font-weight: 600;
 	}
-	.reset-password, .sign-up {
+
+	.reset-password,
+	.sign-up {
 		font-size: 15px;
 		font-weight: 600;
 		color: brown;
 		text-align: center;
 		cursor: pointer;
 	}
+
 	.sign-up {
 		margin-top: 12px;
 	}
+
 	.login-box-icon {
 		height: 50px;
 		width: 50px;
@@ -706,10 +752,12 @@ hr {
 		top: -6%;
 		left: 40%;
 	}
+
 	.form-control {
 		height: 25px;
 		font-size: 18px;
 	}
+
 	.login-button {
 		font-size: 13px;
 		padding: 10px 10px;
@@ -718,48 +766,61 @@ hr {
 		width: 100%;
 		margin: 15px 0px 0px;
 	}
+
 	.lds-dual-ring:after {
 		left: 36%;
 	}
+
 	.incorrect-password-text {
 		color: red;
 		font-size: 15px;
 		text-align: center;
 	}
+
 	.success-text {
 		color: green;
 		font-size: 15px;
 		text-align: center;
 	}
+
 	.error-text {
 		color: red;
 		font-size: 15px;
 		text-align: center;
 	}
-	.shop-header-name, .shop-header-address, .shop-header-time {
+
+	.shop-header-name,
+	.shop-header-address,
+	.shop-header-time {
 		font-size: 18px;
 		text-align: center;
 	}
-	.shop-header-address, .shop-header-time {
+
+	.shop-header-address,
+	.shop-header-time {
 		font-size: 18px;
 	}
+
 	.shop-header-image {
 		position: absolute;
 		top: 15%;
 		right: 15%;
 		display: none;
 	}
+
 	.shop-header {
 		width: 100%;
 		height: 130px;
 		padding: 10px
 	}
+
 	/* .empty-cart-image {
 		height: 358px;
 	} */
 	.shop-details-outer {
 		margin: 10px !important;
 	}
+
 	.menu-items {
 		margin-bottom: 10px;
 		height: 75px;
@@ -769,10 +830,12 @@ hr {
 		border-radius: 5px;
 		position: relative;
 	}
+
 	.menu-items-outer {
 		padding: 0px 0px;
 		margin-top: 15px;
 	}
+
 	.menu-items-name {
 		display: inline-block;
 		font-size: 15px;
@@ -780,22 +843,27 @@ hr {
 		color: white;
 		top: 7px;
 	}
+
 	.menu-items-price {
 		font-size: 16px;
 		margin: 2px 0px 2px 65px;
 		color: white;
 		top: 12px;
 	}
+
 	.menu-items-half-price {
 		color: white;
 		font-size: 16px;
 	}
+
 	.menu-items-half-text {
 		margin-left: 20px;
 		font-size: 14px;
 		color: white;
 	}
-	.menu-items-add-button, .menu-items-count-button {
+
+	.menu-items-add-button,
+	.menu-items-count-button {
 		font-size: 15px;
 		right: 5%;
 		top: 24%;
@@ -808,10 +876,12 @@ hr {
 		cursor: pointer;
 		position: absolute;
 	}
+
 	.menu-items-count-button {
 		width: 50px;
 		cursor: context-menu;
 	}
+
 	.menu-items-count-left-button {
 		position: absolute;
 		left: 10px;
@@ -819,6 +889,7 @@ hr {
 		top: -9px;
 		cursor: pointer;
 	}
+
 	.menu-items-count-right-button {
 		position: absolute;
 		right: 10px;
@@ -827,6 +898,7 @@ hr {
 		font-weight: 600;
 		cursor: pointer;
 	}
+
 	.menu-items-image {
 		top: 10px;
 		position: absolute;
@@ -835,6 +907,7 @@ hr {
 		border-radius: 5px;
 		width: 13%;
 	}
+
 	.cart-items {
 		background-color: orange;
 		padding: 20px;
@@ -842,23 +915,28 @@ hr {
 		position: sticky;
 		top: 30px;
 	}
+
 	.order-details-heading {
 		font-size: 15px;
 		color: white;
 	}
+
 	.order-details-items {
 		font-size: 15px;
 		color: white;
 		margin-bottom: 10px;
 	}
+
 	.checkout-button {
 		background-color: white !important;
 		color: orange !important;
 	}
+
 	.checkout-outer {
 		padding: 10px;
 		margin: 0px !important;
 	}
+
 	.checkout-apply-btn {
 		margin: 0px;
 		display: inline;
@@ -869,11 +947,13 @@ hr {
 		background-color: orange;
 		border-radius: 5px;
 	}
+
 	.checkout-apply-text {
 		width: 40% !important;
 		display: inline;
 		font-size: 15px;
 	}
+
 	.offers-check-text {
 		margin-right: 23px;
 		font-size: 15px;
@@ -881,26 +961,32 @@ hr {
 		color: orange;
 		cursor: pointer;
 	}
+
 	.checkout-code-not-applied {
 		font-size: 15px;
 		color: red;
 	}
+
 	.checkout-code-applied {
 		font-size: 15px;
 		color: green;
 	}
+
 	.checkout-apply-btn-disabled {
 		cursor: not-allowed;
 		background-color: #ebebe4;
 	}
+
 	.checkout-discount-text {
 		font-size: 15px;
 		margin: 0px;
 	}
+
 	.checkout-total-text {
 		font-size: 18px;
 		margin: 0px;
 	}
+
 	.customer-info {
 		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
 		margin: 10px 0px 15px;
@@ -909,6 +995,7 @@ hr {
 		padding: 20px;
 		min-height: 250px;
 	}
+
 	.bill-info {
 		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
 		border-radius: 5px;
@@ -919,15 +1006,19 @@ hr {
 		margin: 0px 0px 20px;
 		min-height: 250px;
 	}
+
 	.radio-btn-size {
 		height: 15px;
 		width: 15px;
 		cursor: pointer;
 	}
+
 	.radio-text-size {
 		font-size: 15px;
 	}
-	.area-box, .profile-page-area-box {
+
+	.area-box,
+	.profile-page-area-box {
 		height: 30px;
 		width: 60%;
 		font-size: 15px;
@@ -936,47 +1027,58 @@ hr {
 		border-radius: 5px;
 		padding: 5px 16px;
 	}
+
 	.profile-page-area-box {
 		width: 95%;
 		margin-left: 0px;
 	}
+
 	.bill-info-heading {
 		font-size: 15px;
 		margin: 0px;
 		text-align: center;
 	}
+
 	.bill-info-text {
 		font-size: 17px;
 		margin: 0px;
 	}
+
 	.place-order-button {
 		background-color: #28A745;
 		color: white;
 	}
+
 	.display-block {
 		display: block;
 	}
+
 	.confirm-modal-heading {
 		font-size: 18px;
 		text-align: center;
 	}
+
 	.confirm-modal-body {
 		font-size: 15px;
 		text-align: center;
 		margin-top: -15px !important;
 	}
+
 	.confirm-modal-body-2 {
 		margin-top: -30px;
 		margin-bottom: 15px;
 		font-size: 15px;
 		text-align: center;
 	}
+
 	.modal-header {
 		border: none !important;
 	}
+
 	.modal-footer {
 		border: none !important;
 	}
+
 	.confirm-modal-close {
 		font-size: 18px;
 		color: black;
@@ -986,6 +1088,7 @@ hr {
 		z-index: 1;
 		right: 4%;
 	}
+
 	.confirm-modal-no {
 		position: absolute;
 		left: 60%;
@@ -993,22 +1096,27 @@ hr {
 		font-size: 15px;
 		bottom: 8%;
 	}
+
 	.confirm-modal-yes {
 		position: absolute;
 		bottom: 9%;
 		right: 7%;
 		font-size: 13px;
 	}
+
 	.modal-content {
 		min-height: 130px;
 	}
+
 	.order-placed-outer {
 		padding: 10px;
 		text-align: center;
 	}
+
 	h1 {
 		font-size: 28px !important;
 	}
+
 	.order-placed-box {
 		background-color: white;
 		width: 100%;
@@ -1016,17 +1124,21 @@ hr {
 		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
 		border-radius: 5px;
 	}
+
 	.order-placed-image {
 		height: 80px;
 		margin-bottom: 30px;
 	}
+
 	.order-placed-text {
 		font-size: 15px;
 		margin: 10px 0px 10px;
 	}
+
 	.order-placed-btn {
 		width: 100%;
 	}
+
 	.offers-page-outer {
 		padding: 20px;
 		margin: 10px !important;
@@ -1034,8 +1146,9 @@ hr {
 		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
 		border-radius: 5px;
 		position: relative;
-		height: 80vh;
+		height: 45vh;
 	}
+
 	.offers-box {
 		padding: 20px;
 		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
@@ -1045,11 +1158,13 @@ hr {
 		margin-top: 15px;
 		cursor: pointer;
 	}
+
 	.offers-heading {
 		font-size: 18px;
 		margin-top: 10px;
 		text-align: center;
 	}
+
 	.offers-copy-btn {
 		height: 50px;
 		width: 100%;
@@ -1060,40 +1175,52 @@ hr {
 		padding: 0px;
 		bottom: 23%;
 	}
+
 	.offers-copy-btn-outer {
 		padding: 0px 23px
 	}
+
 	.offers-text {
 		font-size: 18px;
 		vertical-align: text-top;
 		color: orange;
 	}
+
 	.offers-box-heading {
 		font-size: 15px;
 		color: black;
-		margin: 0px!important;
+		margin: 0px !important;
 	}
-	.offers-box-text, .offers-box-copied-text {
+
+	.offers-box-text,
+	.offers-box-copied-text {
 		font-size: 15px;
 		color: black;
 		margin: 10px;
 	}
+
 	.offers-box-copied-text {
 		margin: 10px 0px 0px;
 	}
-	.offers-not-found, .offers-not-found-shop-details {
+
+	.offers-not-found,
+	.offers-not-found-shop-details {
 		position: absolute;
 		transform: translate(-50%, -50%);
 		top: 50%;
 		left: 50%;
 		width: 100%;
 	}
+
 	.offers-not-found-shop-details {
 		height: 450px;
 		top: 62%;
 		padding: 10px;
 	}
-	.offers-not-found-text1, .offers-not-found-text2, .offers-not-found-text1-shop-details {
+
+	.offers-not-found-text1,
+	.offers-not-found-text2,
+	.offers-not-found-text1-shop-details {
 		font-size: 15px;
 		position: absolute;
 		transform: translate(-50%, -50%);
@@ -1101,13 +1228,16 @@ hr {
 		left: 50%;
 		z-index: 1;
 	}
+
 	.offers-not-found-text1-shop-details {
 		top: 60%;
 		font-size: 17px;
 	}
+
 	.offers-not-found-text2 {
 		top: 43%;
 	}
+
 	.no-shops-found {
 		min-height: 400px;
 		width: 100%;
@@ -1117,30 +1247,39 @@ hr {
 		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
 		padding: 15px;
 	}
-	.no-shops-found-image, .no-shops-found-image-order-history, .no-shops-found-image-glass, .no-shops-found-image-glass-order-history {
+
+	.no-shops-found-image,
+	.no-shops-found-image-order-history,
+	.no-shops-found-image-glass,
+	.no-shops-found-image-glass-order-history {
 		height: 90px;
 		transform: translate(-50%, -50%);
 		top: 50%;
 		left: 50%;
 		position: absolute;
 	}
+
 	.no-shops-found-image-glass {
 		top: 63%;
 		left: 65%;
 	}
+
 	.no-shops-found-heading {
 		font-size: 18px;
 		margin-top: 35px;
 		text-align: center;
 	}
+
 	.no-shops-found-image-order-history {
 		height: 200px;
 		top: 55%;
 	}
+
 	.no-shops-found-image-glass-order-history {
 		top: 64%;
 		left: 70%;
 	}
+
 	.order-history-outer {
 		margin: 10px !important;
 		background-color: white;
@@ -1150,6 +1289,7 @@ hr {
 		padding: 20px;
 		position: relative;
 	}
+
 	.order-history-box {
 		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
 		border: 1px solid #dadce6;
@@ -1157,19 +1297,23 @@ hr {
 		padding: 20px;
 		margin-bottom: 20px;
 	}
+
 	.order-history-box-heading {
 		font-size: 15px;
 		margin-bottom: 5px;
 	}
+
 	.order-history-box-text-heading {
 		font-size: 12px;
 		color: gray;
 	}
+
 	.order-history-box-text {
 		font-size: 15px;
 		color: black;
 		float: right;
 	}
+
 	.order-history-box-btn {
 		height: 35px;
 		border: 1px solid orange;
@@ -1180,44 +1324,54 @@ hr {
 		margin: 10px 0px;
 		padding: 5px;
 	}
+
 	.order-history-box-btn:hover {
 		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, 1);
 	}
+
 	.order-history-box-btn-text {
 		font-size: 15px;
 		color: orange;
 	}
+
 	.order-history-box-image {
 		height: 50px;
 		width: 35%;
 	}
+
 	.order-history-modal {
 		padding: 30px;
 		height: 93vh;
 		overflow: auto;
 	}
+
 	.order-history-modal-body-heading {
 		font-size: 15px;
 		font-weight: 600;
 	}
+
 	.order-history-modal-body-item-text {
 		font-size: 15px;
 		margin: 0px;
 	}
+
 	.order-history-modal-body-quantity-text {
 		margin-bottom: 10px;
 		font-size: 15px;
 	}
+
 	.order-history-modal-body-item-cost-text {
 		font-size: 15px;
 		float: right;
 	}
+
 	.order-history-modal-body-item-portion-text {
 		font-size: 15px;
 		margin: 0px;
 		margin-top: -5px;
 		margin-bottom: 5px;
 	}
+
 	.profile-page-outer {
 		margin: 10px;
 		background-color: white;
@@ -1227,10 +1381,12 @@ hr {
 		min-height: 400px;
 		position: relative;
 	}
+
 	.profile-page-btn {
 		font-weight: 600;
 		background: orange;
 	}
+
 	.admin-shop-status-btn {
 		font-size: 18px;
 		padding: 10px 10px;
@@ -1239,6 +1395,7 @@ hr {
 		height: 50px;
 		margin-bottom: 20px;
 	}
+
 	.admin-shop-edit {
 		box-shadow: 0 4px 20px 0 rgb(218 220 230 / 60%);
 		margin: 0px !important;
@@ -1247,30 +1404,36 @@ hr {
 		padding: 30px;
 		min-height: 435px;
 	}
+
 	.admin-shop-outer {
 		padding: 10px;
 	}
+
 	.admin-shop-image {
 		width: 100%;
 		height: 200px;
 		padding: 10px;
 		border-radius: 5px;
 	}
+
 	.status-text {
 		font-size: 15px;
 		margin: 0px 0px 15px;
 	}
+
 	.admin-shop-status-text {
 		font-size: 15px;
 		color: #A52A2A;
 		margin-bottom: 10px;
 	}
+
 	.landing-page-mob-nav-icon {
 		position: absolute;
 		right: 20px;
 		font-size: 18px;
 		top: 26%;
 	}
+
 	.logo-text-mob {
 		font-size: 15px;
 		display: inline;
@@ -1278,20 +1441,25 @@ hr {
 		position: absolute;
 		top: 18px;
 	}
+
 	.logo-mob {
 		height: 40px;
 		margin-left: 20px;
 		margin-right: 15px;
 	}
+
 	.mob-nav-text {
 		font-size: 15px;
 		margin: -15px 33px 13px;
 	}
+
 	.reset-password-text {
 		font-size: 16px;
 		margin: 15px 0px;
 	}
-	.offers-expired-img, .order-cancel-img {
+
+	.offers-expired-img,
+	.order-cancel-img {
 		position: absolute;
 		height: 135px;
 		top: 50%;
@@ -1300,7 +1468,9 @@ hr {
 		opacity: 0.5;
 		z-index: 1;
 	}
-	.shop-closed-tag, .shopDetails-closed-tag {
+
+	.shop-closed-tag,
+	.shopDetails-closed-tag {
 		height: 30px;
 		width: 53px;
 		background-color: #000;
@@ -1311,6 +1481,7 @@ hr {
 		margin-top: 10px;
 		margin-bottom: -15px;
 	}
+
 	.shopDetails-closed-tag {
 		background-color: #000;
 		color: #fff;
@@ -1322,14 +1493,17 @@ hr {
 		width: 67px;
 		margin-top: -15px;
 	}
+
 	.mob-view-checkbox {
 		position: absolute;
 		bottom: 5px;
 		left: 14%;
 	}
+
 	.mob-left-10 {
 		margin-left: 10px !important;
 	}
+
 	.msg-modal-box-position {
 		position: absolute;
 		top: 24%;
@@ -1340,16 +1514,19 @@ hr {
 		border-radius: 5px;
 		padding: 5px 10px;
 	}
+
 	.msg-modal-times-position {
 		float: right;
 		cursor: pointer;
 		margin-left: 20px;
 	}
+
 	.shop-details-minus-btn {
 		margin-right: 15px;
 		font-size: 16px;
 		cursor: pointer;
 	}
+
 	.online-payment-message {
 		font-size: 15px;
 		border: 2px dashed orange;
@@ -1359,6 +1536,7 @@ hr {
 		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
 		cursor: pointer;
 	}
+
 	.same-as-above-btn {
 		font-size: 12px;
 		padding: 6px;
@@ -1366,11 +1544,13 @@ hr {
 		border-radius: 5px;
 		margin-left: 13px;
 	}
+
 	.same-as-above-btn:focus {
 		outline: none !important;
 		transform: translateY(-3px);
 		box-shadow: 1px 10px 0 rgb(218 220 230 / 60%)
 	}
+
 	.floating-cart-button {
 		position: fixed;
 		bottom: 50px;
@@ -1380,6 +1560,7 @@ hr {
 		border-radius: 50%;
 		background-color: #D55905;
 	}
+
 	.floating-cart-icon {
 		color: white;
 		font-size: 35px;
@@ -1388,6 +1569,7 @@ hr {
 		top: 50%;
 		left: 50%;
 	}
+
 	.add-btn-css {
 		color: white;
 		background: orange;
@@ -1396,33 +1578,43 @@ hr {
 }
 
 @media only screen and (min-width: 769px) {
+
+	.modal-dialog {
+		width: 400px !important;
+	}
+
 	.add-btn-css {
 		color: white;
 		background: orange;
 		border: none;
-		height: 40px;
-		width: 80px;
-		float: right;
-		margin-right: 50px;
 		font-size: 15px;
+		position: absolute;
+		top: 14%;
+		right: 4%;
 	}
+
 	.account-type-text {
 		font-size: 18px;
 		margin-right: 10px;
 		margin-left: 5px;
 	}
+
 	.react-table-outer {
 		padding: 10px 50px;
 	}
+
 	.nav-mob-view {
 		display: none;
 	}
+
 	.logo {
 		height: 40px;
 	}
+
 	.pd-39 {
 		padding: 39px;
 	}
+
 	.header {
 		height: 60px;
 		width: 100%;
@@ -1430,50 +1622,62 @@ hr {
 		padding: 10px 50px;
 		position: relative;
 	}
+
 	.logo-text {
 		display: inline-block;
 		font-size: 18px;
 		margin: 0px 0px 0px 15px;
 	}
+
 	.nav-items {
 		font-size: 14px;
 		float: right;
 		margin: 6px 0px;
 	}
+
 	.nav-items :hover {
 		color: orange;
 		cursor: pointer;
 	}
+
 	.nav-mr {
 		margin-right: 30px;
 	}
+
 	.count-text {
 		font-size: 30px;
 		font-weight: 600;
 	}
+
 	.content-padding {
 		padding: 0px 50px;
 	}
+
 	.shop-image {
 		width: 100%;
 		height: 115px;
 		border-radius: 5px;
 	}
+
 	.shop-address {
 		font-size: 17px;
 	}
+
 	.shop-heading {
 		font-size: 18px;
 		margin-top: 20px;
 		font-weight: 600;
 	}
+
 	.shop-time {
 		font-size: 15px;
 	}
+
 	.shop-time-heading {
 		font-size: 15px;
 		font-weight: 600;
 	}
+
 	.loginBanner {
 		width: 50%;
 		position: absolute;
@@ -1481,12 +1685,14 @@ hr {
 		top: 0;
 		height: 100%;
 	}
+
 	.loginPage {
-		height: 100vh!important;
+		height: 100vh !important;
 		background: #fff;
 		width: 100%;
 		position: relative;
 	}
+
 	.loginbox {
 		width: 30%;
 		position: absolute;
@@ -1498,27 +1704,33 @@ hr {
 		padding: 20px;
 		padding-top: 40px;
 	}
+
 	.welcome-message {
 		font-size: 18px;
 		font-weight: 600;
 		color: orange;
 		text-align: center;
 	}
+
 	.box-label {
 		font-size: 18px;
 		color: brown;
 		font-weight: 600;
 	}
-	.reset-password, .sign-up {
+
+	.reset-password,
+	.sign-up {
 		font-size: 18px;
 		font-weight: 600;
 		color: brown;
 		text-align: center;
 		cursor: pointer;
 	}
+
 	.sign-up {
 		margin-top: 25px;
 	}
+
 	.login-box-icon {
 		height: 50px;
 		width: 50px;
@@ -1526,6 +1738,7 @@ hr {
 		top: -5%;
 		left: 45%;
 	}
+
 	.login-button {
 		font-size: 15px;
 		font-weight: 600;
@@ -1533,17 +1746,21 @@ hr {
 		width: 100%;
 		margin-top: 10px;
 	}
+
 	.incorrect-password-text {
 		color: red;
 		font-size: 15px;
 	}
+
 	.shop-details-outer {
 		padding: 30px 100px;
-		margin: 0px!important;
+		margin: 0px !important;
 	}
+
 	.empty-cart-image {
 		height: 358px;
 	}
+
 	.menu-items {
 		margin-bottom: 10px;
 		height: 80px;
@@ -1554,6 +1771,7 @@ hr {
 		border-radius: 5px;
 		position: relative;
 	}
+
 	.menu-items-name {
 		display: inline-block;
 		font-size: 18px;
@@ -1561,31 +1779,37 @@ hr {
 		color: white;
 		top: 12px;
 	}
+
 	.menu-items-price {
 		font-size: 18px;
 		margin: 2px 0px 2px 65px;
 		color: white;
 		top: 12px;
 	}
+
 	.menu-items-half-price {
 		color: white;
 		font-size: 18px;
 	}
+
 	.menu-items-half-text {
 		margin-left: 33px;
 		font-size: 15px;
 		color: white;
 	}
+
 	.menu-items-half-price-text {
 		margin-left: 20px;
 		font-size: 15px;
 		color: white;
 	}
+
 	.menu-items-full-text {
 		margin-left: 50px;
 		font-size: 15px;
 		color: white;
 	}
+
 	.menu-items-half-price-radioBox {
 		height: 20px;
 		width: 20px;
@@ -1594,6 +1818,7 @@ hr {
 		top: 54%;
 		left: 24%;
 	}
+
 	.menu-items-full-price-radioBox {
 		height: 20px;
 		width: 20px;
@@ -1602,7 +1827,9 @@ hr {
 		top: 54%;
 		left: 32%;
 	}
-	.menu-items-add-button, .menu-items-count-button {
+
+	.menu-items-add-button,
+	.menu-items-count-button {
 		font-size: 18px;
 		right: 5%;
 		top: 20%;
@@ -1615,10 +1842,12 @@ hr {
 		cursor: pointer;
 		position: absolute;
 	}
+
 	.menu-items-count-button {
 		width: 78px;
 		cursor: context-menu;
 	}
+
 	.menu-items-count-left-button {
 		position: absolute;
 		left: 10px;
@@ -1626,6 +1855,7 @@ hr {
 		top: -17px;
 		cursor: pointer;
 	}
+
 	.menu-items-count-right-button {
 		position: absolute;
 		right: 10px;
@@ -1634,6 +1864,7 @@ hr {
 		font-weight: 600;
 		cursor: pointer;
 	}
+
 	.menu-items-image {
 		top: 15px;
 		position: absolute;
@@ -1641,6 +1872,7 @@ hr {
 		border-radius: 5px;
 		width: 8%;
 	}
+
 	.cart-items {
 		background-color: orange;
 		padding: 20px;
@@ -1648,22 +1880,27 @@ hr {
 		position: sticky;
 		top: 30px;
 	}
+
 	.order-details-heading {
 		font-size: 18px;
 		color: white;
 	}
+
 	.order-details-items {
 		font-size: 18px;
 		color: white;
 	}
+
 	.checkout-button {
 		background-color: white !important;
 		color: orange !important;
 	}
+
 	.checkout-outer {
 		padding: 0px 100px;
 		margin: 0px !important;
 	}
+
 	.checkout-apply-btn {
 		margin-top: 10px;
 		display: inline;
@@ -1674,12 +1911,14 @@ hr {
 		background-color: orange;
 		border-radius: 5px;
 	}
+
 	.checkout-apply-text {
 		width: 50% !important;
 		display: inline;
 		margin-right: 30px;
 		font-size: 18px;
 	}
+
 	.offers-check-text {
 		margin-right: 23px;
 		font-size: 18px;
@@ -1687,19 +1926,23 @@ hr {
 		color: orange;
 		cursor: pointer;
 	}
+
 	.checkout-code-not-applied {
 		font-size: 15px;
 		color: red;
 	}
+
 	.checkout-code-applied {
 		font-size: 15px;
 		color: green;
 	}
+
 	.checkout-apply-btn-disabled {
 		margin-top: 10px;
 		cursor: not-allowed;
 		background-color: #ebebe4;
 	}
+
 	.customer-info {
 		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
 		margin: 0px !important;
@@ -1708,6 +1951,7 @@ hr {
 		padding: 30px;
 		min-height: 500px;
 	}
+
 	.bill-info {
 		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
 		margin: 0px !important;
@@ -1719,15 +1963,19 @@ hr {
 		position: sticky;
 		top: 50px;
 	}
+
 	.radio-btn-size {
 		cursor: pointer;
 	}
+
 	.radio-text-size {
 		font-size: 18px;
 		margin-left: 25px;
 		margin-right: 20px;
 	}
-	.area-box, .profile-page-area-box {
+
+	.area-box,
+	.profile-page-area-box {
 		height: 45px;
 		width: 60%;
 		font-size: 18px;
@@ -1736,50 +1984,62 @@ hr {
 		border-radius: 5px;
 		padding: 5px 16px;
 	}
+
 	.profile-page-area-box {
 		width: 95%;
 		margin-left: 0px;
 	}
+
 	.bill-info-heading {
 		font-size: 18px;
 		margin: 0px;
 		text-align: center;
 	}
+
 	.bill-info-text {
 		font-size: 18px;
 		margin: 0px;
 	}
+
 	.bill-info-delivery-text {
 		margin-top: 20px !important;
 		font-size: 18px;
 	}
+
 	.place-order-button {
 		background-color: #28A745;
 		color: white;
 	}
+
 	.display-block {
 		display: block;
 	}
+
 	.confirm-modal-heading {
 		font-size: 18px;
 		font-weight: 900;
 		text-align: center;
 	}
+
 	.confirm-modal-body {
 		font-size: 18px;
 		text-align: center;
 	}
+
 	.confirm-modal-body-2 {
 		margin-top: -30px;
 		font-size: 18px;
 		text-align: center;
 	}
+
 	.modal-header {
 		border: none !important;
 	}
+
 	.modal-footer {
 		border: none !important;
 	}
+
 	.confirm-modal-close {
 		font-size: 25px;
 		color: black;
@@ -1789,6 +2049,7 @@ hr {
 		z-index: 1;
 		right: 3%;
 	}
+
 	.confirm-modal-no {
 		/* position: absolute;
 		left: 60%; */
@@ -1796,21 +2057,26 @@ hr {
 		background: #28A745;
 		/* bottom: 3%; */
 	}
+
 	.confirm-modal-yes {
 		/* position: absolute;
 		bottom: 9%;
 		right: 7%; */
 		font-size: 18px;
 	}
+
 	.modal-content {
 		min-height: 150px;
 	}
+
 	.order-placed-outer {
 		text-align: center;
 	}
+
 	h1 {
 		font-size: 40px !important;
 	}
+
 	.order-placed-box {
 		background-color: white;
 		width: 100%;
@@ -1818,28 +2084,32 @@ hr {
 		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
 		border-radius: 5px;
 	}
+
 	.order-placed-image {
 		height: 50px;
 		margin-bottom: 30px;
 	}
+
 	.order-placed-text {
 		font-size: 18px;
 		margin: 10px 0px 10px;
 	}
+
 	.order-placed-btn {
 		width: 30%;
 	}
+
 	.offers-page-outer {
 		padding: 50px;
-    background-color: white;
-    box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
-    border-radius: 5px;
-    position: relative;
-    /* display: none; */
-    width: 100%;
+		background-color: white;
+		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
+		border-radius: 5px;
+		position: relative;
+		/* display: none; */
+		width: 100%;
 		margin: 0px;
-		height: 80vh;
 	}
+
 	.offers-box {
 		padding: 30px;
 		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
@@ -1849,11 +2119,13 @@ hr {
 		margin-top: 15px;
 		cursor: pointer;
 	}
+
 	.offers-heading {
 		font-size: 25px;
 		margin-top: 20px;
 		text-align: center;
 	}
+
 	.offers-copy-btn {
 		height: 50px;
 		width: 100%;
@@ -1865,39 +2137,51 @@ hr {
 		bottom: 23%;
 		color: orange;
 	}
+
 	.offers-copy-btn-outer {
 		padding: 0px 23px;
 		margin-top: 15px
 	}
+
 	.offers-text {
 		font-size: 18px;
 		vertical-align: text-top;
 	}
+
 	.offers-box-heading {
 		font-size: 18px;
 		color: black;
-		margin: 0px!important;
+		margin: 0px !important;
 	}
-	.offers-box-text, .offers-box-copied-text {
+
+	.offers-box-text,
+	.offers-box-copied-text {
 		font-size: 15px;
 		color: black;
 		margin: 5px 10px 0px;
 	}
+
 	.offers-box-copied-text {
 		margin: 10px 0px 0px;
 	}
-	.offers-not-found, .offers-not-found-shop-details {
+
+	.offers-not-found,
+	.offers-not-found-shop-details {
 		height: 250px;
 		position: absolute;
 		transform: translate(-50%, -50%);
 		top: 50%;
 		left: 50%;
 	}
+
 	.offers-not-found-shop-details {
 		height: 450px;
 		top: 67%;
 	}
-	.offers-not-found-text1, .offers-not-found-text2, .offers-not-found-text1-shop-details {
+
+	.offers-not-found-text1,
+	.offers-not-found-text2,
+	.offers-not-found-text1-shop-details {
 		font-size: 40px;
 		position: absolute;
 		transform: translate(-50%, -50%);
@@ -1905,20 +2189,25 @@ hr {
 		left: 50%;
 		z-index: 1;
 	}
+
 	.offers-not-found-text1-shop-details {
 		top: 60%;
 	}
+
 	.offers-not-found-text2 {
 		top: 43%;
 	}
+
 	.checkout-discount-text {
 		font-size: 15px;
 		margin: 0px;
 	}
+
 	.checkout-total-text {
 		font-size: 18px;
 		margin: 0px;
 	}
+
 	.order-history-outer {
 		margin: 20px;
 		background-color: white;
@@ -1928,6 +2217,7 @@ hr {
 		padding: 10px 30px 30px;
 		position: relative;
 	}
+
 	.order-history-box {
 		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
 		border: 1px solid #dadce6;
@@ -1937,19 +2227,23 @@ hr {
 		padding: 10px;
 		min-height: 340px;
 	}
+
 	.order-history-box-heading {
 		font-size: 18px;
 		margin-bottom: 5px;
 	}
+
 	.order-history-box-text-heading {
 		font-size: 15px;
 		color: gray;
 	}
+
 	.order-history-box-text {
 		font-size: 15px;
 		color: black;
 		float: right;
 	}
+
 	.order-history-box-btn {
 		height: 50px;
 		border: 1px solid orange;
@@ -1959,45 +2253,55 @@ hr {
 		bottom: 23%;
 		margin: 10px 0px;
 	}
+
 	.order-history-box-btn:hover {
 		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, 1);
 	}
+
 	.order-history-box-btn-text {
 		font-size: 15px;
 		padding: 10px;
 		color: orange;
 	}
+
 	.order-history-box-image {
 		height: auto;
 		width: 100%;
 	}
+
 	.order-history-modal {
 		padding: 30px;
 		height: 450px;
 		overflow: auto;
 	}
+
 	.order-history-modal-body-heading {
 		font-size: 18px;
 		font-weight: 600;
 	}
+
 	.order-history-modal-body-item-text {
 		font-size: 18px;
 		margin: 0px;
 	}
+
 	.order-history-modal-body-quantity-text {
 		margin-bottom: 10px;
 		font-size: 18px;
 	}
+
 	.order-history-modal-body-item-cost-text {
 		font-size: 18px;
 		float: right;
 	}
+
 	.order-history-modal-body-item-portion-text {
 		font-size: 15px;
 		margin: 0px;
 		margin-top: -5px;
 		margin-bottom: 5px;
 	}
+
 	.no-shops-found {
 		position: relative;
 		background-color: white;
@@ -2006,30 +2310,39 @@ hr {
 		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
 		padding: 30px;
 	}
-	.no-shops-found-image, .no-shops-found-image-order-history, .no-shops-found-image-glass, .no-shops-found-image-glass-order-history {
+
+	.no-shops-found-image,
+	.no-shops-found-image-order-history,
+	.no-shops-found-image-glass,
+	.no-shops-found-image-glass-order-history {
 		height: 200px;
 		transform: translate(-50%, -50%);
 		top: 50%;
 		left: 50%;
 		position: absolute;
 	}
+
 	.no-shops-found-image-glass {
 		top: 65%;
 		left: 57%;
 	}
+
 	.no-shops-found-image-order-history {
 		height: 400px;
 		top: 55%;
 	}
+
 	.no-shops-found-image-glass-order-history {
 		top: 68%;
 		left: 58%;
 	}
+
 	.no-shops-found-heading {
 		font-size: 50px;
 		margin-top: 35px;
 		text-align: center;
 	}
+
 	.profile-page-outer {
 		background-color: white;
 		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
@@ -2037,6 +2350,7 @@ hr {
 		padding: 30px;
 		position: relative;
 	}
+
 	.profile-page-btn {
 		font-size: 18px;
 		padding: 10px 10px;
@@ -2045,6 +2359,7 @@ hr {
 		width: 10%;
 		margin: 30px 0px 0px;
 	}
+
 	.admin-shop-status-btn {
 		font-size: 18px;
 		padding: 10px 10px;
@@ -2052,6 +2367,7 @@ hr {
 		width: 100%;
 		height: 50px;
 	}
+
 	.admin-shop-edit {
 		box-shadow: 0 4px 20px 0 rgb(218 220 230 / 60%);
 		margin: 0px !important;
@@ -2060,29 +2376,32 @@ hr {
 		padding: 30px;
 		min-height: 500px;
 	}
-	.admin-shop-outer {
-		padding: 50px 300px 100px;
-	}
+
 	.admin-shop-image {
 		width: 100%;
 		height: 400px;
 		padding: 10px;
 		border-radius: 5px;
 	}
+
 	.status-text {
 		font-size: 25px;
 		margin: 0px !important;
 	}
+
 	.admin-shop-status-text {
 		font-size: 35px;
 		margin-bottom: 20px;
 		color: #A52A2A;
 	}
+
 	.reset-password-text {
 		font-size: 18px;
 		margin: 15px 0px;
 	}
-	.offers-expired-img, .order-cancel-img {
+
+	.offers-expired-img,
+	.order-cancel-img {
 		position: absolute;
 		height: 216px;
 		top: 50%;
@@ -2091,24 +2410,30 @@ hr {
 		opacity: 0.5;
 		z-index: 1;
 	}
+
 	.order-cancel-img {
 		top: 40%;
 	}
+
 	.admin-edit-user-btn {
 		float: right;
 		margin-right: 20px;
 		margin-bottom: 30px;
 	}
+
 	.help-section {
 		font-size: 18px;
 		color: cornflowerblue;
 		text-align: center;
 		margin-bottom: 20px;
 	}
+
 	.help-section-text {
 		cursor: pointer;
 	}
-	.shop-closed-tag, .shopDetails-closed-tag {
+
+	.shop-closed-tag,
+	.shopDetails-closed-tag {
 		height: 30px;
 		width: 53px;
 		background-color: #000;
@@ -2119,6 +2444,7 @@ hr {
 		margin-top: 10px;
 		margin-bottom: -15px;
 	}
+
 	.shopDetails-closed-tag {
 		background-color: #000;
 		color: #fff;
@@ -2130,31 +2456,37 @@ hr {
 		width: 100px;
 		font-size: 18px;
 	}
+
 	.box {
 		height: 400px;
 	}
+
 	.msg-modal-box-position {
 		position: fixed;
-    top: 5%;
-    right: 1%;
-    height: 50px;
-    width: 35%;
-    font-size: 25px;
-    border-radius: 5px;
-    padding: 5px 20px;
+		top: 5%;
+		right: 1%;
+		height: 50px;
+		width: 35%;
+		font-size: 25px;
+		border-radius: 5px;
+		padding: 5px 20px;
 	}
+
 	.msg-modal-times-position {
 		float: right;
 		cursor: pointer;
 	}
+
 	.font-size-30 {
 		font-size: 30px !important;
 	}
+
 	.shop-details-minus-btn {
 		margin-right: 15px;
 		font-size: 18px;
 		cursor: pointer;
 	}
+
 	.online-payment-message {
 		font-size: 18px;
 		border: 2px dashed orange;
@@ -2164,26 +2496,30 @@ hr {
 		box-shadow: 0 4px 20px 0 rgba(218, 220, 230, .6);
 		cursor: pointer;
 	}
+
 	.same-as-above-btn {
 		font-size: 15px;
-    padding: 10px 10px;
-    background: orange;
-    border-radius: 5px;
-    /* margin-left: 200px; */
-    /* display: inline; */
-    position: absolute;
-    width: 30%;
-    top: 33%;
-    right: 6%;
+		padding: 10px 10px;
+		background: orange;
+		border-radius: 5px;
+		/* margin-left: 200px; */
+		/* display: inline; */
+		position: absolute;
+		width: 30%;
+		top: 33%;
+		right: 6%;
 	}
+
 	.same-as-above-btn:focus {
 		outline: none !important;
 		transform: translateY(-3px);
 		box-shadow: 1px 10px 0 rgb(218 220 230 / 60%)
 	}
+
 	.fa-cart-arrow-down {
 		display: none !important;
 	}
+
 	.loginBackground {
 		display: none !important;
 	}

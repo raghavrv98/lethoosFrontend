@@ -192,7 +192,7 @@ export class AdminUserEdit extends React.PureComponent {
                 </div>
                 <div className="row">
                   <div className="col-md-6">
-                    <p className="box-label">Offers</p>
+                    <p className="box-label mt-10">Offers</p>
                     <div className="admin-box-outer">
                       {this.state.userDetails.coupon.length > 0 ?
                         this.state.userDetails.coupon.map((val, index) => {
